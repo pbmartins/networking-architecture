@@ -1,0 +1,39 @@
+Feb 23 15:19:35.546 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Feb 23 15:19:35.546 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49792.
+Feb 23 15:19:35.576 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 23 15:19:35.578 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02/ex03/ex03/project-files/dynamips 
+Feb 23 15:19:35.578 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02/ex03/ex03/project-files/dynamips
+Feb 23 15:19:35.581 HYPERVISOR: exec_cmd: vm create R1 3 c7200 
+Feb 23 15:19:35.581 VM: VM R1 created.
+Feb 23 15:19:35.584 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5008 
+Feb 23 15:19:35.586 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Feb 23 15:19:35.589 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:19:35.591 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Feb 23 15:19:35.594 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:19:35.597 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
+Feb 23 15:19:35.599 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:19:35.602 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
+Feb 23 15:19:35.605 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca03.177b.0000 
+Feb 23 15:19:35.618 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Feb 23 15:19:35.619 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Feb 23 15:19:35.620 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Feb 23 15:19:35.621 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:19:35.622 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60608040 
+Feb 23 15:19:35.627 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:19:35.628 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Feb 23 15:19:35.628 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Feb 23 15:19:35.630 HYPERVISOR: exec_cmd: vm set_config R1 configs/i3_startup-config.cfg 
+Feb 23 15:19:35.631 HYPERVISOR: exec_cmd: vm set_config R1 configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Feb 23 15:19:35.828 HYPERVISOR: exec_cmd: nio create_udp udp-464293fa-57e7-4f31-916f-c66e32ba7777 10014 127.0.0.1 10015 
+Feb 23 15:19:35.846 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-464293fa-57e7-4f31-916f-c66e32ba7777 
+Feb 23 15:19:35.850 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:26:38.738 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:26:38.742 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 0 
+Feb 23 15:26:38.743 HYPERVISOR: exec_cmd: nio delete udp-464293fa-57e7-4f31-916f-c66e32ba7777 
+Feb 23 15:26:38.752 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:26:38.758 HYPERVISOR: exec_cmd: vm extract_config R1 
+Feb 23 15:26:38.760 HYPERVISOR: exec_cmd: vm delete R1 
+Feb 23 15:26:38.760 VM: VM R1 destroyed.
+Feb 23 15:26:38.762 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 23 15:26:39.165 HYPERVISOR: Stopped.
+Feb 23 15:26:39.165 GENERAL: reset done.

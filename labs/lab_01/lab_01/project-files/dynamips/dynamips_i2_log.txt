@@ -1,0 +1,61 @@
+Feb 16 16:52:17.124 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Feb 16 16:52:17.124 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49694.
+Feb 16 16:52:17.171 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 16 16:52:17.175 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_01/lab_01/project-files/dynamips 
+Feb 16 16:52:17.175 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_01/lab_01/project-files/dynamips
+Feb 16 16:52:17.177 HYPERVISOR: exec_cmd: vm create Router2 2 c7200 
+Feb 16 16:52:17.177 VM: VM Router2 created.
+Feb 16 16:52:17.179 HYPERVISOR: exec_cmd: vm set_con_tcp_port Router2 5001 
+Feb 16 16:52:17.180 HYPERVISOR: exec_cmd: c7200 get_mac_addr Router2 
+Feb 16 16:52:17.182 HYPERVISOR: exec_cmd: vm get_status Router2 
+Feb 16 16:52:17.183 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 0 0 C7200-IO-FE 
+Feb 16 16:52:17.185 HYPERVISOR: exec_cmd: vm set_disk0 Router2 0 
+Feb 16 16:52:17.192 HYPERVISOR: exec_cmd: vm get_status Router2 
+Feb 16 16:52:17.195 HYPERVISOR: exec_cmd: vm set_idle_pc Router2 0x60608040 
+Feb 16 16:52:17.198 HYPERVISOR: exec_cmd: vm set_ios Router2 /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Feb 16 16:52:17.206 HYPERVISOR: exec_cmd: vm get_status Router2 
+Feb 16 16:52:17.208 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 1 0 PA-2FE-TX 
+Feb 16 16:52:17.210 HYPERVISOR: exec_cmd: vm set_nvram Router2 512 
+Feb 16 16:52:17.212 HYPERVISOR: exec_cmd: vm get_status Router2 
+Feb 16 16:52:17.216 HYPERVISOR: exec_cmd: vm slot_remove_binding Router2 0 0 
+Feb 16 16:52:17.217 HYPERVISOR: exec_cmd: vm get_status Router2 
+Feb 16 16:52:17.218 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 0 0 C7200-IO-2FE 
+Feb 16 16:52:17.219 HYPERVISOR: exec_cmd: vm set_ram Router2 512 
+Feb 16 16:52:17.220 HYPERVISOR: exec_cmd: c7200 set_mac_addr Router2 ca02.1dd9.0000 
+Feb 16 16:52:17.222 HYPERVISOR: exec_cmd: vm set_config Router2 configs/i2_startup-config.cfg 
+Feb 16 16:52:17.222 HYPERVISOR: exec_cmd: vm set_config Router2 configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Feb 16 16:52:17.423 HYPERVISOR: exec_cmd: nio create_udp udp-a38c4124-0215-4df3-bd4e-0f0f1fcdd5c0 10005 127.0.0.1 10004 
+Feb 16 16:52:17.427 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 0 0 udp-a38c4124-0215-4df3-bd4e-0f0f1fcdd5c0 
+Feb 16 16:52:17.435 HYPERVISOR: exec_cmd: vm get_status Router2 
+Feb 16 16:52:25.950 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Feb 16 16:52:25.950 VM: VM Ghost created.
+Feb 16 16:52:25.950 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Feb 16 16:52:25.951 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Feb 16 16:52:25.952 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Feb 16 16:52:25.953 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Feb 16 16:52:25.954 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 16 16:52:25.954 HYPERVISOR: exec_cmd: vm start Ghost 
+Feb 16 16:52:26.284 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 16 16:52:26.286 HYPERVISOR: exec_cmd: vm stop Ghost 
+Feb 16 16:52:27.220 VM: VM Ghost shutdown.
+Feb 16 16:52:27.223 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Feb 16 16:52:27.223 VM: VM Ghost destroyed.
+Feb 16 16:52:27.232 HYPERVISOR: exec_cmd: vm set_ghost_status Router2 2 
+Feb 16 16:52:27.233 HYPERVISOR: exec_cmd: vm set_ghost_file Router2 c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Feb 16 16:52:27.234 HYPERVISOR: exec_cmd: vm get_status Router2 
+Feb 16 16:52:27.235 HYPERVISOR: exec_cmd: vm start Router2 
+Feb 16 16:52:45.283 HYPERVISOR: exec_cmd: nio create_gen_eth generic_ethernet-5ffc529f-ae5b-47db-897e-23ecdd691092 en4 
+Feb 16 16:52:45.285 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 0 1 generic_ethernet-5ffc529f-ae5b-47db-897e-23ecdd691092 
+Feb 16 16:52:45.286 HYPERVISOR: exec_cmd: vm get_status Router2 
+Feb 16 16:52:45.286 HYPERVISOR: exec_cmd: vm slot_enable_nio Router2 0 1 
+Feb 16 16:55:51.371 HYPERVISOR: exec_cmd: vm get_status Router2 
+Feb 16 16:55:51.372 HYPERVISOR: exec_cmd: vm stop Router2 
+Feb 16 16:55:51.847 VM: VM Router2 shutdown.
+Feb 16 16:55:51.850 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Feb 16 16:55:55.769 HYPERVISOR: exec_cmd: vm get_status Router2 
+Feb 16 16:55:55.772 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Feb 16 16:55:55.775 HYPERVISOR: exec_cmd: vm delete Router2 
+Feb 16 16:55:55.775 VM: VM Router2 destroyed.
+Feb 16 16:55:55.777 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 16 16:55:56.208 HYPERVISOR: Stopped.
+Feb 16 16:55:56.208 GENERAL: reset done.

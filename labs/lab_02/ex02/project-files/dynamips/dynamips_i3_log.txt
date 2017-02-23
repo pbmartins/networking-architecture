@@ -1,0 +1,57 @@
+Feb 23 15:11:45.337 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Feb 23 15:11:45.337 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49501.
+Feb 23 15:11:45.368 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 23 15:11:45.368 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02/lab_02/project-files/dynamips 
+Feb 23 15:11:45.369 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02/lab_02/project-files/dynamips
+Feb 23 15:11:45.370 HYPERVISOR: exec_cmd: vm create R1 3 c7200 
+Feb 23 15:11:45.370 VM: VM R1 created.
+Feb 23 15:11:45.380 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5008 
+Feb 23 15:11:45.393 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Feb 23 15:11:45.405 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:11:45.425 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Feb 23 15:11:45.441 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:11:45.451 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
+Feb 23 15:11:45.461 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:11:45.477 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
+Feb 23 15:11:45.480 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca03.177b.0000 
+Feb 23 15:11:45.512 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Feb 23 15:11:45.541 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Feb 23 15:11:45.561 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Feb 23 15:11:45.564 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:11:45.583 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60608040 
+Feb 23 15:11:45.591 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:11:45.594 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Feb 23 15:11:45.601 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Feb 23 15:11:45.614 HYPERVISOR: exec_cmd: vm set_config R1 configs/i3_startup-config.cfg 
+Feb 23 15:11:45.616 HYPERVISOR: exec_cmd: vm set_config R1 configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Feb 23 15:11:45.707 HYPERVISOR: exec_cmd: nio create_udp udp-d5a92daf-e116-49d8-8a22-ee81cddc153c 10014 127.0.0.1 10015 
+Feb 23 15:11:45.715 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-d5a92daf-e116-49d8-8a22-ee81cddc153c 
+Feb 23 15:11:45.716 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:14:18.393 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Feb 23 15:14:18.393 VM: VM Ghost created.
+Feb 23 15:14:18.415 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Feb 23 15:14:18.434 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Feb 23 15:14:18.442 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Feb 23 15:14:18.457 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Feb 23 15:14:18.480 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 23 15:14:18.510 HYPERVISOR: exec_cmd: vm start Ghost 
+Feb 23 15:14:18.903 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 23 15:14:18.905 HYPERVISOR: exec_cmd: vm stop Ghost 
+Feb 23 15:14:19.771 VM: VM Ghost shutdown.
+Feb 23 15:14:19.773 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Feb 23 15:14:19.773 VM: VM Ghost destroyed.
+Feb 23 15:14:19.782 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Feb 23 15:14:19.783 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Feb 23 15:14:19.784 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:14:19.786 HYPERVISOR: exec_cmd: vm start R1 
+Feb 23 15:16:45.138 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:16:45.147 HYPERVISOR: exec_cmd: vm stop R1 
+Feb 23 15:16:45.590 VM: VM R1 shutdown.
+Feb 23 15:16:45.594 HYPERVISOR: exec_cmd: vm extract_config R1 
+Feb 23 15:18:16.018 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 23 15:18:16.023 HYPERVISOR: exec_cmd: vm extract_config R1 
+Feb 23 15:18:16.026 HYPERVISOR: exec_cmd: vm delete R1 
+Feb 23 15:18:16.026 VM: VM R1 destroyed.
+Feb 23 15:18:16.037 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 23 15:18:16.301 HYPERVISOR: Stopped.
+Feb 23 15:18:16.301 GENERAL: reset done.

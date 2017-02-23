@@ -1,0 +1,25 @@
+Feb 16 16:37:50.154 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Feb 16 16:37:50.154 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49364.
+Feb 16 16:37:50.168 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 16 16:37:50.168 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_01/lab_01/project-files/dynamips 
+Feb 16 16:37:50.168 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_01/lab_01/project-files/dynamips
+Feb 16 16:37:50.169 HYPERVISOR: exec_cmd: ethsw create SW1 
+Feb 16 16:37:57.120 HYPERVISOR: exec_cmd: nio create_udp udp-12119888-94e8-4574-877c-ee14004e6bf8 10000 127.0.0.1 10004 
+Feb 16 16:37:57.127 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-12119888-94e8-4574-877c-ee14004e6bf8 
+Feb 16 16:37:57.149 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-12119888-94e8-4574-877c-ee14004e6bf8 1 
+Feb 16 16:38:06.297 HYPERVISOR: exec_cmd: nio create_udp udp-c809535f-2f10-4d9a-9562-dde3251e65ee 10005 127.0.0.1 10006 
+Feb 16 16:38:06.316 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-c809535f-2f10-4d9a-9562-dde3251e65ee 
+Feb 16 16:38:06.324 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-c809535f-2f10-4d9a-9562-dde3251e65ee 1 
+Feb 16 16:38:23.046 HYPERVISOR: exec_cmd: nio create_udp udp-e3c963fd-9e3a-4068-a16b-fe7649ea7bc6 10007 127.0.0.1 10010 
+Feb 16 16:38:23.061 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-e3c963fd-9e3a-4068-a16b-fe7649ea7bc6 
+Feb 16 16:38:23.072 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-e3c963fd-9e3a-4068-a16b-fe7649ea7bc6 1 
+Feb 16 16:39:49.650 HYPERVISOR: exec_cmd: nio create_tap tap-b295b3bf-707e-4ed9-88af-42d334453629 /dev/tap0 
+Feb 16 16:39:59.942 HYPERVISOR: exec_cmd: nio create_tap tap-d279931b-f361-4443-8186-4c06ed89d604 /dev/tap0 
+Feb 16 16:40:36.722 HYPERVISOR: exec_cmd: nio create_tap tap-05b48e95-3934-412f-b3d7-3e7700924a88 /dev/tap0 
+Feb 16 16:42:05.479 HYPERVISOR: exec_cmd: nio create_tap tap-8d7ae7fa-9224-466a-8c17-40d97b6a9187 /dev/tap0 
+Feb 16 16:42:05.481 HYPERVISOR: exec_cmd: ethsw add_nio SW1 tap-8d7ae7fa-9224-466a-8c17-40d97b6a9187 
+Feb 16 16:42:05.495 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 tap-8d7ae7fa-9224-466a-8c17-40d97b6a9187 1 
+Feb 16 16:50:09.910 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Feb 16 16:50:09.985 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 16 16:50:10.369 HYPERVISOR: Stopped.
+Feb 16 16:50:10.369 GENERAL: reset done.

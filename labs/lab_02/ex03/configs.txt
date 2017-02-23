@@ -1,0 +1,33 @@
+vlan database
+vlan 1
+vlan 2
+vlan 3
+exit
+config terminal
+interface f1/0
+switchport mode access
+switchport access vlan 1
+interface range f1/1 - 8
+switchport mode access
+switchport access vlan 2
+interface range f1/9 - 12
+switchport mode access
+switchport access vlan 3
+interface range f1/13 - 15
+switchport mode trunk
+switchport trunk encapsulation dot1q
+exit
+interface Vlan 1
+ip add 10.1.1.1 255.255.255.0
+no autostate
+no shutdown
+interface Vlan 2
+ip add 10.2.2.1 255.255.255.0
+no autostate
+no shutdown
+interface Vlan 3
+ip add 10.3.3.1 255.255.255.0
+no autostate
+no shutdown
+end
+write

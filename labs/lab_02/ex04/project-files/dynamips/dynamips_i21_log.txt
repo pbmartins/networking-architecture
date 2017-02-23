@@ -1,0 +1,63 @@
+Feb 23 17:18:43.877 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Feb 23 17:18:43.878 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50163.
+Feb 23 17:18:43.912 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 23 17:18:43.915 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02/ex04/project-files/dynamips 
+Feb 23 17:18:43.915 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02/ex04/project-files/dynamips
+Feb 23 17:18:43.922 HYPERVISOR: exec_cmd: vm create ESW3 3 c3725 
+Feb 23 17:18:43.923 VM: VM ESW3 created.
+Feb 23 17:18:43.924 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW3 5002 
+Feb 23 17:18:43.926 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW3 
+Feb 23 17:18:43.928 HYPERVISOR: exec_cmd: vm set_ios ESW3 /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Feb 23 17:18:43.930 HYPERVISOR: exec_cmd: vm set_nvram ESW3 256 
+Feb 23 17:18:43.932 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW3 c203.455e.0000 
+Feb 23 17:18:43.935 HYPERVISOR: exec_cmd: vm set_disk0 ESW3 1 
+Feb 23 17:18:43.941 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 23 17:18:43.949 HYPERVISOR: exec_cmd: vm set_idle_pc ESW3 0x60a6a3b8 
+Feb 23 17:18:43.960 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 23 17:18:43.977 HYPERVISOR: exec_cmd: vm slot_add_binding ESW3 1 0 NM-16ESW 
+Feb 23 17:18:43.989 HYPERVISOR: exec_cmd: vm set_ram ESW3 256 
+Feb 23 17:18:43.998 HYPERVISOR: exec_cmd: vm set_config ESW3 configs/i3_startup-config.cfg 
+Feb 23 17:18:44.155 HYPERVISOR: exec_cmd: nio create_udp udp-14b8389d-5b50-4e16-a12b-11880da96992 10011 127.0.0.1 10009 
+Feb 23 17:18:44.162 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW3 0 1 udp-14b8389d-5b50-4e16-a12b-11880da96992 
+Feb 23 17:18:44.164 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 23 17:18:44.197 HYPERVISOR: exec_cmd: nio create_udp udp-29bb7f1a-6a91-4f45-8be2-5b57f298c546 10013 127.0.0.1 10012 
+Feb 23 17:18:44.213 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW3 1 15 udp-29bb7f1a-6a91-4f45-8be2-5b57f298c546 
+Feb 23 17:18:44.216 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 23 17:18:44.239 HYPERVISOR: exec_cmd: nio create_udp udp-18cc4d0d-5e07-43f3-942e-3d922ad598a4 10014 127.0.0.1 10015 
+Feb 23 17:18:44.254 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW3 1 1 udp-18cc4d0d-5e07-43f3-942e-3d922ad598a4 
+Feb 23 17:18:44.267 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 23 17:18:44.285 HYPERVISOR: exec_cmd: nio create_udp udp-1bbf6bda-aafb-433f-9ee6-e9797c4da8c9 10016 127.0.0.1 10017 
+Feb 23 17:18:44.286 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW3 1 5 udp-1bbf6bda-aafb-433f-9ee6-e9797c4da8c9 
+Feb 23 17:18:44.287 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 23 17:18:44.300 HYPERVISOR: exec_cmd: nio create_udp udp-7bd56216-daa0-460b-afd1-befb78229aee 10018 127.0.0.1 10019 
+Feb 23 17:18:44.301 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW3 1 11 udp-7bd56216-daa0-460b-afd1-befb78229aee 
+Feb 23 17:18:44.302 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 23 17:19:08.980 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Feb 23 17:19:08.980 VM: VM Ghost created.
+Feb 23 17:19:08.993 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Feb 23 17:19:08.998 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Feb 23 17:19:09.005 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3725-advipservicesk9-mz.124-21.image-256.ghost 
+Feb 23 17:19:09.018 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Feb 23 17:19:09.028 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 23 17:19:09.029 HYPERVISOR: exec_cmd: vm start Ghost 
+Feb 23 17:19:09.348 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 23 17:19:09.349 HYPERVISOR: exec_cmd: vm stop Ghost 
+Feb 23 17:19:09.839 VM: VM Ghost shutdown.
+Feb 23 17:19:09.842 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Feb 23 17:19:09.842 VM: VM Ghost destroyed.
+Feb 23 17:19:09.852 HYPERVISOR: exec_cmd: vm set_ghost_status ESW3 2 
+Feb 23 17:19:09.853 HYPERVISOR: exec_cmd: vm set_ghost_file ESW3 c3725-advipservicesk9-mz.124-21.image-256.ghost 
+Feb 23 17:19:09.854 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 23 17:19:09.856 HYPERVISOR: exec_cmd: vm start ESW3 
+Feb 23 17:21:31.524 HYPERVISOR: exec_cmd: vm extract_config ESW3 
+Feb 23 17:21:32.901 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 23 17:21:32.909 HYPERVISOR: exec_cmd: vm stop ESW3 
+Feb 23 17:21:33.104 VM: VM ESW3 shutdown.
+Feb 23 17:21:33.112 HYPERVISOR: exec_cmd: vm extract_config ESW3 
+Feb 23 17:21:42.094 HYPERVISOR: exec_cmd: vm get_status ESW3 
+Feb 23 17:21:42.098 HYPERVISOR: exec_cmd: vm extract_config ESW3 
+Feb 23 17:21:42.101 HYPERVISOR: exec_cmd: vm delete ESW3 
+Feb 23 17:21:42.101 VM: VM ESW3 destroyed.
+Feb 23 17:21:42.104 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 23 17:21:42.116 HYPERVISOR: Stopped.
+Feb 23 17:21:42.116 GENERAL: reset done.
