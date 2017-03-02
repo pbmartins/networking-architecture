@@ -1,0 +1,12 @@
+$TTL 604800
+$ORIGIN 1.0.10.in-addr.arpa.
+@       IN      SOA     ns1.ar.com. adm.ar.com. (
+                                2           ; Serial
+                           604800           ; Refresh
+                            86400           ; Retry
+                          2419200           ; Expire
+                           604800 )  ; Negative Cache TTL
+        IN      NS      ns1.ar.com.
+1       IN      PTR     v1sw1.ar.com.   ; qualified name
+11      IN      PTR     v1an1-11.ar.com.
+12      IN      PTR     v1sw1-12.ar.com.

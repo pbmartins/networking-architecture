@@ -1,0 +1,119 @@
+ESW
+
+vlan database
+vlan 1
+vlan 2
+exit
+
+config terminal
+ip routing
+ipv6 unicast-routing
+router rip
+version 2
+network 10.0.0.0
+interface f0/0
+ip add 10.0.0.1 255.255.255.252
+ipv6 enable
+ipv6 address 2001::1/64
+ipv6 rip 1 enable
+no shutdown
+interface range f1/1 - 4
+switchport mode access
+switchport access vlan 1
+interface range f1/5 - 8
+switchport mode access
+switchport access vlan 2
+interface Vlan 1
+ip add 10.0.1.1 255.255.255.0
+ip helper-address 10.0.100.1
+ipv6 enable
+ipv6 address 2001:0:1::1/64
+ipv6 dhcp relay destination 2001:0:100::1
+ipv6 rip 1 enable
+no autostate
+no shutdown
+interface Vlan 2
+ip add 10.0.2.1 255.255.255.0
+ip helper-address 10.0.100.1
+ipv6 enable
+ipv6 address 2001:0:2::1/64
+ipv6 dhcp relay destination 2001:0:100::1
+ipv6 rip 1 enable
+no autostate
+no shutdown
+end
+write
+
+############################
+Router main
+
+config terminal
+ip routing
+ipv6 unicast-routing
+router rip
+version 2
+network 10.0.0.0
+interface f0/0
+ip add 10.0.0.2 255.255.255.252
+ipv6 enable
+ipv6 address 2001::2/64
+ipv6 rip 1 enable
+no shutdown
+interface f0/1
+ip add 10.0.3.2 255.255.255.252
+ip helper-address 10.0.100.1
+ipv6 enable
+ipv6 address 2001:0:3::2/64
+ipv6 dhcp relay destination 2001:0:100::1
+ipv6 rip 1 enable
+no shutdown
+interface f1/1
+ip add 10.0.100.2 255.255.255.252
+ipv6 enable
+ipv6 address 2001:0:100::2/64
+ipv6 rip 1 enable
+no shutdown
+end
+write
+
+############################
+Router 2
+
+config terminal
+ipv6 unicast-routing
+interface f0/0
+ip add dhcp
+ipv6 enable
+ipv6 address dhcp
+no shut
+end
+write
+
+############################
+Router 3
+
+config terminal
+ipv6 unicast-routing
+interface f0/0
+ip add dhcp
+ipv6 enable
+ipv6 address dhcp
+no shut
+end
+write
+
+
+############################
+Router 4
+
+config terminal
+ipv6 unicast-routing
+interface f0/0
+ip add dhcp
+ipv6 enable
+ipv6 address dhcp
+no shut
+end
+write
+
+

@@ -1,0 +1,10 @@
+zone "ar.com" in {
+    type master;
+    file "/etc/bind/db.ar.com";
+};
+
+zone "1.0.10.in-addr.arpa" in {
+    type master;
+    file "/etc/bind/db.10.0.1.rev";
+};
+
