@@ -1,0 +1,41 @@
+Router1
+
+config terminal
+router ospf 1
+router-id 1.1.1.1
+interface f0/0
+ip ospf 1 area 0
+interface f0/1
+ip ospf 1 area 0
+interface f1/0
+ip ospf 1 area 0
+end
+write
+
+Router2
+
+config terminal
+router ospf 1
+router-id 2.2.2.2
+interface f0/0
+ip ospf 1 area 0
+interface f0/1
+ip ospf 1 area 0
+interface f1/0
+ip ospf 1 area 0
+end
+write
+
+Router3
+
+config terminal
+router ospf 1
+router-id 3.3.3.3
+interface f0/0
+ip ospf 1 area 0
+interface f0/1
+ip ospf 1 area 0
+interface f1/0
+ip ospf 1 area 0
+end
+write

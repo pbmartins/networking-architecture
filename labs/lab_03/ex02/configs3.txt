@@ -1,0 +1,62 @@
+Router1
+
+config terminal
+router ospf 1
+router-id 1.1.1.1
+interface f0/0
+ip add 10.1.3.1 255.255.255.252
+ip ospf 1 area 51
+no shutdown
+interface f0/1
+ip add 192.168.1.1 255.255.255.0
+ip ospf 1 area 51
+no shutdown
+end
+write
+
+Router2
+
+config terminal
+router ospf 1
+area 1 range 192.168.4.0 255.255.254.0
+router-id 2.2.2.2
+interface f0/0
+ip add 10.2.3.1 255.255.255.252
+ip ospf 1 area 0
+no shutdown
+interface f0/1
+ip add 192.168.2.2 255.255.255.0
+ip add 192.168.4.2 255.255.255.0 secondary
+ip add 192.168.5.2 255.255.255.0 secondary
+ip ospf 1 area 1
+no shutdown
+end
+write
+
+
+Router3
+
+config terminal
+router ospf 1
+router-id 3.3.3.3
+interface f0/0
+ip add 10.1.3.2 255.255.255.252
+ip ospf 1 area 51
+no shutdown
+interface f0/1
+ip add 192.168.3.3 255.255.255.0
+ip ospf 1 area 0
+no shutdown
+interface f1/0
+ip add 10.2.3.2 255.255.255.252
+ip ospf 1 area 0
+no shutdown
+end
+write
+
+VPC
+ip 192.168.1.100/24 192.168.1.1
+save
+
+# Ex 10
+
