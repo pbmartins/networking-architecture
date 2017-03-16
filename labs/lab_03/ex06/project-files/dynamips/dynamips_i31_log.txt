@@ -1,0 +1,9 @@
+Mar 16 15:14:49.445 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Mar 16 15:14:49.445 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50574.
+Mar 16 15:14:49.543 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 16 15:14:49.548 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex04/project-files/dynamips 
+Mar 16 15:14:49.548 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex04/project-files/dynamips
+Mar 16 15:14:49.556 HYPERVISOR: exec_cmd: ethsw create SW3 
+Mar 16 15:14:49.833 HYPERVISOR: exec_cmd: nio create_udp udp-9e6fa499-2556-4a84-b2d5-f6e7b7925879 10005 127.0.0.1 10004 
+Mar 16 15:14:49.842 HYPERVISOR: exec_cmd: ethsw add_nio SW3 udp-9e6fa499-2556-4a84-b2d5-f6e7b7925879 
+Mar 16 15:14:49.873 HYPERVISOR: exec_cmd: ethsw set_access_port SW3 udp-9e6fa499-2556-4a84-b2d5-f6e7b7925879 1 

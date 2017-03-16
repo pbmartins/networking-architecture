@@ -1,13 +1,42 @@
-Mar 09 17:37:42.803 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Mar 09 17:37:42.803 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60730.
-Mar 09 17:37:42.891 HYPERVISOR: exec_cmd: hypervisor version 
-Mar 09 17:37:42.895 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex03/project-files/dynamips 
-Mar 09 17:37:42.895 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex03/project-files/dynamips
-Mar 09 17:37:42.900 HYPERVISOR: exec_cmd: ethsw create SW2 
-Mar 09 17:37:43.213 HYPERVISOR: exec_cmd: nio create_udp udp-1c0cd2e5-eb0c-4ff7-b4f4-a4d97a1d9871 10011 127.0.0.1 10010 
-Mar 09 17:37:43.215 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-1c0cd2e5-eb0c-4ff7-b4f4-a4d97a1d9871 
-Mar 09 17:37:43.239 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-1c0cd2e5-eb0c-4ff7-b4f4-a4d97a1d9871 1 
-Mar 09 18:04:09.217 HYPERVISOR: exec_cmd: ethsw delete SW2 
-Mar 09 18:04:09.233 HYPERVISOR: exec_cmd: hypervisor stop 
-Mar 09 18:04:09.409 HYPERVISOR: Stopped.
-Mar 09 18:04:09.409 GENERAL: reset done.
+Mar 16 15:13:38.517 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Mar 16 15:13:38.517 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50476.
+Mar 16 15:13:38.575 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 16 15:13:38.579 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex03/project-files/dynamips 
+Mar 16 15:13:38.579 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex03/project-files/dynamips
+Mar 16 15:13:38.584 HYPERVISOR: exec_cmd: vm create R3 6 c7200 
+Mar 16 15:13:38.584 VM: VM R3 created.
+Mar 16 15:13:38.595 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Mar 16 15:13:38.625 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Mar 16 15:13:38.630 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 16 15:13:38.637 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Mar 16 15:13:38.648 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 16 15:13:38.654 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-2FE-TX 
+Mar 16 15:13:38.658 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Mar 16 15:13:38.661 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 16 15:13:38.664 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60608040 
+Mar 16 15:13:38.667 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 16 15:13:38.670 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+Mar 16 15:13:38.677 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 16 15:13:38.692 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-2FE 
+Mar 16 15:13:38.702 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Mar 16 15:13:38.704 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca06.988f.0000 
+Mar 16 15:13:38.709 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Mar 16 15:13:38.731 HYPERVISOR: exec_cmd: vm set_ios R3 /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Mar 16 15:13:38.735 HYPERVISOR: exec_cmd: vm set_config R3 configs/i6_startup-config.cfg 
+Mar 16 15:13:38.813 HYPERVISOR: exec_cmd: nio create_udp udp-30a9f139-5034-4014-8966-5dcf1548c591 10004 127.0.0.1 10005 
+Mar 16 15:13:38.827 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-30a9f139-5034-4014-8966-5dcf1548c591 
+Mar 16 15:13:38.829 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 16 15:13:38.839 HYPERVISOR: exec_cmd: nio create_udp udp-5982d47f-7dca-4525-8aa3-65b32b2f552c 10006 127.0.0.1 10007 
+Mar 16 15:13:38.853 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-5982d47f-7dca-4525-8aa3-65b32b2f552c 
+Mar 16 15:13:38.857 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 16 15:13:38.944 HYPERVISOR: exec_cmd: nio create_udp udp-52ce584c-854d-432b-b2ec-64ca8fd5cfec 10015 127.0.0.1 10014 
+Mar 16 15:13:38.947 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-52ce584c-854d-432b-b2ec-64ca8fd5cfec 
+Mar 16 15:13:38.953 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 16 15:13:48.651 HYPERVISOR: exec_cmd: vm extract_config R3 
+Mar 16 15:13:49.215 HYPERVISOR: exec_cmd: vm get_status R3 
+Mar 16 15:13:49.218 HYPERVISOR: exec_cmd: vm extract_config R3 
+Mar 16 15:13:49.220 HYPERVISOR: exec_cmd: vm delete R3 
+Mar 16 15:13:49.220 VM: VM R3 destroyed.
+Mar 16 15:13:49.222 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 16 15:13:49.620 HYPERVISOR: Stopped.
+Mar 16 15:13:49.620 GENERAL: reset done.

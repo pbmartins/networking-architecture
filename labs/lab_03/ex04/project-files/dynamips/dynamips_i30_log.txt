@@ -1,0 +1,13 @@
+Mar 16 15:14:49.430 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Mar 16 15:14:49.430 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50573.
+Mar 16 15:14:49.542 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 16 15:14:49.548 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex04/project-files/dynamips 
+Mar 16 15:14:49.548 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex04/project-files/dynamips
+Mar 16 15:14:49.555 HYPERVISOR: exec_cmd: ethsw create SW2 
+Mar 16 15:14:49.926 HYPERVISOR: exec_cmd: nio create_udp udp-91c1ec27-675b-42ab-9cc7-343052c1f0d0 10013 127.0.0.1 10012 
+Mar 16 15:14:49.930 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-91c1ec27-675b-42ab-9cc7-343052c1f0d0 
+Mar 16 15:14:49.951 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-91c1ec27-675b-42ab-9cc7-343052c1f0d0 1 
+Mar 16 15:42:33.404 HYPERVISOR: exec_cmd: ethsw delete SW2 
+Mar 16 15:42:33.414 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 16 15:42:33.431 HYPERVISOR: Stopped.
+Mar 16 15:42:33.431 GENERAL: reset done.

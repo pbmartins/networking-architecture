@@ -1,0 +1,119 @@
+Router1
+
+config terminal
+ip route 192.168.100.0 255.255.255.0 null0
+router ospf 1
+redistribute ospf 2 subnets
+redistribute static subnets metric-type 1
+router-id 1.1.1.1
+exit
+router ospf 2
+default-information originate always
+router-id 1.1.1.2
+interface f0/0
+ip add 10.1.3.1 255.255.255.252
+ip ospf 1 area 51
+no shutdown
+interface f0/1
+ip add 192.168.1.1 255.255.255.0
+ip ospf 1 area 51
+no shutdown
+interface f1/0
+ip add 10.1.4.2 255.255.255.252
+ip ospf 2 area 0
+no shutdown
+end
+write
+
+Router2
+
+config terminal
+router ospf 1
+default-information originate always
+area 1 range 192.168.4.0 255.255.254.0
+router-id 2.2.2.2
+interface f0/0
+ip add 10.2.3.1 255.255.255.252
+ip ospf 1 area 0
+no shutdown
+interface f0/1
+ip add 192.168.2.2 255.255.255.0
+ip add 192.168.4.2 255.255.255.0 secondary
+ip add 192.168.5.2 255.255.255.0 secondary
+ip ospf 1 area 1
+no shutdown
+interface f1/0
+ip add 10.0.0.2 255.255.255.0
+no shutdown
+end
+write
+
+
+Router3
+
+config terminal
+router ospf 1
+router-id 3.3.3.3
+interface f0/0
+ip add 10.1.3.2 255.255.255.252
+ip ospf 1 area 51
+no shutdown
+interface f0/1
+ip add 192.168.3.3 255.255.255.0
+ip ospf 1 area 0
+no shutdown
+interface f1/0
+ip add 10.2.3.2 255.255.255.252
+ip ospf 1 area 0
+no shutdown
+end
+write
+
+Router4
+
+config terminal
+router ospf 2
+router-id 4.4.4.4
+interface f0/0
+ip add 10.1.4.1 255.255.255.252
+ip ospf 2 area 0
+no shut
+interface f0/1
+ip add 192.168.10.1 255.255.255.0
+ip ospf 2 area 0
+no shut
+end
+write
+
+
+
+VPC
+ip 192.168.1.100/24 192.168.1.1
+save
+
+VPC Internet
+ip 10.0.0.1/24 10.0.0.2
+save
+
+# Ex 12
+Router 1 - autonomous system boundary router - tem acesso a uma rede externa não configurada com OSPF
+Router 2 e 3 - area border router
+The E2 routes have cost 20 by default.
+
+# Ex 13
+Router 2 - Metric 22
+Router 3 - Metric 21
+Type of route - E1
+
+# Ex 14
+Type of route - O*E2
+Metric - 1
+
+# Ex 15
+Routers have diferent OSPF processes, thus they only informate networks within the same process. Router3 is directly connected to a networking within OSPF 2 process, thus it learns it.
+
+# Ex 16
+Router 1 is now redistributing ospf process 2 subnets, but it is not announcing process 1 subnets in the OSPF process 2, thus Router4 does not learn process 1 networks.
+
+# Ex 17
+Bi-directional redistirbutions should be avoided, so in order to announce process 1 subnets in process 2, it is created a default route to unknown networks at process 2 subnets leading them to F1/0 interface of Router1.
