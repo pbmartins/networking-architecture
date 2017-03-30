@@ -1,0 +1,70 @@
+Router 1
+
+conf t
+ip route 136.192.3.0 255.255.255.0 Tunnel 0 136.192.2.3
+router rip
+version 2
+network 136.192.0.0
+passive-interface Tunnel 0
+interface f0/0
+ip add 136.192.0.1 255.255.255.0
+no shut
+interface f0/1
+ip add 136.192.1.1 255.255.255.0
+no shut
+interface Tunnel 0
+no ip add 10.1.1.1 255.255.255.252
+ip unnumbered f0/1
+tunnel source 136.192.1.1
+tunnel destination 136.192.2.3
+tunnel mode gre ip
+end
+write
+
+Router 2
+
+conf t
+router rip
+version 2
+network 136.192.0.0
+interface f0/0
+ip add 136.192.1.2 255.255.255.0
+no shut
+interface f0/1
+ip add 136.192.2.2 255.255.255.0
+no shut
+end
+write
+
+Router 3
+
+conf t
+router rip
+version 2
+network 136.192.0.0
+passive-interface Tunnel 0
+interface f0/0
+ip add 136.192.2.3 255.255.255.0
+no shut
+interface f0/1
+ip add 136.192.3.3 255.255.255.0
+no shut
+interface Tunnel 0
+no ip add 10.1.1.2 255.255.255.252
+ip unnumbered f0/0
+tunnel source 136.192.2.3
+tunnel destination 136.192.1.1
+tunnel mode gre ip
+end
+write
+
+
+# Ex 3
+The routing table does not have any static route. Maybe because the tunnel interface doesn't have an IP address.
+
+# Ex 4
+Now the static route appears on the routing table.
+The packets are encapsulated in another IP header (Router1 and Router3 tunnel endpoints IPs) and the inside header has source tunnel IP address and ping destination address.
+
+# Ex 5
+Now the internal IPs are the ones from the Router interfaces

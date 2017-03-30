@@ -1,0 +1,52 @@
+Mar 30 17:04:04.007 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Mar 30 17:04:04.007 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50603.
+Mar 30 17:04:04.085 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 30 17:04:04.093 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_04/ex03/project-files/dynamips 
+Mar 30 17:04:04.093 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_04/ex03/project-files/dynamips
+Mar 30 17:04:04.102 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Mar 30 17:04:04.103 VM: VM R2 created.
+Mar 30 17:04:04.108 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Mar 30 17:04:04.111 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Mar 30 17:04:04.119 HYPERVISOR: exec_cmd: vm get_status R2 
+Mar 30 17:04:04.126 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Mar 30 17:04:04.136 HYPERVISOR: exec_cmd: vm set_ios R2 /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Mar 30 17:04:04.143 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Mar 30 17:04:04.145 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Mar 30 17:04:04.148 HYPERVISOR: exec_cmd: vm get_status R2 
+Mar 30 17:04:04.152 HYPERVISOR: exec_cmd: vm slot_remove_binding R2 0 0 
+Mar 30 17:04:04.154 HYPERVISOR: exec_cmd: vm get_status R2 
+Mar 30 17:04:04.157 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-2FE 
+Mar 30 17:04:04.159 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Mar 30 17:04:04.162 HYPERVISOR: exec_cmd: vm get_status R2 
+Mar 30 17:04:04.164 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-2FE-TX 
+Mar 30 17:04:04.171 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.0b2c.0000 
+Mar 30 17:04:04.182 HYPERVISOR: exec_cmd: vm get_status R2 
+Mar 30 17:04:04.210 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60608040 
+Mar 30 17:04:04.213 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Mar 30 17:04:04.478 HYPERVISOR: exec_cmd: nio create_udp udp-f2dff448-766b-45da-9b88-b6b57284487b 10002 127.0.0.1 10001 
+Mar 30 17:04:04.486 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-f2dff448-766b-45da-9b88-b6b57284487b 
+Mar 30 17:04:04.488 HYPERVISOR: exec_cmd: vm get_status R2 
+Mar 30 17:04:04.501 HYPERVISOR: exec_cmd: nio create_udp udp-695db307-e204-45ea-9f30-abdb42c06b5c 10003 127.0.0.1 10005 
+Mar 30 17:04:04.516 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-695db307-e204-45ea-9f30-abdb42c06b5c 
+Mar 30 17:04:04.528 HYPERVISOR: exec_cmd: vm get_status R2 
+Mar 30 17:04:07.196 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Mar 30 17:04:07.198 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Mar 30 17:04:07.199 HYPERVISOR: exec_cmd: vm get_status R2 
+Mar 30 17:04:07.201 HYPERVISOR: exec_cmd: vm start R2 
+Mar 30 17:17:45.013 HYPERVISOR: exec_cmd: nio bind_filter udp-f2dff448-766b-45da-9b88-b6b57284487b 2 capture 
+Mar 30 17:17:45.014 HYPERVISOR: exec_cmd: nio setup_filter udp-f2dff448-766b-45da-9b88-b6b57284487b 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_04/ex03/project-files/captures/R2_FastEthernet0-0_to_HUB1_2.pcap 
+Mar 30 17:20:28.599 HYPERVISOR: exec_cmd: nio unbind_filter udp-f2dff448-766b-45da-9b88-b6b57284487b 2 
+Mar 30 17:20:31.526 HYPERVISOR: exec_cmd: nio bind_filter udp-f2dff448-766b-45da-9b88-b6b57284487b 2 capture 
+Mar 30 17:20:31.526 HYPERVISOR: exec_cmd: nio setup_filter udp-f2dff448-766b-45da-9b88-b6b57284487b 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_04/ex03/project-files/captures/R2_FastEthernet0-0_to_HUB1_2.pcap 
+Mar 30 17:36:26.372 HYPERVISOR: exec_cmd: vm extract_config R2 
+Mar 30 17:36:28.175 HYPERVISOR: exec_cmd: vm get_status R2 
+Mar 30 17:36:28.177 HYPERVISOR: exec_cmd: vm stop R2 
+Mar 30 17:36:29.372 VM: VM R2 shutdown.
+Mar 30 17:36:29.389 HYPERVISOR: exec_cmd: vm extract_config R2 
+Mar 30 17:36:36.110 HYPERVISOR: exec_cmd: vm get_status R2 
+Mar 30 17:36:36.112 HYPERVISOR: exec_cmd: vm extract_config R2 
+Mar 30 17:36:36.129 HYPERVISOR: exec_cmd: vm delete R2 
+Mar 30 17:36:36.129 VM: VM R2 destroyed.
+Mar 30 17:36:36.140 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 30 17:36:36.516 HYPERVISOR: Stopped.
+Mar 30 17:36:36.535 GENERAL: reset done.
