@@ -1,0 +1,156 @@
+Router 1
+
+conf t
+router ospf 1
+interface f0/0
+ip add 11.11.0.1 255.255.255.0
+ip ospf 1 area 0
+no shut
+interface f0/1
+ip add 192.168.0.1 255.255.255.0
+no shut
+crypto isakmp policy 20
+authentication pre-share
+crypto isakmp key labcom address 0.0.0.0 0.0.0.0
+crypto ipsec transform-set nss-ts esp-3des esp-sha-hmac
+crypto dynamic-map nss-dmap 10
+set transform-set nss-ts
+reverse-route
+crypto map dynamic-map 10 ipsec-isakmp dynamic nss-dmap
+int f0/0
+crypto map dynamic-map
+ip route 10.0.2.0 255.255.255.0 11.11.0.2
+ip route 10.0.3.0 255.255.255.0 11.11.0.3
+end
+write
+
+
+Router 2
+
+conf t
+router ospf 1
+interface f0/0
+ip add 11.11.0.2 255.255.255.0
+ip ospf 1 area 0
+no shut
+interface f0/1
+ip add 10.0.2.2 255.255.255.0
+no shut
+exit
+crypto isakmp policy 20
+authentication pre-share
+crypto isakmp key labcom address 11.11.0.1
+crypto ipsec transform-set nss-ts esp-3des esp-sha-hmac
+crypto map nss-cm 10 ipsec-isakmp
+set peer 11.11.0.1
+set transform-set nss-ts
+match address nss-cm-acl
+int f0/0
+crypto map nss-cm
+ip access-list extended nss-cm-acl
+permit ip 10.0.2.0 0.0.0.255 192.168.0.0 0.0.0.255
+permit ip 10.0.2.0 0.0.0.255 10.0.3.0 0.0.0.255
+ip route 192.168.0.0 255.255.255.0 11.11.0.1
+ip route 10.0.3.0 255.255.255.0 11.11.0.3
+end
+write
+
+
+Router 3
+
+conf t
+router ospf 1
+interface f0/0
+ip add 11.11.0.3 255.255.255.0
+ip ospf 1 area 0
+no shut
+interface f0/1
+ip add 10.0.3.3 255.255.255.0
+no shut
+crypto isakmp policy 20
+authentication pre-share
+crypto isakmp key labcom address 11.11.0.1
+crypto ipsec transform-set nss-ts esp-3des esp-sha-hmac
+crypto map nss-cm 10 ipsec-isakmp
+set peer 11.11.0.1
+set transform-set nss-ts
+match address nss-cm-acl
+int f0/0
+crypto map nss-cm
+ip access-list extended nss-cm-acl
+permit ip 10.0.3.0 0.0.0.255 192.168.0.0 0.0.0.255
+permit ip 10.0.3.0 0.0.0.255 10.0.2.0 0.0.0.255
+ip route 192.168.0.0 255.255.255.0 11.11.0.1
+ip route 10.0.2.0 255.255.255.0 11.11.0.2
+end
+write
+
+
+PC2
+ip 10.0.2.100/24 10.0.2.2
+save
+
+
+Server1
+ip 192.168.0.40/24 192.168.0.1
+save
+
+
+Server2
+ip 192.168.0.45/24 192.168.0.1
+save
+
+
+# Ex 2
+Mostra as políticas do ISAKMP, isto é, as políticas para autenticação do túnel, 
+com a ordem de prioridade (se definirmos uma, as default não aparecem).
+Mostra todas as transformadas do IPSec.
+Mostra todos os túneis encriptados.
+
+Apenas estamos a garantir autenticidade dos dados, não encriptação. Isto é, se o
+pacote for intercetado e algum bit alterado, o recetor dá conta e não aceita.
+
+# Ex 3
+
+Os primeiros seis pacotes ISKMP servem para estabelecer um acordo para o estebelecimento
+da autenticação ISAKMP (Security Association -> proposta, Key Exchange, Identification).
+Os pacotes QuickMode servem para iniciar verdadeiramente a autenticação.
+
+
+# Ex 4
+
+Quando se pinga o Server1, apenas os ICMP Reply vêm autenticados, pois a comunicação do
+Router2 para o Server1 não é efetuada através do túnel IPSec, ao contrário de 
+quando a comunicação é feita para o Server2.
+
+# Ex 5
+
+Quando alteramos para o perfil cipherT (ESP-DES), os pacotes ICMP vão totalmente
+encriptados, não conseguimos ver o conteúdo.
+
+Quando alteramos para o perfil auth_cipherT(ESP-DES + Authentication), os pacotes
+ICMP vão encriptados e autenticados.
+
+# Ex 6
+
+Ao efetuar o ping do Server1 para o PC2, os pacotes vão encriptados e autenticados,
+pois, todo o tráfego que seja destinado à rede 10.0.2.0/24 é canalizado para o 
+túnel IPSec, no entanto, como o tráfego está a ser analisado com base em rotas
+estáticas, a resposta não vem pelo túnel (como definimos anteriormente).
+
+# Ex 7
+
+Quando os pedidos vêm de máquinas permitadas na route-map definida, existe 
+comunicação (encriptada) entre elas. No entanto, não há qualquer comunicação com
+o Server1, pois nem tem OSPF definido para as redes privadas, nem está aprovado
+na route-map.
+
+# Ex 8
+
+O segundo ping não funcionou, pois é necessário forçar a criação do túnel entre 
+o Router 3 e o Router 1, para poder comunicar do Router 2 para o 3, pois o Router
+1 serve de "ponte" entre os túneis.
+
+Por ser o mapa dinâmico, o Router 1 não consegue forçar a abertura do túnel entre
+o próprio e o Router 3, mas depois de o Router 3 iniciar o túnel entre ele e o 1,
+já há comunicação entre o Router 2 e o 3.

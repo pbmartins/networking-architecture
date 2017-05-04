@@ -1,0 +1,48 @@
+Apr 04 23:43:37.444 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Apr 04 23:43:37.444 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56114.
+Apr 04 23:43:37.456 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 04 23:43:37.458 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02/ex04/project-files/dynamips 
+Apr 04 23:43:37.458 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02/ex04/project-files/dynamips
+Apr 04 23:43:37.459 HYPERVISOR: exec_cmd: vm create ESW2 2 c3725 
+Apr 04 23:43:37.460 VM: VM ESW2 created.
+Apr 04 23:43:37.461 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5001 
+Apr 04 23:43:37.462 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW2 
+Apr 04 23:43:37.464 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW2 c202.455b.0000 
+Apr 04 23:43:37.465 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 04 23:43:37.469 HYPERVISOR: exec_cmd: vm set_idle_pc ESW2 0x60a6a3b8 
+Apr 04 23:43:37.472 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+Apr 04 23:43:37.474 HYPERVISOR: exec_cmd: vm set_ram ESW2 256 
+Apr 04 23:43:37.477 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+Apr 04 23:43:37.479 HYPERVISOR: exec_cmd: vm set_ios ESW2 /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Apr 04 23:43:37.487 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 04 23:43:37.488 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-16ESW 
+Apr 04 23:43:37.490 HYPERVISOR: exec_cmd: vm set_config ESW2 configs/i2_startup-config.cfg 
+Apr 04 23:43:37.589 HYPERVISOR: exec_cmd: nio create_udp udp-8f769bd6-3fc0-4720-918f-10a55fee3405 10006 127.0.0.1 10007 
+Apr 04 23:43:37.600 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 0 0 udp-8f769bd6-3fc0-4720-918f-10a55fee3405 
+Apr 04 23:43:37.629 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 04 23:43:37.651 HYPERVISOR: exec_cmd: nio create_udp udp-fecbe9ce-bcf9-45b0-8ede-4ba1de42746f 10008 127.0.0.1 10009 
+Apr 04 23:43:37.657 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 15 udp-fecbe9ce-bcf9-45b0-8ede-4ba1de42746f 
+Apr 04 23:43:37.668 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 04 23:43:37.844 HYPERVISOR: exec_cmd: nio create_udp udp-0a2a2355-efae-4c29-8388-c3ae81de0b95 10017 127.0.0.1 10016 
+Apr 04 23:43:37.851 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 0 1 udp-0a2a2355-efae-4c29-8388-c3ae81de0b95 
+Apr 04 23:43:37.857 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 04 23:43:37.899 HYPERVISOR: exec_cmd: nio create_udp udp-dfaf78fe-3023-43aa-8f0c-020aff7c142c 10019 127.0.0.1 10018 
+Apr 04 23:43:37.903 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 14 udp-dfaf78fe-3023-43aa-8f0c-020aff7c142c 
+Apr 04 23:43:37.905 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 04 23:47:02.857 HYPERVISOR: exec_cmd: vm set_ghost_status ESW2 2 
+Apr 04 23:47:02.859 HYPERVISOR: exec_cmd: vm set_ghost_file ESW2 c3725-advipservicesk9-mz.124-21.image-256.ghost 
+Apr 04 23:47:02.860 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 04 23:47:02.862 HYPERVISOR: exec_cmd: vm start ESW2 
+Apr 04 23:51:16.781 HYPERVISOR: exec_cmd: nio bind_filter udp-dfaf78fe-3023-43aa-8f0c-020aff7c142c 2 capture 
+Apr 04 23:51:16.782 HYPERVISOR: exec_cmd: nio setup_filter udp-dfaf78fe-3023-43aa-8f0c-020aff7c142c 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02/ex04/project-files/captures/ESW2_FastEthernet1-14_to_ESW1_FastEthernet1-14.pcap 
+Apr 05 00:18:45.996 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 05 00:18:46.002 HYPERVISOR: exec_cmd: vm stop ESW2 
+Apr 05 00:18:46.153 VM: VM ESW2 shutdown.
+Apr 05 00:18:46.155 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Apr 05 00:18:58.805 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 05 00:18:58.808 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Apr 05 00:18:58.811 HYPERVISOR: exec_cmd: vm delete ESW2 
+Apr 05 00:18:58.811 VM: VM ESW2 destroyed.
+Apr 05 00:18:58.814 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 05 00:18:59.053 HYPERVISOR: Stopped.
+Apr 05 00:18:59.054 GENERAL: reset done.

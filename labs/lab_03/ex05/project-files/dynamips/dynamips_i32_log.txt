@@ -1,43 +1,49 @@
-Mar 16 15:14:49.484 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Mar 16 15:14:49.484 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50575.
-Mar 16 15:14:49.547 HYPERVISOR: exec_cmd: hypervisor version 
-Mar 16 15:14:49.553 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex04/project-files/dynamips 
-Mar 16 15:14:49.553 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex04/project-files/dynamips
-Mar 16 15:14:49.559 HYPERVISOR: exec_cmd: vm create R3 6 c7200 
-Mar 16 15:14:49.559 VM: VM R3 created.
-Mar 16 15:14:49.580 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
-Mar 16 15:14:49.621 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
-Mar 16 15:14:49.629 HYPERVISOR: exec_cmd: vm get_status R3 
-Mar 16 15:14:49.638 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
-Mar 16 15:14:49.652 HYPERVISOR: exec_cmd: vm get_status R3 
-Mar 16 15:14:49.658 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-2FE-TX 
-Mar 16 15:14:49.665 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
-Mar 16 15:14:49.670 HYPERVISOR: exec_cmd: vm get_status R3 
-Mar 16 15:14:49.680 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60608040 
-Mar 16 15:14:49.727 HYPERVISOR: exec_cmd: vm get_status R3 
-Mar 16 15:14:49.732 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
-Mar 16 15:14:49.739 HYPERVISOR: exec_cmd: vm get_status R3 
-Mar 16 15:14:49.744 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-2FE 
-Mar 16 15:14:49.753 HYPERVISOR: exec_cmd: vm set_ram R3 512 
-Mar 16 15:14:49.772 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca06.988f.0000 
-Mar 16 15:14:49.775 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
-Mar 16 15:14:49.777 HYPERVISOR: exec_cmd: vm set_ios R3 /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
-Mar 16 15:14:49.780 HYPERVISOR: exec_cmd: vm set_config R3 configs/i6_startup-config.cfg 
-Mar 16 15:14:49.829 HYPERVISOR: exec_cmd: nio create_udp udp-f5bada86-ceab-4f16-9b13-142ea645d2f2 10004 127.0.0.1 10005 
-Mar 16 15:14:49.841 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-f5bada86-ceab-4f16-9b13-142ea645d2f2 
-Mar 16 15:14:49.844 HYPERVISOR: exec_cmd: vm get_status R3 
-Mar 16 15:14:49.856 HYPERVISOR: exec_cmd: nio create_udp udp-6cd16f48-e137-4491-b7f5-4bcadcc8ae89 10007 127.0.0.1 10006 
-Mar 16 15:14:49.872 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-6cd16f48-e137-4491-b7f5-4bcadcc8ae89 
-Mar 16 15:14:49.880 HYPERVISOR: exec_cmd: vm get_status R3 
-Mar 16 15:14:49.915 HYPERVISOR: exec_cmd: nio create_udp udp-89fc7254-e07d-4875-bebd-aa4bc2e79cc1 10010 127.0.0.1 10011 
-Mar 16 15:14:49.928 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-89fc7254-e07d-4875-bebd-aa4bc2e79cc1 
-Mar 16 15:14:49.931 HYPERVISOR: exec_cmd: vm get_status R3 
-Mar 16 15:15:19.240 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
-Mar 16 15:15:19.242 HYPERVISOR: exec_cmd: vm set_ghost_file R3 c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
-Mar 16 15:15:19.244 HYPERVISOR: exec_cmd: vm get_status R3 
-Mar 16 15:15:19.245 HYPERVISOR: exec_cmd: vm start R3 
-Mar 16 15:42:04.268 HYPERVISOR: exec_cmd: vm extract_config R3 
-Mar 16 15:42:11.107 HYPERVISOR: exec_cmd: vm get_status R3 
-Mar 16 15:42:11.110 HYPERVISOR: exec_cmd: vm stop R3 
-Mar 16 15:42:12.744 VM: VM R3 shutdown.
-Mar 16 15:42:12.777 HYPERVISOR: exec_cmd: vm extract_config R3 
+Apr 06 00:10:39.939 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Apr 06 00:10:39.939 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54441.
+Apr 06 00:10:39.974 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 06 00:10:39.976 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex05/project-files/dynamips 
+Apr 06 00:10:39.976 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex05/project-files/dynamips
+Apr 06 00:10:39.986 HYPERVISOR: exec_cmd: vm create R3 6 c7200 
+Apr 06 00:10:39.986 VM: VM R3 created.
+Apr 06 00:10:40.009 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Apr 06 00:10:40.028 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Apr 06 00:10:40.036 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 06 00:10:40.040 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Apr 06 00:10:40.043 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 06 00:10:40.049 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+Apr 06 00:10:40.052 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 06 00:10:40.056 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-2FE 
+Apr 06 00:10:40.061 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 06 00:10:40.064 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60608040 
+Apr 06 00:10:40.073 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca06.988f.0000 
+Apr 06 00:10:40.087 HYPERVISOR: exec_cmd: vm set_ios R3 /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Apr 06 00:10:40.094 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Apr 06 00:10:40.099 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Apr 06 00:10:40.103 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Apr 06 00:10:40.111 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 06 00:10:40.116 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-2FE-TX 
+Apr 06 00:10:40.121 HYPERVISOR: exec_cmd: vm set_config R3 configs/i6_startup-config.cfg 
+Apr 06 00:10:40.262 HYPERVISOR: exec_cmd: nio create_udp udp-c5344cb7-cd06-49d8-afcb-bf3034e8d9d3 10006 127.0.0.1 10007 
+Apr 06 00:10:40.276 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-c5344cb7-cd06-49d8-afcb-bf3034e8d9d3 
+Apr 06 00:10:40.295 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 06 00:10:40.323 HYPERVISOR: exec_cmd: nio create_udp udp-c59b18f3-a40f-4b92-b290-45f37af6d5a0 10009 127.0.0.1 10008 
+Apr 06 00:10:40.333 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-c59b18f3-a40f-4b92-b290-45f37af6d5a0 
+Apr 06 00:10:40.348 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 06 00:10:40.374 HYPERVISOR: exec_cmd: nio create_udp udp-336accc2-43aa-4cfa-a069-20b68d748f61 10010 127.0.0.1 10011 
+Apr 06 00:10:40.388 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-336accc2-43aa-4cfa-a069-20b68d748f61 
+Apr 06 00:10:40.390 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 06 00:14:39.162 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Apr 06 00:14:39.164 HYPERVISOR: exec_cmd: vm set_ghost_file R3 c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Apr 06 00:14:39.165 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 06 00:14:39.166 HYPERVISOR: exec_cmd: vm start R3 
+Apr 06 00:30:39.974 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 06 00:30:39.977 HYPERVISOR: exec_cmd: vm stop R3 
+Apr 06 00:30:41.596 VM: VM R3 shutdown.
+Apr 06 00:30:41.604 HYPERVISOR: exec_cmd: vm extract_config R3 
+Apr 06 00:30:53.023 HYPERVISOR: exec_cmd: vm get_status R3 
+Apr 06 00:30:53.027 HYPERVISOR: exec_cmd: vm extract_config R3 
+Apr 06 00:30:53.032 HYPERVISOR: exec_cmd: vm delete R3 
+Apr 06 00:30:53.032 VM: VM R3 destroyed.
+Apr 06 00:30:53.041 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 06 00:30:53.185 HYPERVISOR: Stopped.
+Apr 06 00:30:53.186 GENERAL: reset done.

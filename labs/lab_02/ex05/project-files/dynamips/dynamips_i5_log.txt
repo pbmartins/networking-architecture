@@ -1,0 +1,51 @@
+Apr 05 00:19:00.902 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Apr 05 00:19:00.904 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56394.
+Apr 05 00:19:00.935 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 05 00:19:00.942 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02/ex05/project-files/dynamips 
+Apr 05 00:19:00.942 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02/ex05/project-files/dynamips
+Apr 05 00:19:00.954 HYPERVISOR: exec_cmd: vm create ESW2 2 c3725 
+Apr 05 00:19:00.955 VM: VM ESW2 created.
+Apr 05 00:19:00.971 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5001 
+Apr 05 00:19:00.978 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW2 
+Apr 05 00:19:00.986 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW2 c202.455b.0000 
+Apr 05 00:19:00.989 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 05 00:19:00.991 HYPERVISOR: exec_cmd: vm set_idle_pc ESW2 0x60a6a3b8 
+Apr 05 00:19:00.994 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+Apr 05 00:19:00.999 HYPERVISOR: exec_cmd: vm set_ram ESW2 256 
+Apr 05 00:19:01.006 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+Apr 05 00:19:01.011 HYPERVISOR: exec_cmd: vm set_ios ESW2 /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Apr 05 00:19:01.020 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 05 00:19:01.023 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-16ESW 
+Apr 05 00:19:01.026 HYPERVISOR: exec_cmd: vm set_config ESW2 configs/i2_startup-config.cfg 
+Apr 05 00:19:01.196 HYPERVISOR: exec_cmd: nio create_udp udp-6ba3d005-2496-4ee4-9b00-79dad43e0673 10007 127.0.0.1 10006 
+Apr 05 00:19:01.199 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 14 udp-6ba3d005-2496-4ee4-9b00-79dad43e0673 
+Apr 05 00:19:01.201 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 05 00:19:01.301 HYPERVISOR: exec_cmd: nio create_udp udp-1e3df128-3c8e-4327-9738-bbd6a85e6bf7 10014 127.0.0.1 10015 
+Apr 05 00:19:01.319 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 15 udp-1e3df128-3c8e-4327-9738-bbd6a85e6bf7 
+Apr 05 00:19:01.322 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 05 00:19:22.097 HYPERVISOR: exec_cmd: vm set_ghost_status ESW2 2 
+Apr 05 00:19:22.098 HYPERVISOR: exec_cmd: vm set_ghost_file ESW2 c3725-advipservicesk9-mz.124-21.image-256.ghost 
+Apr 05 00:19:22.100 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 05 00:19:22.101 HYPERVISOR: exec_cmd: vm start ESW2 
+Apr 05 00:20:46.068 HYPERVISOR: exec_cmd: nio bind_filter udp-6ba3d005-2496-4ee4-9b00-79dad43e0673 2 capture 
+Apr 05 00:20:46.068 HYPERVISOR: exec_cmd: nio setup_filter udp-6ba3d005-2496-4ee4-9b00-79dad43e0673 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02/ex05/project-files/captures/ESW2_FastEthernet1-14_to_ESW1_FastEthernet1-14.pcap 
+Apr 05 00:25:34.918 HYPERVISOR: exec_cmd: nio bind_filter udp-1e3df128-3c8e-4327-9738-bbd6a85e6bf7 2 capture 
+Apr 05 00:25:34.919 HYPERVISOR: exec_cmd: nio setup_filter udp-1e3df128-3c8e-4327-9738-bbd6a85e6bf7 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02/ex05/project-files/captures/ESW2_FastEthernet1-15_to_ESW3_FastEthernet1-15.pcap 
+Apr 05 00:45:06.905 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 05 00:45:06.912 HYPERVISOR: exec_cmd: vm stop ESW2 
+Apr 05 00:45:07.022 VM: VM ESW2 shutdown.
+Apr 05 00:45:07.024 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Apr 05 00:45:16.969 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 05 00:45:16.986 HYPERVISOR: exec_cmd: vm start ESW2 
+Apr 05 00:52:13.438 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Apr 05 00:52:17.082 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 05 00:52:17.086 HYPERVISOR: exec_cmd: vm stop ESW2 
+Apr 05 00:52:17.210 VM: VM ESW2 shutdown.
+Apr 05 00:52:17.211 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Apr 05 00:52:18.169 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 05 00:52:18.173 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Apr 05 00:52:18.177 HYPERVISOR: exec_cmd: vm delete ESW2 
+Apr 05 00:52:18.177 VM: VM ESW2 destroyed.
+Apr 05 00:52:18.180 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 05 00:52:18.382 HYPERVISOR: Stopped.
+Apr 05 00:52:18.383 GENERAL: reset done.

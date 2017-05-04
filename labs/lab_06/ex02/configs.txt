@@ -1,0 +1,146 @@
+Router 1
+
+conf t
+router ospf 1
+interface f0/0
+ip add 11.11.0.1 255.255.255.0
+ip ospf 1 area 0
+no shut
+interface f0/1
+ip add 192.168.0.1 255.255.255.0
+no shut
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 11.11.0.2
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set authT cipherT auth_ciphT
+interface Tunnel 0
+ip unnumbered FastEthernet0/0
+tunnel source 11.11.0.1
+tunnel destination 11.11.0.2
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile ARipsec
+exit
+access-list 100 permit ip host 192.168.0.45 10.0.2.0 0.0.0.255
+route-map routeT0 permit 10
+match ip address 100
+set interface Tunnel 0
+int f0/1
+ip policy route-map routeT0
+end
+write
+
+
+Router 2
+
+conf t
+router ospf 1
+interface f0/0
+ip add 11.11.0.2 255.255.255.0
+ip ospf 1 area 0
+no shut
+interface f0/1
+ip add 10.0.2.2 255.255.255.0
+no shut
+exit
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 11.11.0.1
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set auth_ciphT cipherT authT
+interface Tunnel 0
+ip unnumbered FastEthernet0/0
+tunnel source 11.11.0.2
+tunnel destination 11.11.0.1
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile ARipsec
+exit
+access-list 100 permit ip 10.0.2.0 0.0.0.255 host 192.168.0.45
+route-map routeT0 permit 10
+match ip address 100
+set interface Tunnel 0
+int f0/1
+ip policy route-map routeT0
+end
+write
+
+
+Router 3
+
+conf t
+router ospf 1
+interface f0/0
+ip add 11.11.0.3 255.255.255.0
+ip ospf 1 area 0
+no shut
+interface f0/1
+ip add 10.0.3.3 255.255.255.0
+no shut
+end
+write
+
+
+PC2
+ip 10.0.2.100/24 10.0.2.2
+save
+
+
+Server1
+ip 192.168.0.40/24 192.168.0.1
+save
+
+
+Server2
+ip 192.168.0.45/24 192.168.0.1
+save
+
+
+# Ex 2
+Mostra as políticas do ISAKMP, isto é, as políticas para autenticação do túnel, 
+com a ordem de prioridade (se definirmos uma, as default não aparecem).
+Mostra todas as transformadas do IPSec.
+Mostra todos os túneis encriptados.
+
+Apenas estamos a garantir autenticidade dos dados, não encriptação. Isto é, se o
+pacote for intercetado e algum bit alterado, o recetor dá conta e não aceita.
+
+# Ex 3
+
+Os primeiros seis pacotes ISKMP servem para estabelecer um acordo para o estebelecimento
+da autenticação ISAKMP (Security Association -> proposta, Key Exchange, Identification).
+Os pacotes QuickMode servem para iniciar verdadeiramente a autenticação.
+
+
+# Ex 4
+
+Quando se pinga o Server1, apenas os ICMP Reply vêm autenticados, pois a comunicação do
+Router2 para o Server1 não é efetuada através do túnel IPSec, ao contrário de 
+quando a comunicação é feita para o Server2.
+
+# Ex 5
+
+Quando alteramos para o perfil cipherT (ESP-DES), os pacotes ICMP vão totalmente
+encriptados, não conseguimos ver o conteúdo.
+
+Quando alteramos para o perfil auth_cipherT(ESP-DES + Authentication), os pacotes
+ICMP vão encriptados e autenticados.
+
+# Ex 6
+
+Ao efetuar o ping do Server1 para o PC2, os pacotes vão encriptados e autenticados,
+pois, todo o tráfego que seja destinado à rede 10.0.2.0/24 é canalizado para o 
+túnel IPSec, no entanto, como o tráfego está a ser analisado com base em rotas
+estáticas, a resposta não vem pelo túnel (como definimos anteriormente).
+
+# Ex 7
+
+Quando os pedidos vêm de máquinas permitadas na route-map definida, existe 
+comunicação (encriptada) entre elas. No entanto, não há qualquer comunicação com
+o Server1, pois nem tem OSPF definido para as redes privadas, nem está aprovado
+na route-map.

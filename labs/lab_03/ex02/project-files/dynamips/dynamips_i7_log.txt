@@ -1,38 +1,16 @@
-Mar 09 17:09:59.210 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Mar 09 17:09:59.210 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60635.
-Mar 09 17:09:59.222 HYPERVISOR: exec_cmd: hypervisor version 
-Mar 09 17:09:59.223 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex01/project-files/dynamips 
-Mar 09 17:09:59.223 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex01/project-files/dynamips
-Mar 09 17:09:59.224 HYPERVISOR: exec_cmd: vm create R1 4 c7200 
-Mar 09 17:09:59.224 VM: VM R1 created.
-Mar 09 17:09:59.225 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
-Mar 09 17:09:59.226 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
-Mar 09 17:09:59.227 HYPERVISOR: exec_cmd: vm get_status R1 
-Mar 09 17:09:59.228 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
-Mar 09 17:09:59.229 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
-Mar 09 17:09:59.230 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
-Mar 09 17:09:59.231 HYPERVISOR: exec_cmd: vm get_status R1 
-Mar 09 17:09:59.232 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
-Mar 09 17:09:59.233 HYPERVISOR: exec_cmd: vm get_status R1 
-Mar 09 17:09:59.233 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
-Mar 09 17:09:59.234 HYPERVISOR: exec_cmd: vm get_status R1 
-Mar 09 17:09:59.236 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
-Mar 09 17:09:59.237 HYPERVISOR: exec_cmd: vm set_ram R1 512 
-Mar 09 17:09:59.238 HYPERVISOR: exec_cmd: vm get_status R1 
-Mar 09 17:09:59.239 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60608040 
-Mar 09 17:09:59.240 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
-Mar 09 17:09:59.241 HYPERVISOR: exec_cmd: vm set_config R1 configs/i4_startup-config.cfg 
-Mar 09 17:10:27.092 HYPERVISOR: exec_cmd: nio create_udp udp-204098a2-e3da-418f-b9ed-d4bcd482daa1 10001 127.0.0.1 10000 
-Mar 09 17:10:27.094 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-204098a2-e3da-418f-b9ed-d4bcd482daa1 
-Mar 09 17:10:27.095 HYPERVISOR: exec_cmd: vm get_status R1 
-Mar 09 17:10:36.853 HYPERVISOR: exec_cmd: nio create_udp udp-23668923-ab8a-4b48-a271-1d8355545755 10002 127.0.0.1 10003 
-Mar 09 17:10:36.867 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-23668923-ab8a-4b48-a271-1d8355545755 
-Mar 09 17:10:36.868 HYPERVISOR: exec_cmd: vm get_status R1 
-Mar 09 17:16:09.128 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
-Mar 09 17:16:09.132 HYPERVISOR: exec_cmd: vm set_ghost_file R1 c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
-Mar 09 17:16:09.133 HYPERVISOR: exec_cmd: vm get_status R1 
-Mar 09 17:16:09.134 HYPERVISOR: exec_cmd: vm start R1 
-Mar 09 17:36:57.011 HYPERVISOR: exec_cmd: vm get_status R1 
-Mar 09 17:36:57.012 HYPERVISOR: exec_cmd: vm stop R1 
-Mar 09 17:36:58.178 VM: VM R1 shutdown.
-Mar 09 17:36:58.182 HYPERVISOR: exec_cmd: vm extract_config R1 
+Apr 05 16:21:00.801 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Apr 05 16:21:00.802 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50830.
+Apr 05 16:21:00.826 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 05 16:21:00.829 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex02/project-files/dynamips 
+Apr 05 16:21:00.829 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_03/ex02/project-files/dynamips
+Apr 05 16:21:00.839 HYPERVISOR: exec_cmd: ethsw create SW1 
+Apr 05 16:21:00.911 HYPERVISOR: exec_cmd: nio create_udp udp-a8f9de68-b449-4d27-9f93-a1528bdbcbaa 10000 127.0.0.1 10001 
+Apr 05 16:21:00.915 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-a8f9de68-b449-4d27-9f93-a1528bdbcbaa 
+Apr 05 16:21:00.944 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-a8f9de68-b449-4d27-9f93-a1528bdbcbaa 1 
+Apr 05 16:21:01.045 HYPERVISOR: exec_cmd: nio create_udp udp-ec8d73e6-5aed-46b1-ba5a-7358d761f144 10002 127.0.0.1 10003 
+Apr 05 16:21:01.070 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-ec8d73e6-5aed-46b1-ba5a-7358d761f144 
+Apr 05 16:21:01.096 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-ec8d73e6-5aed-46b1-ba5a-7358d761f144 1 
+Apr 05 17:14:03.420 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Apr 05 17:14:03.460 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 05 17:14:03.697 HYPERVISOR: Stopped.
+Apr 05 17:14:03.698 GENERAL: reset done.

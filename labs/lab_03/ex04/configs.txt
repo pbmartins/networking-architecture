@@ -110,10 +110,10 @@ Type of route - O*E2
 Metric - 1
 
 # Ex 15
-Routers have diferent OSPF processes, thus they only informate networks within the same process. Router3 is directly connected to a networking within OSPF 2 process, thus it learns it.
+Routers have different OSPF processes, thus they only show networks within the same process. Router3 is directly connected to a networking within OSPF 2 process, thus it learns it.
 
 # Ex 16
 Router 1 is now redistributing ospf process 2 subnets, but it is not announcing process 1 subnets in the OSPF process 2, thus Router4 does not learn process 1 networks.
 
 # Ex 17
-Bi-directional redistirbutions should be avoided, so in order to announce process 1 subnets in process 2, it is created a default route to unknown networks at process 2 subnets leading them to F1/0 interface of Router1.
+Bi-directional redestirbutions should be avoided, so in order to announce process 1 subnets in process 2, it is created a default route to unknown networks at process 2 subnets leading them to F1/0 interface of Router1.
