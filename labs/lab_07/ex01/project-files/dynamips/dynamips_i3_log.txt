@@ -23,3 +23,7 @@ May 18 16:25:41.941 HYPERVISOR: exec_cmd: nio setup_filter udp-b94fb192-9747-47c
 May 18 17:33:33.702 HYPERVISOR: exec_cmd: nio unbind_filter udp-b94fb192-9747-47cd-84fa-76a7455eca34 2 
 May 18 17:33:38.653 HYPERVISOR: exec_cmd: nio bind_filter udp-b94fb192-9747-47cd-84fa-76a7455eca34 2 capture 
 May 18 17:33:38.654 HYPERVISOR: exec_cmd: nio setup_filter udp-b94fb192-9747-47cd-84fa-76a7455eca34 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_07/ex01/project-files/captures/SW2_1_to_R1_FastEthernet0-0.pcap 
+May 18 17:51:02.403 HYPERVISOR: exec_cmd: ethsw delete SW2 
+May 18 17:51:02.434 HYPERVISOR: exec_cmd: hypervisor stop 
+May 18 17:51:02.705 HYPERVISOR: Stopped.
+May 18 17:51:02.705 GENERAL: reset done.

@@ -63,3 +63,16 @@ May 18 15:37:19.845 HYPERVISOR: exec_cmd: vm slot_enable_nio R1 0 0
 May 18 16:22:35.783 HYPERVISOR: exec_cmd: nio bind_filter udp-a67e13ac-b5bd-4ec1-b760-6b8f5ddc6a4a 2 capture 
 May 18 16:22:35.788 HYPERVISOR: exec_cmd: nio setup_filter udp-a67e13ac-b5bd-4ec1-b760-6b8f5ddc6a4a 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_07/ex01/project-files/captures/R1_FastEthernet0-0_to_SW2_1.pcap 
 May 18 16:25:32.437 HYPERVISOR: exec_cmd: nio unbind_filter udp-a67e13ac-b5bd-4ec1-b760-6b8f5ddc6a4a 2 
+May 18 17:50:51.074 HYPERVISOR: exec_cmd: vm get_status R1 
+May 18 17:50:51.079 HYPERVISOR: exec_cmd: vm stop R1 
+May 18 17:50:51.554 VM: VM R1 shutdown.
+May 18 17:50:51.563 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 18 17:50:55.539 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 18 17:51:01.276 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 18 17:51:02.847 HYPERVISOR: exec_cmd: vm get_status R1 
+May 18 17:51:02.854 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 18 17:51:02.857 HYPERVISOR: exec_cmd: vm delete R1 
+May 18 17:51:02.857 VM: VM R1 destroyed.
+May 18 17:51:02.863 HYPERVISOR: exec_cmd: hypervisor stop 
+May 18 17:51:03.275 HYPERVISOR: Stopped.
+May 18 17:51:03.275 GENERAL: reset done.

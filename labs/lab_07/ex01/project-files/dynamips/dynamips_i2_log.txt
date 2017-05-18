@@ -7,3 +7,7 @@ May 18 15:15:04.928 HYPERVISOR: exec_cmd: ethsw create SW1
 May 18 15:15:24.277 HYPERVISOR: exec_cmd: nio create_udp udp-58646a0b-2e31-4e48-818d-aaead43d52d0 10001 127.0.0.1 10000 
 May 18 15:15:24.279 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-58646a0b-2e31-4e48-818d-aaead43d52d0 
 May 18 15:15:24.292 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-58646a0b-2e31-4e48-818d-aaead43d52d0 1 
+May 18 17:51:02.402 HYPERVISOR: exec_cmd: ethsw delete SW1 
+May 18 17:51:02.410 HYPERVISOR: exec_cmd: hypervisor stop 
+May 18 17:51:02.771 HYPERVISOR: Stopped.
+May 18 17:51:02.771 GENERAL: reset done.
