@@ -1,0 +1,48 @@
+conf t
+snmp-server community public RO
+int f0/0
+ip add 192.1.1.1 255.255.255.0
+no shut
+int f0/1
+ip add 192.0.1.1 255.255.255.0
+no shut
+end
+write
+
+conf t
+access-list 10 permit 192.1.1.100
+access-list 11 permit 192.1.1.0/24
+snmp-server community myrouter1 RO 11   
+snmp-server community myrouter1 RW 10
+end
+write
+
+conf t
+snmp-server view myview system included
+snmp-server community myrouter0 view myview RO 10
+end
+write
+
+no snmp-server view myview system included
+no snmp-server view myview interfaces included
+no snmp-server community myrouter0 view myview RO 10
+no snmp-server community myrouter1 RW 10
+
+
+#### SNMP v3
+conf t
+snmp-server engineID local 123456789A
+snmp-server user user1 group1 v3
+snmp-server user user2 group2 v3
+snmp-server user user3 group3 v3 auth md5 authpass
+snmp-server user user4 group4 v3 auth md5 authpass priv des56 encpassword
+snmp-server group group1 v3 noauth
+snmp-server group group2 v3 noauth read myview
+snmp-server group group3 v3 auth
+snmp-server group group4 v3 priv
+snmp-server view myview system included
+snmp-server community myrouter RO
+
+#### TRAPS
+snmp-server enable traps syslog
+snmp-server host 192.1.1.100 version 2c myrouter

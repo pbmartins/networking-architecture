@@ -1,0 +1,25 @@
+May 18 15:37:12.121 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 18 15:37:12.122 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 61529.
+May 18 15:37:12.138 HYPERVISOR: exec_cmd: hypervisor version 
+May 18 15:37:12.139 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_07/ex01/project-files/dynamips 
+May 18 15:37:12.139 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_07/ex01/project-files/dynamips
+May 18 15:37:12.140 HYPERVISOR: exec_cmd: ethsw create SW2 
+May 18 15:37:19.837 HYPERVISOR: exec_cmd: nio create_udp udp-b94fb192-9747-47cd-84fa-76a7455eca34 10002 127.0.0.1 10003 
+May 18 15:37:19.842 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-b94fb192-9747-47cd-84fa-76a7455eca34 
+May 18 15:37:19.846 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-b94fb192-9747-47cd-84fa-76a7455eca34 1 
+May 18 15:37:22.487 HYPERVISOR: exec_cmd: nio create_udp udp-66106630-e316-4c03-9be5-43b5fb466f97 10004 127.0.0.1 10005 
+May 18 15:37:22.497 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-66106630-e316-4c03-9be5-43b5fb466f97 
+May 18 15:37:22.519 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-66106630-e316-4c03-9be5-43b5fb466f97 1 
+May 18 15:37:37.618 HYPERVISOR: exec_cmd: nio bind_filter udp-b94fb192-9747-47cd-84fa-76a7455eca34 2 capture 
+May 18 15:37:37.618 HYPERVISOR: exec_cmd: nio setup_filter udp-b94fb192-9747-47cd-84fa-76a7455eca34 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_07/ex01/project-files/captures/SW2_1_to_R1_FastEthernet0-0.pcap 
+May 18 16:04:39.444 HYPERVISOR: exec_cmd: ethsw remove_nio SW2 udp-66106630-e316-4c03-9be5-43b5fb466f97 
+May 18 16:04:39.465 HYPERVISOR: exec_cmd: nio delete udp-66106630-e316-4c03-9be5-43b5fb466f97 
+May 18 16:16:46.311 HYPERVISOR: exec_cmd: nio create_udp udp-bf8ff6c6-85d1-4a30-b36a-c7bc78ea6d55 10005 127.0.0.1 10004 
+May 18 16:16:46.315 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-bf8ff6c6-85d1-4a30-b36a-c7bc78ea6d55 
+May 18 16:16:46.340 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-bf8ff6c6-85d1-4a30-b36a-c7bc78ea6d55 1 
+May 18 16:25:35.340 HYPERVISOR: exec_cmd: nio unbind_filter udp-b94fb192-9747-47cd-84fa-76a7455eca34 2 
+May 18 16:25:41.939 HYPERVISOR: exec_cmd: nio bind_filter udp-b94fb192-9747-47cd-84fa-76a7455eca34 2 capture 
+May 18 16:25:41.941 HYPERVISOR: exec_cmd: nio setup_filter udp-b94fb192-9747-47cd-84fa-76a7455eca34 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_07/ex01/project-files/captures/SW2_1_to_R1_FastEthernet0-0.pcap 
+May 18 17:33:33.702 HYPERVISOR: exec_cmd: nio unbind_filter udp-b94fb192-9747-47cd-84fa-76a7455eca34 2 
+May 18 17:33:38.653 HYPERVISOR: exec_cmd: nio bind_filter udp-b94fb192-9747-47cd-84fa-76a7455eca34 2 capture 
+May 18 17:33:38.654 HYPERVISOR: exec_cmd: nio setup_filter udp-b94fb192-9747-47cd-84fa-76a7455eca34 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_07/ex01/project-files/captures/SW2_1_to_R1_FastEthernet0-0.pcap 
