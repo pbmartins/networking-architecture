@@ -1,0 +1,50 @@
+May 11 16:02:10.118 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 11 16:02:10.118 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51280.
+May 11 16:02:10.151 HYPERVISOR: exec_cmd: hypervisor version 
+May 11 16:02:10.162 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Diogo Ferreira\Google Drive\Universidade\3º Ano\2º Semestre\Arquitectura de Redes\AR - Project\GNS3_Project\AR_Project\project-files\dynamips 
+May 11 16:02:10.162 GENERAL: working_dir=C:\Users\Diogo Ferreira\Google Drive\Universidade\3º Ano\2º Semestre\Arquitectura de Redes\AR - Project\GNS3_Project\AR_Project\project-files\dynamips
+May 11 16:02:10.173 HYPERVISOR: exec_cmd: vm create ESW2 4 c3725 
+May 11 16:02:10.176 VM: VM ESW2 created.
+May 11 16:02:10.182 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5001 
+May 11 16:02:10.193 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW2 
+May 11 16:02:10.200 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+May 11 16:02:10.208 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 11 16:02:10.217 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 2 0 NM-1FE-TX 
+May 11 16:02:10.225 HYPERVISOR: exec_cmd: vm set_exec_area ESW2 64 
+May 11 16:02:10.234 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 11 16:02:10.241 HYPERVISOR: exec_cmd: vm set_idle_pc ESW2 0x60a68e70 
+May 11 16:02:10.249 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/Diogo Ferreira/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+May 11 16:02:10.256 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 11 16:02:10.265 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-1FE-TX 
+May 11 16:02:10.273 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+May 11 16:02:10.292 HYPERVISOR: exec_cmd: vm set_config ESW2 configs/i4_startup-config.cfg 
+May 11 16:02:17.054 HYPERVISOR: exec_cmd: vm rename ESW2 SWL3_B 
+May 11 16:02:35.541 HYPERVISOR: exec_cmd: vm get_status SWL3_B 
+May 11 16:02:35.548 HYPERVISOR: exec_cmd: vm slot_remove_binding SWL3_B 1 0 
+May 11 16:02:35.555 HYPERVISOR: exec_cmd: vm get_status SWL3_B 
+May 11 16:02:35.562 HYPERVISOR: exec_cmd: vm slot_add_binding SWL3_B 1 0 NM-16ESW 
+May 11 16:02:35.569 HYPERVISOR: exec_cmd: vm get_status SWL3_B 
+May 11 16:02:35.577 HYPERVISOR: exec_cmd: vm slot_remove_binding SWL3_B 2 0 
+May 11 16:02:42.916 HYPERVISOR: exec_cmd: nio create_udp udp-09d2a7fa-1c38-48c5-bbb9-7e030020c891 10003 127.0.0.1 10002 
+May 11 16:02:42.931 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3_B 1 14 udp-09d2a7fa-1c38-48c5-bbb9-7e030020c891 
+May 11 16:02:42.945 HYPERVISOR: exec_cmd: vm get_status SWL3_B 
+May 11 16:02:45.129 HYPERVISOR: exec_cmd: nio create_udp udp-eae41210-e100-4253-aa30-ce51ea5e7b98 10005 127.0.0.1 10004 
+May 11 16:02:45.144 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3_B 1 15 udp-eae41210-e100-4253-aa30-ce51ea5e7b98 
+May 11 16:02:45.159 HYPERVISOR: exec_cmd: vm get_status SWL3_B 
+May 11 16:03:41.404 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3_B 2 
+May 11 16:03:41.432 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3_B c3725-advipservicesk9-mz.124-21.image-128.ghost 
+May 11 16:03:41.449 HYPERVISOR: exec_cmd: vm get_status SWL3_B 
+May 11 16:03:41.475 HYPERVISOR: exec_cmd: vm start SWL3_B 
+May 11 16:09:39.445 HYPERVISOR: exec_cmd: vm extract_config SWL3_B 
+May 11 16:09:42.186 HYPERVISOR: exec_cmd: vm get_status SWL3_B 
+May 11 16:09:42.203 HYPERVISOR: exec_cmd: vm stop SWL3_B 
+May 11 16:09:42.354 VM: VM SWL3_B shutdown.
+May 11 16:09:42.369 HYPERVISOR: exec_cmd: vm extract_config SWL3_B 
+May 11 16:09:46.714 HYPERVISOR: exec_cmd: vm extract_config SWL3_B 
+May 11 16:09:48.437 HYPERVISOR: exec_cmd: vm get_status SWL3_B 
+May 11 16:09:48.451 HYPERVISOR: exec_cmd: vm extract_config SWL3_B 
+May 11 16:09:48.469 HYPERVISOR: exec_cmd: vm delete SWL3_B 
+May 11 16:09:48.469 VM: VM SWL3_B destroyed.
+May 11 16:09:48.485 HYPERVISOR: exec_cmd: hypervisor stop 
+May 11 16:09:48.810 HYPERVISOR: Stopped.
+May 11 16:09:48.810 GENERAL: reset done.

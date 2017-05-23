@@ -1,0 +1,71 @@
+SWL3_A
+
+conf t
+ip routing
+router ospf 1
+int f0/0
+ip address 192.168.100.10 255.255.255.0
+ip ospf 10 area 0
+no shut
+exit
+int f0/1
+ip address 192.168.101.10 255.255.255.0
+ip ospf 10 area 0
+no shut
+exit
+int vlan 1
+ip address 192.168.0.10 255.255.252.0
+ip ospf 10 area 0
+no shut
+exit
+int f1/14
+switchport mode trunk
+switchport trunk encapsulation dot1q
+no shut
+exit
+int f1/15
+switchport mode trunk
+switchport trunk encapsulation dot1q
+no shut
+end
+wr
+
+=========================================
+
+SWL3_B
+
+conf t
+ip routing
+router ospf 1
+int f0/0
+ip address 192.168.100.11 255.255.255.0
+ip ospf 10 area 0
+no shut
+exit
+int f0/1
+ip address 192.168.101.11 255.255.255.0
+ip ospf 10 area 0
+no shut
+exit
+int vlan 1
+ip address 192.168.0.11 255.255.252.0
+ip ospf 10 area 0
+no shut
+exit
+int f1/14
+switchport mode trunk
+switchport trunk encapsulation dot1q
+no shut
+exit
+int f1/15
+switchport mode trunk
+switchport trunk encapsulation dot1q
+no shut
+end
+wr
+
+=========================================
+
+VPC (Old Building)
+
+ip 192.168.0.1/22 192.168.0.10
