@@ -1,50 +1,34 @@
-May 11 16:02:08.219 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
-May 11 16:02:08.220 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51278.
-May 11 16:02:08.705 HYPERVISOR: exec_cmd: hypervisor version 
-May 11 16:02:08.712 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Diogo Ferreira\Google Drive\Universidade\3º Ano\2º Semestre\Arquitectura de Redes\AR - Project\GNS3_Project\AR_Project\project-files\dynamips 
-May 11 16:02:08.713 GENERAL: working_dir=C:\Users\Diogo Ferreira\Google Drive\Universidade\3º Ano\2º Semestre\Arquitectura de Redes\AR - Project\GNS3_Project\AR_Project\project-files\dynamips
-May 11 16:02:08.720 HYPERVISOR: exec_cmd: vm create ESW1 3 c3725 
-May 11 16:02:08.722 VM: VM ESW1 created.
-May 11 16:02:08.727 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5000 
-May 11 16:02:08.734 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
-May 11 16:02:08.740 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
-May 11 16:02:08.747 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 11 16:02:08.755 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 2 0 NM-1FE-TX 
-May 11 16:02:08.762 HYPERVISOR: exec_cmd: vm set_exec_area ESW1 64 
-May 11 16:02:08.769 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 11 16:02:08.776 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60a68e70 
-May 11 16:02:08.783 HYPERVISOR: exec_cmd: vm set_ios ESW1 C:/Users/Diogo Ferreira/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-May 11 16:02:08.790 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 11 16:02:08.798 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-1FE-TX 
-May 11 16:02:08.806 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
-May 11 16:02:08.817 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i3_startup-config.cfg 
-May 11 16:02:13.747 HYPERVISOR: exec_cmd: vm rename ESW1 SWL3_A 
-May 11 16:02:29.319 HYPERVISOR: exec_cmd: vm get_status SWL3_A 
-May 11 16:02:29.326 HYPERVISOR: exec_cmd: vm slot_remove_binding SWL3_A 1 0 
-May 11 16:02:29.334 HYPERVISOR: exec_cmd: vm get_status SWL3_A 
-May 11 16:02:29.342 HYPERVISOR: exec_cmd: vm slot_add_binding SWL3_A 1 0 NM-16ESW 
-May 11 16:02:29.352 HYPERVISOR: exec_cmd: vm get_status SWL3_A 
-May 11 16:02:29.360 HYPERVISOR: exec_cmd: vm slot_remove_binding SWL3_A 2 0 
-May 11 16:02:40.047 HYPERVISOR: exec_cmd: nio create_udp udp-598042d0-5960-4bb4-bde4-1a7c4981598c 10001 127.0.0.1 10000 
-May 11 16:02:40.081 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3_A 1 15 udp-598042d0-5960-4bb4-bde4-1a7c4981598c 
-May 11 16:02:40.101 HYPERVISOR: exec_cmd: vm get_status SWL3_A 
-May 11 16:02:49.660 HYPERVISOR: exec_cmd: nio create_udp udp-dbf7edf5-fb08-4cc8-ae66-60d1c0d501d2 10007 127.0.0.1 10006 
-May 11 16:02:49.674 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3_A 1 14 udp-dbf7edf5-fb08-4cc8-ae66-60d1c0d501d2 
-May 11 16:02:49.687 HYPERVISOR: exec_cmd: vm get_status SWL3_A 
-May 11 16:03:41.461 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3_A 2 
-May 11 16:03:41.488 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3_A c3725-advipservicesk9-mz.124-21.image-128.ghost 
-May 11 16:03:41.509 HYPERVISOR: exec_cmd: vm get_status SWL3_A 
-May 11 16:03:41.541 HYPERVISOR: exec_cmd: vm start SWL3_A 
-May 11 16:09:39.550 HYPERVISOR: exec_cmd: vm extract_config SWL3_A 
-May 11 16:09:42.199 HYPERVISOR: exec_cmd: vm get_status SWL3_A 
-May 11 16:09:42.210 HYPERVISOR: exec_cmd: vm stop SWL3_A 
-May 11 16:09:42.351 VM: VM SWL3_A shutdown.
-May 11 16:09:42.358 HYPERVISOR: exec_cmd: vm extract_config SWL3_A 
-May 11 16:09:46.725 HYPERVISOR: exec_cmd: vm extract_config SWL3_A 
-May 11 16:09:48.442 HYPERVISOR: exec_cmd: vm get_status SWL3_A 
-May 11 16:09:48.456 HYPERVISOR: exec_cmd: vm extract_config SWL3_A 
-May 11 16:09:48.475 HYPERVISOR: exec_cmd: vm delete SWL3_A 
-May 11 16:09:48.475 VM: VM SWL3_A destroyed.
-May 11 16:09:48.525 HYPERVISOR: exec_cmd: hypervisor stop 
-May 11 16:09:48.811 HYPERVISOR: Stopped.
-May 11 16:09:48.811 GENERAL: reset done.
+May 23 17:25:11.288 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 23 17:25:11.288 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49787.
+May 23 17:25:11.311 HYPERVISOR: exec_cmd: hypervisor version 
+May 23 17:25:11.312 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+May 23 17:25:11.312 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+May 23 17:25:11.313 HYPERVISOR: exec_cmd: vm create ESW1 1 c3725 
+May 23 17:25:11.313 VM: VM ESW1 created.
+May 23 17:25:11.314 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5003 
+May 23 17:25:11.314 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+May 23 17:25:11.315 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 23 17:25:11.316 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+May 23 17:25:11.317 HYPERVISOR: exec_cmd: vm set_ram ESW1 256 
+May 23 17:25:11.318 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 23 17:25:11.319 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60a6a3b8 
+May 23 17:25:11.320 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+May 23 17:25:11.321 HYPERVISOR: exec_cmd: vm set_ios ESW1 /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+May 23 17:25:11.322 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+May 23 17:25:11.323 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i1_startup-config.cfg 
+May 23 17:26:16.733 HYPERVISOR: exec_cmd: vm rename ESW1 Aveiro_CoreA 
+May 23 17:26:23.599 HYPERVISOR: exec_cmd: vm rename Aveiro_CoreA Aveiro_Core_A 
+May 23 17:27:26.653 HYPERVISOR: exec_cmd: nio create_udp udp-4a0f86f7-2663-427e-80c9-a737d1d49e28 10014 127.0.0.1 10015 
+May 23 17:27:26.659 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_Core_A 1 0 udp-4a0f86f7-2663-427e-80c9-a737d1d49e28 
+May 23 17:27:26.660 HYPERVISOR: exec_cmd: vm get_status Aveiro_Core_A 
+May 23 17:27:33.424 HYPERVISOR: exec_cmd: nio create_udp udp-e97d6368-89b6-42df-8e4b-d289dcab5b81 10016 127.0.0.1 10017 
+May 23 17:27:33.430 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_Core_A 1 1 udp-e97d6368-89b6-42df-8e4b-d289dcab5b81 
+May 23 17:27:33.431 HYPERVISOR: exec_cmd: vm get_status Aveiro_Core_A 
+May 23 17:30:43.588 HYPERVISOR: exec_cmd: vm extract_config Aveiro_Core_A 
+May 23 17:30:55.458 HYPERVISOR: exec_cmd: vm get_status Aveiro_Core_A 
+May 23 17:30:55.464 HYPERVISOR: exec_cmd: vm extract_config Aveiro_Core_A 
+May 23 17:30:55.471 HYPERVISOR: exec_cmd: vm delete Aveiro_Core_A 
+May 23 17:30:55.471 VM: VM Aveiro_Core_A destroyed.
+May 23 17:30:55.477 HYPERVISOR: exec_cmd: hypervisor stop 
+May 23 17:30:55.568 HYPERVISOR: Stopped.
+May 23 17:30:55.568 GENERAL: reset done.

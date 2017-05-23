@@ -1,0 +1,31 @@
+May 23 17:46:30.287 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 23 17:46:30.287 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50023.
+May 23 17:46:30.306 HYPERVISOR: exec_cmd: hypervisor version 
+May 23 17:46:30.306 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+May 23 17:46:30.306 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+May 23 17:46:30.307 HYPERVISOR: exec_cmd: ethsw create SW3 
+May 23 17:46:33.871 HYPERVISOR: exec_cmd: ethsw rename SW3 Aveiro_E2_Access 
+May 23 17:46:53.752 HYPERVISOR: exec_cmd: nio create_udp udp-e912d8fe-b9d1-4f43-9e8a-2777f5206540 10074 127.0.0.1 10075 
+May 23 17:46:53.766 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E2_Access udp-e912d8fe-b9d1-4f43-9e8a-2777f5206540 
+May 23 17:46:53.780 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E2_Access udp-e912d8fe-b9d1-4f43-9e8a-2777f5206540 1 
+May 23 17:46:57.873 HYPERVISOR: exec_cmd: nio create_udp udp-e18c8c4e-989c-41ab-8637-3e090010b517 10076 127.0.0.1 10077 
+May 23 17:46:57.880 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E2_Access udp-e18c8c4e-989c-41ab-8637-3e090010b517 
+May 23 17:46:57.882 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E2_Access udp-e18c8c4e-989c-41ab-8637-3e090010b517 1 
+May 23 18:00:34.297 HYPERVISOR: exec_cmd: nio create_udp udp-291b6100-5122-4413-bb3d-db4f82975a58 10085 127.0.0.1 10084 
+May 23 18:00:34.298 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E2_Access udp-291b6100-5122-4413-bb3d-db4f82975a58 
+May 23 18:00:34.316 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E2_Access udp-291b6100-5122-4413-bb3d-db4f82975a58 1 
+May 23 18:00:37.221 HYPERVISOR: exec_cmd: nio create_udp udp-ebd33b05-9579-4ed1-a6f1-8e7045a2d3a7 10087 127.0.0.1 10086 
+May 23 18:00:37.225 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E2_Access udp-ebd33b05-9579-4ed1-a6f1-8e7045a2d3a7 
+May 23 18:00:37.248 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E2_Access udp-ebd33b05-9579-4ed1-a6f1-8e7045a2d3a7 1 
+May 23 18:00:40.826 HYPERVISOR: exec_cmd: nio create_udp udp-8d0ae407-191e-468e-b9dd-56f5aebce03a 10089 127.0.0.1 10088 
+May 23 18:00:40.828 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E2_Access udp-8d0ae407-191e-468e-b9dd-56f5aebce03a 
+May 23 18:00:40.839 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E2_Access udp-8d0ae407-191e-468e-b9dd-56f5aebce03a 1 
+May 23 18:09:19.271 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Aveiro_E2_Access udp-e912d8fe-b9d1-4f43-9e8a-2777f5206540 1 
+May 23 18:09:19.275 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Aveiro_E2_Access udp-e18c8c4e-989c-41ab-8637-3e090010b517 1 
+May 23 18:09:19.276 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E2_Access udp-291b6100-5122-4413-bb3d-db4f82975a58 1781 
+May 23 18:09:19.277 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E2_Access udp-ebd33b05-9579-4ed1-a6f1-8e7045a2d3a7 1481 
+May 23 18:09:19.279 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E2_Access udp-8d0ae407-191e-468e-b9dd-56f5aebce03a 1290 
+May 23 18:50:08.340 HYPERVISOR: exec_cmd: ethsw delete Aveiro_E2_Access 
+May 23 18:50:08.464 HYPERVISOR: exec_cmd: hypervisor stop 
+May 23 18:50:08.593 HYPERVISOR: Stopped.
+May 23 18:50:08.593 GENERAL: reset done.

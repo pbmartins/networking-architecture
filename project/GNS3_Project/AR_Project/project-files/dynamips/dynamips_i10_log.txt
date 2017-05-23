@@ -1,0 +1,24 @@
+May 23 17:28:19.659 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 23 17:28:19.659 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49798.
+May 23 17:28:19.676 HYPERVISOR: exec_cmd: hypervisor version 
+May 23 17:28:19.676 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+May 23 17:28:19.677 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+May 23 17:28:19.677 HYPERVISOR: exec_cmd: vm create R1 7 c3745 
+May 23 17:28:19.678 VM: VM R1 created.
+May 23 17:28:19.678 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5007 
+May 23 17:28:19.679 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+May 23 17:28:19.680 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 23 17:28:19.681 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+May 23 17:28:19.682 HYPERVISOR: exec_cmd: vm get_status R1 
+May 23 17:28:19.682 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60b22838 
+May 23 17:28:19.684 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 23 17:28:19.685 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/pedromartins/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+May 23 17:28:19.686 HYPERVISOR: exec_cmd: vm set_config R1 configs/i7_startup-config.cfg 
+May 23 17:30:43.588 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 23 17:30:55.458 HYPERVISOR: exec_cmd: vm get_status R1 
+May 23 17:30:55.464 HYPERVISOR: exec_cmd: vm extract_config R1 
+May 23 17:30:55.472 HYPERVISOR: exec_cmd: vm delete R1 
+May 23 17:30:55.472 VM: VM R1 destroyed.
+May 23 17:30:55.478 HYPERVISOR: exec_cmd: hypervisor stop 
+May 23 17:30:55.555 HYPERVISOR: Stopped.
+May 23 17:30:55.555 GENERAL: reset done.

@@ -1,0 +1,26 @@
+May 23 17:28:30.029 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 23 17:28:30.030 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49800.
+May 23 17:28:30.049 HYPERVISOR: exec_cmd: hypervisor version 
+May 23 17:28:30.050 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+May 23 17:28:30.050 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+May 23 17:28:30.051 HYPERVISOR: exec_cmd: vm create ESW1 8 c3725 
+May 23 17:28:30.051 VM: VM ESW1 created.
+May 23 17:28:30.052 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5008 
+May 23 17:28:30.053 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+May 23 17:28:30.054 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 23 17:28:30.056 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+May 23 17:28:30.058 HYPERVISOR: exec_cmd: vm set_ram ESW1 256 
+May 23 17:28:30.062 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 23 17:28:30.063 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60a6a3b8 
+May 23 17:28:30.064 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+May 23 17:28:30.065 HYPERVISOR: exec_cmd: vm set_ios ESW1 /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+May 23 17:28:30.068 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+May 23 17:28:30.076 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i8_startup-config.cfg 
+May 23 17:30:43.586 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+May 23 17:30:55.456 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 23 17:30:55.463 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+May 23 17:30:55.470 HYPERVISOR: exec_cmd: vm delete ESW1 
+May 23 17:30:55.470 VM: VM ESW1 destroyed.
+May 23 17:30:55.476 HYPERVISOR: exec_cmd: hypervisor stop 
+May 23 17:30:55.837 HYPERVISOR: Stopped.
+May 23 17:30:55.837 GENERAL: reset done.

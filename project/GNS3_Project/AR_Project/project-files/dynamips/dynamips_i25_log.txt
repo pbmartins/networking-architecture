@@ -1,0 +1,49 @@
+May 23 17:31:14.551 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 23 17:31:14.551 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49988.
+May 23 17:31:14.637 HYPERVISOR: exec_cmd: hypervisor version 
+May 23 17:31:14.645 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+May 23 17:31:14.645 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+May 23 17:31:14.658 HYPERVISOR: exec_cmd: vm create ESW1 8 c3725 
+May 23 17:31:14.658 VM: VM ESW1 created.
+May 23 17:31:14.662 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5008 
+May 23 17:31:14.665 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+May 23 17:31:14.669 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW1 c208.1287.0000 
+May 23 17:31:14.677 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 23 17:31:14.698 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60a6a3b8 
+May 23 17:31:14.726 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+May 23 17:31:14.746 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+May 23 17:31:14.757 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 23 17:31:14.760 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+May 23 17:31:14.770 HYPERVISOR: exec_cmd: vm set_ios ESW1 /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+May 23 17:31:14.783 HYPERVISOR: exec_cmd: vm set_ram ESW1 256 
+May 23 17:31:14.787 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i8_startup-config.cfg 
+May 23 17:31:38.751 HYPERVISOR: exec_cmd: vm rename ESW1 Aveiro_ISPSW_A 
+May 23 17:33:07.945 HYPERVISOR: exec_cmd: nio create_udp udp-7d562bfe-e353-4f8a-841f-b3a11ea6b1d8 10022 127.0.0.1 10023 
+May 23 17:33:07.951 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_ISPSW_A 0 0 udp-7d562bfe-e353-4f8a-841f-b3a11ea6b1d8 
+May 23 17:33:07.953 HYPERVISOR: exec_cmd: vm get_status Aveiro_ISPSW_A 
+May 23 17:33:19.318 HYPERVISOR: exec_cmd: nio create_udp udp-fc4b5652-cb54-4204-8d7e-2c6615131fde 10026 127.0.0.1 10027 
+May 23 17:33:19.324 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_ISPSW_A 0 1 udp-fc4b5652-cb54-4204-8d7e-2c6615131fde 
+May 23 17:33:19.325 HYPERVISOR: exec_cmd: vm get_status Aveiro_ISPSW_A 
+May 23 17:33:36.943 HYPERVISOR: exec_cmd: nio create_udp udp-fa6dcdbd-9664-4297-9cbe-a02ec4ce0f0f 10030 127.0.0.1 10031 
+May 23 17:33:36.948 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_ISPSW_A 1 0 udp-fa6dcdbd-9664-4297-9cbe-a02ec4ce0f0f 
+May 23 17:33:36.950 HYPERVISOR: exec_cmd: vm get_status Aveiro_ISPSW_A 
+May 23 17:34:37.592 HYPERVISOR: exec_cmd: nio create_udp udp-875a091a-b413-4566-b942-04d9eafda174 10035 127.0.0.1 10034 
+May 23 17:34:37.594 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_ISPSW_A 1 1 udp-875a091a-b413-4566-b942-04d9eafda174 
+May 23 17:34:37.596 HYPERVISOR: exec_cmd: vm get_status Aveiro_ISPSW_A 
+May 23 17:34:50.644 HYPERVISOR: exec_cmd: nio create_udp udp-55968b5c-54f9-4f76-8d32-2b0ee4f02ea6 10039 127.0.0.1 10038 
+May 23 17:34:50.646 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_ISPSW_A 1 2 udp-55968b5c-54f9-4f76-8d32-2b0ee4f02ea6 
+May 23 17:34:50.648 HYPERVISOR: exec_cmd: vm get_status Aveiro_ISPSW_A 
+May 23 17:34:55.398 HYPERVISOR: exec_cmd: nio create_udp udp-d9dbde41-b355-4858-af00-9f7daa31a8c4 10041 127.0.0.1 10040 
+May 23 17:34:55.399 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_ISPSW_A 1 3 udp-d9dbde41-b355-4858-af00-9f7daa31a8c4 
+May 23 17:34:55.401 HYPERVISOR: exec_cmd: vm get_status Aveiro_ISPSW_A 
+May 23 17:42:03.343 HYPERVISOR: exec_cmd: vm extract_config Aveiro_ISPSW_A 
+May 23 18:01:01.290 HYPERVISOR: exec_cmd: vm extract_config Aveiro_ISPSW_A 
+May 23 18:30:47.563 HYPERVISOR: exec_cmd: vm extract_config Aveiro_ISPSW_A 
+May 23 18:50:06.866 HYPERVISOR: exec_cmd: vm extract_config Aveiro_ISPSW_A 
+May 23 18:50:08.971 HYPERVISOR: exec_cmd: vm get_status Aveiro_ISPSW_A 
+May 23 18:50:08.983 HYPERVISOR: exec_cmd: vm extract_config Aveiro_ISPSW_A 
+May 23 18:50:09.000 HYPERVISOR: exec_cmd: vm delete Aveiro_ISPSW_A 
+May 23 18:50:09.001 VM: VM Aveiro_ISPSW_A destroyed.
+May 23 18:50:09.019 HYPERVISOR: exec_cmd: hypervisor stop 
+May 23 18:50:09.249 HYPERVISOR: Stopped.
+May 23 18:50:09.249 GENERAL: reset done.
