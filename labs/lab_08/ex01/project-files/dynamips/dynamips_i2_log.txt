@@ -1,0 +1,38 @@
+May 25 15:07:31.748 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 25 15:07:31.748 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50605.
+May 25 15:07:31.770 HYPERVISOR: exec_cmd: hypervisor version 
+May 25 15:07:31.771 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_08/ex01/project-files/dynamips 
+May 25 15:07:31.771 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_08/ex01/project-files/dynamips
+May 25 15:07:31.772 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+May 25 15:07:31.772 VM: VM R2 created.
+May 25 15:07:31.773 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+May 25 15:07:31.773 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+May 25 15:07:31.774 HYPERVISOR: exec_cmd: vm get_status R2 
+May 25 15:07:31.775 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60b22838 
+May 25 15:07:31.776 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+May 25 15:07:31.776 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+May 25 15:07:31.777 HYPERVISOR: exec_cmd: vm set_ios R2 /Users/pedromartins/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+May 25 15:07:31.778 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+May 25 15:07:31.779 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+May 25 15:14:15.657 HYPERVISOR: exec_cmd: nio create_udp udp-6def4204-1821-47fc-9a36-fe6afbff7450 10003 127.0.0.1 10002 
+May 25 15:14:15.660 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-6def4204-1821-47fc-9a36-fe6afbff7450 
+May 25 15:14:15.661 HYPERVISOR: exec_cmd: vm get_status R2 
+May 25 15:14:20.755 HYPERVISOR: exec_cmd: nio create_udp udp-2858b40c-6905-4452-beb5-f28d9f6b41a1 10004 127.0.0.1 10005 
+May 25 15:14:20.761 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-2858b40c-6905-4452-beb5-f28d9f6b41a1 
+May 25 15:14:20.763 HYPERVISOR: exec_cmd: vm get_status R2 
+May 25 15:26:35.875 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+May 25 15:26:35.878 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
+May 25 15:26:35.879 HYPERVISOR: exec_cmd: vm get_status R2 
+May 25 15:26:35.880 HYPERVISOR: exec_cmd: vm start R2 
+May 25 16:43:52.491 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 25 16:43:54.274 HYPERVISOR: exec_cmd: vm get_status R2 
+May 25 16:43:54.276 HYPERVISOR: exec_cmd: vm stop R2 
+May 25 16:43:54.375 VM: VM R2 shutdown.
+May 25 16:43:54.379 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 25 16:44:06.021 HYPERVISOR: exec_cmd: vm get_status R2 
+May 25 16:44:06.024 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 25 16:44:06.026 HYPERVISOR: exec_cmd: vm delete R2 
+May 25 16:44:06.026 VM: VM R2 destroyed.
+May 25 16:44:06.032 HYPERVISOR: exec_cmd: hypervisor stop 
+May 25 16:44:06.460 HYPERVISOR: Stopped.
+May 25 16:44:06.461 GENERAL: reset done.

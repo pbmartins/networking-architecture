@@ -1,0 +1,119 @@
+Router 0
+
+conf t
+router ospf 1
+int f0/0
+ip add 192.0.1.1 255.255.255.0
+ip ospf 1 area 0
+no shut
+
+int f0/1
+ip add 192.10.1.1 255.255.255.0
+ip ospf 1 area 0
+no shut
+end
+write
+
+
+Router 1
+
+conf t
+
+class-map match-all PREMIUM
+match ip dscp 46
+class-map match-all GOLD
+match ip dscp 10
+class-map match-all SILVER
+match ip dscp 22
+class-map match-all BEST-EFFORT
+match ip dscp 0
+
+policy-map CORE
+class PREMIUM
+priority percent 40
+class GOLD
+bandwidth percent 20
+class SILVER
+bandwidth percent 15
+class BEST-EFFORT
+police 16000 2000 2000 conform-action set-dscp-transmit 0
+
+
+router ospf 1
+int f0/0
+ip add 192.10.1.2 255.255.255.0
+ip ospf 1 area 0
+service-policy output CORE
+no shut
+
+int f0/1
+ip add 192.20.1.1 255.255.255.0
+ip ospf 1 area 0
+no shut
+end
+write
+
+
+Router 2
+
+conf t
+access-list 101 permit udp any any eq 3001
+access-list 102 permit udp any any eq 3002
+access-list 103 permit udp any any eq 3003
+class-map match-all EF
+match access-group 101
+class-map match-all AF11
+match access-group 102
+class-map match-all AF23
+match access-group 103
+
+policy-map SETDSCP
+class EF
+set ip dscp 46
+class AF11
+set ip dscp 10
+class AF23
+set ip dscp 22
+
+class-map match-all PREMIUM
+match ip dscp 46
+class-map match-all GOLD
+match ip dscp 10
+class-map match-all SILVER
+match ip dscp 22
+class-map match-all BEST-EFFORT
+match ip dscp 0
+
+policy-map EDGE
+class PREMIUM
+priority percent 40
+class GOLD
+bandwidth percent 20
+class SILVER
+bandwidth percent 15
+class BEST-EFFORT
+police 16000 2000 2000 conform-action set-dscp-transmit 0
+
+router ospf 1
+int f0/0
+ip add 192.20.1.2 255.255.255.0
+ip ospf 1 area 0
+service-policy output EDGE
+no shut
+
+int f0/1
+ip add 192.1.1.1 255.255.255.0
+ip ospf 1 area 0
+service-policy input SETDSCP
+no shut
+end
+write
+
+
+PC 1
+ip 192.0.1.100/24 192.0.1.1
+save
+
+PC 2
+ip 192.1.1.100/24 192.1.1.1
+save
