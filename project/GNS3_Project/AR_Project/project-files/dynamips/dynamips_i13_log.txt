@@ -1,0 +1,68 @@
+May 25 16:44:08.544 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 25 16:44:08.544 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51027.
+May 25 16:44:08.636 HYPERVISOR: exec_cmd: hypervisor version 
+May 25 16:44:08.640 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+May 25 16:44:08.640 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+May 25 16:44:08.648 HYPERVISOR: exec_cmd: vm create ISP1_PT_R1 7 c3745 
+May 25 16:44:08.648 VM: VM ISP1_PT_R1 created.
+May 25 16:44:08.652 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP1_PT_R1 5007 
+May 25 16:44:08.656 HYPERVISOR: exec_cmd: c3745 get_mac_addr ISP1_PT_R1 
+May 25 16:44:08.660 HYPERVISOR: exec_cmd: vm set_disk0 ISP1_PT_R1 0 
+May 25 16:44:08.665 HYPERVISOR: exec_cmd: vm set_ios ISP1_PT_R1 /Users/pedromartins/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+May 25 16:44:08.668 HYPERVISOR: exec_cmd: c3745 set_mac_addr ISP1_PT_R1 c407.1277.0000 
+May 25 16:44:08.674 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 16:44:08.680 HYPERVISOR: exec_cmd: vm set_idle_pc ISP1_PT_R1 0x60b22838 
+May 25 16:44:08.691 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 16:44:08.706 HYPERVISOR: exec_cmd: vm slot_add_binding ISP1_PT_R1 1 0 NM-1FE-TX 
+May 25 16:44:08.712 HYPERVISOR: exec_cmd: vm set_ram ISP1_PT_R1 256 
+May 25 16:44:08.715 HYPERVISOR: exec_cmd: vm set_nvram ISP1_PT_R1 256 
+May 25 16:44:08.718 HYPERVISOR: exec_cmd: vm set_config ISP1_PT_R1 configs/i7_startup-config.cfg 
+May 25 16:44:09.681 HYPERVISOR: exec_cmd: nio create_udp udp-253caf14-b357-49dc-bc5c-3069872569e2 10035 127.0.0.1 10034 
+May 25 16:44:09.689 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 0 0 udp-253caf14-b357-49dc-bc5c-3069872569e2 
+May 25 16:44:09.697 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 16:44:09.735 HYPERVISOR: exec_cmd: nio create_udp udp-29254fa3-63b6-4ebf-9ca6-50e190098c49 10040 127.0.0.1 10041 
+May 25 16:44:09.739 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 0 1 udp-29254fa3-63b6-4ebf-9ca6-50e190098c49 
+May 25 16:44:09.751 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 16:44:09.809 HYPERVISOR: exec_cmd: nio create_udp udp-bdf3b3d3-0791-4a2a-b7aa-b9fb7b9c1ef3 10046 127.0.0.1 10047 
+May 25 16:44:09.817 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 1 0 udp-bdf3b3d3-0791-4a2a-b7aa-b9fb7b9c1ef3 
+May 25 16:44:09.828 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 16:58:36.947 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 16:58:36.949 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ISP1_PT_R1 0 1 
+May 25 16:58:36.951 HYPERVISOR: exec_cmd: nio delete udp-29254fa3-63b6-4ebf-9ca6-50e190098c49 
+May 25 16:58:40.834 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 16:58:40.836 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ISP1_PT_R1 0 0 
+May 25 16:58:40.838 HYPERVISOR: exec_cmd: nio delete udp-253caf14-b357-49dc-bc5c-3069872569e2 
+May 25 16:59:07.393 HYPERVISOR: exec_cmd: nio create_udp udp-a8b1f369-b8b8-46b6-9a61-fe1b6def3f61 10014 127.0.0.1 10015 
+May 25 16:59:07.399 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 0 0 udp-a8b1f369-b8b8-46b6-9a61-fe1b6def3f61 
+May 25 16:59:07.400 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 16:59:21.584 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 16:59:21.585 HYPERVISOR: exec_cmd: vm slot_add_binding ISP1_PT_R1 2 0 NM-1FE-TX 
+May 25 16:59:26.937 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 16:59:26.942 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ISP1_PT_R1 1 0 
+May 25 16:59:26.943 HYPERVISOR: exec_cmd: nio delete udp-bdf3b3d3-0791-4a2a-b7aa-b9fb7b9c1ef3 
+May 25 16:59:39.428 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 16:59:39.433 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ISP1_PT_R1 0 0 
+May 25 16:59:39.435 HYPERVISOR: exec_cmd: nio delete udp-a8b1f369-b8b8-46b6-9a61-fe1b6def3f61 
+May 25 16:59:46.107 HYPERVISOR: exec_cmd: nio create_udp udp-2fa9c75a-cc17-4706-8fd0-8175ab4d1383 10014 127.0.0.1 10015 
+May 25 16:59:46.118 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 1 0 udp-2fa9c75a-cc17-4706-8fd0-8175ab4d1383 
+May 25 16:59:46.120 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 16:59:49.231 HYPERVISOR: exec_cmd: nio create_udp udp-ca9c0b52-f9fa-4455-a258-75a32ecbf2b4 10016 127.0.0.1 10017 
+May 25 16:59:49.237 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 2 0 udp-ca9c0b52-f9fa-4455-a258-75a32ecbf2b4 
+May 25 16:59:49.238 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 17:00:41.505 HYPERVISOR: exec_cmd: nio create_udp udp-f26a7365-973e-46d0-af4d-ac764ad00f6d 10020 127.0.0.1 10021 
+May 25 17:00:41.511 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 0 0 udp-f26a7365-973e-46d0-af4d-ac764ad00f6d 
+May 25 17:00:41.512 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 17:00:47.168 HYPERVISOR: exec_cmd: nio create_udp udp-396533a4-1803-4ce5-8178-327f21cf401a 10022 127.0.0.1 10023 
+May 25 17:00:47.180 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 0 1 udp-396533a4-1803-4ce5-8178-327f21cf401a 
+May 25 17:00:47.182 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 17:08:52.677 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
+May 25 17:12:30.402 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
+May 25 17:20:17.267 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
+May 25 17:51:56.553 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
+May 25 17:52:02.320 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+May 25 17:52:02.336 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
+May 25 17:52:02.361 HYPERVISOR: exec_cmd: vm delete ISP1_PT_R1 
+May 25 17:52:02.361 VM: VM ISP1_PT_R1 destroyed.
+May 25 17:52:02.380 HYPERVISOR: exec_cmd: hypervisor stop 
+May 25 17:52:02.755 HYPERVISOR: Stopped.
+May 25 17:52:02.755 GENERAL: reset done.
