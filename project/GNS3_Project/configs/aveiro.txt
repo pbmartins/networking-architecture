@@ -386,25 +386,42 @@ conf t
 ip routing
 ipv6 unicast-routing
 router ospf 1
+redistribute ospf 10 subnets
+router ospf 10
 ipv6 router ospf 1
 
 # OldBuilding A
 interface f0/0
 ip add 10.17.3.5 255.255.255.252
-ipv6 enable
-ipv6 add 2002:A:A:2103:2::1/80
-ip ospf 1 area 0
-ipv6 ospf 1 area 0
+ip ospf 10 area 0
 no shut
 
 # OldBuilding B
 interface f0/1
 ip add 10.17.3.9 255.255.255.252
+ip ospf 10 area 0
+no shut
+
+# Datacenter A
+interface f1/13
+no switchport
+ip add 10.17.3.57 255.255.255.252
 ipv6 enable
-ipv6 add 2002:A:A:2103:3::1/80
+ipv6 add 2002:A:A:2103:15::1/80
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
+
+# Datacenter B
+interface f1/14
+no switchport
+ip add 10.17.3.61 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:16::1/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
 
 # Core
 interface f1/15
@@ -416,7 +433,29 @@ ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
 
-interface range f1/0 - 10
+# ISP-PT 1
+interface f1/0
+no switchport
+ip add 10.17.3.33 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:9::1/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# ISP-PT 2
+interface f1/0
+no switchport
+ip add 10.17.3.37 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:11::1/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+
+
+interface range f1/2 - 10
 switchport mode trunk
 switchport trunk encapsulation dot1q
 switchport trunk allowed vlan 1,1002-1005,1100,1101,1290
@@ -474,22 +513,38 @@ conf t
 ip routing
 ipv6 unicast-routing
 router ospf 1
+redistribute ospf 10 subnets
+router ospf 10
 ipv6 router ospf 1
 
 # OldBuilding A
 interface f0/0
 ip add 10.17.3.13 255.255.255.252
-ipv6 enable
-ipv6 add 2002:A:A:2103:4::1/80
-ip ospf 1 area 0
-ipv6 ospf 1 area 0
+ip ospf 10 area 0
 no shut
 
 # OldBuilding B
 interface f0/1
 ip add 10.17.3.17 255.255.255.252
+ip ospf 10 area 0
+no shut
+
+# Datacenter A
+interface f1/13
+no switchport
+ip add 10.17.3.65 255.255.255.252
 ipv6 enable
-ipv6 add 2002:A:A:2103:5::1/80
+ipv6 add 2002:A:A:2103:17::1/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# Datacenter B
+interface f1/14
+no switchport
+ip add 10.17.3.68 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:18::1/80
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
@@ -503,6 +558,27 @@ ipv6 add 2002:A:A:2103:1::2/80
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
+
+# ISP-PT 1
+interface f1/0
+no switchport
+ip add 10.17.3.41 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:11::1/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# ISP-PT 2
+interface f1/0
+no switchport
+ip add 10.17.3.45 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:12::1/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
 
 
 interface range f1/0 - 10
@@ -545,6 +621,181 @@ ipv6 add 2002:A:A:2248::5/64
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
+no shut
+
+
+###############################################################
+Aveiro_ISP1_PT
+###############################################################
+conf t
+ip routing
+ipv6 unicast-routing
+router ospf 1
+default-information originate always metric 5
+ipv6 router ospf 1
+ip route 200.1.1.128 255.255.255.128 100.0.0.3
+ip route 200.1.1.128 255.255.255.128 100.0.0.4
+ipv6 route 2002:B:B::/64 2001:0:0:0::3
+ipv6 route 2002:B:B::/64 2001:0:0:0::4
+
+# NAT
+access-list 1 permit 10.0.0.0 0.255.255.255
+ip nat POOLR 200.1.0.129 200.1.0.254 netmask 255.255.255.192
+ip nat Stateful id 1
+backup 10.17.3.49
+peer 10.17.3.50
+mapping-id 10
+ip nat inside source list 1 pool POOLR mapping-id 10 overload
+
+
+# Core A
+interface f0/0
+ip add 10.17.3.34 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:9::2/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# Core B
+interface f0/1
+ip add 10.17.3.42 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:11::2/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# ISP_2
+interface f1/0
+ip add 10.17.3.49 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:13::1/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# Internet
+interface f2/0
+ip add 100.0.0.1 255.255.255.0
+ipv6 enable
+ipv6 add 2001:0:0:0::1/64
+no shut
+
+###############################################################
+Aveiro_ISP2_PT
+###############################################################
+conf t
+ip routing
+ipv6 unicast-routing
+router ospf 1
+default-information originate always metric 10
+ipv6 router ospf 1
+ip route 200.1.1.128 255.255.255.128 100.0.0.3
+ip route 200.1.1.128 255.255.255.128 100.0.0.4
+ipv6 route 2002:B:B::/64 2001:0:0:0::3
+ipv6 route 2002:B:B::/64 2001:0:0:0::4
+
+# NAT
+access-list 1 permit 10.0.0.0 0.255.255.255
+ip nat POOLR 200.1.0.129 200.1.0.254 netmask 255.255.255.192
+ip nat Stateful id 2
+backup 10.17.3.50
+peer 10.17.3.49
+mapping-id 10
+ip nat inside source list 1 pool POOLR mapping-id 10 overload
+
+# Core A
+interface f0/0
+ip add 10.17.3.38 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:10::2/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# Core B
+interface f0/1
+ip add 10.17.3.46 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:12::2/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# ISP_1
+interface f1/0
+ip add 10.17.3.50 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:13::2/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# Internet
+interface f2/0
+ip add 100.0.0.2 255.255.255.0
+ipv6 enable
+ipv6 add 2001:0:0:0::2/64
+no shut
+
+
+###############################################################
+Aveiro_Datacenter_A
+###############################################################
+conf t
+ip routing
+ipv6 unicast-routing
+router ospf 1
+ipv6 router ospf 1
+
+# Core A
+interface f1/13
+no switchport
+ip add 10.17.3.58 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:15::2/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# Core B
+interface f1/14
+no switchport
+ip add 10.17.3.66 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:17::2/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+###############################################################
+Aveiro_Datacenter_B
+###############################################################
+conf t
+ip routing
+ipv6 unicast-routing
+router ospf 1
+ipv6 router ospf 1
+
+# Core A
+interface f1/13
+no switchport
+ip add 10.17.3.62 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:16::2/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# Core B
+interface f1/14
+no switchport
+ip add 10.17.3.69 255.255.255.252
+ipv6 enable
+ipv6 add 2002:A:A:2103:18::2/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
 no shut
 
 

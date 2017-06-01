@@ -1,0 +1,96 @@
+###############################################################
+Chicago_ISP1_R1
+###############################################################
+conf t
+ip routing
+ipv6 unicast-routing
+router ospf 1
+default-information originate always metric 5
+ipv6 router ospf 1
+ip route 200.1.0.0 255.255.255.0 100.0.0.1
+ip route 200.1.0.0 255.255.255.0 100.0.0.2
+ipv6 route 2002:A:A::/64 2001:0:0:0::1
+ipv6 route 2002:A:A::/64 2001:0:0:0::2
+
+# NAT
+access-list 1 permit 10.0.0.0 0.255.255.255
+ip nat POOLR 200.1.1.129 200.1.1.254 netmask 255.255.255.192
+ip nat Stateful id 1
+backup 10.0.1.1
+peer 10.0.1.2
+mapping-id 10
+ip nat inside source list 1 pool POOLR mapping-id 10 overload
+
+# Core
+interface f0/0
+ip add 200.1.1.129 255.255.255.192
+ipv6 enable
+ipv6 add 2001:B:B::1/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# ISP_2
+interface f1/0
+ip add 10.0.1.1 255.255.255.252
+ipv6 enable
+ipv6 add 2002:B:B:0:1::1/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# Internet
+interface f2/0
+ip add 100.0.0.3 255.255.255.0
+ipv6 enable
+ipv6 add 2001:0:0:0::3/64
+no shut
+
+###############################################################
+Chicago_ISP2_R1
+###############################################################
+conf t
+ip routing
+ipv6 unicast-routing
+router ospf 1
+default-information originate always metric 10
+ipv6 router ospf 1
+ip route 200.1.0.0 255.255.255.0 100.0.0.1
+ip route 200.1.0.0 255.255.255.0 100.0.0.2
+ipv6 route 2002:A:A::/64 2001:0:0:0::1
+ipv6 route 2002:A:A::/64 2001:0:0:0::2
+
+# NAT
+access-list 1 permit 10.0.0.0 0.255.255.255
+ip nat POOLR 200.1.1.129 200.1.1.254 netmask 255.255.255.192
+ip nat Stateful id 1
+backup 10.0.1.2
+peer 10.0.1.1
+mapping-id 10
+ip nat inside source list 1 pool POOLR mapping-id 10 overload
+
+
+# Core
+interface f0/0
+ip add 200.1.1.130 255.255.255.192
+ipv6 enable
+ipv6 add 2001:B:B::2/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# ISP_1
+interface f1/0
+ip add 10.0.1.2 255.255.255.252
+ipv6 enable
+ipv6 add 2002:B:B:0:1::2/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# Internet
+interface f2/0
+ip add 100.0.0.4 255.255.255.0
+ipv6 enable
+ipv6 add 2001:0:0:0::4/64
+no shut
