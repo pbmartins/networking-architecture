@@ -1,14 +1,14 @@
-Mar 30 17:04:04.057 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Mar 30 17:04:04.057 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50606.
-Mar 30 17:04:04.109 HYPERVISOR: exec_cmd: hypervisor version 
-Mar 30 17:04:04.114 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_04/ex03/project-files/dynamips 
-Mar 30 17:04:04.114 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_04/ex03/project-files/dynamips
-Mar 30 17:04:04.121 HYPERVISOR: exec_cmd: nio_bridge create HUB1 
-Mar 30 17:04:04.471 HYPERVISOR: exec_cmd: nio create_udp udp-0baaf9d9-91c3-4239-ac85-4f763017d5c8 10001 127.0.0.1 10002 
-Mar 30 17:04:04.486 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB1 udp-0baaf9d9-91c3-4239-ac85-4f763017d5c8 
-Mar 30 17:04:04.515 HYPERVISOR: exec_cmd: nio create_udp udp-065fca91-3e40-4bfd-912d-a121566ffc0c 10000 127.0.0.1 10004 
-Mar 30 17:04:04.528 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB1 udp-065fca91-3e40-4bfd-912d-a121566ffc0c 
-Mar 30 17:36:35.526 HYPERVISOR: exec_cmd: nio_bridge delete HUB1 
-Mar 30 17:36:35.568 HYPERVISOR: exec_cmd: hypervisor stop 
-Mar 30 17:36:35.571 HYPERVISOR: Stopped.
-Mar 30 17:36:35.571 GENERAL: reset done.
+Jun 07 00:42:53.149 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 07 00:42:53.150 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 62028.
+Jun 07 00:42:53.180 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 07 00:42:53.184 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_04/ex03/project-files/dynamips 
+Jun 07 00:42:53.184 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_04/ex03/project-files/dynamips
+Jun 07 00:42:53.189 HYPERVISOR: exec_cmd: nio_bridge create HUB2 
+Jun 07 00:42:53.479 HYPERVISOR: exec_cmd: nio create_udp udp-e1c1bcd3-75f4-4a41-be2e-61df4b593b87 10005 127.0.0.1 10004 
+Jun 07 00:42:53.495 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB2 udp-e1c1bcd3-75f4-4a41-be2e-61df4b593b87 
+Jun 07 00:42:53.512 HYPERVISOR: exec_cmd: nio create_udp udp-7836c17e-8ead-4495-af38-58dde21b04a1 10006 127.0.0.1 10007 
+Jun 07 00:42:53.522 HYPERVISOR: exec_cmd: nio_bridge add_nio HUB2 udp-7836c17e-8ead-4495-af38-58dde21b04a1 
+Jun 07 01:11:50.743 HYPERVISOR: exec_cmd: nio_bridge delete HUB2 
+Jun 07 01:11:50.776 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 07 01:11:51.272 HYPERVISOR: Stopped.
+Jun 07 01:11:51.272 GENERAL: reset done.
