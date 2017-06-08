@@ -1,51 +1,19 @@
-Jun 01 16:15:49.690 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 01 16:15:49.690 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57184.
-Jun 01 16:15:49.707 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 01 16:15:49.707 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 01 16:15:49.708 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 01 16:15:49.708 HYPERVISOR: exec_cmd: vm create R1 15 c3745 
-Jun 01 16:15:49.709 VM: VM R1 created.
-Jun 01 16:15:49.709 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5012 
-Jun 01 16:15:49.710 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
-Jun 01 16:15:49.711 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
-Jun 01 16:15:49.712 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
-Jun 01 16:15:49.713 HYPERVISOR: exec_cmd: vm set_ram R1 256 
-Jun 01 16:15:49.714 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/pedromartins/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
-Jun 01 16:15:49.715 HYPERVISOR: exec_cmd: vm get_status R1 
-Jun 01 16:15:49.715 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60b22838 
-Jun 01 16:15:49.717 HYPERVISOR: exec_cmd: vm set_config R1 configs/i15_startup-config.cfg 
-Jun 01 16:16:04.375 HYPERVISOR: exec_cmd: vm rename R1 ISP_USA_R1 
-Jun 01 16:16:33.741 HYPERVISOR: exec_cmd: nio create_udp udp-94030b30-3609-4621-bd79-085127454d3f 10093 127.0.0.1 10092 
-Jun 01 16:16:33.743 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP_USA_R1 0 0 udp-94030b30-3609-4621-bd79-085127454d3f 
-Jun 01 16:16:33.744 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R1 
-Jun 01 16:16:37.910 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R1 
-Jun 01 16:16:37.911 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ISP_USA_R1 0 0 
-Jun 01 16:16:37.912 HYPERVISOR: exec_cmd: nio delete udp-94030b30-3609-4621-bd79-085127454d3f 
-Jun 01 16:16:44.974 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R1 
-Jun 01 16:16:44.975 HYPERVISOR: exec_cmd: vm slot_add_binding ISP_USA_R1 1 0 NM-1FE-TX 
-Jun 01 16:16:59.678 HYPERVISOR: exec_cmd: nio create_udp udp-df601563-0ee6-460b-ad48-1f9592c055b0 10093 127.0.0.1 10092 
-Jun 01 16:16:59.679 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP_USA_R1 1 0 udp-df601563-0ee6-460b-ad48-1f9592c055b0 
-Jun 01 16:16:59.680 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R1 
-Jun 01 16:17:34.064 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R1 
-Jun 01 16:17:34.065 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ISP_USA_R1 1 0 
-Jun 01 16:17:34.066 HYPERVISOR: exec_cmd: nio delete udp-df601563-0ee6-460b-ad48-1f9592c055b0 
-Jun 01 16:17:41.702 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R1 
-Jun 01 16:17:41.703 HYPERVISOR: exec_cmd: vm slot_add_binding ISP_USA_R1 2 0 NM-1FE-TX 
-Jun 01 16:17:53.322 HYPERVISOR: exec_cmd: nio create_udp udp-cffda41f-9acc-4bd8-8772-c26484df141b 10093 127.0.0.1 10092 
-Jun 01 16:17:53.324 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP_USA_R1 2 0 udp-cffda41f-9acc-4bd8-8772-c26484df141b 
-Jun 01 16:17:53.325 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R1 
-Jun 01 16:18:26.994 HYPERVISOR: exec_cmd: nio create_udp udp-642b3237-aa50-4a73-8d95-6d61a2b813e6 10097 127.0.0.1 10096 
-Jun 01 16:18:27.001 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP_USA_R1 0 0 udp-642b3237-aa50-4a73-8d95-6d61a2b813e6 
-Jun 01 16:18:27.003 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R1 
-Jun 01 16:18:35.510 HYPERVISOR: exec_cmd: nio create_udp udp-32ff3d95-807b-4048-9728-7a2aa6d828e3 10101 127.0.0.1 10100 
-Jun 01 16:18:35.512 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP_USA_R1 1 0 udp-32ff3d95-807b-4048-9728-7a2aa6d828e3 
-Jun 01 16:18:35.515 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R1 
-Jun 01 16:21:08.973 HYPERVISOR: exec_cmd: vm rename ISP_USA_R1 ISP1_USA_R1 
-Jun 01 18:28:24.541 HYPERVISOR: exec_cmd: vm extract_config ISP1_USA_R1 
-Jun 01 18:28:26.868 HYPERVISOR: exec_cmd: vm get_status ISP1_USA_R1 
-Jun 01 18:28:26.881 HYPERVISOR: exec_cmd: vm extract_config ISP1_USA_R1 
-Jun 01 18:28:26.897 HYPERVISOR: exec_cmd: vm delete ISP1_USA_R1 
-Jun 01 18:28:26.899 VM: VM ISP1_USA_R1 destroyed.
-Jun 01 18:28:26.917 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 01 18:28:27.245 HYPERVISOR: Stopped.
-Jun 01 18:28:27.245 GENERAL: reset done.
+Jun 08 16:42:25.839 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 08 16:42:25.840 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 65290.
+Jun 08 16:42:25.878 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 08 16:42:25.888 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 08 16:42:25.888 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 08 16:42:25.899 HYPERVISOR: exec_cmd: ethsw create SW2 
+Jun 08 16:42:27.459 HYPERVISOR: exec_cmd: nio create_udp udp-bf7262c2-3631-48c3-ac32-80675242a24a 10093 127.0.0.1 10092 
+Jun 08 16:42:27.470 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-bf7262c2-3631-48c3-ac32-80675242a24a 
+Jun 08 16:42:27.495 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-bf7262c2-3631-48c3-ac32-80675242a24a 1 
+Jun 08 16:42:27.514 HYPERVISOR: exec_cmd: nio create_udp udp-7538e26b-b4be-4cfb-8362-419a740b5932 10096 127.0.0.1 10097 
+Jun 08 16:42:27.549 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-7538e26b-b4be-4cfb-8362-419a740b5932 
+Jun 08 16:42:27.554 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-7538e26b-b4be-4cfb-8362-419a740b5932 1 
+Jun 08 16:42:27.580 HYPERVISOR: exec_cmd: nio create_udp udp-4dcda36c-304c-4f08-9ec2-536c44ab3c7d 10101 127.0.0.1 10100 
+Jun 08 16:42:27.589 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-4dcda36c-304c-4f08-9ec2-536c44ab3c7d 
+Jun 08 16:42:27.595 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-4dcda36c-304c-4f08-9ec2-536c44ab3c7d 1 
+Jun 08 23:21:14.784 HYPERVISOR: exec_cmd: ethsw delete SW2 
+Jun 08 23:21:14.855 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 08 23:21:15.073 HYPERVISOR: Stopped.
+Jun 08 23:21:15.073 GENERAL: reset done.

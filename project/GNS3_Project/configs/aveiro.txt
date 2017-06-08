@@ -86,7 +86,9 @@ ip add 10.18.72.253 255.255.255.0
 ipv6 enable
 ipv6 add 2002:A:A:2248::/64
 ip ospf 1 area 0
+ip ospf passive-interface
 ipv6 ospf 1 area 0
+ipv6 ospf passive-interface
 no autostate
 no shut
 
@@ -179,7 +181,9 @@ ip add 10.18.72.254 255.255.255.0
 ipv6 enable
 ipv6 add 2002:A:A:2248::1/64
 ip ospf 1 area 0
+ip ospf passive-interface
 ipv6 ospf 1 area 0
+ipv6 ospf passive-interface
 no autostate
 no shut
 
@@ -273,7 +277,9 @@ ip add 10.18.72.252 255.255.255.0
 ipv6 enable
 ipv6 add 2002:A:A:2248::2/64
 ip ospf 1 area 0
+ip ospf passive-interface
 ipv6 ospf 1 area 0
+ipv6 ospf passive-interface
 no autostate
 no shut
 
@@ -367,7 +373,9 @@ ip add 10.18.72.251 255.255.255.0
 ipv6 enable
 ipv6 add 2002:A:A:2248::3/64
 ip ospf 1 area 0
+ip ospf passive-interface
 ipv6 ospf 1 area 0
+ipv6 ospf passive-interface
 no autostate
 no shut
 
@@ -493,7 +501,9 @@ ip add 10.18.72.250 255.255.255.0
 ipv6 enable
 ipv6 add 2002:A:A:2248::4/64
 ip ospf 1 area 0
+ip ospf passive-interface
 ipv6 ospf 1 area 0
+ipv6 ospf passive-interface
 no autostate
 no shut
 
@@ -619,7 +629,9 @@ ip add 10.18.72.249 255.255.255.0
 ipv6 enable
 ipv6 add 2002:A:A:2248::5/64
 ip ospf 1 area 0
+ip ospf passive-interface
 ipv6 ospf 1 area 0
+ipv6 ospf passive-interface
 no autostate
 no shut
 
@@ -798,4 +810,51 @@ ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
 
+###############################################################
+Aveiro_Datacenter_Terminal
+###############################################################
+# Precisa de IP privado?
+ip 200.1.0.1/25 200.1.0.127
+ipv6 2002:A:A:1::1/64 2002:A:A:1::/64
 
+
+
+###############################################################
+Aveiro_E0_MonTerminal
+###############################################################
+ip 10.23.64.1/24 10.23.64.253
+ipv6 2002:A:A:2740::10/64 2002:A:A:2740::
+
+###############################################################
+Aveiro_E0_MonVC
+###############################################################
+ip 10.20.64.1/24 10.20.64.253
+#ip 200.1.0.193/28 10.20.64.1/24 10.20.64.253
+ipv6 2002:A:A:2408::10/64 2002:A:A:2408::
+
+###############################################################
+Aveiro_WLAN1_1
+###############################################################
+ip 10.18.72.1/24 10.18.72.253
+ipv6 2002:A:A:2248::10/64 2002:A:A:2248::/64
+
+
+
+###############################################################
+Aveiro_E1_MonTerminal
+###############################################################
+ip 10.23.65.1/24 10.23.65.253
+ipv6 2002:A:A:2741::10/64 2002:A:A:2741::
+
+###############################################################
+Aveiro_E1_MonVC
+###############################################################
+ip 10.20.65.1/24 10.20.65.253
+#ip 200.1.0.194/28 10.20.64.1/24 10.20.64.253
+ipv6 2002:A:A:2409::10/64 2002:A:A:2409::
+
+###############################################################
+Aveiro_WLAN1_2
+###############################################################
+ip 10.18.72.2/24 10.18.72.253
+ipv6 2002:A:A:2248::11/64 2002:A:A:2248::/64

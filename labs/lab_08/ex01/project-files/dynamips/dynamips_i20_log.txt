@@ -1,0 +1,51 @@
+Jun 08 00:48:58.707 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 08 00:48:58.707 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55488.
+Jun 08 00:48:58.725 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 08 00:48:58.727 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_08/ex01/project-files/dynamips 
+Jun 08 00:48:58.727 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_08/ex01/project-files/dynamips
+Jun 08 00:48:58.728 HYPERVISOR: exec_cmd: vm create R3 3 c3745 
+Jun 08 00:48:58.729 VM: VM R3 created.
+Jun 08 00:48:58.730 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+Jun 08 00:48:58.731 HYPERVISOR: exec_cmd: c3745 get_mac_addr R3 
+Jun 08 00:48:58.733 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Jun 08 00:48:58.735 HYPERVISOR: exec_cmd: vm set_ram R3 256 
+Jun 08 00:48:58.739 HYPERVISOR: exec_cmd: vm set_ios R3 /Users/pedromartins/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 08 00:48:58.740 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Jun 08 00:48:58.742 HYPERVISOR: exec_cmd: c3745 set_mac_addr R3 c403.39c4.0000 
+Jun 08 00:48:58.743 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 08 00:48:58.745 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60b22838 
+Jun 08 00:48:58.752 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Jun 08 00:48:58.806 HYPERVISOR: exec_cmd: nio create_udp udp-f84f2585-4489-49c0-991a-e7c9f3a212fa 10005 127.0.0.1 10004 
+Jun 08 00:48:58.811 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-f84f2585-4489-49c0-991a-e7c9f3a212fa 
+Jun 08 00:48:58.815 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 08 00:48:58.848 HYPERVISOR: exec_cmd: nio create_udp udp-448df65f-838d-445b-b9c3-e7542e0621d7 10006 127.0.0.1 10007 
+Jun 08 00:48:58.861 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-448df65f-838d-445b-b9c3-e7542e0621d7 
+Jun 08 00:48:58.863 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 08 00:50:13.698 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jun 08 00:50:13.698 VM: VM Ghost created.
+Jun 08 00:50:13.704 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/pedromartins/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 08 00:50:13.708 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 08 00:50:13.711 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
+Jun 08 00:50:13.726 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jun 08 00:50:13.737 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 08 00:50:13.741 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 08 00:50:14.107 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 08 00:50:14.109 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 08 00:50:14.534 VM: VM Ghost shutdown.
+Jun 08 00:50:14.536 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 08 00:50:14.536 VM: VM Ghost destroyed.
+Jun 08 00:50:14.546 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Jun 08 00:50:14.547 HYPERVISOR: exec_cmd: vm set_ghost_file R3 c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
+Jun 08 00:50:14.549 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 08 00:50:14.550 HYPERVISOR: exec_cmd: vm start R3 
+Jun 08 01:28:28.182 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 08 01:28:28.187 HYPERVISOR: exec_cmd: vm stop R3 
+Jun 08 01:28:28.291 VM: VM R3 shutdown.
+Jun 08 01:28:28.304 HYPERVISOR: exec_cmd: vm extract_config R3 
+Jun 08 01:28:30.356 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 08 01:28:30.358 HYPERVISOR: exec_cmd: vm extract_config R3 
+Jun 08 01:28:30.364 HYPERVISOR: exec_cmd: vm delete R3 
+Jun 08 01:28:30.364 VM: VM R3 destroyed.
+Jun 08 01:28:30.371 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 08 01:28:30.399 HYPERVISOR: Stopped.
+Jun 08 01:28:30.399 GENERAL: reset done.

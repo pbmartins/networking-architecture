@@ -1,13 +1,13 @@
-May 04 15:22:48.582 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-May 04 15:22:48.583 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51253.
-May 04 15:22:48.599 HYPERVISOR: exec_cmd: hypervisor version 
-May 04 15:22:48.600 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_06/ex01/project-files/dynamips 
-May 04 15:22:48.600 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_06/ex01/project-files/dynamips
-May 04 15:22:48.601 HYPERVISOR: exec_cmd: ethsw create SW3 
-May 04 15:24:30.544 HYPERVISOR: exec_cmd: nio create_udp udp-b51481c2-958c-474a-87ea-9c5f00a61b17 10013 127.0.0.1 10012 
-May 04 15:24:30.546 HYPERVISOR: exec_cmd: ethsw add_nio SW3 udp-b51481c2-958c-474a-87ea-9c5f00a61b17 
-May 04 15:24:30.563 HYPERVISOR: exec_cmd: ethsw set_access_port SW3 udp-b51481c2-958c-474a-87ea-9c5f00a61b17 1 
-May 04 16:27:41.262 HYPERVISOR: exec_cmd: ethsw delete SW3 
-May 04 16:27:41.269 HYPERVISOR: exec_cmd: hypervisor stop 
-May 04 16:27:41.671 HYPERVISOR: Stopped.
-May 04 16:27:41.671 GENERAL: reset done.
+Jun 07 22:49:06.421 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 07 22:49:06.422 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52319.
+Jun 07 22:49:06.471 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 07 22:49:06.481 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_06/ex01/project-files/dynamips 
+Jun 07 22:49:06.481 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_06/ex01/project-files/dynamips
+Jun 07 22:49:06.492 HYPERVISOR: exec_cmd: ethsw create SW3 
+Jun 07 22:49:06.763 HYPERVISOR: exec_cmd: nio create_udp udp-1a47816b-e51d-4c44-b2fb-0c13aae4a4fc 10009 127.0.0.1 10008 
+Jun 07 22:49:06.770 HYPERVISOR: exec_cmd: ethsw add_nio SW3 udp-1a47816b-e51d-4c44-b2fb-0c13aae4a4fc 
+Jun 07 22:49:06.781 HYPERVISOR: exec_cmd: ethsw set_access_port SW3 udp-1a47816b-e51d-4c44-b2fb-0c13aae4a4fc 1 
+Jun 07 23:03:01.624 HYPERVISOR: exec_cmd: ethsw delete SW3 
+Jun 07 23:03:01.636 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 07 23:03:01.651 HYPERVISOR: Stopped.
+Jun 07 23:03:01.651 GENERAL: reset done.
