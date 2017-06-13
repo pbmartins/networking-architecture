@@ -1,0 +1,19 @@
+Jun 13 12:17:36.376 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 13 12:17:36.377 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53292.
+Jun 13 12:17:36.464 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 12:17:36.471 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 13 12:17:36.471 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 13 12:17:36.475 HYPERVISOR: exec_cmd: ethsw create SW_Datacenter 
+Jun 13 12:17:38.066 HYPERVISOR: exec_cmd: nio create_udp udp-358f0cf1-2639-45b1-9bd0-6a6a71f603cb 10078 127.0.0.1 10079 
+Jun 13 12:17:38.085 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-358f0cf1-2639-45b1-9bd0-6a6a71f603cb 
+Jun 13 12:17:38.121 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-358f0cf1-2639-45b1-9bd0-6a6a71f603cb 1 
+Jun 13 12:17:38.160 HYPERVISOR: exec_cmd: nio create_udp udp-8d48052e-833b-417e-874e-357d13e527f6 10085 127.0.0.1 10084 
+Jun 13 12:17:38.180 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-8d48052e-833b-417e-874e-357d13e527f6 
+Jun 13 12:17:38.204 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-8d48052e-833b-417e-874e-357d13e527f6 1 
+Jun 13 12:17:38.276 HYPERVISOR: exec_cmd: nio create_udp udp-5bd0a451-0e1d-400e-aa22-3edc22c4aa36 10093 127.0.0.1 10092 
+Jun 13 12:17:38.296 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-5bd0a451-0e1d-400e-aa22-3edc22c4aa36 
+Jun 13 12:17:38.312 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-5bd0a451-0e1d-400e-aa22-3edc22c4aa36 1 
+Jun 13 13:36:12.167 HYPERVISOR: exec_cmd: ethsw delete SW_Datacenter 
+Jun 13 13:36:12.228 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 13:36:12.604 HYPERVISOR: Stopped.
+Jun 13 13:36:12.604 GENERAL: reset done.

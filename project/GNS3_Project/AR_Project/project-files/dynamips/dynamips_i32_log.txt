@@ -1,39 +1,39 @@
-May 23 17:40:32.579 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-May 23 17:40:32.579 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50011.
-May 23 17:40:32.598 HYPERVISOR: exec_cmd: hypervisor version 
-May 23 17:40:32.599 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-May 23 17:40:32.599 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-May 23 17:40:32.600 HYPERVISOR: exec_cmd: vm create ESW1 14 c3725 
-May 23 17:40:32.601 VM: VM ESW1 created.
-May 23 17:40:32.601 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5014 
-May 23 17:40:32.602 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
-May 23 17:40:32.603 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 23 17:40:32.604 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
-May 23 17:40:32.605 HYPERVISOR: exec_cmd: vm set_ram ESW1 256 
-May 23 17:40:32.606 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 23 17:40:32.608 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60a6a3b8 
-May 23 17:40:32.609 HYPERVISOR: exec_cmd: vm set_ios ESW1 /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-May 23 17:40:32.611 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
-May 23 17:40:32.612 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
-May 23 17:40:32.616 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i14_startup-config.cfg 
-May 23 17:40:39.882 HYPERVISOR: exec_cmd: vm rename ESW1 Aveiro_E2_Dist_B 
-May 23 17:41:06.749 HYPERVISOR: exec_cmd: nio create_udp udp-f9306204-0aa0-4c7d-b6a6-a2fe2ece3e3a 10064 127.0.0.1 10065 
-May 23 17:41:06.760 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_E2_Dist_B 0 0 udp-f9306204-0aa0-4c7d-b6a6-a2fe2ece3e3a 
-May 23 17:41:06.762 HYPERVISOR: exec_cmd: vm get_status Aveiro_E2_Dist_B 
-May 23 17:41:46.406 HYPERVISOR: exec_cmd: nio create_udp udp-06a734c9-0f6c-46e0-8887-d314e1eefe14 10068 127.0.0.1 10069 
-May 23 17:41:46.412 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_E2_Dist_B 0 1 udp-06a734c9-0f6c-46e0-8887-d314e1eefe14 
-May 23 17:41:46.413 HYPERVISOR: exec_cmd: vm get_status Aveiro_E2_Dist_B 
-May 23 17:42:03.342 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E2_Dist_B 
-May 23 17:46:57.878 HYPERVISOR: exec_cmd: nio create_udp udp-11b17c21-7ef3-4847-b237-cfee1e4c00eb 10077 127.0.0.1 10076 
-May 23 17:46:57.880 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_E2_Dist_B 1 0 udp-11b17c21-7ef3-4847-b237-cfee1e4c00eb 
-May 23 17:46:57.882 HYPERVISOR: exec_cmd: vm get_status Aveiro_E2_Dist_B 
-May 23 18:01:01.288 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E2_Dist_B 
-May 23 18:30:47.558 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E2_Dist_B 
-May 23 18:50:06.865 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E2_Dist_B 
-May 23 18:50:08.968 HYPERVISOR: exec_cmd: vm get_status Aveiro_E2_Dist_B 
-May 23 18:50:08.981 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E2_Dist_B 
-May 23 18:50:08.995 HYPERVISOR: exec_cmd: vm delete Aveiro_E2_Dist_B 
-May 23 18:50:08.996 VM: VM Aveiro_E2_Dist_B destroyed.
-May 23 18:50:09.017 HYPERVISOR: exec_cmd: hypervisor stop 
-May 23 18:50:09.098 HYPERVISOR: Stopped.
-May 23 18:50:09.098 GENERAL: reset done.
+Jun 13 12:17:35.736 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 13 12:17:35.737 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53185.
+Jun 13 12:17:35.772 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 12:17:35.778 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 13 12:17:35.778 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 13 12:17:35.801 HYPERVISOR: exec_cmd: vm create OldBuilding_A 3 c3725 
+Jun 13 12:17:35.801 VM: VM OldBuilding_A created.
+Jun 13 12:17:35.812 HYPERVISOR: exec_cmd: vm set_con_tcp_port OldBuilding_A 5000 
+Jun 13 12:17:35.834 HYPERVISOR: exec_cmd: c3725 get_mac_addr OldBuilding_A 
+Jun 13 12:17:35.843 HYPERVISOR: exec_cmd: vm set_ios OldBuilding_A /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 13 12:17:35.847 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 13 12:17:35.854 HYPERVISOR: exec_cmd: vm slot_add_binding OldBuilding_A 1 0 NM-16ESW 
+Jun 13 12:17:35.858 HYPERVISOR: exec_cmd: vm set_nvram OldBuilding_A 256 
+Jun 13 12:17:35.863 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 13 12:17:35.867 HYPERVISOR: exec_cmd: vm set_idle_pc OldBuilding_A 0x60a68e70 
+Jun 13 12:17:35.871 HYPERVISOR: exec_cmd: c3725 set_mac_addr OldBuilding_A c203.1ef4.0000 
+Jun 13 12:17:35.878 HYPERVISOR: exec_cmd: vm set_disk0 OldBuilding_A 1 
+Jun 13 12:17:35.883 HYPERVISOR: exec_cmd: vm set_config OldBuilding_A configs/i3_startup-config.cfg 
+Jun 13 12:17:36.967 HYPERVISOR: exec_cmd: nio create_udp udp-f7e0c182-4730-43e4-b14c-3d33c0f73dc9 10007 127.0.0.1 10006 
+Jun 13 12:17:36.978 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OldBuilding_A 1 15 udp-f7e0c182-4730-43e4-b14c-3d33c0f73dc9 
+Jun 13 12:17:36.982 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 13 12:17:37.003 HYPERVISOR: exec_cmd: nio create_udp udp-fba454a1-1d9e-4d91-adba-3c149e4b112e 10009 127.0.0.1 10008 
+Jun 13 12:17:37.015 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OldBuilding_A 1 14 udp-fba454a1-1d9e-4d91-adba-3c149e4b112e 
+Jun 13 12:17:37.023 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 13 12:17:37.109 HYPERVISOR: exec_cmd: nio create_udp udp-17596387-4633-4eef-a8a6-2a1879638bb4 10015 127.0.0.1 10014 
+Jun 13 12:17:37.115 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OldBuilding_A 0 0 udp-17596387-4633-4eef-a8a6-2a1879638bb4 
+Jun 13 12:17:37.118 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 13 12:17:37.154 HYPERVISOR: exec_cmd: nio create_udp udp-184811f1-4333-4a6f-adc4-6ed451e39680 10018 127.0.0.1 10019 
+Jun 13 12:17:37.168 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OldBuilding_A 0 1 udp-184811f1-4333-4a6f-adc4-6ed451e39680 
+Jun 13 12:17:37.171 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 13 13:35:51.822 HYPERVISOR: exec_cmd: vm extract_config OldBuilding_A 
+Jun 13 13:35:58.493 HYPERVISOR: exec_cmd: vm extract_config OldBuilding_A 
+Jun 13 13:36:12.718 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 13 13:36:12.732 HYPERVISOR: exec_cmd: vm extract_config OldBuilding_A 
+Jun 13 13:36:12.746 HYPERVISOR: exec_cmd: vm delete OldBuilding_A 
+Jun 13 13:36:12.747 VM: VM OldBuilding_A destroyed.
+Jun 13 13:36:12.763 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 13:36:13.089 HYPERVISOR: Stopped.
+Jun 13 13:36:13.089 GENERAL: reset done.
