@@ -1,45 +1,45 @@
-Jun 13 13:36:31.824 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 13 13:36:31.825 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53749.
-Jun 13 13:36:31.914 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 13 13:36:31.928 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 13 13:36:31.928 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 13 13:36:31.955 HYPERVISOR: exec_cmd: vm create Datacenter_Aveiro_1 10 c3725 
-Jun 13 13:36:31.955 VM: VM Datacenter_Aveiro_1 created.
-Jun 13 13:36:31.959 HYPERVISOR: exec_cmd: vm set_con_tcp_port Datacenter_Aveiro_1 5008 
-Jun 13 13:36:31.963 HYPERVISOR: exec_cmd: c3725 get_mac_addr Datacenter_Aveiro_1 
-Jun 13 13:36:31.971 HYPERVISOR: exec_cmd: vm set_ram Datacenter_Aveiro_1 256 
-Jun 13 13:36:31.987 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
-Jun 13 13:36:31.993 HYPERVISOR: exec_cmd: vm set_idle_pc Datacenter_Aveiro_1 0x60a6a3b8 
-Jun 13 13:36:31.998 HYPERVISOR: exec_cmd: vm set_nvram Datacenter_Aveiro_1 256 
-Jun 13 13:36:32.000 HYPERVISOR: exec_cmd: vm set_disk0 Datacenter_Aveiro_1 1 
-Jun 13 13:36:32.005 HYPERVISOR: exec_cmd: vm set_ios Datacenter_Aveiro_1 /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Jun 13 13:36:32.011 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
-Jun 13 13:36:32.014 HYPERVISOR: exec_cmd: vm slot_add_binding Datacenter_Aveiro_1 1 0 NM-16ESW 
-Jun 13 13:36:32.019 HYPERVISOR: exec_cmd: c3725 set_mac_addr Datacenter_Aveiro_1 c20a.f6ec.0000 
-Jun 13 13:36:32.025 HYPERVISOR: exec_cmd: vm set_config Datacenter_Aveiro_1 configs/i10_startup-config.cfg 
-Jun 13 13:36:33.378 HYPERVISOR: exec_cmd: nio create_udp udp-154e2873-48f7-4ad1-b117-ce6d6331a2cb 10067 127.0.0.1 10066 
-Jun 13 13:36:33.383 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter_Aveiro_1 0 1 udp-154e2873-48f7-4ad1-b117-ce6d6331a2cb 
-Jun 13 13:36:33.408 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
-Jun 13 13:36:33.433 HYPERVISOR: exec_cmd: nio create_udp udp-0d9bd25a-3a40-4829-9066-97b507ad4bb3 10069 127.0.0.1 10068 
-Jun 13 13:36:33.450 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter_Aveiro_1 0 0 udp-0d9bd25a-3a40-4829-9066-97b507ad4bb3 
-Jun 13 13:36:33.460 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
-Jun 13 13:36:33.475 HYPERVISOR: exec_cmd: nio create_udp udp-859205e3-c2a0-4676-9819-df356b4000aa 10070 127.0.0.1 10071 
-Jun 13 13:36:33.492 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter_Aveiro_1 1 0 udp-859205e3-c2a0-4676-9819-df356b4000aa 
-Jun 13 13:36:33.509 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
-Jun 13 13:36:42.707 HYPERVISOR: exec_cmd: vm set_ghost_status Datacenter_Aveiro_1 2 
-Jun 13 13:36:42.709 HYPERVISOR: exec_cmd: vm set_ghost_file Datacenter_Aveiro_1 c3725-advipservicesk9-mz.124-21.image-256.ghost 
-Jun 13 13:36:42.711 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
-Jun 13 13:36:42.712 HYPERVISOR: exec_cmd: vm start Datacenter_Aveiro_1 
-Jun 13 13:36:48.390 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
-Jun 13 13:36:48.445 HYPERVISOR: exec_cmd: vm stop Datacenter_Aveiro_1 
-Jun 13 13:36:48.590 VM: VM Datacenter_Aveiro_1 shutdown.
-Jun 13 13:36:48.654 HYPERVISOR: exec_cmd: vm extract_config Datacenter_Aveiro_1 
-Jun 13 15:02:17.140 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
-Jun 13 15:02:17.144 HYPERVISOR: exec_cmd: vm start Datacenter_Aveiro_1 
-Jun 13 15:05:51.282 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
-Jun 13 15:05:51.283 HYPERVISOR: exec_cmd: vm stop Datacenter_Aveiro_1 
-Jun 13 15:05:51.422 VM: VM Datacenter_Aveiro_1 shutdown.
-Jun 13 15:05:51.424 HYPERVISOR: exec_cmd: vm extract_config Datacenter_Aveiro_1 
-Jun 13 15:05:57.912 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
-Jun 13 15:05:57.913 HYPERVISOR: exec_cmd: vm start Datacenter_Aveiro_1 
-Jun 13 15:49:04.807 HYPERVISOR: exec_cmd: vm extract_config Datacenter_Aveiro_1 
+Jun 13 16:19:10.302 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 13 16:19:10.302 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54094.
+Jun 13 16:19:10.428 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 16:19:10.433 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 13 16:19:10.433 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 13 16:19:10.435 HYPERVISOR: exec_cmd: vm create Datacenter_Aveiro_1 10 c3725 
+Jun 13 16:19:10.437 VM: VM Datacenter_Aveiro_1 created.
+Jun 13 16:19:10.441 HYPERVISOR: exec_cmd: vm set_con_tcp_port Datacenter_Aveiro_1 5008 
+Jun 13 16:19:10.452 HYPERVISOR: exec_cmd: c3725 get_mac_addr Datacenter_Aveiro_1 
+Jun 13 16:19:10.459 HYPERVISOR: exec_cmd: vm set_nvram Datacenter_Aveiro_1 256 
+Jun 13 16:19:10.473 HYPERVISOR: exec_cmd: vm set_ios Datacenter_Aveiro_1 /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 13 16:19:10.478 HYPERVISOR: exec_cmd: vm set_disk0 Datacenter_Aveiro_1 1 
+Jun 13 16:19:10.483 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
+Jun 13 16:19:10.486 HYPERVISOR: exec_cmd: vm set_idle_pc Datacenter_Aveiro_1 0x60a6a3b8 
+Jun 13 16:19:10.490 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
+Jun 13 16:19:10.497 HYPERVISOR: exec_cmd: vm slot_add_binding Datacenter_Aveiro_1 1 0 NM-16ESW 
+Jun 13 16:19:10.503 HYPERVISOR: exec_cmd: vm set_ram Datacenter_Aveiro_1 256 
+Jun 13 16:19:10.507 HYPERVISOR: exec_cmd: c3725 set_mac_addr Datacenter_Aveiro_1 c20a.f6ec.0000 
+Jun 13 16:19:10.513 HYPERVISOR: exec_cmd: vm set_config Datacenter_Aveiro_1 configs/i10_startup-config.cfg 
+Jun 13 16:19:11.882 HYPERVISOR: exec_cmd: nio create_udp udp-921e72b6-5e69-41e8-aebe-6356c8903a10 10067 127.0.0.1 10066 
+Jun 13 16:19:11.895 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter_Aveiro_1 0 1 udp-921e72b6-5e69-41e8-aebe-6356c8903a10 
+Jun 13 16:19:11.904 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
+Jun 13 16:19:11.928 HYPERVISOR: exec_cmd: nio create_udp udp-59680203-9f53-4443-b703-9c809af7bf65 10069 127.0.0.1 10068 
+Jun 13 16:19:11.945 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter_Aveiro_1 0 0 udp-59680203-9f53-4443-b703-9c809af7bf65 
+Jun 13 16:19:11.960 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
+Jun 13 16:19:11.979 HYPERVISOR: exec_cmd: nio create_udp udp-342dfe15-d78a-46ec-ad0d-b9d5c6fbbdcb 10070 127.0.0.1 10071 
+Jun 13 16:19:11.991 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter_Aveiro_1 1 0 udp-342dfe15-d78a-46ec-ad0d-b9d5c6fbbdcb 
+Jun 13 16:19:12.007 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
+Jun 13 16:19:17.737 HYPERVISOR: exec_cmd: vm set_ghost_status Datacenter_Aveiro_1 2 
+Jun 13 16:19:17.748 HYPERVISOR: exec_cmd: vm set_ghost_file Datacenter_Aveiro_1 c3725-advipservicesk9-mz.124-21.image-256.ghost 
+Jun 13 16:19:17.752 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
+Jun 13 16:19:17.769 HYPERVISOR: exec_cmd: vm start Datacenter_Aveiro_1 
+Jun 13 18:03:45.124 HYPERVISOR: exec_cmd: vm extract_config Datacenter_Aveiro_1 
+Jun 13 18:03:54.550 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
+Jun 13 18:03:54.554 HYPERVISOR: exec_cmd: vm stop Datacenter_Aveiro_1 
+Jun 13 18:03:54.695 VM: VM Datacenter_Aveiro_1 shutdown.
+Jun 13 18:03:54.698 HYPERVISOR: exec_cmd: vm extract_config Datacenter_Aveiro_1 
+Jun 13 18:03:58.348 HYPERVISOR: exec_cmd: vm extract_config Datacenter_Aveiro_1 
+Jun 13 18:04:00.622 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
+Jun 13 18:04:00.643 HYPERVISOR: exec_cmd: vm extract_config Datacenter_Aveiro_1 
+Jun 13 18:04:00.689 HYPERVISOR: exec_cmd: vm delete Datacenter_Aveiro_1 
+Jun 13 18:04:00.689 VM: VM Datacenter_Aveiro_1 destroyed.
+Jun 13 18:04:00.731 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 18:04:01.174 HYPERVISOR: Stopped.
+Jun 13 18:04:01.174 GENERAL: reset done.

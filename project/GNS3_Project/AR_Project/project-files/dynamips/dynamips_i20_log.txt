@@ -1,15 +1,19 @@
-Jun 13 13:36:31.989 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 13 13:36:31.989 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53758.
-Jun 13 13:36:32.036 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 13 13:36:32.047 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 13 13:36:32.047 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 13 13:36:32.073 HYPERVISOR: exec_cmd: ethsw create SW2 
-Jun 13 13:36:33.554 HYPERVISOR: exec_cmd: nio create_udp udp-183a21e4-1918-49f3-9733-0386c01f1a4e 10079 127.0.0.1 10078 
-Jun 13 13:36:33.573 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-183a21e4-1918-49f3-9733-0386c01f1a4e 
-Jun 13 13:36:33.607 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-183a21e4-1918-49f3-9733-0386c01f1a4e 1 
-Jun 13 13:36:33.626 HYPERVISOR: exec_cmd: nio create_udp udp-fe0f874f-8404-4541-9ccb-78891a6a66bb 10082 127.0.0.1 10083 
-Jun 13 13:36:33.646 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-fe0f874f-8404-4541-9ccb-78891a6a66bb 
-Jun 13 13:36:33.664 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-fe0f874f-8404-4541-9ccb-78891a6a66bb 1 
-Jun 13 13:36:33.687 HYPERVISOR: exec_cmd: nio create_udp udp-d8bb4e01-c97b-48f8-b092-ceb828b5749b 10087 127.0.0.1 10086 
-Jun 13 13:36:33.698 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-d8bb4e01-c97b-48f8-b092-ceb828b5749b 
-Jun 13 13:36:33.714 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-d8bb4e01-c97b-48f8-b092-ceb828b5749b 1 
+Jun 13 16:19:10.474 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 13 16:19:10.474 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54104.
+Jun 13 16:19:10.523 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 16:19:10.539 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 13 16:19:10.539 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 13 16:19:10.581 HYPERVISOR: exec_cmd: ethsw create SW2 
+Jun 13 16:19:12.055 HYPERVISOR: exec_cmd: nio create_udp udp-6be7b389-d631-40bb-8148-9d8fe3e776ab 10079 127.0.0.1 10078 
+Jun 13 16:19:12.067 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-6be7b389-d631-40bb-8148-9d8fe3e776ab 
+Jun 13 16:19:12.095 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-6be7b389-d631-40bb-8148-9d8fe3e776ab 1 
+Jun 13 16:19:12.119 HYPERVISOR: exec_cmd: nio create_udp udp-727930f2-44bf-4984-bd2d-34f2ec0a3177 10081 127.0.0.1 10082 
+Jun 13 16:19:12.128 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-727930f2-44bf-4984-bd2d-34f2ec0a3177 
+Jun 13 16:19:12.169 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-727930f2-44bf-4984-bd2d-34f2ec0a3177 1 
+Jun 13 16:19:12.179 HYPERVISOR: exec_cmd: nio create_udp udp-14c35ec5-27de-4725-9037-890a605d9e68 10087 127.0.0.1 10086 
+Jun 13 16:19:12.188 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-14c35ec5-27de-4725-9037-890a605d9e68 
+Jun 13 16:19:12.203 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-14c35ec5-27de-4725-9037-890a605d9e68 1 
+Jun 13 18:04:00.012 HYPERVISOR: exec_cmd: ethsw delete SW2 
+Jun 13 18:04:00.073 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 18:04:00.294 HYPERVISOR: Stopped.
+Jun 13 18:04:00.294 GENERAL: reset done.

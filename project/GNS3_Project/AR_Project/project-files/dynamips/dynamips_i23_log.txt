@@ -1,45 +1,29 @@
-Jun 01 16:15:55.299 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 01 16:15:55.300 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57187.
-Jun 01 16:15:55.317 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 01 16:15:55.318 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 01 16:15:55.318 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 01 16:15:55.319 HYPERVISOR: exec_cmd: vm create R2 16 c3745 
-Jun 01 16:15:55.319 VM: VM R2 created.
-Jun 01 16:15:55.320 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5021 
-Jun 01 16:15:55.321 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
-Jun 01 16:15:55.322 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
-Jun 01 16:15:55.323 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
-Jun 01 16:15:55.323 HYPERVISOR: exec_cmd: vm set_ram R2 256 
-Jun 01 16:15:55.324 HYPERVISOR: exec_cmd: vm set_ios R2 /Users/pedromartins/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
-Jun 01 16:15:55.325 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 01 16:15:55.326 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60b22838 
-Jun 01 16:15:55.327 HYPERVISOR: exec_cmd: vm set_config R2 configs/i16_startup-config.cfg 
-Jun 01 16:16:19.083 HYPERVISOR: exec_cmd: vm rename R2 ISP_USA_R2 
-Jun 01 16:16:50.467 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R2 
-Jun 01 16:16:50.468 HYPERVISOR: exec_cmd: vm slot_add_binding ISP_USA_R2 1 0 NM-1FE-TX 
-Jun 01 16:17:03.591 HYPERVISOR: exec_cmd: nio create_udp udp-13f3a3a5-c941-48b2-8c88-279598b999f8 10095 127.0.0.1 10094 
-Jun 01 16:17:03.596 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP_USA_R2 1 0 udp-13f3a3a5-c941-48b2-8c88-279598b999f8 
-Jun 01 16:17:03.598 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R2 
-Jun 01 16:17:32.210 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R2 
-Jun 01 16:17:32.212 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ISP_USA_R2 1 0 
-Jun 01 16:17:32.215 HYPERVISOR: exec_cmd: nio delete udp-13f3a3a5-c941-48b2-8c88-279598b999f8 
-Jun 01 16:17:47.822 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R2 
-Jun 01 16:17:47.823 HYPERVISOR: exec_cmd: vm slot_add_binding ISP_USA_R2 2 0 NM-1FE-TX 
-Jun 01 16:17:57.443 HYPERVISOR: exec_cmd: nio create_udp udp-655f13cd-a078-4833-9efe-f2e3f074d14e 10095 127.0.0.1 10094 
-Jun 01 16:17:57.445 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP_USA_R2 2 0 udp-655f13cd-a078-4833-9efe-f2e3f074d14e 
-Jun 01 16:17:57.446 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R2 
-Jun 01 16:18:30.594 HYPERVISOR: exec_cmd: nio create_udp udp-15f16147-a29f-4f59-b22e-b773f194055f 10098 127.0.0.1 10099 
-Jun 01 16:18:30.606 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP_USA_R2 0 0 udp-15f16147-a29f-4f59-b22e-b773f194055f 
-Jun 01 16:18:30.608 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R2 
-Jun 01 16:18:35.506 HYPERVISOR: exec_cmd: nio create_udp udp-61582cc3-6308-45db-b3a5-c1f8a11aa50e 10100 127.0.0.1 10101 
-Jun 01 16:18:35.512 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP_USA_R2 1 0 udp-61582cc3-6308-45db-b3a5-c1f8a11aa50e 
-Jun 01 16:18:35.513 HYPERVISOR: exec_cmd: vm get_status ISP_USA_R2 
-Jun 01 16:20:54.748 HYPERVISOR: exec_cmd: vm rename ISP_USA_R2 ISP2_USA_R1 
-Jun 01 18:28:24.482 HYPERVISOR: exec_cmd: vm extract_config ISP2_USA_R1 
-Jun 01 18:28:26.861 HYPERVISOR: exec_cmd: vm get_status ISP2_USA_R1 
-Jun 01 18:28:26.875 HYPERVISOR: exec_cmd: vm extract_config ISP2_USA_R1 
-Jun 01 18:28:26.886 HYPERVISOR: exec_cmd: vm delete ISP2_USA_R1 
-Jun 01 18:28:26.887 VM: VM ISP2_USA_R1 destroyed.
-Jun 01 18:28:26.907 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 01 18:28:27.245 HYPERVISOR: Stopped.
-Jun 01 18:28:27.245 GENERAL: reset done.
+Jun 13 17:53:49.513 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 13 17:53:49.513 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54434.
+Jun 13 17:53:49.525 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 17:53:49.525 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 13 17:53:49.526 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 13 17:53:49.526 HYPERVISOR: exec_cmd: ethsw create SW1 
+Jun 13 17:54:02.156 HYPERVISOR: exec_cmd: nio create_udp udp-9ab973fb-58ee-4a93-994d-b11edb9bf48a 10105 127.0.0.1 10104 
+Jun 13 17:54:02.161 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-9ab973fb-58ee-4a93-994d-b11edb9bf48a 
+Jun 13 17:54:02.184 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-9ab973fb-58ee-4a93-994d-b11edb9bf48a 1 
+Jun 13 17:54:10.311 HYPERVISOR: exec_cmd: nio create_udp udp-100839fa-2c83-4061-9c37-4fae5c0daf7f 10106 127.0.0.1 10107 
+Jun 13 17:54:10.319 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-100839fa-2c83-4061-9c37-4fae5c0daf7f 
+Jun 13 17:54:10.321 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-100839fa-2c83-4061-9c37-4fae5c0daf7f 1 
+Jun 13 17:55:04.145 HYPERVISOR: exec_cmd: nio create_udp udp-1520cb6b-7cc1-44aa-b82e-1e1463fc498d 10108 127.0.0.1 10109 
+Jun 13 17:55:04.156 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-1520cb6b-7cc1-44aa-b82e-1e1463fc498d 
+Jun 13 17:55:04.168 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-1520cb6b-7cc1-44aa-b82e-1e1463fc498d 1 
+Jun 13 18:00:03.183 HYPERVISOR: exec_cmd: ethsw remove_nio SW1 udp-1520cb6b-7cc1-44aa-b82e-1e1463fc498d 
+Jun 13 18:00:03.200 HYPERVISOR: exec_cmd: nio delete udp-1520cb6b-7cc1-44aa-b82e-1e1463fc498d 
+Jun 13 18:00:05.416 HYPERVISOR: exec_cmd: ethsw remove_nio SW1 udp-100839fa-2c83-4061-9c37-4fae5c0daf7f 
+Jun 13 18:00:05.427 HYPERVISOR: exec_cmd: nio delete udp-100839fa-2c83-4061-9c37-4fae5c0daf7f 
+Jun 13 18:00:18.027 HYPERVISOR: exec_cmd: nio create_udp udp-5921c62a-5c17-4e5b-a666-b79067cce57f 10106 127.0.0.1 10107 
+Jun 13 18:00:18.034 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-5921c62a-5c17-4e5b-a666-b79067cce57f 
+Jun 13 18:00:18.048 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-5921c62a-5c17-4e5b-a666-b79067cce57f 1 
+Jun 13 18:00:22.962 HYPERVISOR: exec_cmd: nio create_udp udp-c930c58d-012a-46ba-8353-cba323dbb77b 10108 127.0.0.1 10109 
+Jun 13 18:00:22.968 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-c930c58d-012a-46ba-8353-cba323dbb77b 
+Jun 13 18:00:22.971 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-c930c58d-012a-46ba-8353-cba323dbb77b 1 
+Jun 13 18:04:00.015 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Jun 13 18:04:00.078 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 18:04:00.504 HYPERVISOR: Stopped.
+Jun 13 18:04:00.504 GENERAL: reset done.

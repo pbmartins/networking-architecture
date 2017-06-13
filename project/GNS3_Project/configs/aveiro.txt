@@ -487,11 +487,21 @@ ipv6 ospf 1 area 0
 no shut
 
 # ISP-PT 2
-interface f1/0
+interface f1/1
 no switchport
 ip add 10.17.3.37 255.255.255.252
 ipv6 enable
-ipv6 add 2002:A:A:2103:11::1/80
+ipv6 add 2002:A:A:2103:10::1/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# DHCP - DNS
+interface f1/2
+no switchport
+ip add 10.17.3.81 255.255.255.248
+ipv6 enable
+ipv6 add 2002:A:A:2103:19::1/80
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
@@ -618,11 +628,21 @@ ipv6 ospf 1 area 0
 no shut
 
 # ISP-PT 2
-interface f1/0
+interface f1/1
 no switchport
 ip add 10.17.3.45 255.255.255.252
 ipv6 enable
 ipv6 add 2002:A:A:2103:12::1/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# DHCP - DNS
+interface f1/2
+no switchport
+ip add 10.17.3.82 255.255.255.248
+ipv6 enable
+ipv6 add 2002:A:A:2103:19::2/80
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
@@ -682,16 +702,17 @@ conf t
 ip routing
 ipv6 unicast-routing
 router ospf 1
-default-information originate always metric 5
+-information originate always metric 5
 ipv6 router ospf 1
+default-information originate always metric 5
 ip route 200.1.1.128 255.255.255.128 100.0.0.3
 ip route 200.1.1.128 255.255.255.128 100.0.0.4
-ipv6 route 2002:B:B::/64 2001:0:0:0::3
-ipv6 route 2002:B:B::/64 2001:0:0:0::4
+ipv6 route 2002:A:A:6000::/52 2001:0:0:0::3
+ipv6 route 2002:A:A:6000::/52 2001:0:0:0::4
 
 # NAT
 access-list 1 permit 10.0.0.0 0.255.255.255
-ip nat POOLR 200.1.0.129 200.1.0.254 netmask 255.255.255.192
+ip nat pool POOLR 200.1.0.129 200.1.0.254 netmask 255.255.255.192
 ip nat Stateful id 1
 backup 10.17.3.49
 peer 10.17.3.50
@@ -733,6 +754,9 @@ ipv6 enable
 ipv6 add 2001:0:0:0::1/64
 no shut
 
+end
+write
+
 ###############################################################
 Aveiro_ISP2_PT
 ###############################################################
@@ -742,14 +766,15 @@ ipv6 unicast-routing
 router ospf 1
 default-information originate always metric 10
 ipv6 router ospf 1
+default-information originate always metric 10
 ip route 200.1.1.128 255.255.255.128 100.0.0.3
 ip route 200.1.1.128 255.255.255.128 100.0.0.4
-ipv6 route 2002:B:B::/64 2001:0:0:0::3
-ipv6 route 2002:B:B::/64 2001:0:0:0::4
+ipv6 route 2002:A:A:6000::/52 2001:0:0:0::3
+ipv6 route 2002:A:A:6000::/52 2001:0:0:0::4
 
 # NAT
 access-list 1 permit 10.0.0.0 0.255.255.255
-ip nat POOLR 200.1.0.129 200.1.0.254 netmask 255.255.255.192
+ip nat pool POOLR 200.1.0.129 200.1.0.254 netmask 255.255.255.192
 ip nat Stateful id 2
 backup 10.17.3.50
 peer 10.17.3.49
@@ -790,6 +815,8 @@ ipv6 enable
 ipv6 add 2001:0:0:0::2/64
 no shut
 
+end
+write
 
 ###############################################################
 Aveiro_Datacenter_A

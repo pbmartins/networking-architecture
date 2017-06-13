@@ -1,0 +1,56 @@
+Jun 13 12:13:25.194 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 13 12:13:25.195 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53089.
+Jun 13 12:13:25.282 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 12:13:25.291 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02_dhcp_dns/project-files/dynamips 
+Jun 13 12:13:25.291 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/labs/lab_02_dhcp_dns/project-files/dynamips
+Jun 13 12:13:25.317 HYPERVISOR: exec_cmd: vm create ESW1 2 c3725 
+Jun 13 12:13:25.318 VM: VM ESW1 created.
+Jun 13 12:13:25.324 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5001 
+Jun 13 12:13:25.326 HYPERVISOR: exec_cmd: c3725 get_mac_addr ESW1 
+Jun 13 12:13:25.333 HYPERVISOR: exec_cmd: vm set_ios ESW1 /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 13 12:13:25.337 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 13 12:13:25.343 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Jun 13 12:13:25.349 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Jun 13 12:13:25.353 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 13 12:13:25.356 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60a6a3b8 
+Jun 13 12:13:25.360 HYPERVISOR: exec_cmd: c3725 set_mac_addr ESW1 c202.1d4d.0000 
+Jun 13 12:13:25.363 HYPERVISOR: exec_cmd: vm set_ram ESW1 256 
+Jun 13 12:13:25.366 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Jun 13 12:13:25.369 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i2_startup-config.cfg 
+Jun 13 12:13:25.561 HYPERVISOR: exec_cmd: nio create_udp udp-e233a652-1489-494c-adfd-c52ca7e0ffba 10004 127.0.0.1 10005 
+Jun 13 12:13:25.570 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 0 0 udp-e233a652-1489-494c-adfd-c52ca7e0ffba 
+Jun 13 12:13:25.594 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 13 12:13:25.631 HYPERVISOR: exec_cmd: nio create_udp udp-5d025acf-d805-4358-853a-717f395881f9 10007 127.0.0.1 10006 
+Jun 13 12:13:25.648 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 1 udp-5d025acf-d805-4358-853a-717f395881f9 
+Jun 13 12:13:25.653 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 13 12:13:25.756 HYPERVISOR: exec_cmd: nio create_udp udp-0d11aac0-b572-4212-be73-50c61fd4fe73 10011 127.0.0.1 10010 
+Jun 13 12:13:25.757 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 5 udp-0d11aac0-b572-4212-be73-50c61fd4fe73 
+Jun 13 12:13:25.759 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 13 12:13:31.396 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Jun 13 12:13:31.397 VM: VM Ghost created.
+Jun 13 12:13:31.398 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 13 12:13:31.400 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 13 12:13:31.401 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3725-advipservicesk9-mz.124-21.image-256.ghost 
+Jun 13 12:13:31.402 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jun 13 12:13:31.403 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 13 12:13:31.404 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 13 12:13:31.777 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 13 12:13:31.780 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 13 12:13:32.820 VM: VM Ghost shutdown.
+Jun 13 12:13:32.824 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 13 12:13:32.825 VM: VM Ghost destroyed.
+Jun 13 12:13:32.839 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Jun 13 12:13:32.843 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 c3725-advipservicesk9-mz.124-21.image-256.ghost 
+Jun 13 12:13:32.847 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 13 12:13:32.858 HYPERVISOR: exec_cmd: vm start ESW1 
+Jun 13 12:16:59.030 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 13 12:16:59.038 HYPERVISOR: exec_cmd: vm stop ESW1 
+Jun 13 12:16:59.179 VM: VM ESW1 shutdown.
+Jun 13 12:16:59.187 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 13 12:17:33.681 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 13 12:17:33.691 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 13 12:17:33.707 HYPERVISOR: exec_cmd: vm delete ESW1 
+Jun 13 12:17:33.707 VM: VM ESW1 destroyed.
+Jun 13 12:17:33.732 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 12:17:34.096 HYPERVISOR: Stopped.
+Jun 13 12:17:34.096 GENERAL: reset done.

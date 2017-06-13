@@ -1,18 +1,25 @@
-Jun 13 13:36:31.555 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 13 13:36:31.555 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53738.
-Jun 13 13:36:31.620 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 13 13:36:31.641 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 13 13:36:31.641 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 13 13:36:31.648 HYPERVISOR: exec_cmd: ethsw create Internet 
-Jun 13 13:36:32.843 HYPERVISOR: exec_cmd: nio create_udp udp-ff166e5b-bf21-41b4-b138-45a803df0d67 10029 127.0.0.1 10028 
-Jun 13 13:36:32.860 HYPERVISOR: exec_cmd: ethsw add_nio Internet udp-ff166e5b-bf21-41b4-b138-45a803df0d67 
-Jun 13 13:36:32.901 HYPERVISOR: exec_cmd: ethsw set_access_port Internet udp-ff166e5b-bf21-41b4-b138-45a803df0d67 1 
-Jun 13 13:36:32.914 HYPERVISOR: exec_cmd: nio create_udp udp-db4191f7-f8c8-4c16-adc4-ac66ea8d0135 10033 127.0.0.1 10032 
-Jun 13 13:36:32.924 HYPERVISOR: exec_cmd: ethsw add_nio Internet udp-db4191f7-f8c8-4c16-adc4-ac66ea8d0135 
-Jun 13 13:36:32.955 HYPERVISOR: exec_cmd: ethsw set_access_port Internet udp-db4191f7-f8c8-4c16-adc4-ac66ea8d0135 1 
-Jun 13 13:36:33.566 HYPERVISOR: exec_cmd: nio create_udp udp-8cad6b8f-3963-40f2-af96-8b49cbc7dd43 10080 127.0.0.1 10081 
-Jun 13 13:36:33.580 HYPERVISOR: exec_cmd: ethsw add_nio Internet udp-8cad6b8f-3963-40f2-af96-8b49cbc7dd43 
-Jun 13 13:36:33.615 HYPERVISOR: exec_cmd: ethsw set_access_port Internet udp-8cad6b8f-3963-40f2-af96-8b49cbc7dd43 1 
-Jun 13 13:36:33.635 HYPERVISOR: exec_cmd: nio create_udp udp-b4d2e493-a075-48ce-8af7-f846fa147429 10084 127.0.0.1 10085 
-Jun 13 13:36:33.649 HYPERVISOR: exec_cmd: ethsw add_nio Internet udp-b4d2e493-a075-48ce-8af7-f846fa147429 
-Jun 13 13:36:33.691 HYPERVISOR: exec_cmd: ethsw set_access_port Internet udp-b4d2e493-a075-48ce-8af7-f846fa147429 1 
+Jun 13 16:19:10.005 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 13 16:19:10.006 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54083.
+Jun 13 16:19:10.060 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 16:19:10.084 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 13 16:19:10.084 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 13 16:19:10.088 HYPERVISOR: exec_cmd: ethsw create Internet 
+Jun 13 16:19:11.362 HYPERVISOR: exec_cmd: nio create_udp udp-1d6eaf2f-c3d3-4506-9734-2937dff08a53 10029 127.0.0.1 10028 
+Jun 13 16:19:11.374 HYPERVISOR: exec_cmd: ethsw add_nio Internet udp-1d6eaf2f-c3d3-4506-9734-2937dff08a53 
+Jun 13 16:19:11.411 HYPERVISOR: exec_cmd: ethsw set_access_port Internet udp-1d6eaf2f-c3d3-4506-9734-2937dff08a53 1 
+Jun 13 16:19:11.424 HYPERVISOR: exec_cmd: nio create_udp udp-87272e33-0862-4105-aa1e-b2a8912f77f9 10033 127.0.0.1 10032 
+Jun 13 16:19:11.438 HYPERVISOR: exec_cmd: ethsw add_nio Internet udp-87272e33-0862-4105-aa1e-b2a8912f77f9 
+Jun 13 16:19:11.470 HYPERVISOR: exec_cmd: ethsw set_access_port Internet udp-87272e33-0862-4105-aa1e-b2a8912f77f9 1 
+Jun 13 16:19:12.103 HYPERVISOR: exec_cmd: nio create_udp udp-9e5066c2-727e-4c53-b283-9fcfade6512f 10080 127.0.0.1 10083 
+Jun 13 16:19:12.119 HYPERVISOR: exec_cmd: ethsw add_nio Internet udp-9e5066c2-727e-4c53-b283-9fcfade6512f 
+Jun 13 16:19:12.130 HYPERVISOR: exec_cmd: ethsw set_access_port Internet udp-9e5066c2-727e-4c53-b283-9fcfade6512f 1 
+Jun 13 16:19:12.150 HYPERVISOR: exec_cmd: nio create_udp udp-adf2a109-b5a7-4f0d-a166-f46b484d39e2 10084 127.0.0.1 10085 
+Jun 13 16:19:12.170 HYPERVISOR: exec_cmd: ethsw add_nio Internet udp-adf2a109-b5a7-4f0d-a166-f46b484d39e2 
+Jun 13 16:19:12.195 HYPERVISOR: exec_cmd: ethsw set_access_port Internet udp-adf2a109-b5a7-4f0d-a166-f46b484d39e2 1 
+Jun 13 16:47:13.879 HYPERVISOR: exec_cmd: nio bind_filter udp-9e5066c2-727e-4c53-b283-9fcfade6512f 2 capture 
+Jun 13 16:47:13.881 HYPERVISOR: exec_cmd: nio setup_filter udp-9e5066c2-727e-4c53-b283-9fcfade6512f 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/captures/Internet_3_to_ISP1_USA_R1_FastEthernet2-0.pcap 
+Jun 13 16:51:39.788 HYPERVISOR: exec_cmd: nio unbind_filter udp-9e5066c2-727e-4c53-b283-9fcfade6512f 2 
+Jun 13 18:04:00.016 HYPERVISOR: exec_cmd: ethsw delete Internet 
+Jun 13 18:04:00.100 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 18:04:00.329 HYPERVISOR: Stopped.
+Jun 13 18:04:00.329 GENERAL: reset done.
