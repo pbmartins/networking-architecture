@@ -73,8 +73,10 @@ no shut
 
 interface vlan 780
 ip add 10.23.64.253 255.255.255.0
+ip helper-address 10.17.3.83
 ipv6 enable
 ipv6 add 2002:A:A:2740::/64
+ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -82,8 +84,10 @@ no shut
 
 interface vlan 480
 ip add 10.20.64.253 255.255.255.0
+ip helper-address 10.17.3.83
 ipv6 enable
 ipv6 add 2002:A:A:2408::/64
+ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -175,8 +179,10 @@ no shut
 
 interface vlan 780
 ip add 10.23.64.254 255.255.255.0
+ip helper-address 10.17.3.83
 ipv6 enable
 ipv6 add 2002:A:A:2740::1/64
+ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -184,8 +190,10 @@ no shut
 
 interface vlan 480
 ip add 10.20.64.254 255.255.255.0
+ip helper-address 10.17.3.83
 ipv6 enable
 ipv6 add 2002:A:A:2408::1/64
+ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -278,8 +286,10 @@ no shut
 
 interface vlan 781
 ip add 10.23.65.253 255.255.255.0
+ip helper-address 10.17.3.83
 ipv6 enable
 ipv6 add 2002:A:A:2741::/64
+ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -287,8 +297,10 @@ no shut
 
 interface vlan 481
 ip add 10.20.65.253 255.255.255.0
+ip helper-address 10.17.3.83
 ipv6 enable
 ipv6 add 2002:A:A:2409::/64
+ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -381,8 +393,10 @@ no shut
 
 interface vlan 781
 ip add 10.23.65.254 255.255.255.0
+ip helper-address 10.17.3.83
 ipv6 enable
 ipv6 add 2002:A:A:2741::1/64
+ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -390,8 +404,10 @@ no shut
 
 interface vlan 481
 ip add 10.20.65.254 255.255.255.0
+ip helper-address 10.17.3.83
 ipv6 enable
 ipv6 add 2002:A:A:2409::1/64
+ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
