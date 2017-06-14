@@ -13,6 +13,7 @@ exit
 conf t
 ip routing
 ipv6 unicast-routing
+service dhcp
 router ospf 1
 passive-interface default
 no passive-interface vlan100
@@ -21,6 +22,24 @@ ipv6 router ospf 1
 passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
+
+# QoS
+access-list 101 permit ip 10.20.64.0 0.0.0.255 any
+class-map match-all EF
+match access-group 101
+policy-map SETDSCP
+class EF
+set ip dscp 46
+
+class-map match-all PREMIUM
+match ip dscp 46
+class-map match-all BEST-EFFORT
+match ip dscp 0
+policy-map EDGE
+class PREMIUM
+priority percent 60
+class BEST-EFFORT
+bandwidth percent 40
 
 
 interface f0/0
@@ -54,6 +73,7 @@ no shut
 
 interface vlan 100
 ip add 10.17.0.3 255.255.255.0
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2100::3/64
 ip ospf 1 area 0
@@ -63,6 +83,7 @@ no shut
 
 interface vlan 101
 ip add 10.17.1.3 255.255.255.0
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2101::3/64
 ip ospf 1 area 0
@@ -75,7 +96,7 @@ interface vlan 780
 ip add 10.23.64.253 255.255.255.0
 ip helper-address 10.17.3.83
 ipv6 enable
-ipv6 add 2002:A:A:2740::/64
+ipv6 add 2002:A:A:2740::1/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
@@ -85,8 +106,9 @@ no shut
 interface vlan 480
 ip add 10.20.64.253 255.255.255.0
 ip helper-address 10.17.3.83
+service-policy input SETDSCP
 ipv6 enable
-ipv6 add 2002:A:A:2408::/64
+ipv6 add 2002:A:A:2408::1/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
@@ -96,7 +118,7 @@ no shut
 interface vlan 290
 ip add 10.18.72.253 255.255.255.0
 ipv6 enable
-ipv6 add 2002:A:A:2248::/64
+ipv6 add 2002:A:A:2248::1/64
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -120,6 +142,7 @@ exit
 conf t
 ip routing
 ipv6 unicast-routing
+service dhcp
 router ospf 1
 passive-interface default
 no passive-interface vlan100
@@ -128,6 +151,24 @@ ipv6 router ospf 1
 passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
+
+# QoS
+access-list 101 permit ip 10.20.64.0 0.0.0.255 any
+class-map match-all EF
+match access-group 101
+policy-map SETDSCP
+class EF
+set ip dscp 46
+
+class-map match-all PREMIUM
+match ip dscp 46
+class-map match-all BEST-EFFORT
+match ip dscp 0
+policy-map EDGE
+class PREMIUM
+priority percent 60
+class BEST-EFFORT
+bandwidth percent 40
 
 interface f0/0
 ip add 10.17.3.22 255.255.255.252
@@ -160,6 +201,7 @@ no shut
 
 interface vlan 100
 ip add 10.17.0.4 255.255.255.0
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2100::4/64
 ip ospf 1 area 0
@@ -169,6 +211,7 @@ no shut
 
 interface vlan 101
 ip add 10.17.1.4 255.255.255.0
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2101::4/64
 ip ospf 1 area 0
@@ -181,7 +224,7 @@ interface vlan 780
 ip add 10.23.64.254 255.255.255.0
 ip helper-address 10.17.3.83
 ipv6 enable
-ipv6 add 2002:A:A:2740::1/64
+ipv6 add 2002:A:A:2740::2/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
@@ -191,8 +234,9 @@ no shut
 interface vlan 480
 ip add 10.20.64.254 255.255.255.0
 ip helper-address 10.17.3.83
+service-policy input SETDSCP
 ipv6 enable
-ipv6 add 2002:A:A:2408::1/64
+ipv6 add 2002:A:A:2408::2/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
@@ -202,7 +246,7 @@ no shut
 interface vlan 290
 ip add 10.18.72.254 255.255.255.0
 ipv6 enable
-ipv6 add 2002:A:A:2248::1/64
+ipv6 add 2002:A:A:2248::2/64
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -226,6 +270,7 @@ exit
 conf t
 ip routing
 ipv6 unicast-routing
+service dhcp
 router ospf 1
 passive-interface default
 no passive-interface vlan100
@@ -288,7 +333,7 @@ interface vlan 781
 ip add 10.23.65.253 255.255.255.0
 ip helper-address 10.17.3.83
 ipv6 enable
-ipv6 add 2002:A:A:2741::/64
+ipv6 add 2002:A:A:2741::1/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
@@ -299,7 +344,7 @@ interface vlan 481
 ip add 10.20.65.253 255.255.255.0
 ip helper-address 10.17.3.83
 ipv6 enable
-ipv6 add 2002:A:A:2409::/64
+ipv6 add 2002:A:A:2409::1/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
@@ -309,7 +354,7 @@ no shut
 interface vlan 290
 ip add 10.18.72.252 255.255.255.0
 ipv6 enable
-ipv6 add 2002:A:A:2248::2/64
+ipv6 add 2002:A:A:2248::3/64
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -333,6 +378,7 @@ exit
 conf t
 ip routing
 ipv6 unicast-routing
+service dhcp
 router ospf 1
 passive-interface default
 no passive-interface vlan100
@@ -395,7 +441,7 @@ interface vlan 781
 ip add 10.23.65.254 255.255.255.0
 ip helper-address 10.17.3.83
 ipv6 enable
-ipv6 add 2002:A:A:2741::1/64
+ipv6 add 2002:A:A:2741::2/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
@@ -406,7 +452,7 @@ interface vlan 481
 ip add 10.20.65.254 255.255.255.0
 ip helper-address 10.17.3.83
 ipv6 enable
-ipv6 add 2002:A:A:2409::1/64
+ipv6 add 2002:A:A:2409::2/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
@@ -416,7 +462,7 @@ no shut
 interface vlan 290
 ip add 10.18.72.251 255.255.255.0
 ipv6 enable
-ipv6 add 2002:A:A:2248::3/64
+ipv6 add 2002:A:A:2248::4/64
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -524,7 +570,7 @@ no shut
 
 
 
-interface range f1/2 - 10
+interface range f1/3 - 10
 switchport mode trunk
 switchport trunk encapsulation dot1q
 switchport trunk allowed vlan 1,1002-1005,100,101,290
@@ -560,7 +606,7 @@ no shut
 interface vlan 290
 ip add 10.18.72.250 255.255.255.0
 ipv6 enable
-ipv6 add 2002:A:A:2248::4/64
+ipv6 add 2002:A:A:2248::5/64
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -616,7 +662,7 @@ no shut
 # Datacenter B
 interface f1/14
 no switchport
-ip add 10.17.3.68 255.255.255.252
+ip add 10.17.3.69 255.255.255.252
 ipv6 enable
 ipv6 add 2002:A:A:2103:18::1/80
 ip ospf 1 area 0
@@ -665,7 +711,7 @@ no shut
 
 
 
-interface range f1/0 - 10
+interface range f1/3 - 10
 switchport mode trunk
 switchport trunk encapsulation dot1q
 switchport trunk allowed vlan 1,1002-1005,100,101,290
@@ -701,7 +747,7 @@ no shut
 interface vlan 290
 ip add 10.18.72.249 255.255.255.0
 ipv6 enable
-ipv6 add 2002:A:A:2248::5/64
+ipv6 add 2002:A:A:2248::6/64
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -718,7 +764,7 @@ conf t
 ip routing
 ipv6 unicast-routing
 router ospf 1
--information originate always metric 5
+default-information originate always metric 5
 ipv6 router ospf 1
 default-information originate always metric 5
 ip route 200.1.1.128 255.255.255.128 100.0.0.3
@@ -726,11 +772,27 @@ ip route 200.1.1.128 255.255.255.128 100.0.0.4
 ipv6 route 2002:A:A:6000::/52 2001:0:0:0::3
 ipv6 route 2002:A:A:6000::/52 2001:0:0:0::4
 
+# IPSec
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 100.0.0.3
+crypto isakmp key labcom address 100.0.0.4
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile Chicago
+set transform-set auth_ciphT
+exit
+
+access-list 100 permit ip 10.20.64.0 0.0.7.255 10.52.40.0 0.0.0.255
+route-map routevc permit 10
+match ip address 100
+set interface tunnel 1
+
+
 # NAT
 access-list 1 permit 10.0.0.0 0.255.255.255
-ip nat pool POOLR 200.1.0.129 200.1.0.254 netmask 255.255.255.192
+ip nat pool POOLR 200.1.0.129 200.1.0.190 netmask 255.255.255.192
 ip nat Stateful id 1
-backup 10.17.3.49
+primary 10.17.3.49
 peer 10.17.3.50
 mapping-id 10
 ip nat inside source list 1 pool POOLR mapping-id 10 overload
@@ -741,6 +803,8 @@ interface f0/0
 ip add 10.17.3.34 255.255.255.252
 ipv6 enable
 ipv6 add 2002:A:A:2103:9::2/80
+ip nat inside
+ip policy route-map routevc
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
@@ -750,6 +814,8 @@ interface f0/1
 ip add 10.17.3.42 255.255.255.252
 ipv6 enable
 ipv6 add 2002:A:A:2103:11::2/80
+ip nat inside
+ip policy route-map routevc
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
@@ -766,9 +832,28 @@ no shut
 # Internet
 interface f2/0
 ip add 100.0.0.1 255.255.255.0
+ip nat outside
 ipv6 enable
 ipv6 add 2001:0:0:0::1/64
 no shut
+
+# DHCP - DNS
+interface f3/0
+ip add 10.17.3.81 255.255.255.248
+ipv6 enable
+ipv6 add 2002:A:A:2103:19::1/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no shut
+
+# Tunel IPSec
+int tunnel 1
+ip unnumbered f2/0
+tunnel source 100.0.0.1
+tunnel destination 100.0.0.3
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile Chicago
+
 
 end
 write
@@ -785,12 +870,11 @@ ipv6 router ospf 1
 default-information originate always metric 10
 ip route 200.1.1.128 255.255.255.128 100.0.0.3
 ip route 200.1.1.128 255.255.255.128 100.0.0.4
-ipv6 route 2002:A:A:6000::/52 2001:0:0:0::3
-ipv6 route 2002:A:A:6000::/52 2001:0:0:0::4
+ipv6 route 2002:A:A:6000::/52 tunnel 0
 
 # NAT
 access-list 1 permit 10.0.0.0 0.255.255.255
-ip nat pool POOLR 200.1.0.129 200.1.0.254 netmask 255.255.255.192
+ip nat pool POOLR 200.1.0.129 200.1.0.190 netmask 255.255.255.192
 ip nat Stateful id 2
 backup 10.17.3.50
 peer 10.17.3.49
@@ -802,6 +886,7 @@ interface f0/0
 ip add 10.17.3.38 255.255.255.252
 ipv6 enable
 ipv6 add 2002:A:A:2103:10::2/80
+ip nat inside
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
@@ -811,6 +896,7 @@ interface f0/1
 ip add 10.17.3.46 255.255.255.252
 ipv6 enable
 ipv6 add 2002:A:A:2103:12::2/80
+ip nat inside
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
@@ -824,11 +910,27 @@ ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
 
-# Internet
+# Internet (não tem IPv6)
 interface f2/0
 ip add 100.0.0.2 255.255.255.0
+ip nat outside
+no shut
+
+# Tunel GRE IPv6 over IPv4
+interface tunnel 0
+ipv6 add 2002:A:A:2103:20::1/80
+tunnel source f2/0
+tunnel destination 100.0.0.3
+tunnel mode gre ip
+no shut
+
+# DHCP - DNS
+interface f3/0
+ip add 10.17.3.82 255.255.255.248
 ipv6 enable
-ipv6 add 2001:0:0:0::2/64
+ipv6 add 2002:A:A:2103:19::2/80
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
 no shut
 
 end
@@ -866,7 +968,7 @@ interface f1/0
 no switchport
 ip add 200.1.0.126 255.255.255.128
 ipv6 enable
-ipv6 add 2002:A:A:1::/64 
+ipv6 add 2002:A:A:1::1/64 
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
@@ -896,8 +998,7 @@ no shut
 
 # Core B
 interface f0/1
-no switchport
-ip add 10.17.3.69 255.255.255.252
+ip add 10.17.3.70 255.255.255.252
 ipv6 enable
 ipv6 add 2002:A:A:2103:18::2/80
 ip ospf 1 area 0
@@ -909,7 +1010,7 @@ interface f1/0
 no switchport
 ip add 200.1.0.125 255.255.255.128
 ipv6 enable
-ipv6 add 2002:A:A:1::1/64 
+ipv6 add 2002:A:A:1::2/64 
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
@@ -924,7 +1025,7 @@ Aveiro_Datacenter_Terminal
 ###############################################################
 # Precisa de IP privado?
 ip 200.1.0.1/25 200.1.0.126
-ip 2002:A:A:1::100/64 2002:A:A:1::
+ip 2002:A:A:1::100/64 2002:A:A:1::1
 
 
 
@@ -932,20 +1033,33 @@ ip 2002:A:A:1::100/64 2002:A:A:1::
 Aveiro_E0_MonTerminal
 ###############################################################
 ip 10.23.64.1/24 10.23.64.253
-ip 2002:A:A:2740::10/64 2002:A:A:2740::
+ip 2002:A:A:2740::10/64 2002:A:A:2740::1
+
+###############################################################
+Aveiro_E0_MonTerminal_DHCP
+###############################################################
+conf t
+ipv6 unicast-routing
+int f0/0
+ip add dhcp
+ipv6 add dhcp
+no shut
+end
+write
+
 
 ###############################################################
 Aveiro_E0_MonVC
 ###############################################################
 ip 10.20.64.1/24 10.20.64.253
 #ip 200.1.0.193/28 10.20.64.1/24 10.20.64.253
-ip 2002:A:A:2408::10/64 2002:A:A:2408::
+ip 2002:A:A:2408::10/64 2002:A:A:2408::1
 
 ###############################################################
 Aveiro_WLAN1_1
 ###############################################################
 ip 10.18.72.1/24 10.18.72.253
-ip 2002:A:A:2248::10/64 2002:A:A:2248::
+ip 2002:A:A:2248::10/64 2002:A:A:2248::1
 
 
 
@@ -953,17 +1067,17 @@ ip 2002:A:A:2248::10/64 2002:A:A:2248::
 Aveiro_E1_MonTerminal
 ###############################################################
 ip 10.23.65.1/24 10.23.65.253
-ip 2002:A:A:2741::10/64 2002:A:A:2741::
+ip 2002:A:A:2741::10/64 2002:A:A:2741::1
 
 ###############################################################
 Aveiro_E1_MonVC
 ###############################################################
 ip 10.20.65.1/24 10.20.65.253
 #ip 200.1.0.194/28 10.20.64.1/24 10.20.64.253
-ip 2002:A:A:2409::10/64 2002:A:A:2409::
+ip 2002:A:A:2409::10/64 2002:A:A:2409::1
 
 ###############################################################
 Aveiro_WLAN1_2
 ###############################################################
 ip 10.18.72.2/24 10.18.72.251
-ip 2002:A:A:2248::11/64 2002:A:A:2248::
+ip 2002:A:A:2248::11/64 2002:A:A:2248::3

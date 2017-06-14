@@ -13,11 +13,27 @@ ip route 200.1.0.0 255.255.255.0 100.0.0.2
 ipv6 route 2002:A:A:2000::/52 2001:0:0:0::1
 ipv6 route 2002:A:A:2000::/52 2001:0:0:0::2
 
+# IPSec
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 100.0.0.1
+crypto isakmp key labcom address 100.0.0.2
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile Aveiro
+set transform-set auth_ciphT
+exit
+
+access-list 100 permit ip 10.52.40.0 0.0.0.255 10.20.64.0 0.0.7.255
+route-map routevc permit 10
+match ip address 100
+set interface tunnel 1
+
+
 # NAT
 access-list 1 permit 10.0.0.0 0.255.255.255
-ip nat pool POOLR 200.1.1.129 200.1.1.254 netmask 255.255.255.192
+ip nat pool POOLR 200.1.1.129 200.1.1.190 netmask 255.255.255.192
 ip nat Stateful id 1
-backup 10.49.0.1
+primary 10.49.0.1
 peer 10.49.0.2
 mapping-id 10
 ip nat inside source list 1 pool POOLR mapping-id 10 overload
@@ -28,6 +44,7 @@ ip add 10.52.40.1 255.255.255.0
 ip add 200.1.1.193 255.255.255.192 secondary
 ipv6 enable
 ipv6 add 2002:A:A:6428::1/64
+ip nat inside
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
@@ -44,9 +61,27 @@ no shut
 # Internet
 interface f2/0
 ip add 100.0.0.3 255.255.255.0
+ip nat outside
 ipv6 enable
 ipv6 add 2001:0:0:0::3/64
 no shut
+
+# Tunel GRE IPv6 over IPv4
+interface tunnel 0
+ipv6 unnumbered f2/0
+tunnel source f2/0
+tunnel destination 100.0.0.2
+tunnel mode gre ip
+no shut
+
+# Tunel IPSec
+int tunnel 1
+ip unnumbered f2/0
+tunnel source 100.0.0.1
+tunnel destination 100.0.0.3
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile Aveiro
+
 
 end
 write
@@ -68,7 +103,7 @@ ipv6 route 2002:A:A:2000::/52 2001:0:0:0::2
 
 # NAT
 access-list 1 permit 10.0.0.0 0.255.255.255
-ip nat pool POOLR 200.1.1.129 200.1.1.254 netmask 255.255.255.192
+ip nat pool POOLR 200.1.1.129 200.1.1.190 netmask 255.255.255.192
 ip nat Stateful id 1
 backup 10.49.0.2
 peer 10.49.0.1
@@ -82,6 +117,7 @@ ip add 10.52.40.2 255.255.255.0
 ip add 200.1.1.194 255.255.255.192 secondary
 ipv6 enable
 ipv6 add 2002:A:A:6428::2/64
+ip nat inside
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
@@ -98,6 +134,7 @@ no shut
 # Internet
 interface f2/0
 ip add 100.0.0.4 255.255.255.0
+ip nat outside
 ipv6 enable
 ipv6 add 2001:0:0:0::4/64
 no shut

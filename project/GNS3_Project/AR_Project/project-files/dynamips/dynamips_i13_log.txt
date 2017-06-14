@@ -1,25 +1,35 @@
-Jun 13 22:54:44.285 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 13 22:54:44.285 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58384.
-Jun 13 22:54:44.330 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 13 22:54:44.347 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 13 22:54:44.347 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 13 22:54:44.353 HYPERVISOR: exec_cmd: ethsw create Aveiro_E0_Access 
-Jun 13 22:54:45.924 HYPERVISOR: exec_cmd: nio create_udp udp-e6c5eea4-8465-4b66-8698-db64e459f2e0 10039 127.0.0.1 10038 
-Jun 13 22:54:45.948 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-e6c5eea4-8465-4b66-8698-db64e459f2e0 
-Jun 13 22:54:45.978 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-e6c5eea4-8465-4b66-8698-db64e459f2e0 780 
-Jun 13 22:54:45.996 HYPERVISOR: exec_cmd: nio create_udp udp-4db64abb-a137-47fa-88fd-af1891242377 10041 127.0.0.1 10040 
-Jun 13 22:54:46.013 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-4db64abb-a137-47fa-88fd-af1891242377 
-Jun 13 22:54:46.035 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-4db64abb-a137-47fa-88fd-af1891242377 480 
-Jun 13 22:54:46.058 HYPERVISOR: exec_cmd: nio create_udp udp-40f38da9-fcfe-4e3e-88d1-d663a2f5b631 10043 127.0.0.1 10042 
-Jun 13 22:54:46.085 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-40f38da9-fcfe-4e3e-88d1-d663a2f5b631 
-Jun 13 22:54:46.105 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-40f38da9-fcfe-4e3e-88d1-d663a2f5b631 290 
-Jun 13 22:54:46.790 HYPERVISOR: exec_cmd: nio create_udp udp-b047e3c9-46bf-49cd-ba0f-b31a9f164168 10099 127.0.0.1 10098 
-Jun 13 22:54:46.800 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-b047e3c9-46bf-49cd-ba0f-b31a9f164168 
-Jun 13 22:54:46.822 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Aveiro_E0_Access udp-b047e3c9-46bf-49cd-ba0f-b31a9f164168 1 
-Jun 13 22:54:46.883 HYPERVISOR: exec_cmd: nio create_udp udp-7b7b343a-2892-4d10-8e44-1437e44622be 10107 127.0.0.1 10106 
-Jun 13 22:54:46.895 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-7b7b343a-2892-4d10-8e44-1437e44622be 
-Jun 13 22:54:46.949 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Aveiro_E0_Access udp-7b7b343a-2892-4d10-8e44-1437e44622be 1 
-Jun 14 00:07:43.658 HYPERVISOR: exec_cmd: ethsw delete Aveiro_E0_Access 
-Jun 14 00:07:43.757 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 14 00:07:43.794 HYPERVISOR: Stopped.
-Jun 14 00:07:43.794 GENERAL: reset done.
+Jun 14 14:51:05.270 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 14 14:51:05.270 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52152.
+Jun 14 14:51:05.324 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 14 14:51:05.329 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 14 14:51:05.329 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 14 14:51:05.333 HYPERVISOR: exec_cmd: ethsw create Aveiro_E0_Access 
+Jun 14 14:51:06.799 HYPERVISOR: exec_cmd: nio create_udp udp-575528e2-3535-469b-894e-85a526e6e38b 10039 127.0.0.1 10038 
+Jun 14 14:51:06.811 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-575528e2-3535-469b-894e-85a526e6e38b 
+Jun 14 14:51:06.831 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-575528e2-3535-469b-894e-85a526e6e38b 780 
+Jun 14 14:51:06.844 HYPERVISOR: exec_cmd: nio create_udp udp-a2751d41-a8df-40d9-a545-3fc02f9642bb 10041 127.0.0.1 10040 
+Jun 14 14:51:06.856 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-a2751d41-a8df-40d9-a545-3fc02f9642bb 
+Jun 14 14:51:06.884 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-a2751d41-a8df-40d9-a545-3fc02f9642bb 480 
+Jun 14 14:51:06.907 HYPERVISOR: exec_cmd: nio create_udp udp-4a7742b0-14c4-4235-b16a-d45699b3d53b 10047 127.0.0.1 10046 
+Jun 14 14:51:06.923 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-4a7742b0-14c4-4235-b16a-d45699b3d53b 
+Jun 14 14:51:06.943 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-4a7742b0-14c4-4235-b16a-d45699b3d53b 290 
+Jun 14 14:51:07.434 HYPERVISOR: exec_cmd: nio create_udp udp-19885a64-a8c9-4310-9b99-af7c9d5788ed 10099 127.0.0.1 10098 
+Jun 14 14:51:07.437 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-19885a64-a8c9-4310-9b99-af7c9d5788ed 
+Jun 14 14:51:07.463 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Aveiro_E0_Access udp-19885a64-a8c9-4310-9b99-af7c9d5788ed 1 
+Jun 14 14:51:07.532 HYPERVISOR: exec_cmd: nio create_udp udp-5ba8975a-f9a5-45f5-bec5-a229afc04319 10107 127.0.0.1 10106 
+Jun 14 14:51:07.548 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-5ba8975a-f9a5-45f5-bec5-a229afc04319 
+Jun 14 14:51:07.559 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Aveiro_E0_Access udp-5ba8975a-f9a5-45f5-bec5-a229afc04319 1 
+Jun 14 18:29:35.341 HYPERVISOR: exec_cmd: nio create_udp udp-0e79e3c5-4629-46ff-8743-1d9c17288843 10111 127.0.0.1 10110 
+Jun 14 18:29:35.344 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-0e79e3c5-4629-46ff-8743-1d9c17288843 
+Jun 14 18:29:35.361 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-0e79e3c5-4629-46ff-8743-1d9c17288843 780 
+Jun 14 18:30:11.333 HYPERVISOR: exec_cmd: nio bind_filter udp-0e79e3c5-4629-46ff-8743-1d9c17288843 2 capture 
+Jun 14 18:30:11.337 HYPERVISOR: exec_cmd: nio setup_filter udp-0e79e3c5-4629-46ff-8743-1d9c17288843 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/captures/Aveiro_E0_Access_6_to_Aveiro_E0_MonTerminal_DHCP_Ethernet0.pcap 
+Jun 14 18:48:39.534 HYPERVISOR: exec_cmd: nio unbind_filter udp-0e79e3c5-4629-46ff-8743-1d9c17288843 2 
+Jun 14 18:48:41.691 HYPERVISOR: exec_cmd: ethsw remove_nio Aveiro_E0_Access udp-0e79e3c5-4629-46ff-8743-1d9c17288843 
+Jun 14 18:48:41.707 HYPERVISOR: exec_cmd: nio delete udp-0e79e3c5-4629-46ff-8743-1d9c17288843 
+Jun 14 18:48:59.750 HYPERVISOR: exec_cmd: nio create_udp udp-341a9646-bc80-4e0a-a1a2-cb4fc7eb7377 10111 127.0.0.1 10110 
+Jun 14 18:48:59.753 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-341a9646-bc80-4e0a-a1a2-cb4fc7eb7377 
+Jun 14 18:48:59.774 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-341a9646-bc80-4e0a-a1a2-cb4fc7eb7377 780 
+Jun 14 18:51:38.622 HYPERVISOR: exec_cmd: nio bind_filter udp-341a9646-bc80-4e0a-a1a2-cb4fc7eb7377 2 capture 
+Jun 14 18:51:38.623 HYPERVISOR: exec_cmd: nio setup_filter udp-341a9646-bc80-4e0a-a1a2-cb4fc7eb7377 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/captures/Aveiro_E0_Access_6_to_Aveiro_E0_MonTerminal_DHCP_FastEthernet0-0.pcap 
+Jun 14 18:57:30.304 HYPERVISOR: exec_cmd: nio unbind_filter udp-341a9646-bc80-4e0a-a1a2-cb4fc7eb7377 2 
