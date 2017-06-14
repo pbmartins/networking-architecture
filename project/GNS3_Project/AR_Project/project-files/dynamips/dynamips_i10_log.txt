@@ -31,3 +31,7 @@ Jun 14 19:46:17.467 HYPERVISOR: exec_cmd: nio unbind_filter udp-47bdf185-297c-4a
 Jun 14 20:15:16.802 HYPERVISOR: exec_cmd: nio bind_filter udp-76deccc3-a573-4288-9518-71e8104714ff 2 capture 
 Jun 14 20:15:16.806 HYPERVISOR: exec_cmd: nio setup_filter udp-76deccc3-a573-4288-9518-71e8104714ff 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/captures/Internet_1_to_ISP1_PT_R1_FastEthernet2-0.pcap 
 Jun 14 20:31:22.172 HYPERVISOR: exec_cmd: nio unbind_filter udp-76deccc3-a573-4288-9518-71e8104714ff 2 
+Jun 14 23:04:46.579 HYPERVISOR: exec_cmd: ethsw delete Internet 
+Jun 14 23:04:46.674 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 14 23:04:46.810 HYPERVISOR: Stopped.
+Jun 14 23:04:46.810 GENERAL: reset done.

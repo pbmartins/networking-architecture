@@ -13,3 +13,7 @@ Jun 14 14:51:06.369 HYPERVISOR: exec_cmd: ethsw set_access_port OldBuilding_SW1 
 Jun 14 14:51:06.446 HYPERVISOR: exec_cmd: nio create_udp udp-00f57925-e52f-44cc-9d4a-0d46724d0f89 10010 127.0.0.1 10011 
 Jun 14 14:51:06.450 HYPERVISOR: exec_cmd: ethsw add_nio OldBuilding_SW1 udp-00f57925-e52f-44cc-9d4a-0d46724d0f89 
 Jun 14 14:51:06.476 HYPERVISOR: exec_cmd: ethsw set_access_port OldBuilding_SW1 udp-00f57925-e52f-44cc-9d4a-0d46724d0f89 1 
+Jun 14 23:04:46.574 HYPERVISOR: exec_cmd: ethsw delete OldBuilding_SW1 
+Jun 14 23:04:46.624 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 14 23:04:46.725 HYPERVISOR: Stopped.
+Jun 14 23:04:46.726 GENERAL: reset done.

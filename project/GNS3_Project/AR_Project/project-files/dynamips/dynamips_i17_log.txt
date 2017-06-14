@@ -16,3 +16,7 @@ Jun 14 14:51:07.241 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter ud
 Jun 14 15:27:39.033 HYPERVISOR: exec_cmd: nio bind_filter udp-1b5b0a4f-b8a3-4895-823f-600f6e2d6355 2 capture 
 Jun 14 15:27:39.038 HYPERVISOR: exec_cmd: nio setup_filter udp-1b5b0a4f-b8a3-4895-823f-600f6e2d6355 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/captures/SW_Datacenter_3_to_Datacenter_Ethernet0.pcap 
 Jun 14 15:30:24.937 HYPERVISOR: exec_cmd: nio unbind_filter udp-1b5b0a4f-b8a3-4895-823f-600f6e2d6355 2 
+Jun 14 23:04:46.578 HYPERVISOR: exec_cmd: ethsw delete SW_Datacenter 
+Jun 14 23:04:46.650 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 14 23:04:46.725 HYPERVISOR: Stopped.
+Jun 14 23:04:46.726 GENERAL: reset done.

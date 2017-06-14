@@ -49,3 +49,11 @@ Jun 14 22:58:53.175 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1
 Jun 14 22:58:53.184 HYPERVISOR: exec_cmd: vm stop Datacenter_Aveiro_1 
 Jun 14 22:58:53.342 VM: VM Datacenter_Aveiro_1 shutdown.
 Jun 14 22:58:53.361 HYPERVISOR: exec_cmd: vm extract_config Datacenter_Aveiro_1 
+Jun 14 23:04:41.416 HYPERVISOR: exec_cmd: vm extract_config Datacenter_Aveiro_1 
+Jun 14 23:04:46.996 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_1 
+Jun 14 23:04:47.016 HYPERVISOR: exec_cmd: vm extract_config Datacenter_Aveiro_1 
+Jun 14 23:04:47.048 HYPERVISOR: exec_cmd: vm delete Datacenter_Aveiro_1 
+Jun 14 23:04:47.048 VM: VM Datacenter_Aveiro_1 destroyed.
+Jun 14 23:04:47.078 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 14 23:04:47.226 HYPERVISOR: Stopped.
+Jun 14 23:04:47.226 GENERAL: reset done.

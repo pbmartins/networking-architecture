@@ -51,3 +51,11 @@ Jun 14 22:58:52.992 HYPERVISOR: exec_cmd: vm get_status ISP1_USA_R1
 Jun 14 22:58:53.026 HYPERVISOR: exec_cmd: vm stop ISP1_USA_R1 
 Jun 14 22:58:53.174 VM: VM ISP1_USA_R1 shutdown.
 Jun 14 22:58:53.182 HYPERVISOR: exec_cmd: vm extract_config ISP1_USA_R1 
+Jun 14 23:04:41.414 HYPERVISOR: exec_cmd: vm extract_config ISP1_USA_R1 
+Jun 14 23:04:46.987 HYPERVISOR: exec_cmd: vm get_status ISP1_USA_R1 
+Jun 14 23:04:47.009 HYPERVISOR: exec_cmd: vm extract_config ISP1_USA_R1 
+Jun 14 23:04:47.034 HYPERVISOR: exec_cmd: vm delete ISP1_USA_R1 
+Jun 14 23:04:47.034 VM: VM ISP1_USA_R1 destroyed.
+Jun 14 23:04:47.071 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 14 23:04:47.165 HYPERVISOR: Stopped.
+Jun 14 23:04:47.165 GENERAL: reset done.

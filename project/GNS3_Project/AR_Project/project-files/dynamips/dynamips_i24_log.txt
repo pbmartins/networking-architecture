@@ -49,3 +49,11 @@ Jun 14 22:58:52.553 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DH
 Jun 14 22:58:52.575 HYPERVISOR: exec_cmd: vm stop Aveiro_E0_MonTerminal_DHCP 
 Jun 14 22:58:53.130 VM: VM Aveiro_E0_MonTerminal_DHCP shutdown.
 Jun 14 22:58:53.135 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E0_MonTerminal_DHCP 
+Jun 14 23:04:41.426 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E0_MonTerminal_DHCP 
+Jun 14 23:04:46.987 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
+Jun 14 23:04:47.010 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E0_MonTerminal_DHCP 
+Jun 14 23:04:47.036 HYPERVISOR: exec_cmd: vm delete Aveiro_E0_MonTerminal_DHCP 
+Jun 14 23:04:47.036 VM: VM Aveiro_E0_MonTerminal_DHCP destroyed.
+Jun 14 23:04:47.072 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 14 23:04:47.226 HYPERVISOR: Stopped.
+Jun 14 23:04:47.226 GENERAL: reset done.

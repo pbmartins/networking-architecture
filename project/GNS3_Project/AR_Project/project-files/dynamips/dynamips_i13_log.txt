@@ -33,3 +33,7 @@ Jun 14 18:48:59.774 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access
 Jun 14 18:51:38.622 HYPERVISOR: exec_cmd: nio bind_filter udp-341a9646-bc80-4e0a-a1a2-cb4fc7eb7377 2 capture 
 Jun 14 18:51:38.623 HYPERVISOR: exec_cmd: nio setup_filter udp-341a9646-bc80-4e0a-a1a2-cb4fc7eb7377 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/captures/Aveiro_E0_Access_6_to_Aveiro_E0_MonTerminal_DHCP_FastEthernet0-0.pcap 
 Jun 14 18:57:30.304 HYPERVISOR: exec_cmd: nio unbind_filter udp-341a9646-bc80-4e0a-a1a2-cb4fc7eb7377 2 
+Jun 14 23:04:46.577 HYPERVISOR: exec_cmd: ethsw delete Aveiro_E0_Access 
+Jun 14 23:04:46.695 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 14 23:04:46.725 HYPERVISOR: Stopped.
+Jun 14 23:04:46.726 GENERAL: reset done.

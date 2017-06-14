@@ -24,3 +24,7 @@ Jun 14 18:18:18.471 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ udp-aae68897
 Jun 14 18:18:22.335 HYPERVISOR: exec_cmd: nio create_udp udp-3bed120b-c3ec-4fe5-a837-5e8bd9c13136 10093 127.0.0.1 10092 
 Jun 14 18:18:22.339 HYPERVISOR: exec_cmd: ethsw add_nio DMZ udp-3bed120b-c3ec-4fe5-a837-5e8bd9c13136 
 Jun 14 18:18:22.354 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ udp-3bed120b-c3ec-4fe5-a837-5e8bd9c13136 1 
+Jun 14 23:04:46.576 HYPERVISOR: exec_cmd: ethsw delete DMZ 
+Jun 14 23:04:46.649 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 14 23:04:46.725 HYPERVISOR: Stopped.
+Jun 14 23:04:46.725 GENERAL: reset done.
