@@ -1091,6 +1091,7 @@ conf t
 ipv6 unicast-routing
 int f0/0
 ip add dhcp
+ipv6 enable
 ipv6 add dhcp
 no shut
 end

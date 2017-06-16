@@ -1,56 +1,58 @@
-Jun 16 17:33:34.295 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 16 17:33:34.295 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50196.
-Jun 16 17:33:34.384 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 16 17:33:34.401 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project_QoSETuneis-Working/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 16 17:33:34.401 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project_QoSETuneis-Working/GNS3_Project/AR_Project/project-files/dynamips
-Jun 16 17:33:34.421 HYPERVISOR: exec_cmd: vm create Aveiro_E0_MonTerminal_DHCP 5 c7200 
-Jun 16 17:33:34.422 VM: VM Aveiro_E0_MonTerminal_DHCP created.
-Jun 16 17:33:34.427 HYPERVISOR: exec_cmd: vm set_con_tcp_port Aveiro_E0_MonTerminal_DHCP 5024 
-Jun 16 17:33:34.435 HYPERVISOR: exec_cmd: c7200 get_mac_addr Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:33:34.454 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:33:34.468 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_E0_MonTerminal_DHCP 0 0 C7200-IO-FE 
-Jun 16 17:33:34.498 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:33:34.531 HYPERVISOR: exec_cmd: vm slot_remove_binding Aveiro_E0_MonTerminal_DHCP 0 0 
-Jun 16 17:33:34.545 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:33:34.560 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_E0_MonTerminal_DHCP 0 0 C7200-IO-2FE 
-Jun 16 17:33:34.573 HYPERVISOR: exec_cmd: vm set_ram Aveiro_E0_MonTerminal_DHCP 512 
-Jun 16 17:33:34.579 HYPERVISOR: exec_cmd: vm set_nvram Aveiro_E0_MonTerminal_DHCP 512 
-Jun 16 17:33:34.599 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:33:34.618 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_E0_MonTerminal_DHCP 1 0 PA-2FE-TX 
-Jun 16 17:33:34.630 HYPERVISOR: exec_cmd: vm set_disk0 Aveiro_E0_MonTerminal_DHCP 0 
-Jun 16 17:33:34.645 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:33:34.659 HYPERVISOR: exec_cmd: vm set_idle_pc Aveiro_E0_MonTerminal_DHCP 0x60608040 
-Jun 16 17:33:34.670 HYPERVISOR: exec_cmd: vm set_ios Aveiro_E0_MonTerminal_DHCP /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
-Jun 16 17:33:34.680 HYPERVISOR: exec_cmd: c7200 set_mac_addr Aveiro_E0_MonTerminal_DHCP ca05.7b3e.0000 
-Jun 16 17:33:34.690 HYPERVISOR: exec_cmd: vm set_config Aveiro_E0_MonTerminal_DHCP configs/i5_startup-config.cfg 
-Jun 16 17:33:36.464 HYPERVISOR: exec_cmd: nio create_udp udp-4bb25146-25d6-45e9-8492-72d98d35de4c 10112 127.0.0.1 10113 
-Jun 16 17:33:36.478 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_E0_MonTerminal_DHCP 0 0 udp-4bb25146-25d6-45e9-8492-72d98d35de4c 
-Jun 16 17:33:36.488 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:34:02.389 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
-Jun 16 17:34:02.389 VM: VM Ghost created.
-Jun 16 17:34:02.397 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
-Jun 16 17:34:02.404 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
-Jun 16 17:34:02.413 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
-Jun 16 17:34:02.415 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
-Jun 16 17:34:02.417 HYPERVISOR: exec_cmd: vm get_status Ghost 
-Jun 16 17:34:02.419 HYPERVISOR: exec_cmd: vm start Ghost 
-Jun 16 17:34:02.940 HYPERVISOR: exec_cmd: vm get_status Ghost 
-Jun 16 17:34:02.944 HYPERVISOR: exec_cmd: vm stop Ghost 
-Jun 16 17:34:04.894 VM: VM Ghost shutdown.
-Jun 16 17:34:04.896 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
-Jun 16 17:34:04.897 VM: VM Ghost destroyed.
-Jun 16 17:34:04.948 HYPERVISOR: exec_cmd: vm set_ghost_status Aveiro_E0_MonTerminal_DHCP 2 
-Jun 16 17:34:04.965 HYPERVISOR: exec_cmd: vm set_ghost_file Aveiro_E0_MonTerminal_DHCP c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
-Jun 16 17:34:04.979 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:34:05.019 HYPERVISOR: exec_cmd: vm start Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:48:41.222 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:48:41.228 HYPERVISOR: exec_cmd: vm stop Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:48:41.695 VM: VM Aveiro_E0_MonTerminal_DHCP shutdown.
-Jun 16 17:48:41.712 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:48:47.090 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:48:47.137 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:48:47.167 HYPERVISOR: exec_cmd: vm delete Aveiro_E0_MonTerminal_DHCP 
-Jun 16 17:48:47.167 VM: VM Aveiro_E0_MonTerminal_DHCP destroyed.
-Jun 16 17:48:47.202 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 16 17:48:47.479 HYPERVISOR: Stopped.
-Jun 16 17:48:47.479 GENERAL: reset done.
+Jun 16 21:57:39.162 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jun 16 21:57:39.163 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63385.
+Jun 16 21:57:39.389 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 16 21:57:39.438 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Diogo Ferreira\Google Drive\Universidade\3º Ano\2º Semestre\Arquitectura de Redes\Repository\AR\project\GNS3_Project\AR_Project\project-files\dynamips 
+Jun 16 21:57:39.438 GENERAL: working_dir=C:\Users\Diogo Ferreira\Google Drive\Universidade\3º Ano\2º Semestre\Arquitectura de Redes\Repository\AR\project\GNS3_Project\AR_Project\project-files\dynamips
+Jun 16 21:57:39.481 HYPERVISOR: exec_cmd: vm create Aveiro_E0_MonTerminal_DHCP 5 c7200 
+Jun 16 21:57:39.484 VM: VM Aveiro_E0_MonTerminal_DHCP created.
+Jun 16 21:57:39.539 HYPERVISOR: exec_cmd: vm set_con_tcp_port Aveiro_E0_MonTerminal_DHCP 5024 
+Jun 16 21:57:39.596 HYPERVISOR: exec_cmd: c7200 get_mac_addr Aveiro_E0_MonTerminal_DHCP 
+Jun 16 21:57:39.663 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
+Jun 16 21:57:39.718 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_E0_MonTerminal_DHCP 0 0 C7200-IO-FE 
+Jun 16 21:57:39.765 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
+Jun 16 21:57:39.809 HYPERVISOR: exec_cmd: vm slot_remove_binding Aveiro_E0_MonTerminal_DHCP 0 0 
+Jun 16 21:57:39.893 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
+Jun 16 21:57:39.980 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_E0_MonTerminal_DHCP 0 0 C7200-IO-2FE 
+Jun 16 21:57:40.027 HYPERVISOR: exec_cmd: vm set_exec_area Aveiro_E0_MonTerminal_DHCP 64 
+Jun 16 21:57:40.095 HYPERVISOR: exec_cmd: c7200 set_mac_addr Aveiro_E0_MonTerminal_DHCP ca05.7b3e.0000 
+Jun 16 21:57:40.160 HYPERVISOR: exec_cmd: vm set_ios Aveiro_E0_MonTerminal_DHCP C:/Users/Diogo Ferreira/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 16 21:57:40.232 HYPERVISOR: exec_cmd: vm set_nvram Aveiro_E0_MonTerminal_DHCP 512 
+Jun 16 21:57:40.292 HYPERVISOR: exec_cmd: vm set_disk0 Aveiro_E0_MonTerminal_DHCP 0 
+Jun 16 21:57:40.354 HYPERVISOR: exec_cmd: vm set_ram Aveiro_E0_MonTerminal_DHCP 512 
+Jun 16 21:57:40.405 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
+Jun 16 21:57:40.462 HYPERVISOR: exec_cmd: vm set_idle_pc Aveiro_E0_MonTerminal_DHCP 0x60608040 
+Jun 16 21:57:40.512 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
+Jun 16 21:57:40.568 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_E0_MonTerminal_DHCP 1 0 PA-2FE-TX 
+Jun 16 21:57:40.618 HYPERVISOR: exec_cmd: vm set_config Aveiro_E0_MonTerminal_DHCP configs/i5_startup-config.cfg 
+Jun 16 21:57:47.457 HYPERVISOR: exec_cmd: nio create_udp udp-fc66ada7-de82-4074-a90e-94b8a76b7f29 10112 127.0.0.1 10113 
+Jun 16 21:57:47.496 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_E0_MonTerminal_DHCP 0 0 udp-fc66ada7-de82-4074-a90e-94b8a76b7f29 
+Jun 16 21:57:47.553 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
+Jun 16 21:59:04.390 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jun 16 21:59:04.393 VM: VM Ghost created.
+Jun 16 21:59:04.402 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Diogo Ferreira/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 16 21:59:04.415 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 16 21:59:04.429 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 16 21:59:04.442 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jun 16 21:59:04.455 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 16 21:59:04.649 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 16 21:59:06.432 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 16 21:59:06.450 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 16 21:59:06.615 VM: VM Ghost shutdown.
+Jun 16 21:59:06.625 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 16 21:59:06.625 VM: VM Ghost destroyed.
+Jun 16 21:59:06.764 HYPERVISOR: exec_cmd: vm set_ghost_status Aveiro_E0_MonTerminal_DHCP 2 
+Jun 16 21:59:06.776 HYPERVISOR: exec_cmd: vm set_ghost_file Aveiro_E0_MonTerminal_DHCP c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 16 21:59:06.789 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
+Jun 16 21:59:06.801 HYPERVISOR: exec_cmd: vm start Aveiro_E0_MonTerminal_DHCP 
+Jun 16 22:06:20.519 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
+Jun 16 22:06:20.590 HYPERVISOR: exec_cmd: vm stop Aveiro_E0_MonTerminal_DHCP 
+Jun 16 22:06:20.769 VM: VM Aveiro_E0_MonTerminal_DHCP shutdown.
+Jun 16 22:06:20.779 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E0_MonTerminal_DHCP 
+Jun 16 22:06:25.140 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E0_MonTerminal_DHCP 
+Jun 16 22:06:25.412 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_MonTerminal_DHCP 
+Jun 16 22:06:25.585 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E0_MonTerminal_DHCP 
+Jun 16 22:06:25.749 HYPERVISOR: exec_cmd: vm delete Aveiro_E0_MonTerminal_DHCP 
+Jun 16 22:06:25.749 VM: VM Aveiro_E0_MonTerminal_DHCP destroyed.
+Jun 16 22:06:25.948 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 16 22:06:26.256 HYPERVISOR: Stopped.
+Jun 16 22:06:26.256 GENERAL: reset done.

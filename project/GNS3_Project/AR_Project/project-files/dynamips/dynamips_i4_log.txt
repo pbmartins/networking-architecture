@@ -1,45 +1,39 @@
-Jun 16 17:33:33.412 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 16 17:33:33.413 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50087.
-Jun 16 17:33:33.471 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 16 17:33:33.479 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project_QoSETuneis-Working/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 16 17:33:33.479 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project_QoSETuneis-Working/GNS3_Project/AR_Project/project-files/dynamips
-Jun 16 17:33:33.482 HYPERVISOR: exec_cmd: vm create OldBuilding_A 3 c3725 
-Jun 16 17:33:33.483 VM: VM OldBuilding_A created.
-Jun 16 17:33:33.487 HYPERVISOR: exec_cmd: vm set_con_tcp_port OldBuilding_A 5000 
-Jun 16 17:33:33.494 HYPERVISOR: exec_cmd: c3725 get_mac_addr OldBuilding_A 
-Jun 16 17:33:33.513 HYPERVISOR: exec_cmd: vm set_nvram OldBuilding_A 256 
-Jun 16 17:33:33.520 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
-Jun 16 17:33:33.530 HYPERVISOR: exec_cmd: vm slot_add_binding OldBuilding_A 1 0 NM-16ESW 
-Jun 16 17:33:33.574 HYPERVISOR: exec_cmd: vm set_disk0 OldBuilding_A 1 
-Jun 16 17:33:33.579 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
-Jun 16 17:33:33.583 HYPERVISOR: exec_cmd: vm set_idle_pc OldBuilding_A 0x60a68e70 
-Jun 16 17:33:33.588 HYPERVISOR: exec_cmd: vm set_ios OldBuilding_A /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Jun 16 17:33:33.592 HYPERVISOR: exec_cmd: c3725 set_mac_addr OldBuilding_A c203.1ef4.0000 
-Jun 16 17:33:33.598 HYPERVISOR: exec_cmd: vm set_config OldBuilding_A configs/i3_startup-config.cfg 
-Jun 16 17:33:34.986 HYPERVISOR: exec_cmd: nio create_udp udp-253b3b62-aa5c-4013-94f0-9fc41a2ea065 10011 127.0.0.1 10010 
-Jun 16 17:33:35.003 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OldBuilding_A 1 15 udp-253b3b62-aa5c-4013-94f0-9fc41a2ea065 
-Jun 16 17:33:35.013 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
-Jun 16 17:33:35.031 HYPERVISOR: exec_cmd: nio create_udp udp-00dcabaa-5e2e-4051-9926-3449eeff6bc8 10014 127.0.0.1 10013 
-Jun 16 17:33:35.039 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OldBuilding_A 1 14 udp-00dcabaa-5e2e-4051-9926-3449eeff6bc8 
-Jun 16 17:33:35.051 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
-Jun 16 17:33:35.084 HYPERVISOR: exec_cmd: nio create_udp udp-1477d87c-7e04-4a81-9d24-4f94d984f193 10015 127.0.0.1 10012 
-Jun 16 17:33:35.092 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OldBuilding_A 0 0 udp-1477d87c-7e04-4a81-9d24-4f94d984f193 
-Jun 16 17:33:35.096 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
-Jun 16 17:33:35.121 HYPERVISOR: exec_cmd: nio create_udp udp-d106bbf8-5d4f-467f-a8bd-9c3b9522044c 10018 127.0.0.1 10019 
-Jun 16 17:33:35.149 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OldBuilding_A 0 1 udp-d106bbf8-5d4f-467f-a8bd-9c3b9522044c 
-Jun 16 17:33:35.156 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
-Jun 16 17:34:07.970 HYPERVISOR: exec_cmd: vm set_ghost_status OldBuilding_A 2 
-Jun 16 17:34:07.973 HYPERVISOR: exec_cmd: vm set_ghost_file OldBuilding_A c3725-advipservicesk9-mz.124-21.image-128.ghost 
-Jun 16 17:34:07.975 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
-Jun 16 17:34:07.976 HYPERVISOR: exec_cmd: vm start OldBuilding_A 
-Jun 16 17:48:42.235 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
-Jun 16 17:48:42.236 HYPERVISOR: exec_cmd: vm stop OldBuilding_A 
-Jun 16 17:48:42.389 VM: VM OldBuilding_A shutdown.
-Jun 16 17:48:42.391 HYPERVISOR: exec_cmd: vm extract_config OldBuilding_A 
-Jun 16 17:48:47.092 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
-Jun 16 17:48:47.138 HYPERVISOR: exec_cmd: vm extract_config OldBuilding_A 
-Jun 16 17:48:47.171 HYPERVISOR: exec_cmd: vm delete OldBuilding_A 
-Jun 16 17:48:47.171 VM: VM OldBuilding_A destroyed.
-Jun 16 17:48:47.203 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 16 17:48:47.595 HYPERVISOR: Stopped.
-Jun 16 17:48:47.595 GENERAL: reset done.
+Jun 16 21:57:34.562 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jun 16 21:57:34.563 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63338.
+Jun 16 21:57:34.963 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 16 21:57:34.992 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Diogo Ferreira\Google Drive\Universidade\3º Ano\2º Semestre\Arquitectura de Redes\Repository\AR\project\GNS3_Project\AR_Project\project-files\dynamips 
+Jun 16 21:57:35.395 GENERAL: working_dir=C:\Users\Diogo Ferreira\Google Drive\Universidade\3º Ano\2º Semestre\Arquitectura de Redes\Repository\AR\project\GNS3_Project\AR_Project\project-files\dynamips
+Jun 16 21:57:35.443 HYPERVISOR: exec_cmd: vm create OldBuilding_A 3 c3725 
+Jun 16 21:57:35.447 VM: VM OldBuilding_A created.
+Jun 16 21:57:35.479 HYPERVISOR: exec_cmd: vm set_con_tcp_port OldBuilding_A 5000 
+Jun 16 21:57:35.530 HYPERVISOR: exec_cmd: c3725 get_mac_addr OldBuilding_A 
+Jun 16 21:57:35.587 HYPERVISOR: exec_cmd: vm set_exec_area OldBuilding_A 64 
+Jun 16 21:57:35.626 HYPERVISOR: exec_cmd: c3725 set_mac_addr OldBuilding_A c203.1ef4.0000 
+Jun 16 21:57:35.664 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 16 21:57:35.702 HYPERVISOR: exec_cmd: vm set_idle_pc OldBuilding_A 0x60a68e70 
+Jun 16 21:57:35.740 HYPERVISOR: exec_cmd: vm set_nvram OldBuilding_A 256 
+Jun 16 21:57:35.788 HYPERVISOR: exec_cmd: vm set_disk0 OldBuilding_A 1 
+Jun 16 21:57:35.836 HYPERVISOR: exec_cmd: vm set_ios OldBuilding_A C:/Users/Diogo Ferreira/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jun 16 21:57:35.888 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 16 21:57:35.935 HYPERVISOR: exec_cmd: vm slot_add_binding OldBuilding_A 1 0 NM-16ESW 
+Jun 16 21:57:35.982 HYPERVISOR: exec_cmd: vm set_config OldBuilding_A configs/i3_startup-config.cfg 
+Jun 16 21:57:42.106 HYPERVISOR: exec_cmd: nio create_udp udp-bafc4d75-6918-481f-8d3d-514bdd7b01a6 10007 127.0.0.1 10006 
+Jun 16 21:57:42.148 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OldBuilding_A 1 15 udp-bafc4d75-6918-481f-8d3d-514bdd7b01a6 
+Jun 16 21:57:42.205 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 16 21:57:42.282 HYPERVISOR: exec_cmd: nio create_udp udp-ae5b19a1-bd0d-4ea4-b75d-3aa8bb400e05 10009 127.0.0.1 10008 
+Jun 16 21:57:42.340 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OldBuilding_A 1 14 udp-ae5b19a1-bd0d-4ea4-b75d-3aa8bb400e05 
+Jun 16 21:57:42.394 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 16 21:57:42.548 HYPERVISOR: exec_cmd: nio create_udp udp-1bbdf77f-1cc9-49a9-9766-d63c5034da25 10015 127.0.0.1 10014 
+Jun 16 21:57:42.596 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OldBuilding_A 0 0 udp-1bbdf77f-1cc9-49a9-9766-d63c5034da25 
+Jun 16 21:57:42.631 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 16 21:57:42.731 HYPERVISOR: exec_cmd: nio create_udp udp-e634970b-6515-4f36-b6f2-68e8913b1be5 10018 127.0.0.1 10019 
+Jun 16 21:57:42.778 HYPERVISOR: exec_cmd: vm slot_add_nio_binding OldBuilding_A 0 1 udp-e634970b-6515-4f36-b6f2-68e8913b1be5 
+Jun 16 21:57:42.817 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 16 22:06:25.072 HYPERVISOR: exec_cmd: vm extract_config OldBuilding_A 
+Jun 16 22:06:25.472 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 16 22:06:25.617 HYPERVISOR: exec_cmd: vm extract_config OldBuilding_A 
+Jun 16 22:06:25.778 HYPERVISOR: exec_cmd: vm delete OldBuilding_A 
+Jun 16 22:06:25.778 VM: VM OldBuilding_A destroyed.
+Jun 16 22:06:26.414 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 16 22:06:26.853 HYPERVISOR: Stopped.
+Jun 16 22:06:26.853 GENERAL: reset done.
