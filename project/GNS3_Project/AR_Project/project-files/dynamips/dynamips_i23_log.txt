@@ -1,30 +1,19 @@
-Jun 14 14:51:05.902 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 14 14:51:05.902 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52173.
-Jun 14 14:51:05.962 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 14 14:51:05.968 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 14 14:51:05.968 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 14 14:51:05.974 HYPERVISOR: exec_cmd: ethsw create SW1 
-Jun 14 14:51:07.325 HYPERVISOR: exec_cmd: nio create_udp udp-3b2f37d1-ef89-461e-98ed-e253cc65d8bc 10090 127.0.0.1 10091 
-Jun 14 14:51:07.337 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-3b2f37d1-ef89-461e-98ed-e253cc65d8bc 
-Jun 14 14:51:07.345 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-3b2f37d1-ef89-461e-98ed-e253cc65d8bc 1 
-Jun 14 14:51:07.365 HYPERVISOR: exec_cmd: nio create_udp udp-6555a36d-13ee-4f73-91b1-69a652301250 10092 127.0.0.1 10093 
-Jun 14 14:51:07.382 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-6555a36d-13ee-4f73-91b1-69a652301250 
-Jun 14 14:51:07.391 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-6555a36d-13ee-4f73-91b1-69a652301250 1 
-Jun 14 14:51:07.553 HYPERVISOR: exec_cmd: nio create_udp udp-f21796cc-b0fc-47b1-a375-5bd93efe2c2f 10109 127.0.0.1 10108 
-Jun 14 14:51:07.557 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-f21796cc-b0fc-47b1-a375-5bd93efe2c2f 
-Jun 14 14:51:07.603 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-f21796cc-b0fc-47b1-a375-5bd93efe2c2f 1 
-Jun 14 15:36:03.898 HYPERVISOR: exec_cmd: ethsw rename SW1 DMZ 
-Jun 14 18:17:08.291 HYPERVISOR: exec_cmd: ethsw remove_nio DMZ udp-6555a36d-13ee-4f73-91b1-69a652301250 
-Jun 14 18:17:08.316 HYPERVISOR: exec_cmd: nio delete udp-6555a36d-13ee-4f73-91b1-69a652301250 
-Jun 14 18:17:10.893 HYPERVISOR: exec_cmd: ethsw remove_nio DMZ udp-3b2f37d1-ef89-461e-98ed-e253cc65d8bc 
-Jun 14 18:17:10.907 HYPERVISOR: exec_cmd: nio delete udp-3b2f37d1-ef89-461e-98ed-e253cc65d8bc 
-Jun 14 18:18:18.453 HYPERVISOR: exec_cmd: nio create_udp udp-aae68897-a153-4109-8cc4-2961498ab67b 10091 127.0.0.1 10090 
-Jun 14 18:18:18.455 HYPERVISOR: exec_cmd: ethsw add_nio DMZ udp-aae68897-a153-4109-8cc4-2961498ab67b 
-Jun 14 18:18:18.471 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ udp-aae68897-a153-4109-8cc4-2961498ab67b 1 
-Jun 14 18:18:22.335 HYPERVISOR: exec_cmd: nio create_udp udp-3bed120b-c3ec-4fe5-a837-5e8bd9c13136 10093 127.0.0.1 10092 
-Jun 14 18:18:22.339 HYPERVISOR: exec_cmd: ethsw add_nio DMZ udp-3bed120b-c3ec-4fe5-a837-5e8bd9c13136 
-Jun 14 18:18:22.354 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ udp-3bed120b-c3ec-4fe5-a837-5e8bd9c13136 1 
-Jun 14 23:04:46.576 HYPERVISOR: exec_cmd: ethsw delete DMZ 
-Jun 14 23:04:46.649 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 14 23:04:46.725 HYPERVISOR: Stopped.
-Jun 14 23:04:46.725 GENERAL: reset done.
+Jun 16 17:33:34.262 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 16 17:33:34.263 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50195.
+Jun 16 17:33:34.336 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 16 17:33:34.351 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project_QoSETuneis-Working/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 16 17:33:34.351 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project_QoSETuneis-Working/GNS3_Project/AR_Project/project-files/dynamips
+Jun 16 17:33:34.365 HYPERVISOR: exec_cmd: ethsw create DMZ 
+Jun 16 17:33:36.087 HYPERVISOR: exec_cmd: nio create_udp udp-389eed9d-c5ba-4d61-aab5-78970de29c97 10091 127.0.0.1 10090 
+Jun 16 17:33:36.097 HYPERVISOR: exec_cmd: ethsw add_nio DMZ udp-389eed9d-c5ba-4d61-aab5-78970de29c97 
+Jun 16 17:33:36.142 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ udp-389eed9d-c5ba-4d61-aab5-78970de29c97 1 
+Jun 16 17:33:36.163 HYPERVISOR: exec_cmd: nio create_udp udp-7a121717-9061-4a19-b78c-9d46e7658edb 10093 127.0.0.1 10092 
+Jun 16 17:33:36.167 HYPERVISOR: exec_cmd: ethsw add_nio DMZ udp-7a121717-9061-4a19-b78c-9d46e7658edb 
+Jun 16 17:33:36.195 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ udp-7a121717-9061-4a19-b78c-9d46e7658edb 1 
+Jun 16 17:33:36.398 HYPERVISOR: exec_cmd: nio create_udp udp-6b05d77f-b53c-4541-9ea8-db1c8c17237b 10111 127.0.0.1 10110 
+Jun 16 17:33:36.440 HYPERVISOR: exec_cmd: ethsw add_nio DMZ udp-6b05d77f-b53c-4541-9ea8-db1c8c17237b 
+Jun 16 17:33:36.472 HYPERVISOR: exec_cmd: ethsw set_access_port DMZ udp-6b05d77f-b53c-4541-9ea8-db1c8c17237b 1 
+Jun 16 17:48:46.388 HYPERVISOR: exec_cmd: ethsw delete DMZ 
+Jun 16 17:48:46.449 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 16 17:48:46.451 HYPERVISOR: Stopped.
+Jun 16 17:48:46.452 GENERAL: reset done.

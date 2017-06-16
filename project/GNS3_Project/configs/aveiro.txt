@@ -39,8 +39,7 @@ policy-map EDGE
 class PREMIUM
 priority percent 60
 class BEST-EFFORT
-bandwidth percent 40
-
+bandwidth percent 15
 
 interface f0/0
 ip add 10.17.3.21 255.255.255.252
@@ -94,7 +93,7 @@ no shut
 
 interface vlan 780
 ip add 10.23.64.253 255.255.255.0
-ip helper-address 10.17.3.83
+ip helper-address 200.1.0.65
 ipv6 enable
 ipv6 add 2002:A:A:2740::1/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
@@ -105,7 +104,7 @@ no shut
 
 interface vlan 480
 ip add 10.20.64.253 255.255.255.0
-ip helper-address 10.17.3.83
+ip helper-address 200.1.0.65
 service-policy input SETDSCP
 ipv6 enable
 ipv6 add 2002:A:A:2408::1/64
@@ -168,7 +167,7 @@ policy-map EDGE
 class PREMIUM
 priority percent 60
 class BEST-EFFORT
-bandwidth percent 40
+bandwidth percent 15
 
 interface f0/0
 ip add 10.17.3.22 255.255.255.252
@@ -222,7 +221,7 @@ no shut
 
 interface vlan 780
 ip add 10.23.64.254 255.255.255.0
-ip helper-address 10.17.3.83
+ip helper-address 200.1.0.65
 ipv6 enable
 ipv6 add 2002:A:A:2740::2/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
@@ -233,7 +232,7 @@ no shut
 
 interface vlan 480
 ip add 10.20.64.254 255.255.255.0
-ip helper-address 10.17.3.83
+ip helper-address 200.1.0.65
 service-policy input SETDSCP
 ipv6 enable
 ipv6 add 2002:A:A:2408::2/64
@@ -280,6 +279,25 @@ passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
 
+
+# QoS
+access-list 101 permit ip 10.20.64.0 0.0.0.255 any
+class-map match-all EF
+match access-group 101
+policy-map SETDSCP
+class EF
+set ip dscp 46
+
+class-map match-all PREMIUM
+match ip dscp 46
+class-map match-all BEST-EFFORT
+match ip dscp 0
+policy-map EDGE
+class PREMIUM
+priority percent 60
+class BEST-EFFORT
+bandwidth percent 15
+
 interface f0/0
 ip add 10.17.3.25 255.255.255.252
 ipv6 enable
@@ -287,7 +305,6 @@ ipv6 add 2002:A:A:2103:7::1/80
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
-
 
 interface range f1/1 - 2
 switchport mode trunk
@@ -312,6 +329,7 @@ no shut
 
 interface vlan 100
 ip add 10.17.0.5 255.255.255.0
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2100::5/64
 ip ospf 1 area 0
@@ -321,6 +339,7 @@ no shut
 
 interface vlan 101
 ip add 10.17.1.5 255.255.255.0
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2101::5/64
 ip ospf 1 area 0
@@ -331,7 +350,7 @@ no shut
 
 interface vlan 781
 ip add 10.23.65.253 255.255.255.0
-ip helper-address 10.17.3.83
+ip helper-address 200.1.0.65
 ipv6 enable
 ipv6 add 2002:A:A:2741::1/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
@@ -342,7 +361,7 @@ no shut
 
 interface vlan 481
 ip add 10.20.65.253 255.255.255.0
-ip helper-address 10.17.3.83
+ip helper-address 200.1.0.65
 ipv6 enable
 ipv6 add 2002:A:A:2409::1/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
@@ -388,6 +407,25 @@ passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
 
+
+# QoS
+access-list 101 permit ip 10.20.64.0 0.0.0.255 any
+class-map match-all EF
+match access-group 101
+policy-map SETDSCP
+class EF
+set ip dscp 46
+
+class-map match-all PREMIUM
+match ip dscp 46
+class-map match-all BEST-EFFORT
+match ip dscp 0
+policy-map EDGE
+class PREMIUM
+priority percent 60
+class BEST-EFFORT
+bandwidth percent 15
+
 interface f0/0
 ip add 10.17.3.26 255.255.255.252
 ipv6 enable
@@ -420,6 +458,7 @@ no shut
 
 interface vlan 100
 ip add 10.17.0.6 255.255.255.0
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2100::6/64
 ip ospf 1 area 0
@@ -429,6 +468,7 @@ no shut
 
 interface vlan 101
 ip add 10.17.1.6 255.255.255.0
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2101::6/64
 ip ospf 1 area 0
@@ -436,10 +476,9 @@ ipv6 ospf 1 area 0
 no autostate
 no shut
 
-
 interface vlan 781
 ip add 10.23.65.254 255.255.255.0
-ip helper-address 10.17.3.83
+ip helper-address 200.1.0.65
 ipv6 enable
 ipv6 add 2002:A:A:2741::2/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
@@ -450,7 +489,7 @@ no shut
 
 interface vlan 481
 ip add 10.20.65.254 255.255.255.0
-ip helper-address 10.17.3.83
+ip helper-address 200.1.0.65
 ipv6 enable
 ipv6 add 2002:A:A:2409::2/64
 ipv6 dhcp relay destination 2002:A:A:2103:19::3
@@ -494,6 +533,17 @@ default-information originate always
 ipv6 router ospf 1
 passive-interface vlan 290
 
+# QoS
+class-map match-all PREMIUM
+match ip dscp 46
+class-map match-all BEST-EFFORT
+match ip dscp 0
+
+policy-map EDGE
+class PREMIUM
+priority percent 60
+class BEST-EFFORT
+bandwidth percent 15
 
 # OldBuilding A
 interface f0/0
@@ -511,6 +561,7 @@ no shut
 interface f1/13
 no switchport
 ip add 10.17.3.57 255.255.255.252
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2103:15::1/80
 ip ospf 1 area 0
@@ -521,6 +572,7 @@ no shut
 interface f1/14
 no switchport
 ip add 10.17.3.61 255.255.255.252
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2103:16::1/80
 ip ospf 1 area 0
@@ -542,6 +594,7 @@ no shut
 interface f1/0
 no switchport
 ip add 10.17.3.33 255.255.255.252
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2103:9::1/80
 ip ospf 1 area 0
@@ -552,6 +605,7 @@ no shut
 interface f1/1
 no switchport
 ip add 10.17.3.37 255.255.255.252
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2103:10::1/80
 ip ospf 1 area 0
@@ -594,15 +648,6 @@ ipv6 ospf 1 area 0
 no autostate
 no shut
 
-interface vlan 101
-ip add 10.17.1.1 255.255.255.0
-ipv6 enable
-ipv6 add 2002:A:A:2101::1/64
-ip ospf 1 area 0
-ipv6 ospf 1 area 0
-no autostate
-no shut
-
 interface vlan 290
 ip add 10.18.72.250 255.255.255.0
 ipv6 enable
@@ -636,6 +681,17 @@ default-information originate always
 ipv6 router ospf 1
 passive-interface vlan 290
 
+# QoS
+class-map match-all PREMIUM
+match ip dscp 46
+class-map match-all BEST-EFFORT
+match ip dscp 0
+
+policy-map EDGE
+class PREMIUM
+priority percent 60
+class BEST-EFFORT
+bandwidth percent 15
 
 # OldBuilding A
 interface f0/0
@@ -653,6 +709,7 @@ no shut
 interface f1/13
 no switchport
 ip add 10.17.3.65 255.255.255.252
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2103:17::1/80
 ip ospf 1 area 0
@@ -663,6 +720,7 @@ no shut
 interface f1/14
 no switchport
 ip add 10.17.3.69 255.255.255.252
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2103:18::1/80
 ip ospf 1 area 0
@@ -683,6 +741,7 @@ no shut
 interface f1/0
 no switchport
 ip add 10.17.3.41 255.255.255.252
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2103:11::1/80
 ip ospf 1 area 0
@@ -693,6 +752,7 @@ no shut
 interface f1/1
 no switchport
 ip add 10.17.3.45 255.255.255.252
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2103:12::1/80
 ip ospf 1 area 0
@@ -703,6 +763,7 @@ no shut
 interface f1/2
 no switchport
 ip add 10.17.3.82 255.255.255.248
+service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2103:19::2/80
 ip ospf 1 area 0
@@ -721,15 +782,6 @@ interface vlan 1
 ip add 10.0.0.2 255.255.255.0
 ipv6 enable
 ipv6 add 2002:A:A::2/64
-ip ospf 1 area 0
-ipv6 ospf 1 area 0
-no autostate
-no shut
-
-interface vlan 100
-ip add 10.17.0.2 255.255.255.0
-ipv6 enable
-ipv6 add 2002:A:A:2100::2/64
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no autostate
@@ -776,7 +828,6 @@ ipv6 route 2002:A:A:6000::/52 2001:0:0:0::4
 crypto isakmp policy 30
 authentication pre-share
 crypto isakmp key labcom address 100.0.0.3
-crypto isakmp key labcom address 100.0.0.4
 crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
 crypto ipsec profile Chicago
 set transform-set auth_ciphT
@@ -786,7 +837,6 @@ access-list 100 permit ip 10.20.64.0 0.0.7.255 10.52.40.0 0.0.0.255
 route-map routevc permit 10
 match ip address 100
 set interface tunnel 1
-
 
 # NAT
 access-list 1 permit 10.0.0.0 0.255.255.255
@@ -837,9 +887,9 @@ ipv6 enable
 ipv6 add 2001:0:0:0::1/64
 no shut
 
-# DHCP - DNS
+# DMZ
 interface f3/0
-ip add 10.17.3.81 255.255.255.248
+ip add 200.1.0.125 255.255.255.192
 ipv6 enable
 ipv6 add 2002:A:A:2103:19::1/80
 ip ospf 1 area 0
@@ -924,9 +974,9 @@ tunnel destination 100.0.0.3
 tunnel mode gre ip
 no shut
 
-# DHCP - DNS
+# DMZ
 interface f3/0
-ip add 10.17.3.82 255.255.255.248
+ip add 200.1.0.126 255.255.255.192
 ipv6 enable
 ipv6 add 2002:A:A:2103:19::2/80
 ip ospf 1 area 0
@@ -966,7 +1016,7 @@ no shut
 # Internal
 interface f1/0
 no switchport
-ip add 200.1.0.126 255.255.255.128
+ip add 200.1.0.62 255.255.255.192
 ipv6 enable
 ipv6 add 2002:A:A:1::1/64 
 ip ospf 1 area 0
@@ -1008,7 +1058,7 @@ no shut
 # Internal
 interface f1/0
 no switchport
-ip add 200.1.0.125 255.255.255.128
+ip add 200.1.0.61 255.255.255.192
 ipv6 enable
 ipv6 add 2002:A:A:1::2/64 
 ip ospf 1 area 0
@@ -1024,9 +1074,8 @@ write
 Aveiro_Datacenter_Terminal
 ###############################################################
 # Precisa de IP privado?
-ip 200.1.0.1/25 200.1.0.126
+ip 200.1.0.1/26 200.1.0.62
 ip 2002:A:A:1::100/64 2002:A:A:1::1
-
 
 
 ###############################################################

@@ -1,0 +1,22 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "metaltech.com" in {
+    type master;
+    file "/etc/bind/db.metaltech.com.signed";
+};
+
+zone "1.0.1.200.in-addr.arpa" in {
+    type master;
+    file "/etc/bind/db.200.1.0.1.rev";
+};
+
+zone "metaltech.pt" in {
+    type master;
+    file "/etc/bind/db.metaltech.pt.signed";
+};

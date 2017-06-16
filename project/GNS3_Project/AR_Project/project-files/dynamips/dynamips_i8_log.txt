@@ -1,88 +1,53 @@
-Jun 14 14:51:05.075 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 14 14:51:05.075 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52143.
-Jun 14 14:51:05.182 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 14 14:51:05.187 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 14 14:51:05.187 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 14 14:51:05.192 HYPERVISOR: exec_cmd: vm create ISP1_PT_R1 7 c3745 
-Jun 14 14:51:05.192 VM: VM ISP1_PT_R1 created.
-Jun 14 14:51:05.196 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP1_PT_R1 5007 
-Jun 14 14:51:05.202 HYPERVISOR: exec_cmd: c3745 get_mac_addr ISP1_PT_R1 
-Jun 14 14:51:05.207 HYPERVISOR: exec_cmd: vm set_ios ISP1_PT_R1 /Users/pedromartins/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
-Jun 14 14:51:05.212 HYPERVISOR: exec_cmd: vm set_disk0 ISP1_PT_R1 0 
-Jun 14 14:51:05.220 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 14:51:05.259 HYPERVISOR: exec_cmd: vm slot_add_binding ISP1_PT_R1 2 0 NM-1FE-TX 
-Jun 14 14:51:05.271 HYPERVISOR: exec_cmd: vm set_nvram ISP1_PT_R1 256 
-Jun 14 14:51:05.276 HYPERVISOR: exec_cmd: c3745 set_mac_addr ISP1_PT_R1 c407.1277.0000 
-Jun 14 14:51:05.278 HYPERVISOR: exec_cmd: vm set_ram ISP1_PT_R1 256 
-Jun 14 14:51:05.280 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 14:51:05.286 HYPERVISOR: exec_cmd: vm set_idle_pc ISP1_PT_R1 0x60b22838 
-Jun 14 14:51:05.292 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 14:51:05.295 HYPERVISOR: exec_cmd: vm slot_add_binding ISP1_PT_R1 1 0 NM-1FE-TX 
-Jun 14 14:51:05.300 HYPERVISOR: exec_cmd: vm set_config ISP1_PT_R1 configs/i7_startup-config.cfg 
-Jun 14 14:51:06.640 HYPERVISOR: exec_cmd: nio create_udp udp-8b2fea65-df5b-4b5c-a467-35ab103a432f 10025 127.0.0.1 10026 
-Jun 14 14:51:06.648 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 0 0 udp-8b2fea65-df5b-4b5c-a467-35ab103a432f 
-Jun 14 14:51:06.650 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 14:51:06.673 HYPERVISOR: exec_cmd: nio create_udp udp-33d17a86-32b1-47d9-b30a-8c2a2d0e6b54 10024 127.0.0.1 10027 
-Jun 14 14:51:06.683 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 0 1 udp-33d17a86-32b1-47d9-b30a-8c2a2d0e6b54 
-Jun 14 14:51:06.685 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 14:51:06.705 HYPERVISOR: exec_cmd: nio create_udp udp-234efe84-7c32-436b-9c75-a3811a9d0ed2 10028 127.0.0.1 10029 
-Jun 14 14:51:06.713 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 2 0 udp-234efe84-7c32-436b-9c75-a3811a9d0ed2 
-Jun 14 14:51:06.717 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 14:51:06.733 HYPERVISOR: exec_cmd: nio create_udp udp-74e3d6b3-e6db-4727-bcb6-44bb4050bf29 10030 127.0.0.1 10031 
-Jun 14 14:51:06.748 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 1 0 udp-74e3d6b3-e6db-4727-bcb6-44bb4050bf29 
-Jun 14 14:51:06.755 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 14:54:26.916 HYPERVISOR: exec_cmd: vm set_ghost_status ISP1_PT_R1 2 
-Jun 14 14:54:26.922 HYPERVISOR: exec_cmd: vm set_ghost_file ISP1_PT_R1 c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
-Jun 14 14:54:26.924 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 14:54:26.927 HYPERVISOR: exec_cmd: vm start ISP1_PT_R1 
-Jun 14 15:23:14.859 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
-Jun 14 17:11:26.332 HYPERVISOR: exec_cmd: nio bind_filter udp-74e3d6b3-e6db-4727-bcb6-44bb4050bf29 2 capture 
-Jun 14 17:11:26.337 HYPERVISOR: exec_cmd: nio setup_filter udp-74e3d6b3-e6db-4727-bcb6-44bb4050bf29 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/captures/ISP1_PT_R1_FastEthernet1-0_to_ISP2_PT_R1_FastEthernet1-0.pcap 
-Jun 14 17:11:41.462 HYPERVISOR: exec_cmd: nio unbind_filter udp-74e3d6b3-e6db-4727-bcb6-44bb4050bf29 2 
-Jun 14 17:11:44.915 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
-Jun 14 18:16:40.445 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 18:16:49.437 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 18:16:49.438 HYPERVISOR: exec_cmd: vm stop ISP1_PT_R1 
-Jun 14 18:16:49.606 VM: VM ISP1_PT_R1 shutdown.
-Jun 14 18:16:49.611 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
-Jun 14 18:16:55.938 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 18:16:55.939 HYPERVISOR: exec_cmd: vm slot_add_binding ISP1_PT_R1 3 0 NM-1FE-TX 
-Jun 14 18:18:18.442 HYPERVISOR: exec_cmd: nio create_udp udp-29d3d0c3-48c5-49a6-8931-9b61fc02aa26 10090 127.0.0.1 10091 
-Jun 14 18:18:18.454 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 3 0 udp-29d3d0c3-48c5-49a6-8931-9b61fc02aa26 
-Jun 14 18:18:18.456 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 18:21:12.642 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 18:21:12.645 HYPERVISOR: exec_cmd: vm start ISP1_PT_R1 
-Jun 14 18:24:54.854 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
-Jun 14 18:24:56.722 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 18:24:56.733 HYPERVISOR: exec_cmd: vm stop ISP1_PT_R1 
-Jun 14 18:24:56.903 VM: VM ISP1_PT_R1 shutdown.
-Jun 14 18:24:56.923 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
-Jun 14 18:24:58.664 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
-Jun 14 18:25:00.938 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 18:25:00.952 HYPERVISOR: exec_cmd: vm start ISP1_PT_R1 
-Jun 14 18:30:38.320 HYPERVISOR: exec_cmd: nio bind_filter udp-29d3d0c3-48c5-49a6-8931-9b61fc02aa26 2 capture 
-Jun 14 18:30:38.322 HYPERVISOR: exec_cmd: nio setup_filter udp-29d3d0c3-48c5-49a6-8931-9b61fc02aa26 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/captures/ISP1_PT_R1_FastEthernet3-0_to_DMZ_2.pcap 
-Jun 14 18:57:35.069 HYPERVISOR: exec_cmd: nio unbind_filter udp-29d3d0c3-48c5-49a6-8931-9b61fc02aa26 2 
-Jun 14 18:57:39.488 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
-Jun 14 19:09:50.673 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 19:09:50.678 HYPERVISOR: exec_cmd: vm stop ISP1_PT_R1 
-Jun 14 19:09:50.864 VM: VM ISP1_PT_R1 shutdown.
-Jun 14 19:09:50.866 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
-Jun 14 19:46:20.253 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 19:46:20.254 HYPERVISOR: exec_cmd: vm start ISP1_PT_R1 
-Jun 14 20:09:40.288 HYPERVISOR: exec_cmd: nio bind_filter udp-8b2fea65-df5b-4b5c-a467-35ab103a432f 2 capture 
-Jun 14 20:09:40.289 HYPERVISOR: exec_cmd: nio setup_filter udp-8b2fea65-df5b-4b5c-a467-35ab103a432f 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/captures/ISP1_PT_R1_FastEthernet0-0_to_Aveiro_Core_A_FastEthernet1-0.pcap 
-Jun 14 20:31:25.017 HYPERVISOR: exec_cmd: nio unbind_filter udp-8b2fea65-df5b-4b5c-a467-35ab103a432f 2 
-Jun 14 20:40:58.181 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
-Jun 14 22:58:53.632 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 22:58:53.648 HYPERVISOR: exec_cmd: vm stop ISP1_PT_R1 
-Jun 14 22:58:53.833 VM: VM ISP1_PT_R1 shutdown.
-Jun 14 22:58:53.836 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
-Jun 14 23:04:41.405 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
-Jun 14 23:04:46.997 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
-Jun 14 23:04:47.019 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
-Jun 14 23:04:47.052 HYPERVISOR: exec_cmd: vm delete ISP1_PT_R1 
-Jun 14 23:04:47.052 VM: VM ISP1_PT_R1 destroyed.
-Jun 14 23:04:47.080 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 14 23:04:47.165 HYPERVISOR: Stopped.
-Jun 14 23:04:47.165 GENERAL: reset done.
+Jun 16 17:33:33.512 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 16 17:33:33.512 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50165.
+Jun 16 17:33:33.594 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 16 17:33:33.599 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project_QoSETuneis-Working/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 16 17:33:33.599 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project_QoSETuneis-Working/GNS3_Project/AR_Project/project-files/dynamips
+Jun 16 17:33:33.608 HYPERVISOR: exec_cmd: vm create ISP1_PT_R1 7 c3745 
+Jun 16 17:33:33.608 VM: VM ISP1_PT_R1 created.
+Jun 16 17:33:33.623 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP1_PT_R1 5007 
+Jun 16 17:33:33.627 HYPERVISOR: exec_cmd: c3745 get_mac_addr ISP1_PT_R1 
+Jun 16 17:33:33.632 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+Jun 16 17:33:33.645 HYPERVISOR: exec_cmd: vm slot_add_binding ISP1_PT_R1 2 0 NM-1FE-TX 
+Jun 16 17:33:33.669 HYPERVISOR: exec_cmd: vm set_nvram ISP1_PT_R1 256 
+Jun 16 17:33:33.679 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+Jun 16 17:33:33.702 HYPERVISOR: exec_cmd: vm slot_add_binding ISP1_PT_R1 1 0 NM-1FE-TX 
+Jun 16 17:33:33.707 HYPERVISOR: exec_cmd: vm set_disk0 ISP1_PT_R1 0 
+Jun 16 17:33:33.710 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+Jun 16 17:33:33.715 HYPERVISOR: exec_cmd: vm set_idle_pc ISP1_PT_R1 0x60b22838 
+Jun 16 17:33:33.718 HYPERVISOR: exec_cmd: vm set_ram ISP1_PT_R1 256 
+Jun 16 17:33:33.727 HYPERVISOR: exec_cmd: vm set_ios ISP1_PT_R1 /Users/pedromartins/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 16 17:33:33.741 HYPERVISOR: exec_cmd: c3745 set_mac_addr ISP1_PT_R1 c407.1277.0000 
+Jun 16 17:33:33.748 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+Jun 16 17:33:33.752 HYPERVISOR: exec_cmd: vm slot_add_binding ISP1_PT_R1 3 0 NM-1FE-TX 
+Jun 16 17:33:33.755 HYPERVISOR: exec_cmd: vm set_config ISP1_PT_R1 configs/i7_startup-config.cfg 
+Jun 16 17:33:35.191 HYPERVISOR: exec_cmd: nio create_udp udp-9b2187bb-13f0-4222-a077-84dd253ed04e 10024 127.0.0.1 10025 
+Jun 16 17:33:35.202 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 0 0 udp-9b2187bb-13f0-4222-a077-84dd253ed04e 
+Jun 16 17:33:35.206 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+Jun 16 17:33:35.231 HYPERVISOR: exec_cmd: nio create_udp udp-a227c694-e1d9-4e8b-a2ca-1c15ba309300 10026 127.0.0.1 10027 
+Jun 16 17:33:35.243 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 0 1 udp-a227c694-e1d9-4e8b-a2ca-1c15ba309300 
+Jun 16 17:33:35.245 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+Jun 16 17:33:35.264 HYPERVISOR: exec_cmd: nio create_udp udp-1cfb80d2-b372-47f1-8c71-a8c9ffa20ac2 10028 127.0.0.1 10029 
+Jun 16 17:33:35.276 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 2 0 udp-1cfb80d2-b372-47f1-8c71-a8c9ffa20ac2 
+Jun 16 17:33:35.279 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+Jun 16 17:33:35.303 HYPERVISOR: exec_cmd: nio create_udp udp-48a45160-e35a-4c51-9eed-cd99ca526d03 10030 127.0.0.1 10031 
+Jun 16 17:33:35.319 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 1 0 udp-48a45160-e35a-4c51-9eed-cd99ca526d03 
+Jun 16 17:33:35.322 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+Jun 16 17:33:36.060 HYPERVISOR: exec_cmd: nio create_udp udp-0486ba79-6a1c-4644-a087-d6e2d73e97d5 10090 127.0.0.1 10091 
+Jun 16 17:33:36.069 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1_PT_R1 3 0 udp-0486ba79-6a1c-4644-a087-d6e2d73e97d5 
+Jun 16 17:33:36.088 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+Jun 16 17:34:06.660 HYPERVISOR: exec_cmd: vm set_ghost_status ISP1_PT_R1 2 
+Jun 16 17:34:06.669 HYPERVISOR: exec_cmd: vm set_ghost_file ISP1_PT_R1 c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
+Jun 16 17:34:06.675 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+Jun 16 17:34:06.677 HYPERVISOR: exec_cmd: vm start ISP1_PT_R1 
+Jun 16 17:48:42.151 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+Jun 16 17:48:42.170 HYPERVISOR: exec_cmd: vm stop ISP1_PT_R1 
+Jun 16 17:48:42.333 VM: VM ISP1_PT_R1 shutdown.
+Jun 16 17:48:42.335 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
+Jun 16 17:48:47.095 HYPERVISOR: exec_cmd: vm get_status ISP1_PT_R1 
+Jun 16 17:48:47.140 HYPERVISOR: exec_cmd: vm extract_config ISP1_PT_R1 
+Jun 16 17:48:47.173 HYPERVISOR: exec_cmd: vm delete ISP1_PT_R1 
+Jun 16 17:48:47.173 VM: VM ISP1_PT_R1 destroyed.
+Jun 16 17:48:47.205 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 16 17:48:47.698 HYPERVISOR: Stopped.
+Jun 16 17:48:47.698 GENERAL: reset done.
