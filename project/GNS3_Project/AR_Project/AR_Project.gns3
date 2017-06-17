@@ -161,91 +161,25 @@
                 }
             },
             {
-                "description": "Link from Aveiro_Core_A port FastEthernet0/0 to OldBuilding_A port FastEthernet0/0",
+                "description": "Link from OldBuilding_B port FastEthernet0/1 to OldBuilding_A port FastEthernet0/1",
                 "destination_node_id": 7,
-                "destination_port_id": 84,
+                "destination_port_id": 85,
                 "destination_port_label": {
                     "color": "#ff000000",
                     "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": 45.75688085474279,
-                    "y": 40.254072742513145
+                    "text": "f0/1",
+                    "x": 26.429981109950575,
+                    "y": 63.489187727873826
                 },
                 "id": 8,
-                "source_node_id": 9,
-                "source_port_id": 140,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": -29.405113132883628,
-                    "y": 8.8672476010465
-                }
-            },
-            {
-                "description": "Link from Aveiro_Core_A port FastEthernet0/1 to OldBuilding_B port FastEthernet0/0",
-                "destination_node_id": 8,
-                "destination_port_id": 88,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": 34.110488545466055,
-                    "y": -18.67710046216982
-                },
-                "id": 9,
-                "source_node_id": 9,
-                "source_port_id": 141,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/1",
-                    "x": -31.90085644733783,
-                    "y": 25.37201393453661
-                }
-            },
-            {
-                "description": "Link from OldBuilding_A port FastEthernet0/1 to Aveiro_Core_B port FastEthernet0/0",
-                "destination_node_id": 10,
-                "destination_port_id": 158,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/0",
-                    "x": -34.7578037660648,
-                    "y": -4.989167376242936
-                },
-                "id": 10,
-                "source_node_id": 7,
-                "source_port_id": 85,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/1",
-                    "x": 62.423279986908724,
-                    "y": 11.684080848609739
-                }
-            },
-            {
-                "description": "Link from OldBuilding_B port FastEthernet0/1 to Aveiro_Core_B port FastEthernet0/1",
-                "destination_node_id": 10,
-                "destination_port_id": 159,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f0/1",
-                    "x": -33.09603617137191,
-                    "y": 35.005857952823504
-                },
-                "id": 11,
                 "source_node_id": 8,
                 "source_port_id": 89,
                 "source_port_label": {
                     "color": "#ff000000",
                     "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
                     "text": "f0/1",
-                    "x": 57.225978486283125,
-                    "y": 12.701248828363035
+                    "x": 24.570018890049425,
+                    "y": -16.489187727873855
                 }
             },
             {
@@ -259,7 +193,7 @@
                     "x": -43.48293634068585,
                     "y": 11.36454715213776
                 },
-                "id": 12,
+                "id": 9,
                 "source_node_id": 9,
                 "source_port_id": 139,
                 "source_port_label": {
@@ -281,7 +215,7 @@
                     "x": -9.69970690599851,
                     "y": -33.461257685310514
                 },
-                "id": 13,
+                "id": 10,
                 "source_node_id": 13,
                 "source_port_id": 196,
                 "source_port_label": {
@@ -303,7 +237,7 @@
                     "x": -37.36607015219957,
                     "y": -21.04041489368952
                 },
-                "id": 14,
+                "id": 11,
                 "source_node_id": 13,
                 "source_port_id": 197,
                 "source_port_label": {
@@ -325,7 +259,7 @@
                     "x": 23.881109757643372,
                     "y": 54.27533656986009
                 },
-                "id": 15,
+                "id": 12,
                 "source_node_id": 13,
                 "source_port_id": 520,
                 "source_port_label": {
@@ -334,72 +268,6 @@
                     "text": "f2/0",
                     "x": 6.435124058283051,
                     "y": -27.589045068844854
-                }
-            },
-            {
-                "description": "Link from Aveiro_E0_MonTerminal port Ethernet0 to Aveiro_E0_Access port 3",
-                "destination_node_id": 22,
-                "destination_port_id": 308,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "3",
-                    "x": 12.665385718064314,
-                    "y": 48.84174767875817
-                },
-                "id": 16,
-                "source_node_id": 24,
-                "source_port_id": 322,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "e0",
-                    "x": 55.334614281935686,
-                    "y": -3.3417476787581677
-                }
-            },
-            {
-                "description": "Link from Aveiro_E0_MonVC port Ethernet0 to Aveiro_E0_Access port 4",
-                "destination_node_id": 22,
-                "destination_port_id": 309,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "4",
-                    "x": 44.49438026795035,
-                    "y": 54.97564782778477
-                },
-                "id": 17,
-                "source_node_id": 25,
-                "source_port_id": 323,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "e0",
-                    "x": 23.505619732049652,
-                    "y": -9.475647827784769
-                }
-            },
-            {
-                "description": "Link from Aveiro_WLAN1_1 port Ethernet0 to Aveiro_E0_Access port 5",
-                "destination_node_id": 22,
-                "destination_port_id": 310,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "5",
-                    "x": 66.09644792468204,
-                    "y": 41.76542983131117
-                },
-                "id": 18,
-                "source_node_id": 26,
-                "source_port_id": 324,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "e0",
-                    "x": -5.745559905852559,
-                    "y": -2.7067872891390152
                 }
             },
             {
@@ -413,7 +281,7 @@
                     "x": -6.999869209190308,
                     "y": 21.89770998254852
                 },
-                "id": 19,
+                "id": 13,
                 "source_node_id": 13,
                 "source_port_id": 258,
                 "source_port_label": {
@@ -435,7 +303,7 @@
                     "x": 51.88894180730264,
                     "y": 52.4883897484782
                 },
-                "id": 20,
+                "id": 14,
                 "source_node_id": 17,
                 "source_port_id": 521,
                 "source_port_label": {
@@ -457,7 +325,7 @@
                     "x": 31.891377048840724,
                     "y": -27.130847627701296
                 },
-                "id": 21,
+                "id": 15,
                 "source_node_id": 17,
                 "source_port_id": 254,
                 "source_port_label": {
@@ -479,7 +347,7 @@
                     "x": 23.744785169520924,
                     "y": -19.77204389896432
                 },
-                "id": 22,
+                "id": 16,
                 "source_node_id": 17,
                 "source_port_id": 255,
                 "source_port_label": {
@@ -488,6 +356,72 @@
                     "text": "f0/1",
                     "x": 38.99785551759834,
                     "y": 62.44361677421813
+                }
+            },
+            {
+                "description": "Link from Aveiro_E0_MonTerminal port Ethernet0 to Aveiro_E0_Access port 3",
+                "destination_node_id": 22,
+                "destination_port_id": 308,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "3",
+                    "x": 12.665385718064314,
+                    "y": 48.84174767875817
+                },
+                "id": 17,
+                "source_node_id": 24,
+                "source_port_id": 322,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 55.334614281935686,
+                    "y": -3.3417476787581677
+                }
+            },
+            {
+                "description": "Link from Aveiro_E0_MonVC port Ethernet0 to Aveiro_E0_Access port 4",
+                "destination_node_id": 22,
+                "destination_port_id": 309,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "4",
+                    "x": 44.49438026795035,
+                    "y": 54.97564782778477
+                },
+                "id": 18,
+                "source_node_id": 25,
+                "source_port_id": 323,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": 23.505619732049652,
+                    "y": -9.475647827784769
+                }
+            },
+            {
+                "description": "Link from Aveiro_WLAN1_1 port Ethernet0 to Aveiro_E0_Access port 5",
+                "destination_node_id": 22,
+                "destination_port_id": 310,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "5",
+                    "x": 66.09644792468204,
+                    "y": 41.76542983131117
+                },
+                "id": 19,
+                "source_node_id": 26,
+                "source_port_id": 324,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": -5.745559905852559,
+                    "y": -2.7067872891390152
                 }
             },
             {
@@ -501,7 +435,7 @@
                     "x": 10.147095562518984,
                     "y": 46.939137618620805
                 },
-                "id": 23,
+                "id": 20,
                 "source_node_id": 27,
                 "source_port_id": 325,
                 "source_port_label": {
@@ -523,7 +457,7 @@
                     "x": 39.857473635954534,
                     "y": 55.761946928086445
                 },
-                "id": 24,
+                "id": 21,
                 "source_node_id": 28,
                 "source_port_id": 326,
                 "source_port_label": {
@@ -532,6 +466,72 @@
                     "text": "e0",
                     "x": 28.142526364045466,
                     "y": -10.261946928086445
+                }
+            },
+            {
+                "description": "Link from Aveiro_Core_A port FastEthernet1/5 to Aveiro_E1_Dist_A port FastEthernet1/1",
+                "destination_node_id": 20,
+                "destination_port_id": 271,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/1",
+                    "x": -35.52828417092445,
+                    "y": -2.0756345219652417
+                },
+                "id": 22,
+                "source_node_id": 9,
+                "source_port_id": 129,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/5",
+                    "x": 51.530809487866094,
+                    "y": 46.07563452196525
+                }
+            },
+            {
+                "description": "Link from Aveiro_Core_B port FastEthernet1/5 to Aveiro_E1_Dist_A port FastEthernet1/2",
+                "destination_node_id": 20,
+                "destination_port_id": 272,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/2",
+                    "x": 11.167478279620639,
+                    "y": -16.96602117327808
+                },
+                "id": 23,
+                "source_node_id": 10,
+                "source_port_id": 147,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/5",
+                    "x": 36.154852190715644,
+                    "y": 56.99545842480094
+                }
+            },
+            {
+                "description": "Link from Aveiro_E1_Access port 1 to Aveiro_E1_Dist_A port FastEthernet1/0",
+                "destination_node_id": 20,
+                "destination_port_id": 270,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f1/0",
+                    "x": 49.470026945767586,
+                    "y": 55.52245787286131
+                },
+                "id": 24,
+                "source_node_id": 23,
+                "source_port_id": 314,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 11.529973054232414,
+                    "y": -16.022457872861253
                 }
             },
             {
@@ -557,72 +557,6 @@
                 }
             },
             {
-                "description": "Link from Aveiro_Core_A port FastEthernet1/5 to Aveiro_E1_Dist_A port FastEthernet1/1",
-                "destination_node_id": 20,
-                "destination_port_id": 271,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f1/1",
-                    "x": -35.52828417092445,
-                    "y": -2.0756345219652417
-                },
-                "id": 26,
-                "source_node_id": 9,
-                "source_port_id": 129,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f1/5",
-                    "x": 51.530809487866094,
-                    "y": 46.07563452196525
-                }
-            },
-            {
-                "description": "Link from Aveiro_Core_B port FastEthernet1/5 to Aveiro_E1_Dist_A port FastEthernet1/2",
-                "destination_node_id": 20,
-                "destination_port_id": 272,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f1/2",
-                    "x": 11.167478279620639,
-                    "y": -16.96602117327808
-                },
-                "id": 27,
-                "source_node_id": 10,
-                "source_port_id": 147,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f1/5",
-                    "x": 36.154852190715644,
-                    "y": 56.99545842480094
-                }
-            },
-            {
-                "description": "Link from Aveiro_E1_Access port 1 to Aveiro_E1_Dist_A port FastEthernet1/0",
-                "destination_node_id": 20,
-                "destination_port_id": 270,
-                "destination_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "f1/0",
-                    "x": 49.470026945767586,
-                    "y": 55.52245787286131
-                },
-                "id": 28,
-                "source_node_id": 23,
-                "source_port_id": 314,
-                "source_port_label": {
-                    "color": "#ff000000",
-                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "1",
-                    "x": 11.529973054232414,
-                    "y": -16.022457872861253
-                }
-            },
-            {
                 "description": "Link from Aveiro_Core_A port FastEthernet1/6 to Aveiro_E1_Dist_B port FastEthernet1/1",
                 "destination_node_id": 21,
                 "destination_port_id": 289,
@@ -633,7 +567,7 @@
                     "x": -40.56982700469223,
                     "y": -0.184841122562716
                 },
-                "id": 29,
+                "id": 26,
                 "source_node_id": 9,
                 "source_port_id": 130,
                 "source_port_label": {
@@ -655,7 +589,7 @@
                     "x": 0.5333814241182608,
                     "y": -16.00601830532912
                 },
-                "id": 30,
+                "id": 27,
                 "source_node_id": 10,
                 "source_port_id": 148,
                 "source_port_label": {
@@ -677,7 +611,7 @@
                     "x": -30.05300537238577,
                     "y": 24.724304921526425
                 },
-                "id": 31,
+                "id": 28,
                 "source_node_id": 20,
                 "source_port_id": 286,
                 "source_port_label": {
@@ -699,7 +633,7 @@
                     "x": 5.124174389931682,
                     "y": 57.92129763254263
                 },
-                "id": 32,
+                "id": 29,
                 "source_node_id": 23,
                 "source_port_id": 315,
                 "source_port_label": {
@@ -721,7 +655,7 @@
                     "x": -7.457201845183931,
                     "y": 31.349870455795553
                 },
-                "id": 33,
+                "id": 30,
                 "source_node_id": 32,
                 "source_port_id": 635,
                 "source_port_label": {
@@ -743,7 +677,7 @@
                     "x": -26.023260608176656,
                     "y": 36.77831107867546
                 },
-                "id": 34,
+                "id": 31,
                 "source_node_id": 10,
                 "source_port_id": 155,
                 "source_port_label": {
@@ -765,7 +699,7 @@
                     "x": -35.82182767512745,
                     "y": 10.594515909742597
                 },
-                "id": 35,
+                "id": 32,
                 "source_node_id": 9,
                 "source_port_id": 137,
                 "source_port_label": {
@@ -787,7 +721,7 @@
                     "x": -6.452484036250212,
                     "y": -16.305633934332754
                 },
-                "id": 36,
+                "id": 33,
                 "source_node_id": 30,
                 "source_port_id": 597,
                 "source_port_label": {
@@ -809,7 +743,7 @@
                     "x": -30.025909430463912,
                     "y": 15.675481887309843
                 },
-                "id": 37,
+                "id": 34,
                 "source_node_id": 10,
                 "source_port_id": 156,
                 "source_port_label": {
@@ -831,7 +765,7 @@
                     "x": -26.971441285800438,
                     "y": -10.682728077484114
                 },
-                "id": 38,
+                "id": 35,
                 "source_node_id": 9,
                 "source_port_id": 138,
                 "source_port_label": {
@@ -853,7 +787,7 @@
                     "x": 0.31638384850020884,
                     "y": 35.029270992445404
                 },
-                "id": 39,
+                "id": 36,
                 "source_node_id": 31,
                 "source_port_id": 615,
                 "source_port_label": {
@@ -875,7 +809,7 @@
                     "x": -4.438414128216493,
                     "y": 18.218800784900907
                 },
-                "id": 40,
+                "id": 37,
                 "source_node_id": 37,
                 "source_port_id": 658,
                 "source_port_label": {
@@ -897,7 +831,7 @@
                     "x": 72.59126406979053,
                     "y": 27.703666308271693
                 },
-                "id": 41,
+                "id": 38,
                 "source_node_id": 19,
                 "source_port_id": 261,
                 "source_port_label": {
@@ -919,7 +853,7 @@
                     "x": -2.0096614175707828,
                     "y": 41.34744446760493
                 },
-                "id": 42,
+                "id": 39,
                 "source_node_id": 36,
                 "source_port_id": 650,
                 "source_port_label": {
@@ -941,7 +875,7 @@
                     "x": 69.99487992114805,
                     "y": 6.78885738611865
                 },
-                "id": 43,
+                "id": 40,
                 "source_node_id": 19,
                 "source_port_id": 262,
                 "source_port_label": {
@@ -963,7 +897,7 @@
                     "x": 73.2493014408387,
                     "y": 29.228387684396466
                 },
-                "id": 44,
+                "id": 41,
                 "source_node_id": 35,
                 "source_port_id": 644,
                 "source_port_label": {
@@ -985,7 +919,7 @@
                     "x": 34.153366395197324,
                     "y": 61.98336836684007
                 },
-                "id": 45,
+                "id": 42,
                 "source_node_id": 35,
                 "source_port_id": 647,
                 "source_port_label": {
@@ -1007,7 +941,7 @@
                     "x": -1.1189030889896685,
                     "y": 32.095214709943605
                 },
-                "id": 46,
+                "id": 43,
                 "source_node_id": 13,
                 "source_port_id": 1124,
                 "source_port_label": {
@@ -1029,7 +963,7 @@
                     "x": 16.168638568352037,
                     "y": 51.018544589959674
                 },
-                "id": 47,
+                "id": 44,
                 "source_node_id": 17,
                 "source_port_id": 1125,
                 "source_port_label": {
@@ -1051,7 +985,7 @@
                     "x": -0.11654661624498885,
                     "y": 34.20608709011486
                 },
-                "id": 48,
+                "id": 45,
                 "source_node_id": 46,
                 "source_port_id": 1251,
                 "source_port_label": {
@@ -1073,7 +1007,7 @@
                     "x": -19.11576767203465,
                     "y": 52.085534859016555
                 },
-                "id": 49,
+                "id": 46,
                 "source_node_id": 40,
                 "source_port_id": 883,
                 "source_port_label": {
@@ -1095,7 +1029,7 @@
                     "x": -35.570482424719955,
                     "y": 50.06541564352574
                 },
-                "id": 50,
+                "id": 47,
                 "source_node_id": 40,
                 "source_port_id": 884,
                 "source_port_label": {
@@ -1117,7 +1051,7 @@
                     "x": 21.84824831772987,
                     "y": -21.598266928219346
                 },
-                "id": 51,
+                "id": 48,
                 "source_node_id": 40,
                 "source_port_id": 882,
                 "source_port_label": {
@@ -1139,7 +1073,7 @@
                     "x": 57.00427373868189,
                     "y": 27.949580879942346
                 },
-                "id": 52,
+                "id": 49,
                 "source_node_id": 41,
                 "source_port_id": 916,
                 "source_port_label": {
@@ -1161,7 +1095,7 @@
                     "x": 3.9302219717129674,
                     "y": 62.392528112373284
                 },
-                "id": 53,
+                "id": 50,
                 "source_node_id": 41,
                 "source_port_id": 901,
                 "source_port_label": {
@@ -1183,7 +1117,7 @@
                     "x": -12.582683275450108,
                     "y": 62.42151722165933
                 },
-                "id": 54,
+                "id": 51,
                 "source_node_id": 41,
                 "source_port_id": 902,
                 "source_port_label": {
@@ -1205,7 +1139,7 @@
                     "x": 58.33084247007349,
                     "y": -16.844369869228558
                 },
-                "id": 55,
+                "id": 52,
                 "source_node_id": 41,
                 "source_port_id": 900,
                 "source_port_label": {
@@ -1217,25 +1151,91 @@
                 }
             },
             {
-                "description": "Link from LabComServer Project port Ethernet0 to DMZ port 1",
-                "destination_node_id": 43,
-                "destination_port_id": 919,
+                "description": "Link from OldBuilding_A port FastEthernet0/0 to SW_OldBuilding port 1",
+                "destination_node_id": 47,
+                "destination_port_id": 1293,
                 "destination_port_label": {
                     "color": "#ff000000",
                     "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
                     "text": "1",
-                    "x": 71.34337903700043,
-                    "y": 23.85584733578395
+                    "x": 1.795343745185619,
+                    "y": -5.540569786911448
                 },
-                "id": 56,
-                "source_node_id": 42,
-                "source_port_id": 918,
+                "id": 53,
+                "source_node_id": 7,
+                "source_port_id": 84,
                 "source_port_label": {
                     "color": "#ff000000",
                     "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
-                    "text": "e0",
-                    "x": -3.3433790370004317,
-                    "y": 11.744657727604363
+                    "text": "f0/0",
+                    "x": 59.20465625481438,
+                    "y": 45.04056978691145
+                }
+            },
+            {
+                "description": "Link from OldBuilding_B port FastEthernet0/0 to SW_OldBuilding port 2",
+                "destination_node_id": 47,
+                "destination_port_id": 1294,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "2",
+                    "x": 2.337114846972952,
+                    "y": 38.365666731111276
+                },
+                "id": 54,
+                "source_node_id": 8,
+                "source_port_id": 88,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": 58.66288515302705,
+                    "y": 1.1343332688887244
+                }
+            },
+            {
+                "description": "Link from Aveiro_Core_A port FastEthernet0/0 to SW_OldBuilding port 3",
+                "destination_node_id": 47,
+                "destination_port_id": 1295,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "3",
+                    "x": 63.20988097697992,
+                    "y": -12.84722683797537
+                },
+                "id": 55,
+                "source_node_id": 9,
+                "source_port_id": 140,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -41.20988097697992,
+                    "y": 33.34722683797537
+                }
+            },
+            {
+                "description": "Link from Aveiro_Core_B port FastEthernet0/0 to SW_OldBuilding port 4",
+                "destination_node_id": 47,
+                "destination_port_id": 1296,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "4",
+                    "x": 69.79310857433524,
+                    "y": -4.5908403011838175
+                },
+                "id": 56,
+                "source_node_id": 10,
+                "source_port_id": 158,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "f0/0",
+                    "x": -46.793108574335236,
+                    "y": 30.090840301183817
                 }
             },
             {
@@ -1258,6 +1258,28 @@
                     "text": "f0/0",
                     "x": 70.73127332058473,
                     "y": 8.720278105045622
+                }
+            },
+            {
+                "description": "Link from LabComServer Project port Ethernet0 to DMZ port 1",
+                "destination_node_id": 43,
+                "destination_port_id": 919,
+                "destination_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "1",
+                    "x": 71.34337903700043,
+                    "y": 23.85584733578395
+                },
+                "id": 58,
+                "source_node_id": 42,
+                "source_port_id": 918,
+                "source_port_label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "e0",
+                    "x": -3.3433790370004317,
+                    "y": 11.744657727604363
                 }
             }
         ],
@@ -1345,8 +1367,8 @@
                 },
                 "server_id": 1,
                 "type": "EthernetSwitch",
-                "x": -264.5,
-                "y": -89.0
+                "x": -516.5,
+                "y": 116.0
             },
             {
                 "description": "Ethernet switch",
@@ -1431,8 +1453,8 @@
                 },
                 "server_id": 1,
                 "type": "EthernetSwitch",
-                "x": -258.5,
-                "y": 85.0
+                "x": -510.5,
+                "y": 290.0
             },
             {
                 "description": "VPCS device",
@@ -1464,8 +1486,8 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "type": "VPCSDevice",
                 "vm_id": "64fa54f3-c2d3-4208-9308-fe7e86836807",
-                "x": -457.5,
-                "y": -3.5
+                "x": -709.5,
+                "y": 201.5
             },
             {
                 "description": "Ethernet switch",
@@ -1550,8 +1572,8 @@
                 },
                 "server_id": 1,
                 "type": "EthernetSwitch",
-                "x": -351.5,
-                "y": 9.0
+                "x": -603.5,
+                "y": 214.0
             },
             {
                 "description": "Router c3725",
@@ -1669,18 +1691,18 @@
                     },
                     {
                         "adapter_number": 0,
-                        "description": "connected to Aveiro_Core_A on port FastEthernet0/0",
+                        "description": "connected to SW_OldBuilding on port 1",
                         "id": 84,
-                        "link_id": 8,
+                        "link_id": 53,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
                     },
                     {
                         "adapter_number": 0,
-                        "description": "connected to Aveiro_Core_B on port FastEthernet0/0",
+                        "description": "connected to OldBuilding_B on port FastEthernet0/1",
                         "id": 85,
-                        "link_id": 10,
+                        "link_id": 8,
                         "name": "FastEthernet0/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -1715,8 +1737,8 @@
                 "symbol": ":/symbols/multilayer_switch.svg",
                 "type": "C3725",
                 "vm_id": "89e1e01b-3457-4ef6-bc0f-f7af8de0f7fc",
-                "x": -83.5,
-                "y": -94.5
+                "x": -335.5,
+                "y": 110.5
             },
             {
                 "description": "Router c3725",
@@ -1834,18 +1856,18 @@
                     },
                     {
                         "adapter_number": 0,
-                        "description": "connected to Aveiro_Core_A on port FastEthernet0/1",
+                        "description": "connected to SW_OldBuilding on port 2",
                         "id": 88,
-                        "link_id": 9,
+                        "link_id": 54,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
                     },
                     {
                         "adapter_number": 0,
-                        "description": "connected to Aveiro_Core_B on port FastEthernet0/1",
+                        "description": "connected to OldBuilding_A on port FastEthernet0/1",
                         "id": 89,
-                        "link_id": 11,
+                        "link_id": 8,
                         "name": "FastEthernet0/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -1880,8 +1902,8 @@
                 "symbol": ":/symbols/multilayer_switch.svg",
                 "type": "C3725",
                 "vm_id": "2abca006-021f-4ab2-bf37-a540467c8443",
-                "x": -79.5,
-                "y": 77.5
+                "x": -331.5,
+                "y": 282.5
             },
             {
                 "description": "Router c3725",
@@ -1891,15 +1913,15 @@
                     "color": "#ff000000",
                     "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
                     "text": "Aveiro_Core_A",
-                    "x": -114.52150501646557,
-                    "y": 17.5857864376269
+                    "x": -87.52150501646554,
+                    "y": 4.5857864376268935
                 },
                 "ports": [
                     {
                         "adapter_number": 1,
                         "description": "connected to ISP1_PT_R1 on port FastEthernet0/0",
                         "id": 124,
-                        "link_id": 13,
+                        "link_id": 10,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -1908,7 +1930,7 @@
                         "adapter_number": 1,
                         "description": "connected to ISP2_PT_R1 on port FastEthernet0/0",
                         "id": 125,
-                        "link_id": 21,
+                        "link_id": 15,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -1923,7 +1945,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_E0_Dist_A on port FastEthernet1/1",
                         "id": 127,
-                        "link_id": 49,
+                        "link_id": 46,
                         "name": "FastEthernet1/3",
                         "nio": "NIO_UDP",
                         "port_number": 3
@@ -1932,7 +1954,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_E0_Dist_B on port FastEthernet1/1",
                         "id": 128,
-                        "link_id": 53,
+                        "link_id": 50,
                         "name": "FastEthernet1/4",
                         "nio": "NIO_UDP",
                         "port_number": 4
@@ -1941,7 +1963,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_E1_Dist_A on port FastEthernet1/1",
                         "id": 129,
-                        "link_id": 26,
+                        "link_id": 22,
                         "name": "FastEthernet1/5",
                         "nio": "NIO_UDP",
                         "port_number": 5
@@ -1950,7 +1972,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_E1_Dist_B on port FastEthernet1/1",
                         "id": 130,
-                        "link_id": 29,
+                        "link_id": 26,
                         "name": "FastEthernet1/6",
                         "nio": "NIO_UDP",
                         "port_number": 6
@@ -1995,7 +2017,7 @@
                         "adapter_number": 1,
                         "description": "connected to Datacenter_Aveiro_1 on port FastEthernet0/0",
                         "id": 137,
-                        "link_id": 35,
+                        "link_id": 32,
                         "name": "FastEthernet1/13",
                         "nio": "NIO_UDP",
                         "port_number": 13
@@ -2004,7 +2026,7 @@
                         "adapter_number": 1,
                         "description": "connected to Datacenter_Aveiro_2 on port FastEthernet0/0",
                         "id": 138,
-                        "link_id": 38,
+                        "link_id": 35,
                         "name": "FastEthernet1/14",
                         "nio": "NIO_UDP",
                         "port_number": 14
@@ -2013,27 +2035,24 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_Core_B on port FastEthernet1/15",
                         "id": 139,
-                        "link_id": 12,
+                        "link_id": 9,
                         "name": "FastEthernet1/15",
                         "nio": "NIO_UDP",
                         "port_number": 15
                     },
                     {
                         "adapter_number": 0,
-                        "description": "connected to OldBuilding_A on port FastEthernet0/0",
+                        "description": "connected to SW_OldBuilding on port 3",
                         "id": 140,
-                        "link_id": 8,
+                        "link_id": 55,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
                     },
                     {
                         "adapter_number": 0,
-                        "description": "connected to OldBuilding_B on port FastEthernet0/0",
                         "id": 141,
-                        "link_id": 9,
                         "name": "FastEthernet0/1",
-                        "nio": "NIO_UDP",
                         "port_number": 1
                     }
                 ],
@@ -2085,7 +2104,7 @@
                         "adapter_number": 1,
                         "description": "connected to ISP1_PT_R1 on port FastEthernet0/1",
                         "id": 142,
-                        "link_id": 14,
+                        "link_id": 11,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2094,7 +2113,7 @@
                         "adapter_number": 1,
                         "description": "connected to ISP2_PT_R1 on port FastEthernet0/1",
                         "id": 143,
-                        "link_id": 22,
+                        "link_id": 16,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -2109,7 +2128,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_E0_Dist_A on port FastEthernet1/2",
                         "id": 145,
-                        "link_id": 50,
+                        "link_id": 47,
                         "name": "FastEthernet1/3",
                         "nio": "NIO_UDP",
                         "port_number": 3
@@ -2118,7 +2137,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_E0_Dist_B on port FastEthernet1/2",
                         "id": 146,
-                        "link_id": 54,
+                        "link_id": 51,
                         "name": "FastEthernet1/4",
                         "nio": "NIO_UDP",
                         "port_number": 4
@@ -2127,7 +2146,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_E1_Dist_A on port FastEthernet1/2",
                         "id": 147,
-                        "link_id": 27,
+                        "link_id": 23,
                         "name": "FastEthernet1/5",
                         "nio": "NIO_UDP",
                         "port_number": 5
@@ -2136,7 +2155,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_E1_Dist_B on port FastEthernet1/2",
                         "id": 148,
-                        "link_id": 30,
+                        "link_id": 27,
                         "name": "FastEthernet1/6",
                         "nio": "NIO_UDP",
                         "port_number": 6
@@ -2181,7 +2200,7 @@
                         "adapter_number": 1,
                         "description": "connected to Datacenter_Aveiro_1 on port FastEthernet0/1",
                         "id": 155,
-                        "link_id": 34,
+                        "link_id": 31,
                         "name": "FastEthernet1/13",
                         "nio": "NIO_UDP",
                         "port_number": 13
@@ -2190,7 +2209,7 @@
                         "adapter_number": 1,
                         "description": "connected to Datacenter_Aveiro_2 on port FastEthernet0/1",
                         "id": 156,
-                        "link_id": 37,
+                        "link_id": 34,
                         "name": "FastEthernet1/14",
                         "nio": "NIO_UDP",
                         "port_number": 14
@@ -2199,27 +2218,24 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_Core_A on port FastEthernet1/15",
                         "id": 157,
-                        "link_id": 12,
+                        "link_id": 9,
                         "name": "FastEthernet1/15",
                         "nio": "NIO_UDP",
                         "port_number": 15
                     },
                     {
                         "adapter_number": 0,
-                        "description": "connected to OldBuilding_A on port FastEthernet0/1",
+                        "description": "connected to SW_OldBuilding on port 4",
                         "id": 158,
-                        "link_id": 10,
+                        "link_id": 56,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
                     },
                     {
                         "adapter_number": 0,
-                        "description": "connected to OldBuilding_B on port FastEthernet0/1",
                         "id": 159,
-                        "link_id": 11,
                         "name": "FastEthernet0/1",
-                        "nio": "NIO_UDP",
                         "port_number": 1
                     }
                 ],
@@ -2268,29 +2284,11 @@
                 },
                 "ports": [
                     {
-                        "adapter_number": 2,
-                        "description": "connected to Internet on port 1",
-                        "id": 520,
-                        "link_id": 15,
-                        "name": "FastEthernet2/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
                         "adapter_number": 1,
                         "description": "connected to ISP2_PT_R1 on port FastEthernet1/0",
                         "id": 258,
-                        "link_id": 19,
+                        "link_id": 13,
                         "name": "FastEthernet1/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 3,
-                        "description": "connected to DMZ on port 2",
-                        "id": 1124,
-                        "link_id": 46,
-                        "name": "FastEthernet3/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
                     },
@@ -2298,7 +2296,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_Core_A on port FastEthernet1/0",
                         "id": 196,
-                        "link_id": 13,
+                        "link_id": 10,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2307,10 +2305,28 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_Core_B on port FastEthernet1/0",
                         "id": 197,
-                        "link_id": 14,
+                        "link_id": 11,
                         "name": "FastEthernet0/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
+                    },
+                    {
+                        "adapter_number": 3,
+                        "description": "connected to DMZ on port 2",
+                        "id": 1124,
+                        "link_id": 43,
+                        "name": "FastEthernet3/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to Internet on port 1",
+                        "id": 520,
+                        "link_id": 12,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
                     }
                 ],
                 "properties": {
@@ -2359,29 +2375,11 @@
                 },
                 "ports": [
                     {
-                        "adapter_number": 2,
-                        "description": "connected to Internet on port 2",
-                        "id": 521,
-                        "link_id": 20,
-                        "name": "FastEthernet2/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
                         "adapter_number": 1,
                         "description": "connected to ISP1_PT_R1 on port FastEthernet1/0",
                         "id": 268,
-                        "link_id": 19,
+                        "link_id": 13,
                         "name": "FastEthernet1/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
-                        "adapter_number": 3,
-                        "description": "connected to DMZ on port 3",
-                        "id": 1125,
-                        "link_id": 47,
-                        "name": "FastEthernet3/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
                     },
@@ -2389,7 +2387,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_Core_A on port FastEthernet1/1",
                         "id": 254,
-                        "link_id": 21,
+                        "link_id": 15,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2398,10 +2396,28 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_Core_B on port FastEthernet1/1",
                         "id": 255,
-                        "link_id": 22,
+                        "link_id": 16,
                         "name": "FastEthernet0/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
+                    },
+                    {
+                        "adapter_number": 3,
+                        "description": "connected to DMZ on port 3",
+                        "id": 1125,
+                        "link_id": 44,
+                        "name": "FastEthernet3/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to Internet on port 2",
+                        "id": 521,
+                        "link_id": 14,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
                     }
                 ],
                 "properties": {
@@ -2452,7 +2468,7 @@
                     {
                         "description": "connected to ISP1_PT_R1 on port FastEthernet2/0",
                         "id": 259,
-                        "link_id": 15,
+                        "link_id": 12,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1,
@@ -2462,7 +2478,7 @@
                     {
                         "description": "connected to ISP2_PT_R1 on port FastEthernet2/0",
                         "id": 260,
-                        "link_id": 20,
+                        "link_id": 14,
                         "name": "2",
                         "nio": "NIO_UDP",
                         "port_number": 2,
@@ -2472,7 +2488,7 @@
                     {
                         "description": "connected to ISP1_USA_R1 on port FastEthernet2/0",
                         "id": 261,
-                        "link_id": 41,
+                        "link_id": 38,
                         "name": "3",
                         "nio": "NIO_UDP",
                         "port_number": 3,
@@ -2482,7 +2498,7 @@
                     {
                         "description": "connected to ISP2_USA_R1 on port FastEthernet2/0",
                         "id": 262,
-                        "link_id": 43,
+                        "link_id": 40,
                         "name": "4",
                         "nio": "NIO_UDP",
                         "port_number": 4,
@@ -2542,7 +2558,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_E1_Access on port 1",
                         "id": 270,
-                        "link_id": 28,
+                        "link_id": 24,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2551,7 +2567,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_Core_A on port FastEthernet1/5",
                         "id": 271,
-                        "link_id": 26,
+                        "link_id": 22,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -2560,7 +2576,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_Core_B on port FastEthernet1/5",
                         "id": 272,
-                        "link_id": 27,
+                        "link_id": 23,
                         "name": "FastEthernet1/2",
                         "nio": "NIO_UDP",
                         "port_number": 2
@@ -2647,7 +2663,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_E1_Dist_B on port FastEthernet0/0",
                         "id": 286,
-                        "link_id": 31,
+                        "link_id": 28,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2707,7 +2723,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_E1_Access on port 2",
                         "id": 288,
-                        "link_id": 32,
+                        "link_id": 29,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2716,7 +2732,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_Core_A on port FastEthernet1/6",
                         "id": 289,
-                        "link_id": 29,
+                        "link_id": 26,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -2725,7 +2741,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_Core_B on port FastEthernet1/6",
                         "id": 290,
-                        "link_id": 30,
+                        "link_id": 27,
                         "name": "FastEthernet1/2",
                         "nio": "NIO_UDP",
                         "port_number": 2
@@ -2812,7 +2828,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_E1_Dist_A on port FastEthernet0/0",
                         "id": 304,
-                        "link_id": 31,
+                        "link_id": 28,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -2871,7 +2887,7 @@
                     {
                         "description": "connected to Aveiro_E0_Dist_A on port FastEthernet1/0",
                         "id": 306,
-                        "link_id": 51,
+                        "link_id": 48,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1,
@@ -2881,7 +2897,7 @@
                     {
                         "description": "connected to Aveiro_E0_Dist_B on port FastEthernet1/0",
                         "id": 307,
-                        "link_id": 55,
+                        "link_id": 52,
                         "name": "2",
                         "nio": "NIO_UDP",
                         "port_number": 2,
@@ -2891,7 +2907,7 @@
                     {
                         "description": "connected to Aveiro_E0_MonTerminal on port Ethernet0",
                         "id": 308,
-                        "link_id": 16,
+                        "link_id": 17,
                         "name": "3",
                         "nio": "NIO_UDP",
                         "port_number": 3,
@@ -2901,7 +2917,7 @@
                     {
                         "description": "connected to Aveiro_E0_MonVC on port Ethernet0",
                         "id": 309,
-                        "link_id": 17,
+                        "link_id": 18,
                         "name": "4",
                         "nio": "NIO_UDP",
                         "port_number": 4,
@@ -2911,7 +2927,7 @@
                     {
                         "description": "connected to Aveiro_WLAN1_1 on port Ethernet0",
                         "id": 310,
-                        "link_id": 18,
+                        "link_id": 19,
                         "name": "5",
                         "nio": "NIO_UDP",
                         "port_number": 5,
@@ -2966,7 +2982,7 @@
                     {
                         "description": "connected to Aveiro_E1_Dist_A on port FastEthernet1/0",
                         "id": 314,
-                        "link_id": 28,
+                        "link_id": 24,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1,
@@ -2976,7 +2992,7 @@
                     {
                         "description": "connected to Aveiro_E1_Dist_B on port FastEthernet1/0",
                         "id": 315,
-                        "link_id": 32,
+                        "link_id": 29,
                         "name": "2",
                         "nio": "NIO_UDP",
                         "port_number": 2,
@@ -2986,7 +3002,7 @@
                     {
                         "description": "connected to Aveiro_E1_MonTerminal on port Ethernet0",
                         "id": 316,
-                        "link_id": 23,
+                        "link_id": 20,
                         "name": "3",
                         "nio": "NIO_UDP",
                         "port_number": 3,
@@ -2996,7 +3012,7 @@
                     {
                         "description": "connected to Aveiro_E1_MonVC on port Ethernet0",
                         "id": 317,
-                        "link_id": 24,
+                        "link_id": 21,
                         "name": "4",
                         "nio": "NIO_UDP",
                         "port_number": 4,
@@ -3058,7 +3074,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_E0_Access on port 3",
                         "id": 322,
-                        "link_id": 16,
+                        "link_id": 17,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3091,7 +3107,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_E0_Access on port 4",
                         "id": 323,
-                        "link_id": 17,
+                        "link_id": 18,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3124,7 +3140,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_E0_Access on port 5",
                         "id": 324,
-                        "link_id": 18,
+                        "link_id": 19,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3157,7 +3173,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_E1_Access on port 3",
                         "id": 325,
-                        "link_id": 23,
+                        "link_id": 20,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3190,7 +3206,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_E1_Access on port 4",
                         "id": 326,
-                        "link_id": 24,
+                        "link_id": 21,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3257,7 +3273,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW_Datacenter on port 2",
                         "id": 597,
-                        "link_id": 36,
+                        "link_id": 33,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3356,7 +3372,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_Core_A on port FastEthernet1/13",
                         "id": 613,
-                        "link_id": 35,
+                        "link_id": 32,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3365,7 +3381,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_Core_B on port FastEthernet1/13",
                         "id": 614,
-                        "link_id": 34,
+                        "link_id": 31,
                         "name": "FastEthernet0/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -3419,7 +3435,7 @@
                         "adapter_number": 1,
                         "description": "connected to SW_Datacenter on port 1",
                         "id": 615,
-                        "link_id": 39,
+                        "link_id": 36,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3518,7 +3534,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_Core_A on port FastEthernet1/14",
                         "id": 631,
-                        "link_id": 38,
+                        "link_id": 35,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3527,7 +3543,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_Core_B on port FastEthernet1/14",
                         "id": 632,
-                        "link_id": 37,
+                        "link_id": 34,
                         "name": "FastEthernet0/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -3580,7 +3596,7 @@
                     {
                         "description": "connected to Datacenter_Aveiro_2 on port FastEthernet1/0",
                         "id": 633,
-                        "link_id": 39,
+                        "link_id": 36,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1,
@@ -3590,7 +3606,7 @@
                     {
                         "description": "connected to Datacenter_Aveiro_1 on port FastEthernet1/0",
                         "id": 634,
-                        "link_id": 36,
+                        "link_id": 33,
                         "name": "2",
                         "nio": "NIO_UDP",
                         "port_number": 2,
@@ -3600,7 +3616,7 @@
                     {
                         "description": "connected to Datacenter on port Ethernet0",
                         "id": 635,
-                        "link_id": 33,
+                        "link_id": 30,
                         "name": "3",
                         "nio": "NIO_UDP",
                         "port_number": 3,
@@ -3666,7 +3682,7 @@
                         "adapter_number": 0,
                         "description": "connected to SW_Datacenter on port 3",
                         "id": 641,
-                        "link_id": 33,
+                        "link_id": 30,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3697,19 +3713,10 @@
                 },
                 "ports": [
                     {
-                        "adapter_number": 2,
-                        "description": "connected to Internet on port 3",
-                        "id": 648,
-                        "link_id": 41,
-                        "name": "FastEthernet2/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
                         "adapter_number": 1,
                         "description": "connected to ISP2_USA_R1 on port FastEthernet1/0",
                         "id": 646,
-                        "link_id": 45,
+                        "link_id": 42,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3718,7 +3725,7 @@
                         "adapter_number": 0,
                         "description": "connected to SW2 on port 1",
                         "id": 642,
-                        "link_id": 42,
+                        "link_id": 39,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3728,6 +3735,15 @@
                         "id": 643,
                         "name": "FastEthernet0/1",
                         "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to Internet on port 3",
+                        "id": 648,
+                        "link_id": 38,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
                     }
                 ],
                 "properties": {
@@ -3775,19 +3791,10 @@
                 },
                 "ports": [
                     {
-                        "adapter_number": 2,
-                        "description": "connected to Internet on port 4",
-                        "id": 649,
-                        "link_id": 43,
-                        "name": "FastEthernet2/0",
-                        "nio": "NIO_UDP",
-                        "port_number": 0
-                    },
-                    {
                         "adapter_number": 1,
                         "description": "connected to ISP1_USA_R1 on port FastEthernet1/0",
                         "id": 647,
-                        "link_id": 45,
+                        "link_id": 42,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3796,7 +3803,7 @@
                         "adapter_number": 0,
                         "description": "connected to SW2 on port 2",
                         "id": 644,
-                        "link_id": 44,
+                        "link_id": 41,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3806,6 +3813,15 @@
                         "id": 645,
                         "name": "FastEthernet0/1",
                         "port_number": 1
+                    },
+                    {
+                        "adapter_number": 2,
+                        "description": "connected to Internet on port 4",
+                        "id": 649,
+                        "link_id": 40,
+                        "name": "FastEthernet2/0",
+                        "nio": "NIO_UDP",
+                        "port_number": 0
                     }
                 ],
                 "properties": {
@@ -3855,7 +3871,7 @@
                     {
                         "description": "connected to ISP1_USA_R1 on port FastEthernet0/0",
                         "id": 650,
-                        "link_id": 42,
+                        "link_id": 39,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1,
@@ -3865,7 +3881,7 @@
                     {
                         "description": "connected to ISP2_USA_R1 on port FastEthernet0/0",
                         "id": 651,
-                        "link_id": 44,
+                        "link_id": 41,
                         "name": "2",
                         "nio": "NIO_UDP",
                         "port_number": 2,
@@ -3875,7 +3891,7 @@
                     {
                         "description": "connected to Chicago_Test on port Ethernet0",
                         "id": 652,
-                        "link_id": 40,
+                        "link_id": 37,
                         "name": "3",
                         "nio": "NIO_UDP",
                         "port_number": 3,
@@ -3885,7 +3901,7 @@
                     {
                         "description": "connected to Chicago_Public on port Ethernet0",
                         "id": 653,
-                        "link_id": 48,
+                        "link_id": 45,
                         "name": "4",
                         "nio": "NIO_UDP",
                         "port_number": 4,
@@ -3944,7 +3960,7 @@
                         "adapter_number": 0,
                         "description": "connected to SW2 on port 3",
                         "id": 658,
-                        "link_id": 40,
+                        "link_id": 37,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3978,7 +3994,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_E0_Access on port 1",
                         "id": 882,
-                        "link_id": 51,
+                        "link_id": 48,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -3987,7 +4003,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_Core_A on port FastEthernet1/3",
                         "id": 883,
-                        "link_id": 49,
+                        "link_id": 46,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -3996,7 +4012,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_Core_B on port FastEthernet1/3",
                         "id": 884,
-                        "link_id": 50,
+                        "link_id": 47,
                         "name": "FastEthernet1/2",
                         "nio": "NIO_UDP",
                         "port_number": 2
@@ -4083,7 +4099,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_E0_Dist_B on port FastEthernet0/0",
                         "id": 898,
-                        "link_id": 52,
+                        "link_id": 49,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -4143,7 +4159,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_E0_Access on port 2",
                         "id": 900,
-                        "link_id": 55,
+                        "link_id": 52,
                         "name": "FastEthernet1/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -4152,7 +4168,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_Core_A on port FastEthernet1/4",
                         "id": 901,
-                        "link_id": 53,
+                        "link_id": 50,
                         "name": "FastEthernet1/1",
                         "nio": "NIO_UDP",
                         "port_number": 1
@@ -4161,7 +4177,7 @@
                         "adapter_number": 1,
                         "description": "connected to Aveiro_Core_B on port FastEthernet1/4",
                         "id": 902,
-                        "link_id": 54,
+                        "link_id": 51,
                         "name": "FastEthernet1/2",
                         "nio": "NIO_UDP",
                         "port_number": 2
@@ -4248,7 +4264,7 @@
                         "adapter_number": 0,
                         "description": "connected to Aveiro_E0_Dist_A on port FastEthernet0/0",
                         "id": 916,
-                        "link_id": 52,
+                        "link_id": 49,
                         "name": "FastEthernet0/0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -4309,7 +4325,7 @@
                         "adapter_number": 0,
                         "description": "connected to DMZ on port 1",
                         "id": 918,
-                        "link_id": 56,
+                        "link_id": 58,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -4348,7 +4364,7 @@
                     {
                         "description": "connected to LabComServer Project on port Ethernet0",
                         "id": 919,
-                        "link_id": 56,
+                        "link_id": 58,
                         "name": "1",
                         "nio": "NIO_UDP",
                         "port_number": 1,
@@ -4358,7 +4374,7 @@
                     {
                         "description": "connected to ISP1_PT_R1 on port FastEthernet3/0",
                         "id": 920,
-                        "link_id": 46,
+                        "link_id": 43,
                         "name": "2",
                         "nio": "NIO_UDP",
                         "port_number": 2,
@@ -4368,7 +4384,7 @@
                     {
                         "description": "connected to ISP2_PT_R1 on port FastEthernet3/0",
                         "id": 921,
-                        "link_id": 47,
+                        "link_id": 44,
                         "name": "3",
                         "nio": "NIO_UDP",
                         "port_number": 3,
@@ -4516,7 +4532,7 @@
                         "adapter_number": 0,
                         "description": "connected to SW2 on port 4",
                         "id": 1251,
-                        "link_id": 48,
+                        "link_id": 45,
                         "name": "Ethernet0",
                         "nio": "NIO_UDP",
                         "port_number": 0
@@ -4533,6 +4549,95 @@
                 "vm_id": "07257158-4e06-4561-92a9-84bf2d0781dc",
                 "x": -459.38094448497066,
                 "y": -305.4634388589709
+            },
+            {
+                "description": "Ethernet switch",
+                "device_id": "094055ad-2a1b-432e-b497-90a58292c7e0",
+                "id": 47,
+                "label": {
+                    "color": "#ff000000",
+                    "font": "TypeWriter,10,-1,5,75,0,0,0,0,0",
+                    "text": "SW_OldBuilding",
+                    "x": 18.390625,
+                    "y": 37.0
+                },
+                "ports": [
+                    {
+                        "description": "connected to OldBuilding_A on port FastEthernet0/0",
+                        "id": 1293,
+                        "link_id": 53,
+                        "name": "1",
+                        "nio": "NIO_UDP",
+                        "port_number": 1,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to OldBuilding_B on port FastEthernet0/0",
+                        "id": 1294,
+                        "link_id": 54,
+                        "name": "2",
+                        "nio": "NIO_UDP",
+                        "port_number": 2,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to Aveiro_Core_A on port FastEthernet0/0",
+                        "id": 1295,
+                        "link_id": 55,
+                        "name": "3",
+                        "nio": "NIO_UDP",
+                        "port_number": 3,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "description": "connected to Aveiro_Core_B on port FastEthernet0/0",
+                        "id": 1296,
+                        "link_id": 56,
+                        "name": "4",
+                        "nio": "NIO_UDP",
+                        "port_number": 4,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 1297,
+                        "name": "5",
+                        "port_number": 5,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 1298,
+                        "name": "6",
+                        "port_number": 6,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 1299,
+                        "name": "7",
+                        "port_number": 7,
+                        "type": "access",
+                        "vlan": 1
+                    },
+                    {
+                        "id": 1300,
+                        "name": "8",
+                        "port_number": 8,
+                        "type": "access",
+                        "vlan": 1
+                    }
+                ],
+                "properties": {
+                    "name": "SW_OldBuilding"
+                },
+                "server_id": 1,
+                "type": "EthernetSwitch",
+                "x": -212.5,
+                "y": 203.0
             }
         ],
         "servers": [
@@ -4547,5 +4652,5 @@
         ]
     },
     "type": "topology",
-    "version": "1.5.0"
+    "version": "1.5.2"
 }

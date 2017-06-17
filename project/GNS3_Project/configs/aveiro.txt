@@ -545,15 +545,9 @@ priority percent 60
 class BEST-EFFORT
 bandwidth percent 15
 
-# OldBuilding A
+# OldBuilding
 interface f0/0
 ip address 192.168.100.1 255.255.255.0
-ip ospf 10 area 0
-no shut
-
-# OldBuilding B
-interface f0/1
-ip address 192.168.101.1 255.255.255.0
 ip ospf 10 area 0
 no shut
 
@@ -693,15 +687,9 @@ priority percent 60
 class BEST-EFFORT
 bandwidth percent 15
 
-# OldBuilding A
+# OldBuilding
 interface f0/0
 ip address 192.168.100.2 255.255.255.0
-ip ospf 10 area 0
-no shut
-
-# OldBuilding B
-interface f0/1
-ip address 192.168.101.2 255.255.255.0
 ip ospf 10 area 0
 no shut
 
