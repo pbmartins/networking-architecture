@@ -1,28 +1,28 @@
-Jun 17 12:25:08.273 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 17 12:25:08.274 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50538.
-Jun 17 12:25:08.317 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 17 12:25:08.322 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/AR/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 17 12:25:08.322 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/AR/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 17 12:25:08.326 HYPERVISOR: exec_cmd: ethsw create Aveiro_E0_Access 
-Jun 17 12:25:09.842 HYPERVISOR: exec_cmd: nio create_udp udp-edffa1b0-9e3b-422b-b333-fb2c9fdd5667 10033 127.0.0.1 10032 
-Jun 17 12:25:09.857 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-edffa1b0-9e3b-422b-b333-fb2c9fdd5667 
-Jun 17 12:25:09.889 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-edffa1b0-9e3b-422b-b333-fb2c9fdd5667 780 
-Jun 17 12:25:09.912 HYPERVISOR: exec_cmd: nio create_udp udp-4f745a18-9db1-4bfb-a7d1-e3b7a1074d36 10035 127.0.0.1 10034 
-Jun 17 12:25:09.934 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-4f745a18-9db1-4bfb-a7d1-e3b7a1074d36 
-Jun 17 12:25:09.953 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-4f745a18-9db1-4bfb-a7d1-e3b7a1074d36 480 
-Jun 17 12:25:09.974 HYPERVISOR: exec_cmd: nio create_udp udp-14a1d641-9877-4b1d-98a3-df4ac80aad92 10037 127.0.0.1 10036 
-Jun 17 12:25:09.985 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-14a1d641-9877-4b1d-98a3-df4ac80aad92 
-Jun 17 12:25:10.001 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-14a1d641-9877-4b1d-98a3-df4ac80aad92 290 
-Jun 17 12:25:10.703 HYPERVISOR: exec_cmd: nio create_udp udp-9cd3709f-3ff4-4968-9422-b2124735da12 10095 127.0.0.1 10094 
-Jun 17 12:25:10.725 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-9cd3709f-3ff4-4968-9422-b2124735da12 
-Jun 17 12:25:10.740 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Aveiro_E0_Access udp-9cd3709f-3ff4-4968-9422-b2124735da12 1 
-Jun 17 12:25:10.844 HYPERVISOR: exec_cmd: nio create_udp udp-a8398688-2f39-4bbc-b009-83961ff0fcb7 10103 127.0.0.1 10102 
-Jun 17 12:25:10.861 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-a8398688-2f39-4bbc-b009-83961ff0fcb7 
-Jun 17 12:25:10.872 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Aveiro_E0_Access udp-a8398688-2f39-4bbc-b009-83961ff0fcb7 1 
-Jun 17 12:25:10.986 HYPERVISOR: exec_cmd: nio create_udp udp-25e9dae0-eee2-4cdb-9bd8-a1305f799f04 10113 127.0.0.1 10112 
-Jun 17 12:25:10.992 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-25e9dae0-eee2-4cdb-9bd8-a1305f799f04 
-Jun 17 12:25:11.015 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-25e9dae0-eee2-4cdb-9bd8-a1305f799f04 780 
-Jun 17 12:28:44.399 HYPERVISOR: exec_cmd: ethsw delete Aveiro_E0_Access 
-Jun 17 12:28:44.525 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 17 12:28:44.647 HYPERVISOR: Stopped.
-Jun 17 12:28:44.647 GENERAL: reset done.
+Jun 17 19:57:04.788 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jun 17 19:57:04.790 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50859.
+Jun 17 19:57:05.077 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 17 19:57:05.121 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Diogo Ferreira\Google Drive\Universidade\3º Ano\2º Semestre\Arquitectura de Redes\Repository\AR\project\GNS3_Project\AR_Project\project-files\dynamips 
+Jun 17 19:57:05.121 GENERAL: working_dir=C:\Users\Diogo Ferreira\Google Drive\Universidade\3º Ano\2º Semestre\Arquitectura de Redes\Repository\AR\project\GNS3_Project\AR_Project\project-files\dynamips
+Jun 17 19:57:05.164 HYPERVISOR: exec_cmd: ethsw create Aveiro_E0_Access 
+Jun 17 19:57:12.534 HYPERVISOR: exec_cmd: nio create_udp udp-a07e37be-5b03-47af-8a56-e9efc4062623 10025 127.0.0.1 10024 
+Jun 17 19:57:12.593 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-a07e37be-5b03-47af-8a56-e9efc4062623 
+Jun 17 19:57:12.707 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-a07e37be-5b03-47af-8a56-e9efc4062623 780 
+Jun 17 19:57:12.804 HYPERVISOR: exec_cmd: nio create_udp udp-7e09785a-1766-45da-a32d-84f6556c5bce 10027 127.0.0.1 10026 
+Jun 17 19:57:12.866 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-7e09785a-1766-45da-a32d-84f6556c5bce 
+Jun 17 19:57:12.897 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-7e09785a-1766-45da-a32d-84f6556c5bce 480 
+Jun 17 19:57:12.967 HYPERVISOR: exec_cmd: nio create_udp udp-0c7d97d7-6459-4827-a5ce-a8e64bd435e9 10029 127.0.0.1 10028 
+Jun 17 19:57:13.020 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-0c7d97d7-6459-4827-a5ce-a8e64bd435e9 
+Jun 17 19:57:13.073 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-0c7d97d7-6459-4827-a5ce-a8e64bd435e9 290 
+Jun 17 19:57:17.334 HYPERVISOR: exec_cmd: nio create_udp udp-f2169311-f789-4bfc-acf0-553316b8c9b7 10095 127.0.0.1 10094 
+Jun 17 19:57:17.392 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-f2169311-f789-4bfc-acf0-553316b8c9b7 
+Jun 17 19:57:17.466 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Aveiro_E0_Access udp-f2169311-f789-4bfc-acf0-553316b8c9b7 1 
+Jun 17 19:57:17.822 HYPERVISOR: exec_cmd: nio create_udp udp-5b9a741e-36d8-4727-bd75-41eabcbf9672 10103 127.0.0.1 10102 
+Jun 17 19:57:17.879 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-5b9a741e-36d8-4727-bd75-41eabcbf9672 
+Jun 17 19:57:17.964 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Aveiro_E0_Access udp-5b9a741e-36d8-4727-bd75-41eabcbf9672 1 
+Jun 17 19:57:18.493 HYPERVISOR: exec_cmd: nio create_udp udp-9fac72f9-d3de-4f90-a094-2db3f9a5cc46 10113 127.0.0.1 10112 
+Jun 17 19:57:18.538 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-9fac72f9-d3de-4f90-a094-2db3f9a5cc46 
+Jun 17 19:57:18.577 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-9fac72f9-d3de-4f90-a094-2db3f9a5cc46 780 
+Jun 18 00:51:09.695 HYPERVISOR: exec_cmd: ethsw delete Aveiro_E0_Access 
+Jun 18 00:51:10.158 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 00:51:10.330 HYPERVISOR: Stopped.
+Jun 18 00:51:10.330 GENERAL: reset done.

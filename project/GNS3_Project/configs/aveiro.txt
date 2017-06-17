@@ -22,6 +22,7 @@ ipv6 router ospf 1
 passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
+snmp-server community public RO
 
 # QoS
 access-list 101 permit ip 10.20.64.0 0.0.0.255 any
@@ -150,6 +151,7 @@ ipv6 router ospf 1
 passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
+snmp-server community public RO
 
 # QoS
 access-list 101 permit ip 10.20.64.0 0.0.0.255 any
@@ -278,6 +280,7 @@ ipv6 router ospf 1
 passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
+snmp-server community public RO
 
 
 # QoS
@@ -406,7 +409,7 @@ ipv6 router ospf 1
 passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
-
+snmp-server community public RO
 
 # QoS
 access-list 101 permit ip 10.20.64.0 0.0.0.255 any
@@ -532,6 +535,7 @@ router ospf 10
 default-information originate always
 ipv6 router ospf 1
 passive-interface vlan 290
+snmp-server community public RO
 
 # QoS
 class-map match-all PREMIUM
@@ -674,6 +678,7 @@ router ospf 10
 default-information originate always
 ipv6 router ospf 1
 passive-interface vlan 290
+snmp-server community public RO
 
 # QoS
 class-map match-all PREMIUM
@@ -811,6 +816,7 @@ ip route 200.1.1.128 255.255.255.128 100.0.0.3
 ip route 200.1.1.128 255.255.255.128 100.0.0.4
 ipv6 route 2002:A:A:6000::/52 2001:0:0:0::3
 ipv6 route 2002:A:A:6000::/52 2001:0:0:0::4
+snmp-server community public RO
 
 # IPSec
 crypto isakmp policy 30
@@ -909,6 +915,7 @@ default-information originate always metric 10
 ip route 200.1.1.128 255.255.255.128 100.0.0.3
 ip route 200.1.1.128 255.255.255.128 100.0.0.4
 ipv6 route 2002:A:A:6000::/52 tunnel 0
+snmp-server community public RO
 
 # NAT
 access-list 1 permit 10.0.0.0 0.255.255.255
@@ -982,6 +989,7 @@ ip routing
 ipv6 unicast-routing
 router ospf 1
 ipv6 router ospf 1
+snmp-server community public RO
 
 # Core A
 interface f0/0
@@ -1033,6 +1041,7 @@ ipv6 add 2002:A:A:2103:16::2/80
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
 no shut
+snmp-server community public RO
 
 # Core B
 interface f0/1
