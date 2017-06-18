@@ -8,6 +8,7 @@ vlan 101 ! ptp aveiro 2
 vlan 780 ! terminais tecn. mon. aveiro 0
 vlan 480 ! VC tecn. mon. aveiro 0
 vlan 290 ! aveiro wlan 1
+vlan 110 ! iptv
 exit
 
 conf t
@@ -22,6 +23,9 @@ ipv6 router ospf 1
 passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
+
+ip multicast-routing
+ip pim rp-address 10.17.0.1
 
 # QoS
 access-list 101 permit ip 10.20.64.0 0.0.0.255 any
@@ -58,7 +62,7 @@ no shut
 interface f1/0
 switchport mode trunk
 switchport trunk encapsulation dot1q
-switchport trunk allowed vlan 1,1002-1005,290,480,780
+switchport trunk allowed vlan 1,1002-1005,110,290,480,780
 no shut
 
 interface vlan 1
@@ -71,6 +75,7 @@ no autostate
 no shut
 
 interface vlan 100
+ip pim sparse-mode
 ip add 10.17.0.3 255.255.255.0
 service-policy output EDGE
 ipv6 enable
@@ -123,6 +128,17 @@ ipv6 ospf 1 area 0
 no autostate
 no shut
 
+interface vlan 110
+ip pim sparse-mode
+ip add 10.27.0.253 255.255.255.0
+ipv6 enable
+ipv6 add 2002:A:A:2B00::1/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate
+no shut
+
+
 end
 write
 
@@ -136,6 +152,7 @@ vlan 101 ! ptp aveiro 2
 vlan 780 ! terminais tecn. mon. aveiro 0
 vlan 480 ! VC tecn. mon. aveiro 0
 vlan 290 ! aveiro wlan 1
+vlan 110 ! iptv
 exit
 
 conf t
@@ -150,6 +167,10 @@ ipv6 router ospf 1
 passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
+
+ip multicast-routing
+ip pim rp-address 10.17.0.1
+
 
 # QoS
 access-list 101 permit ip 10.20.64.0 0.0.0.255 any
@@ -186,7 +207,7 @@ no shut
 interface f1/0
 switchport mode trunk
 switchport trunk encapsulation dot1q
-switchport trunk allowed vlan 1,1002-1005,290,480,780
+switchport trunk allowed vlan 1,1002-1005,110,290,480,780
 no shut
 
 interface vlan 1
@@ -251,6 +272,16 @@ ipv6 ospf 1 area 0
 no autostate
 no shut
 
+interface vlan 110
+ip add 10.27.0.254 255.255.255.0
+ip pim sparse-mode
+ipv6 enable
+ipv6 add 2002:A:A:2B00::2/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate
+no shut
+
 end
 write
 
@@ -264,6 +295,7 @@ vlan 101 ! ptp aveiro 2
 vlan 781 ! terminais tecn. mon. aveiro 1
 vlan 481 ! VC tecn. mon. aveiro 1
 vlan 290 ! aveiro wlan 1
+vlan 111 ! aveiro iptv
 exit
 
 conf t
@@ -279,6 +311,8 @@ passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
 
+ip multicast-routing
+ip pim rp-address 10.17.0.1
 
 # QoS
 access-list 101 permit ip 10.20.64.0 0.0.0.255 any
@@ -315,7 +349,7 @@ no shut
 interface f1/0
 switchport mode trunk
 switchport trunk encapsulation dot1q
-switchport trunk allowed vlan 1,1002-1005,290,481,781
+switchport trunk allowed vlan 1,1002-1005,111,290,481,781
 no shut
 
 interface vlan 1
@@ -329,6 +363,7 @@ no shut
 
 interface vlan 100
 ip add 10.17.0.5 255.255.255.0
+ip pim sparse-mode
 service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2100::5/64
@@ -379,6 +414,16 @@ ipv6 ospf 1 area 0
 no autostate
 no shut
 
+interface vlan 111
+ip add 10.27.1.253 255.255.255.0
+ip pim sparse-mode
+ipv6 enable
+ipv6 add 2002:A:A:2B01::1/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate
+no shut
+
 end
 write
 
@@ -392,6 +437,7 @@ vlan 101 ! ptp aveiro 2
 vlan 781 ! terminais tecn. mon. aveiro 1
 vlan 481 ! VC tecn. mon. aveiro 1
 vlan 290 ! aveiro wlan 1
+vlan 111 ! aveiro iptv
 exit
 
 conf t
@@ -407,6 +453,8 @@ passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
 
+ip multicast-routing
+ip pim rp-address 10.17.0.1
 
 # QoS
 access-list 101 permit ip 10.20.64.0 0.0.0.255 any
@@ -444,7 +492,7 @@ no shut
 interface f1/0
 switchport mode trunk
 switchport trunk encapsulation dot1q
-switchport trunk allowed vlan 1,1002-1005,290,481,781
+switchport trunk allowed vlan 1,1002-1005,111,290,481,781
 no shut
 
 interface vlan 1
@@ -458,6 +506,7 @@ no shut
 
 interface vlan 100
 ip add 10.17.0.6 255.255.255.0
+ip pim sparse-mode
 service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2100::6/64
@@ -507,6 +556,16 @@ ipv6 ospf 1 area 0
 no autostate
 no shut
 
+interface vlan 111
+ip add 10.27.1.254 255.255.255.0
+ip pim sparse-mode
+ipv6 enable
+ipv6 add 2002:A:A:2B01::2/64
+ip ospf 1 area 0
+ipv6 ospf 1 area 0
+no autostate
+no shut
+
 end
 write
 
@@ -533,6 +592,9 @@ default-information originate always
 ipv6 router ospf 1
 passive-interface vlan 290
 
+ip multicast-routing
+ip pim rp-address 10.17.0.1
+
 # QoS
 class-map match-all PREMIUM
 match ip dscp 46
@@ -554,6 +616,7 @@ no shut
 # Datacenter A
 interface f1/13
 no switchport
+ip pim sparse-mode
 ip add 10.17.3.57 255.255.255.252
 service-policy output EDGE
 ipv6 enable
@@ -634,6 +697,7 @@ no autostate
 no shut
 
 interface vlan 100
+ip pim sparse-mode
 ip add 10.17.0.1 255.255.255.0
 ipv6 enable
 ipv6 add 2002:A:A:2100::1/64
@@ -983,8 +1047,12 @@ ipv6 unicast-routing
 router ospf 1
 ipv6 router ospf 1
 
+ip multicast-routing
+ip pim rp-address 10.17.0.1
+
 # Core A
 interface f0/0
+ip pim sparse-mode
 ip add 10.17.3.58 255.255.255.252
 ipv6 enable
 ipv6 add 2002:A:A:2103:15::2/80
@@ -1004,7 +1072,9 @@ no shut
 # Internal
 interface f1/0
 no switchport
+ip pim sparse-mode
 ip add 200.1.0.62 255.255.255.192
+ip add 10.28.0.254 255.255.255.0 secondary
 ipv6 enable
 ipv6 add 2002:A:A:1::1/64 
 ip ospf 1 area 0
@@ -1047,6 +1117,7 @@ no shut
 interface f1/0
 no switchport
 ip add 200.1.0.61 255.255.255.192
+ip add 10.28.0.253 255.255.255.0 secondary
 ipv6 enable
 ipv6 add 2002:A:A:1::2/64 
 ip ospf 1 area 0
@@ -1065,6 +1136,11 @@ Aveiro_Datacenter_Terminal
 ip 200.1.0.1/26 200.1.0.62
 ip 2002:A:A:1::100/64 2002:A:A:1::1
 
+###############################################################
+Aveiro_IPTV_Server
+###############################################################
+ip 10.28.0.1/24 10.28.0.253
+ip 2002:A:A:1::101/64 2002:A:A:1::1
 
 ###############################################################
 Aveiro_E0_MonTerminal
@@ -1094,6 +1170,30 @@ ip 10.20.64.1/24 10.20.64.253
 ip 2002:A:A:2408::10/64 2002:A:A:2408::1
 
 ###############################################################
+Aveiro_E0_IPTV
+###############################################################
+ip 10.27.0.1/24 10.27.0.253
+ip 2002:A:A:2B00::10/64 2002:A:A:2B00::1
+
+conf t
+ipv6 unicast-routing
+ip route 0.0.0.0 0.0.0.0 10.27.0.253
+
+ip multicast-routing
+ip pim rp-address 10.17.0.1
+
+int f0/0
+ip add 10.27.0.1 255.255.255.0
+ip pim sparse-mode
+ip igmp join-group 234.234.234.234
+ipv6 enable
+ipv6 add 2002:A:A:2B00::10/64
+no shut
+end
+write
+
+
+###############################################################
 Aveiro_WLAN1_1
 ###############################################################
 ip 10.18.72.1/24 10.18.72.253
@@ -1119,3 +1219,25 @@ Aveiro_WLAN1_2
 ###############################################################
 ip 10.18.72.2/24 10.18.72.251
 ip 2002:A:A:2248::11/64 2002:A:A:2248::3
+
+###############################################################
+Aveiro_E1_IPTV
+###############################################################
+conf t
+ipv6 unicast-routing
+ip route 0.0.0.0 0.0.0.0 10.27.1.253
+
+ip multicast-routing
+ip pim rp-address 10.17.0.1
+
+int f0/0
+ip add 10.27.1.1 255.255.255.0
+ip pim sparse-mode
+ip igmp join-group 234.234.234.234
+ipv6 enable
+ipv6 add 2002:A:A:2B01::10/64
+no shut
+end
+write
+
+
