@@ -37,3 +37,10 @@ Jun 18 14:56:14.829 HYPERVISOR: exec_cmd: vm stop OldBuilding_A
 Jun 18 14:56:14.979 VM: VM OldBuilding_A shutdown.
 Jun 18 14:56:14.982 HYPERVISOR: exec_cmd: vm extract_config OldBuilding_A 
 Jun 18 14:56:22.738 HYPERVISOR: exec_cmd: vm extract_config OldBuilding_A 
+Jun 18 14:58:24.157 HYPERVISOR: exec_cmd: vm get_status OldBuilding_A 
+Jun 18 14:58:24.179 HYPERVISOR: exec_cmd: vm extract_config OldBuilding_A 
+Jun 18 14:58:24.206 HYPERVISOR: exec_cmd: vm delete OldBuilding_A 
+Jun 18 14:58:24.206 VM: VM OldBuilding_A destroyed.
+Jun 18 14:58:24.251 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 14:58:24.285 HYPERVISOR: Stopped.
+Jun 18 14:58:24.285 GENERAL: reset done.

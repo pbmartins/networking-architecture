@@ -35,3 +35,10 @@ Jun 18 14:56:12.182 HYPERVISOR: exec_cmd: vm stop IPTV_Server
 Jun 18 14:56:14.066 VM: VM IPTV_Server shutdown.
 Jun 18 14:56:14.079 HYPERVISOR: exec_cmd: vm extract_config IPTV_Server 
 Jun 18 14:56:22.728 HYPERVISOR: exec_cmd: vm extract_config IPTV_Server 
+Jun 18 14:58:24.160 HYPERVISOR: exec_cmd: vm get_status IPTV_Server 
+Jun 18 14:58:24.180 HYPERVISOR: exec_cmd: vm extract_config IPTV_Server 
+Jun 18 14:58:24.210 HYPERVISOR: exec_cmd: vm delete IPTV_Server 
+Jun 18 14:58:24.210 VM: VM IPTV_Server destroyed.
+Jun 18 14:58:24.253 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 14:58:24.306 HYPERVISOR: Stopped.
+Jun 18 14:58:24.306 GENERAL: reset done.

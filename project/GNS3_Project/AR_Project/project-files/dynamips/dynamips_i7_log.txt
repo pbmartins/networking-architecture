@@ -56,3 +56,10 @@ Jun 18 14:56:14.812 HYPERVISOR: exec_cmd: vm stop Aveiro_Core_B
 Jun 18 14:56:15.094 VM: VM Aveiro_Core_B shutdown.
 Jun 18 14:56:15.095 HYPERVISOR: exec_cmd: vm extract_config Aveiro_Core_B 
 Jun 18 14:56:22.745 HYPERVISOR: exec_cmd: vm extract_config Aveiro_Core_B 
+Jun 18 14:58:24.164 HYPERVISOR: exec_cmd: vm get_status Aveiro_Core_B 
+Jun 18 14:58:24.184 HYPERVISOR: exec_cmd: vm extract_config Aveiro_Core_B 
+Jun 18 14:58:24.219 HYPERVISOR: exec_cmd: vm delete Aveiro_Core_B 
+Jun 18 14:58:24.219 VM: VM Aveiro_Core_B destroyed.
+Jun 18 14:58:24.259 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 14:58:24.503 HYPERVISOR: Stopped.
+Jun 18 14:58:24.503 GENERAL: reset done.

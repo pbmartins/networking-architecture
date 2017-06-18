@@ -21,3 +21,7 @@ Jun 18 14:50:25.890 HYPERVISOR: exec_cmd: nio delete udp-fdc70d52-2332-47c8-a154
 Jun 18 14:50:41.406 HYPERVISOR: exec_cmd: nio create_udp udp-8ddff0ad-0d41-43b2-a334-c378d31dba2d 10096 127.0.0.1 10097 
 Jun 18 14:50:41.416 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-8ddff0ad-0d41-43b2-a334-c378d31dba2d 
 Jun 18 14:50:41.432 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-8ddff0ad-0d41-43b2-a334-c378d31dba2d 1 
+Jun 18 14:58:23.627 HYPERVISOR: exec_cmd: ethsw delete SW_Datacenter 
+Jun 18 14:58:23.708 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 14:58:24.053 HYPERVISOR: Stopped.
+Jun 18 14:58:24.053 GENERAL: reset done.

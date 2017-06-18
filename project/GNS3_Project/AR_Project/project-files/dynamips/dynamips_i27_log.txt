@@ -35,3 +35,10 @@ Jun 18 14:56:12.185 HYPERVISOR: exec_cmd: vm stop Aveiro_E1_IPTV
 Jun 18 14:56:14.071 VM: VM Aveiro_E1_IPTV shutdown.
 Jun 18 14:56:14.086 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E1_IPTV 
 Jun 18 14:56:22.737 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E1_IPTV 
+Jun 18 14:58:24.165 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
+Jun 18 14:58:24.184 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E1_IPTV 
+Jun 18 14:58:24.220 HYPERVISOR: exec_cmd: vm delete Aveiro_E1_IPTV 
+Jun 18 14:58:24.220 VM: VM Aveiro_E1_IPTV destroyed.
+Jun 18 14:58:24.259 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 14:58:24.422 HYPERVISOR: Stopped.
+Jun 18 14:58:24.422 GENERAL: reset done.

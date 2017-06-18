@@ -16,3 +16,7 @@ Jun 18 14:02:29.953 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-fbefb43e
 Jun 18 14:02:30.018 HYPERVISOR: exec_cmd: nio create_udp udp-2eb3c9ae-476f-44e2-aace-e1399f041afd 10089 127.0.0.1 10088 
 Jun 18 14:02:30.034 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-2eb3c9ae-476f-44e2-aace-e1399f041afd 
 Jun 18 14:02:30.057 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-2eb3c9ae-476f-44e2-aace-e1399f041afd 1 
+Jun 18 14:58:23.629 HYPERVISOR: exec_cmd: ethsw delete SW2 
+Jun 18 14:58:23.709 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 14:58:23.713 HYPERVISOR: Stopped.
+Jun 18 14:58:23.713 GENERAL: reset done.

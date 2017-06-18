@@ -16,3 +16,7 @@ Jun 18 14:02:29.820 HYPERVISOR: exec_cmd: ethsw set_access_port Internet udp-258
 Jun 18 14:02:29.867 HYPERVISOR: exec_cmd: nio create_udp udp-b2fda0db-ad34-429c-8635-a664628e7527 10078 127.0.0.1 10079 
 Jun 18 14:02:29.883 HYPERVISOR: exec_cmd: ethsw add_nio Internet udp-b2fda0db-ad34-429c-8635-a664628e7527 
 Jun 18 14:02:29.910 HYPERVISOR: exec_cmd: ethsw set_access_port Internet udp-b2fda0db-ad34-429c-8635-a664628e7527 1 
+Jun 18 14:58:23.627 HYPERVISOR: exec_cmd: ethsw delete Internet 
+Jun 18 14:58:23.710 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 14:58:23.713 HYPERVISOR: Stopped.
+Jun 18 14:58:23.713 GENERAL: reset done.

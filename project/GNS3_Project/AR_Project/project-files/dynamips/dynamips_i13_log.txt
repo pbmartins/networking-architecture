@@ -25,3 +25,7 @@ Jun 18 14:02:30.465 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access
 Jun 18 14:02:30.515 HYPERVISOR: exec_cmd: nio create_udp udp-3007c105-051c-47ac-8ba4-713af2133c5f 10119 127.0.0.1 10118 
 Jun 18 14:02:30.528 HYPERVISOR: exec_cmd: ethsw add_nio Aveiro_E0_Access udp-3007c105-051c-47ac-8ba4-713af2133c5f 
 Jun 18 14:02:30.546 HYPERVISOR: exec_cmd: ethsw set_access_port Aveiro_E0_Access udp-3007c105-051c-47ac-8ba4-713af2133c5f 110 
+Jun 18 14:58:23.629 HYPERVISOR: exec_cmd: ethsw delete Aveiro_E0_Access 
+Jun 18 14:58:23.775 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 14:58:23.806 HYPERVISOR: Stopped.
+Jun 18 14:58:23.806 GENERAL: reset done.
