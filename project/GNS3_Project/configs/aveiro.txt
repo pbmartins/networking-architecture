@@ -24,6 +24,10 @@ passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
 
+# SNMP
+snmp-server community public RO
+
+# Multicast
 ip multicast-routing
 ip pim rp-address 10.17.0.1
 
@@ -87,6 +91,7 @@ no shut
 
 interface vlan 101
 ip add 10.17.1.3 255.255.255.0
+ip pim sparse-mode
 service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2101::3/64
@@ -168,9 +173,12 @@ passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
 
+# SNMP
+snmp-server community public RO
+
+# Multicast
 ip multicast-routing
 ip pim rp-address 10.17.0.1
-
 
 # QoS
 access-list 101 permit ip 10.20.64.0 0.0.0.255 any
@@ -221,6 +229,7 @@ no shut
 
 interface vlan 100
 ip add 10.17.0.4 255.255.255.0
+ip pim sparse-mode
 service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2100::4/64
@@ -231,6 +240,7 @@ no shut
 
 interface vlan 101
 ip add 10.17.1.4 255.255.255.0
+ip pim sparse-mode
 service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2101::4/64
@@ -311,6 +321,10 @@ passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
 
+# SNMP
+snmp-server community public RO
+
+# Multicast
 ip multicast-routing
 ip pim rp-address 10.17.0.1
 
@@ -374,6 +388,7 @@ no shut
 
 interface vlan 101
 ip add 10.17.1.5 255.255.255.0
+ip pim sparse-mode
 service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2101::5/64
@@ -453,6 +468,10 @@ passive-interface default
 no passive-interface vlan100
 no passive-interface vlan101
 
+# SNMP
+snmp-server community public RO
+
+# Multicast
 ip multicast-routing
 ip pim rp-address 10.17.0.1
 
@@ -517,6 +536,7 @@ no shut
 
 interface vlan 101
 ip add 10.17.1.6 255.255.255.0
+ip pim sparse-mode
 service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2101::6/64
@@ -592,6 +612,10 @@ default-information originate always
 ipv6 router ospf 1
 passive-interface vlan 290
 
+# SNMP
+snmp-server community public RO
+
+# Multicast
 ip multicast-routing
 ip pim rp-address 10.17.0.1
 
@@ -629,6 +653,7 @@ no shut
 interface f1/14
 no switchport
 ip add 10.17.3.61 255.255.255.252
+ip pim sparse-mode
 service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2103:16::1/80
@@ -739,6 +764,13 @@ default-information originate always
 ipv6 router ospf 1
 passive-interface vlan 290
 
+# SNMP
+snmp-server community public RO
+
+# Multicast
+ip multicast-routing
+ip pim rp-address 10.17.0.1
+
 # QoS
 class-map match-all PREMIUM
 match ip dscp 46
@@ -761,6 +793,7 @@ no shut
 interface f1/13
 no switchport
 ip add 10.17.3.65 255.255.255.252
+ip pim sparse-mode
 service-policy output EDGE
 ipv6 enable
 ipv6 add 2002:A:A:2103:17::1/80
@@ -841,6 +874,7 @@ no shut
 
 interface vlan 101
 ip add 10.17.1.2 255.255.255.0
+ip pim sparse-mode
 ipv6 enable
 ipv6 add 2002:A:A:2101::2/64
 ip ospf 1 area 0
@@ -875,6 +909,9 @@ ip route 200.1.1.128 255.255.255.128 100.0.0.3
 ip route 200.1.1.128 255.255.255.128 100.0.0.4
 ipv6 route 2002:A:A:6000::/52 2001:0:0:0::3
 ipv6 route 2002:A:A:6000::/52 2001:0:0:0::4
+
+# SNMP
+snmp-server community public RO
 
 # IPSec
 crypto isakmp policy 30
@@ -974,6 +1011,9 @@ ip route 200.1.1.128 255.255.255.128 100.0.0.3
 ip route 200.1.1.128 255.255.255.128 100.0.0.4
 ipv6 route 2002:A:A:6000::/52 tunnel 0
 
+# SNMP
+snmp-server community public RO
+
 # NAT
 access-list 1 permit 10.0.0.0 0.255.255.255
 ip nat pool POOLR 200.1.0.129 200.1.0.190 netmask 255.255.255.192
@@ -1047,6 +1087,10 @@ ipv6 unicast-routing
 router ospf 1
 ipv6 router ospf 1
 
+# SNMP
+snmp-server community public RO
+
+# Multicast
 ip multicast-routing
 ip pim rp-address 10.17.0.1
 
@@ -1063,6 +1107,7 @@ no shut
 # Core B
 interface f0/1
 ip add 10.17.3.66 255.255.255.252
+ip pim sparse-mode
 ipv6 enable
 ipv6 add 2002:A:A:2103:17::2/80
 ip ospf 1 area 0
@@ -1095,9 +1140,17 @@ ipv6 unicast-routing
 router ospf 1
 ipv6 router ospf 1
 
+# SNMP
+snmp-server community public RO
+
+# Multicast
+ip multicast-routing
+ip pim rp-address 10.17.0.1
+
 # Core A
 interface f0/0
 ip add 10.17.3.62 255.255.255.252
+ip pim sparse-mode
 ipv6 enable
 ipv6 add 2002:A:A:2103:16::2/80
 ip ospf 1 area 0
@@ -1107,6 +1160,7 @@ no shut
 # Core B
 interface f0/1
 ip add 10.17.3.70 255.255.255.252
+ip pim sparse-mode
 ipv6 enable
 ipv6 add 2002:A:A:2103:18::2/80
 ip ospf 1 area 0
@@ -1118,6 +1172,7 @@ interface f1/0
 no switchport
 ip add 200.1.0.61 255.255.255.192
 ip add 10.28.0.253 255.255.255.0 secondary
+ip pim sparse-mode
 ipv6 enable
 ipv6 add 2002:A:A:1::2/64 
 ip ospf 1 area 0
@@ -1132,15 +1187,28 @@ write
 ###############################################################
 Aveiro_Datacenter_Terminal
 ###############################################################
-# Precisa de IP privado?
 ip 200.1.0.1/26 200.1.0.62
 ip 2002:A:A:1::100/64 2002:A:A:1::1
 
 ###############################################################
 Aveiro_IPTV_Server
 ###############################################################
-ip 10.28.0.1/24 10.28.0.253
-ip 2002:A:A:1::101/64 2002:A:A:1::1
+conf t
+ipv6 unicast-routing
+ip route 0.0.0.0 0.0.0.0 10.28.0.253
+ipv6 route ::/0 2002:A:A:1::1
+
+ip multicast-routing
+ip pim rp-address 10.17.0.1
+
+int f0/0
+ip add 10.28.0.1 255.255.255.0
+ip pim sparse-mode
+ipv6 enable
+ipv6 add 2002:A:A:1::101/64
+no shut
+end
+write
 
 ###############################################################
 Aveiro_E0_MonTerminal
@@ -1172,12 +1240,10 @@ ip 2002:A:A:2408::10/64 2002:A:A:2408::1
 ###############################################################
 Aveiro_E0_IPTV
 ###############################################################
-ip 10.27.0.1/24 10.27.0.253
-ip 2002:A:A:2B00::10/64 2002:A:A:2B00::1
-
 conf t
 ipv6 unicast-routing
 ip route 0.0.0.0 0.0.0.0 10.27.0.253
+ipv6 route ::/0 2002:A:A:2B00::1
 
 ip multicast-routing
 ip pim rp-address 10.17.0.1
@@ -1226,6 +1292,7 @@ Aveiro_E1_IPTV
 conf t
 ipv6 unicast-routing
 ip route 0.0.0.0 0.0.0.0 10.27.1.253
+ipv6 route ::/0 2002:A:A:2B01::1
 
 ip multicast-routing
 ip pim rp-address 10.17.0.1

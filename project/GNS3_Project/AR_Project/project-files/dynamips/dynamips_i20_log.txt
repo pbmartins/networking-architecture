@@ -1,22 +1,18 @@
-Jun 18 11:34:49.042 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 18 11:34:49.042 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49506.
-Jun 18 11:34:49.087 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 18 11:34:49.091 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 18 11:34:49.091 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 18 11:34:49.097 HYPERVISOR: exec_cmd: ethsw create SW2 
-Jun 18 11:34:51.306 HYPERVISOR: exec_cmd: nio create_udp udp-0007121f-406e-4183-aef7-2774b6bf1e24 10073 127.0.0.1 10072 
-Jun 18 11:34:51.319 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-0007121f-406e-4183-aef7-2774b6bf1e24 
-Jun 18 11:34:51.349 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-0007121f-406e-4183-aef7-2774b6bf1e24 1 
-Jun 18 11:34:51.379 HYPERVISOR: exec_cmd: nio create_udp udp-2e5b2ab0-2456-41b7-a73c-74cb0ea7b16d 10076 127.0.0.1 10077 
-Jun 18 11:34:51.390 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-2e5b2ab0-2456-41b7-a73c-74cb0ea7b16d 
-Jun 18 11:34:51.419 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-2e5b2ab0-2456-41b7-a73c-74cb0ea7b16d 1 
-Jun 18 11:34:51.431 HYPERVISOR: exec_cmd: nio create_udp udp-f00663fc-a76b-419a-9087-66686cff969a 10081 127.0.0.1 10080 
-Jun 18 11:34:51.443 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-f00663fc-a76b-419a-9087-66686cff969a 
-Jun 18 11:34:51.458 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-f00663fc-a76b-419a-9087-66686cff969a 1 
-Jun 18 11:34:51.518 HYPERVISOR: exec_cmd: nio create_udp udp-587c6935-9183-4bba-988e-9e42c6d4a73b 10089 127.0.0.1 10088 
-Jun 18 11:34:51.529 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-587c6935-9183-4bba-988e-9e42c6d4a73b 
-Jun 18 11:34:51.553 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-587c6935-9183-4bba-988e-9e42c6d4a73b 1 
-Jun 18 13:47:59.325 HYPERVISOR: exec_cmd: ethsw delete SW2 
-Jun 18 13:47:59.417 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 18 13:47:59.716 HYPERVISOR: Stopped.
-Jun 18 13:47:59.716 GENERAL: reset done.
+Jun 18 14:02:27.631 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 18 14:02:27.631 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50532.
+Jun 18 14:02:27.671 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 14:02:27.675 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 18 14:02:27.675 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 18 14:02:27.690 HYPERVISOR: exec_cmd: ethsw create SW2 
+Jun 18 14:02:29.791 HYPERVISOR: exec_cmd: nio create_udp udp-f68856c3-a2a3-4590-8e56-f32aa6876c3e 10073 127.0.0.1 10072 
+Jun 18 14:02:29.808 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-f68856c3-a2a3-4590-8e56-f32aa6876c3e 
+Jun 18 14:02:29.827 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-f68856c3-a2a3-4590-8e56-f32aa6876c3e 1 
+Jun 18 14:02:29.847 HYPERVISOR: exec_cmd: nio create_udp udp-722812fb-5ad1-43f5-8f45-506aee94d38d 10076 127.0.0.1 10077 
+Jun 18 14:02:29.878 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-722812fb-5ad1-43f5-8f45-506aee94d38d 
+Jun 18 14:02:29.908 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-722812fb-5ad1-43f5-8f45-506aee94d38d 1 
+Jun 18 14:02:29.918 HYPERVISOR: exec_cmd: nio create_udp udp-fbefb43e-95bf-483f-84a2-c85345503f06 10081 127.0.0.1 10080 
+Jun 18 14:02:29.931 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-fbefb43e-95bf-483f-84a2-c85345503f06 
+Jun 18 14:02:29.953 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-fbefb43e-95bf-483f-84a2-c85345503f06 1 
+Jun 18 14:02:30.018 HYPERVISOR: exec_cmd: nio create_udp udp-2eb3c9ae-476f-44e2-aace-e1399f041afd 10089 127.0.0.1 10088 
+Jun 18 14:02:30.034 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-2eb3c9ae-476f-44e2-aace-e1399f041afd 
+Jun 18 14:02:30.057 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-2eb3c9ae-476f-44e2-aace-e1399f041afd 1 

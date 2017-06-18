@@ -1,19 +1,15 @@
-Jun 18 11:34:48.081 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 18 11:34:48.083 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49402.
-Jun 18 11:34:48.157 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 18 11:34:48.169 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 18 11:34:48.169 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 18 11:34:48.178 HYPERVISOR: exec_cmd: ethsw create OldBuilding_SW2 
-Jun 18 11:34:50.296 HYPERVISOR: exec_cmd: nio create_udp udp-e6c83a06-0008-4d55-8987-e209655eb862 10004 127.0.0.1 10005 
-Jun 18 11:34:50.304 HYPERVISOR: exec_cmd: ethsw add_nio OldBuilding_SW2 udp-e6c83a06-0008-4d55-8987-e209655eb862 
-Jun 18 11:34:50.340 HYPERVISOR: exec_cmd: ethsw set_access_port OldBuilding_SW2 udp-e6c83a06-0008-4d55-8987-e209655eb862 1 
-Jun 18 11:34:50.373 HYPERVISOR: exec_cmd: nio create_udp udp-73699a47-c17b-42bc-ad6c-26970d581af9 10008 127.0.0.1 10009 
-Jun 18 11:34:50.379 HYPERVISOR: exec_cmd: ethsw add_nio OldBuilding_SW2 udp-73699a47-c17b-42bc-ad6c-26970d581af9 
-Jun 18 11:34:50.401 HYPERVISOR: exec_cmd: ethsw set_access_port OldBuilding_SW2 udp-73699a47-c17b-42bc-ad6c-26970d581af9 1 
-Jun 18 11:34:50.428 HYPERVISOR: exec_cmd: nio create_udp udp-dd440008-ad84-4644-8ed7-635865fe5a93 10010 127.0.0.1 10011 
-Jun 18 11:34:50.441 HYPERVISOR: exec_cmd: ethsw add_nio OldBuilding_SW2 udp-dd440008-ad84-4644-8ed7-635865fe5a93 
-Jun 18 11:34:50.476 HYPERVISOR: exec_cmd: ethsw set_access_port OldBuilding_SW2 udp-dd440008-ad84-4644-8ed7-635865fe5a93 1 
-Jun 18 13:47:59.327 HYPERVISOR: exec_cmd: ethsw delete OldBuilding_SW2 
-Jun 18 13:47:59.394 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 18 13:47:59.717 HYPERVISOR: Stopped.
-Jun 18 13:47:59.717 GENERAL: reset done.
+Jun 18 14:02:26.917 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 18 14:02:26.923 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50424.
+Jun 18 14:02:26.968 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 14:02:26.973 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 18 14:02:26.973 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 18 14:02:26.980 HYPERVISOR: exec_cmd: ethsw create OldBuilding_SW3 
+Jun 18 14:02:28.562 HYPERVISOR: exec_cmd: nio create_udp udp-443371fc-0cd1-41cd-96be-5b6168acd33e 10001 127.0.0.1 10000 
+Jun 18 14:02:28.573 HYPERVISOR: exec_cmd: ethsw add_nio OldBuilding_SW3 udp-443371fc-0cd1-41cd-96be-5b6168acd33e 
+Jun 18 14:02:28.584 HYPERVISOR: exec_cmd: ethsw set_access_port OldBuilding_SW3 udp-443371fc-0cd1-41cd-96be-5b6168acd33e 1 
+Jun 18 14:02:28.596 HYPERVISOR: exec_cmd: nio create_udp udp-ab5ae2a2-662f-4a69-b645-f935861bbb8a 10003 127.0.0.1 10002 
+Jun 18 14:02:28.606 HYPERVISOR: exec_cmd: ethsw add_nio OldBuilding_SW3 udp-ab5ae2a2-662f-4a69-b645-f935861bbb8a 
+Jun 18 14:02:28.635 HYPERVISOR: exec_cmd: ethsw set_access_port OldBuilding_SW3 udp-ab5ae2a2-662f-4a69-b645-f935861bbb8a 1 
+Jun 18 14:02:28.651 HYPERVISOR: exec_cmd: nio create_udp udp-3600698a-70a6-4273-a243-a56b4ad77479 10005 127.0.0.1 10004 
+Jun 18 14:02:28.667 HYPERVISOR: exec_cmd: ethsw add_nio OldBuilding_SW3 udp-3600698a-70a6-4273-a243-a56b4ad77479 
+Jun 18 14:02:28.688 HYPERVISOR: exec_cmd: ethsw set_access_port OldBuilding_SW3 udp-3600698a-70a6-4273-a243-a56b4ad77479 1 

@@ -1,44 +1,23 @@
-Jun 18 11:34:48.883 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 18 11:34:48.883 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49497.
-Jun 18 11:34:49.004 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 18 11:34:49.009 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 18 11:34:49.009 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 18 11:34:49.013 HYPERVISOR: exec_cmd: vm create Datacenter_Aveiro_2 12 c3725 
-Jun 18 11:34:49.013 VM: VM Datacenter_Aveiro_2 created.
-Jun 18 11:34:49.018 HYPERVISOR: exec_cmd: vm set_con_tcp_port Datacenter_Aveiro_2 5009 
-Jun 18 11:34:49.028 HYPERVISOR: exec_cmd: c3725 get_mac_addr Datacenter_Aveiro_2 
-Jun 18 11:34:49.049 HYPERVISOR: exec_cmd: vm set_ios Datacenter_Aveiro_2 /Users/pedromartins/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
-Jun 18 11:34:49.058 HYPERVISOR: exec_cmd: vm set_disk0 Datacenter_Aveiro_2 1 
-Jun 18 11:34:49.065 HYPERVISOR: exec_cmd: vm set_nvram Datacenter_Aveiro_2 256 
-Jun 18 11:34:49.070 HYPERVISOR: exec_cmd: vm set_ram Datacenter_Aveiro_2 256 
-Jun 18 11:34:49.076 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_2 
-Jun 18 11:34:49.082 HYPERVISOR: exec_cmd: vm set_idle_pc Datacenter_Aveiro_2 0x60a6a3b8 
-Jun 18 11:34:49.087 HYPERVISOR: exec_cmd: c3725 set_mac_addr Datacenter_Aveiro_2 c20c.f6fc.0000 
-Jun 18 11:34:49.090 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_2 
-Jun 18 11:34:49.096 HYPERVISOR: exec_cmd: vm slot_add_binding Datacenter_Aveiro_2 1 0 NM-16ESW 
-Jun 18 11:34:49.100 HYPERVISOR: exec_cmd: vm set_config Datacenter_Aveiro_2 configs/i12_startup-config.cfg 
-Jun 18 11:34:51.218 HYPERVISOR: exec_cmd: nio create_udp udp-2e5deab4-a758-420f-b59c-844046061d53 10067 127.0.0.1 10066 
-Jun 18 11:34:51.225 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter_Aveiro_2 0 1 udp-2e5deab4-a758-420f-b59c-844046061d53 
-Jun 18 11:34:51.241 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_2 
-Jun 18 11:34:51.266 HYPERVISOR: exec_cmd: nio create_udp udp-3f4b5db9-887e-4a73-b1c2-b86a99bd6cc7 10069 127.0.0.1 10068 
-Jun 18 11:34:51.281 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter_Aveiro_2 0 0 udp-3f4b5db9-887e-4a73-b1c2-b86a99bd6cc7 
-Jun 18 11:34:51.302 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_2 
-Jun 18 11:34:51.324 HYPERVISOR: exec_cmd: nio create_udp udp-eaf71f2d-2158-4c87-881b-7152ff4f055f 10070 127.0.0.1 10071 
-Jun 18 11:34:51.335 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Datacenter_Aveiro_2 1 0 udp-eaf71f2d-2158-4c87-881b-7152ff4f055f 
-Jun 18 11:34:51.339 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_2 
-Jun 18 11:35:00.316 HYPERVISOR: exec_cmd: vm set_ghost_status Datacenter_Aveiro_2 2 
-Jun 18 11:35:00.344 HYPERVISOR: exec_cmd: vm set_ghost_file Datacenter_Aveiro_2 c3725-advipservicesk9-mz.124-21.image-256.ghost 
-Jun 18 11:35:00.363 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_2 
-Jun 18 11:35:00.379 HYPERVISOR: exec_cmd: vm start Datacenter_Aveiro_2 
-Jun 18 13:21:31.188 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_2 
-Jun 18 13:21:31.196 HYPERVISOR: exec_cmd: vm stop Datacenter_Aveiro_2 
-Jun 18 13:21:31.343 VM: VM Datacenter_Aveiro_2 shutdown.
-Jun 18 13:21:31.352 HYPERVISOR: exec_cmd: vm extract_config Datacenter_Aveiro_2 
-Jun 18 13:21:40.689 HYPERVISOR: exec_cmd: vm extract_config Datacenter_Aveiro_2 
-Jun 18 13:47:59.862 HYPERVISOR: exec_cmd: vm get_status Datacenter_Aveiro_2 
-Jun 18 13:47:59.899 HYPERVISOR: exec_cmd: vm extract_config Datacenter_Aveiro_2 
-Jun 18 13:47:59.957 HYPERVISOR: exec_cmd: vm delete Datacenter_Aveiro_2 
-Jun 18 13:47:59.958 VM: VM Datacenter_Aveiro_2 destroyed.
-Jun 18 13:48:00.011 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 18 13:48:00.238 HYPERVISOR: Stopped.
-Jun 18 13:48:00.238 GENERAL: reset done.
+Jun 18 14:02:27.497 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 18 14:02:27.497 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50523.
+Jun 18 14:02:27.596 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 14:02:27.600 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 18 14:02:27.600 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 18 14:02:27.605 HYPERVISOR: exec_cmd: ethsw create SW_Datacenter 
+Jun 18 14:02:29.561 HYPERVISOR: exec_cmd: nio create_udp udp-a5a4ca06-97c1-46f2-b9ab-6886f0f31590 10055 127.0.0.1 10059 
+Jun 18 14:02:29.578 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-a5a4ca06-97c1-46f2-b9ab-6886f0f31590 
+Jun 18 14:02:29.612 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-a5a4ca06-97c1-46f2-b9ab-6886f0f31590 1 
+Jun 18 14:02:29.670 HYPERVISOR: exec_cmd: nio create_udp udp-e84ee0d1-def4-4cbb-8078-64c34712eecf 10065 127.0.0.1 10064 
+Jun 18 14:02:29.685 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-e84ee0d1-def4-4cbb-8078-64c34712eecf 
+Jun 18 14:02:29.715 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-e84ee0d1-def4-4cbb-8078-64c34712eecf 1 
+Jun 18 14:02:29.756 HYPERVISOR: exec_cmd: nio create_udp udp-c08b5189-cd2f-41af-99b2-c1ef1eb9c496 10071 127.0.0.1 10070 
+Jun 18 14:02:29.770 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-c08b5189-cd2f-41af-99b2-c1ef1eb9c496 
+Jun 18 14:02:29.808 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-c08b5189-cd2f-41af-99b2-c1ef1eb9c496 1 
+Jun 18 14:02:30.155 HYPERVISOR: exec_cmd: nio create_udp udp-fdc70d52-2332-47c8-a154-4cd5b53dc3d5 10097 127.0.0.1 10096 
+Jun 18 14:02:30.168 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-fdc70d52-2332-47c8-a154-4cd5b53dc3d5 
+Jun 18 14:02:30.210 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-fdc70d52-2332-47c8-a154-4cd5b53dc3d5 1 
+Jun 18 14:50:25.870 HYPERVISOR: exec_cmd: ethsw remove_nio SW_Datacenter udp-fdc70d52-2332-47c8-a154-4cd5b53dc3d5 
+Jun 18 14:50:25.890 HYPERVISOR: exec_cmd: nio delete udp-fdc70d52-2332-47c8-a154-4cd5b53dc3d5 
+Jun 18 14:50:41.406 HYPERVISOR: exec_cmd: nio create_udp udp-8ddff0ad-0d41-43b2-a334-c378d31dba2d 10096 127.0.0.1 10097 
+Jun 18 14:50:41.416 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-8ddff0ad-0d41-43b2-a334-c378d31dba2d 
+Jun 18 14:50:41.432 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-8ddff0ad-0d41-43b2-a334-c378d31dba2d 1 
