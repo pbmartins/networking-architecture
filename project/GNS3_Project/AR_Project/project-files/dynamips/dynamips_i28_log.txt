@@ -1,39 +1,44 @@
-May 23 17:32:41.313 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-May 23 17:32:41.313 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49996.
-May 23 17:32:41.332 HYPERVISOR: exec_cmd: hypervisor version 
-May 23 17:32:41.334 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-May 23 17:32:41.334 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-May 23 17:32:41.334 HYPERVISOR: exec_cmd: vm create R1 11 c3745 
-May 23 17:32:41.335 VM: VM R1 created.
-May 23 17:32:41.335 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5011 
-May 23 17:32:41.336 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
-May 23 17:32:41.337 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
-May 23 17:32:41.338 HYPERVISOR: exec_cmd: vm set_ram R1 256 
-May 23 17:32:41.339 HYPERVISOR: exec_cmd: vm get_status R1 
-May 23 17:32:41.339 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60b22838 
-May 23 17:32:41.341 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/pedromartins/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
-May 23 17:32:41.342 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
-May 23 17:32:41.343 HYPERVISOR: exec_cmd: vm set_config R1 configs/i11_startup-config.cfg 
-May 23 17:32:47.188 HYPERVISOR: exec_cmd: vm rename R1 ISP2_PT_R1 
-May 23 17:34:50.640 HYPERVISOR: exec_cmd: nio create_udp udp-dae39362-439f-4057-b8e3-58f2f186e449 10038 127.0.0.1 10039 
-May 23 17:34:50.646 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP2_PT_R1 0 0 udp-dae39362-439f-4057-b8e3-58f2f186e449 
-May 23 17:34:50.647 HYPERVISOR: exec_cmd: vm get_status ISP2_PT_R1 
-May 23 17:35:04.163 HYPERVISOR: exec_cmd: nio create_udp udp-9b8e52a5-6596-4484-9d99-b5dc63e75110 10042 127.0.0.1 10043 
-May 23 17:35:04.169 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP2_PT_R1 0 1 udp-9b8e52a5-6596-4484-9d99-b5dc63e75110 
-May 23 17:35:04.170 HYPERVISOR: exec_cmd: vm get_status ISP2_PT_R1 
-May 23 17:36:32.454 HYPERVISOR: exec_cmd: vm get_status ISP2_PT_R1 
-May 23 17:36:32.455 HYPERVISOR: exec_cmd: vm slot_add_binding ISP2_PT_R1 1 0 NM-1FE-TX 
-May 23 17:36:47.028 HYPERVISOR: exec_cmd: nio create_udp udp-7390e662-7d5b-4a1a-854e-ab76a9803abd 10050 127.0.0.1 10051 
-May 23 17:36:47.029 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP2_PT_R1 1 0 udp-7390e662-7d5b-4a1a-854e-ab76a9803abd 
-May 23 17:36:47.031 HYPERVISOR: exec_cmd: vm get_status ISP2_PT_R1 
-May 23 17:42:03.347 HYPERVISOR: exec_cmd: vm extract_config ISP2_PT_R1 
-May 23 18:01:01.294 HYPERVISOR: exec_cmd: vm extract_config ISP2_PT_R1 
-May 23 18:30:47.569 HYPERVISOR: exec_cmd: vm extract_config ISP2_PT_R1 
-May 23 18:50:06.868 HYPERVISOR: exec_cmd: vm extract_config ISP2_PT_R1 
-May 23 18:50:08.972 HYPERVISOR: exec_cmd: vm get_status ISP2_PT_R1 
-May 23 18:50:08.983 HYPERVISOR: exec_cmd: vm extract_config ISP2_PT_R1 
-May 23 18:50:09.001 HYPERVISOR: exec_cmd: vm delete ISP2_PT_R1 
-May 23 18:50:09.002 VM: VM ISP2_PT_R1 destroyed.
-May 23 18:50:09.019 HYPERVISOR: exec_cmd: hypervisor stop 
-May 23 18:50:09.098 HYPERVISOR: Stopped.
-May 23 18:50:09.098 GENERAL: reset done.
+Jun 18 12:46:48.371 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 18 12:46:48.371 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49918.
+Jun 18 12:46:48.389 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 12:46:48.390 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 18 12:46:48.390 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 18 12:46:48.391 HYPERVISOR: exec_cmd: vm create R1 18 c7200 
+Jun 18 12:46:48.391 VM: VM R1 created.
+Jun 18 12:46:48.392 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5027 
+Jun 18 12:46:48.393 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Jun 18 12:46:48.395 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 18 12:46:48.396 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Jun 18 12:46:48.398 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Jun 18 12:46:48.399 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 18 12:46:48.400 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60608040 
+Jun 18 12:46:48.401 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 18 12:46:48.403 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Jun 18 12:46:48.404 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Jun 18 12:46:48.405 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 18 12:46:48.407 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Jun 18 12:46:48.411 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 18 12:46:48.413 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 0 0 
+Jun 18 12:46:48.416 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 18 12:46:48.417 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-2FE 
+Jun 18 12:46:48.420 HYPERVISOR: exec_cmd: vm set_config R1 configs/i18_startup-config.cfg 
+Jun 18 12:46:57.760 HYPERVISOR: exec_cmd: vm rename R1 Aveiro_E0_IPTV 
+Jun 18 12:47:14.187 HYPERVISOR: exec_cmd: nio create_udp udp-37789416-6c31-4a67-88b9-1dfa3c148aa8 10104 127.0.0.1 10105 
+Jun 18 12:47:14.194 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_E0_IPTV 0 0 udp-37789416-6c31-4a67-88b9-1dfa3c148aa8 
+Jun 18 12:47:14.196 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_IPTV 
+Jun 18 12:47:19.587 HYPERVISOR: exec_cmd: vm set_ghost_status Aveiro_E0_IPTV 2 
+Jun 18 12:47:19.588 HYPERVISOR: exec_cmd: vm set_ghost_file Aveiro_E0_IPTV c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 18 12:47:19.589 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_IPTV 
+Jun 18 12:47:19.592 HYPERVISOR: exec_cmd: vm start Aveiro_E0_IPTV 
+Jun 18 13:21:29.766 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_IPTV 
+Jun 18 13:21:29.773 HYPERVISOR: exec_cmd: vm stop Aveiro_E0_IPTV 
+Jun 18 13:21:31.126 VM: VM Aveiro_E0_IPTV shutdown.
+Jun 18 13:21:31.134 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E0_IPTV 
+Jun 18 13:21:40.712 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E0_IPTV 
+Jun 18 13:47:59.863 HYPERVISOR: exec_cmd: vm get_status Aveiro_E0_IPTV 
+Jun 18 13:47:59.905 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E0_IPTV 
+Jun 18 13:47:59.963 HYPERVISOR: exec_cmd: vm delete Aveiro_E0_IPTV 
+Jun 18 13:47:59.964 VM: VM Aveiro_E0_IPTV destroyed.
+Jun 18 13:48:00.014 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 13:48:00.219 HYPERVISOR: Stopped.
+Jun 18 13:48:00.219 GENERAL: reset done.

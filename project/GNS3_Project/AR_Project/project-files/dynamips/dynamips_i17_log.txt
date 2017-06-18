@@ -1,19 +1,36 @@
-Jun 17 12:25:08.460 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 17 12:25:08.460 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50544.
-Jun 17 12:25:08.546 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 17 12:25:08.551 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/AR/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 17 12:25:08.551 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/AR/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 17 12:25:08.555 HYPERVISOR: exec_cmd: ethsw create SW_Datacenter 
-Jun 17 12:25:10.198 HYPERVISOR: exec_cmd: nio create_udp udp-ca94a8e7-5a2a-4060-8111-55721dd504a8 10058 127.0.0.1 10059 
-Jun 17 12:25:10.221 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-ca94a8e7-5a2a-4060-8111-55721dd504a8 
-Jun 17 12:25:10.254 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-ca94a8e7-5a2a-4060-8111-55721dd504a8 1 
-Jun 17 12:25:10.307 HYPERVISOR: exec_cmd: nio create_udp udp-911bed42-bc14-413b-98a1-23950e320236 10065 127.0.0.1 10064 
-Jun 17 12:25:10.323 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-911bed42-bc14-413b-98a1-23950e320236 
-Jun 17 12:25:10.327 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-911bed42-bc14-413b-98a1-23950e320236 1 
-Jun 17 12:25:10.377 HYPERVISOR: exec_cmd: nio create_udp udp-890dcd74-42b6-476e-9d15-002a5eae1eed 10071 127.0.0.1 10070 
-Jun 17 12:25:10.383 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-890dcd74-42b6-476e-9d15-002a5eae1eed 
-Jun 17 12:25:10.399 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-890dcd74-42b6-476e-9d15-002a5eae1eed 1 
-Jun 17 12:28:44.397 HYPERVISOR: exec_cmd: ethsw delete SW_Datacenter 
-Jun 17 12:28:44.462 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 17 12:28:44.882 HYPERVISOR: Stopped.
-Jun 17 12:28:44.882 GENERAL: reset done.
+Jun 18 11:34:48.901 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 18 11:34:48.901 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49498.
+Jun 18 11:34:49.005 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 11:34:49.009 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 18 11:34:49.009 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 18 11:34:49.013 HYPERVISOR: exec_cmd: ethsw create SW_Datacenter 
+Jun 18 11:34:51.106 HYPERVISOR: exec_cmd: nio create_udp udp-e4a592c4-cfc5-46ee-a169-1cca463c5d32 10058 127.0.0.1 10059 
+Jun 18 11:34:51.123 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-e4a592c4-cfc5-46ee-a169-1cca463c5d32 
+Jun 18 11:34:51.147 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-e4a592c4-cfc5-46ee-a169-1cca463c5d32 1 
+Jun 18 11:34:51.193 HYPERVISOR: exec_cmd: nio create_udp udp-f3f52164-60d4-4ef0-aabf-5220f5a05355 10065 127.0.0.1 10064 
+Jun 18 11:34:51.205 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-f3f52164-60d4-4ef0-aabf-5220f5a05355 
+Jun 18 11:34:51.235 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-f3f52164-60d4-4ef0-aabf-5220f5a05355 1 
+Jun 18 11:34:51.273 HYPERVISOR: exec_cmd: nio create_udp udp-6879f993-22df-4ac3-9477-1e2ce7988d9b 10071 127.0.0.1 10070 
+Jun 18 11:34:51.287 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-6879f993-22df-4ac3-9477-1e2ce7988d9b 
+Jun 18 11:34:51.319 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-6879f993-22df-4ac3-9477-1e2ce7988d9b 1 
+Jun 18 11:34:51.913 HYPERVISOR: exec_cmd: nio create_udp udp-73cbffc1-5bdd-4eef-91ae-bd9d83d61d9c 10114 127.0.0.1 10115 
+Jun 18 11:34:51.924 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-73cbffc1-5bdd-4eef-91ae-bd9d83d61d9c 
+Jun 18 11:34:51.950 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-73cbffc1-5bdd-4eef-91ae-bd9d83d61d9c 1 
+Jun 18 11:47:38.220 HYPERVISOR: exec_cmd: nio bind_filter udp-73cbffc1-5bdd-4eef-91ae-bd9d83d61d9c 2 capture 
+Jun 18 11:47:38.222 HYPERVISOR: exec_cmd: nio setup_filter udp-73cbffc1-5bdd-4eef-91ae-bd9d83d61d9c 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/captures/SW_Datacenter_4_to_IPVT_Server_FastEthernet0-0.pcap 
+Jun 18 11:48:17.527 HYPERVISOR: exec_cmd: nio bind_filter udp-f3f52164-60d4-4ef0-aabf-5220f5a05355 2 capture 
+Jun 18 11:48:17.528 HYPERVISOR: exec_cmd: nio setup_filter udp-f3f52164-60d4-4ef0-aabf-5220f5a05355 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/captures/SW_Datacenter_2_to_Datacenter_Aveiro_1_FastEthernet1-0.pcap 
+Jun 18 11:50:54.267 HYPERVISOR: exec_cmd: nio unbind_filter udp-73cbffc1-5bdd-4eef-91ae-bd9d83d61d9c 2 
+Jun 18 11:50:56.306 HYPERVISOR: exec_cmd: ethsw remove_nio SW_Datacenter udp-73cbffc1-5bdd-4eef-91ae-bd9d83d61d9c 
+Jun 18 11:50:56.317 HYPERVISOR: exec_cmd: nio delete udp-73cbffc1-5bdd-4eef-91ae-bd9d83d61d9c 
+Jun 18 11:51:21.759 HYPERVISOR: exec_cmd: nio create_udp udp-19da4b87-92bf-439c-979b-7f374128bf17 10115 127.0.0.1 10114 
+Jun 18 11:51:21.762 HYPERVISOR: exec_cmd: ethsw add_nio SW_Datacenter udp-19da4b87-92bf-439c-979b-7f374128bf17 
+Jun 18 11:51:21.765 HYPERVISOR: exec_cmd: ethsw set_access_port SW_Datacenter udp-19da4b87-92bf-439c-979b-7f374128bf17 1 
+Jun 18 12:08:40.605 HYPERVISOR: exec_cmd: nio unbind_filter udp-f3f52164-60d4-4ef0-aabf-5220f5a05355 2 
+Jun 18 12:39:42.105 HYPERVISOR: exec_cmd: nio bind_filter udp-f3f52164-60d4-4ef0-aabf-5220f5a05355 2 capture 
+Jun 18 12:39:42.107 HYPERVISOR: exec_cmd: nio setup_filter udp-f3f52164-60d4-4ef0-aabf-5220f5a05355 2 en10mb /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/captures/SW_Datacenter_2_to_Datacenter_Aveiro_1_FastEthernet1-0.pcap 
+Jun 18 13:05:11.626 HYPERVISOR: exec_cmd: nio unbind_filter udp-f3f52164-60d4-4ef0-aabf-5220f5a05355 2 
+Jun 18 13:47:59.324 HYPERVISOR: exec_cmd: ethsw delete SW_Datacenter 
+Jun 18 13:47:59.418 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 18 13:47:59.719 HYPERVISOR: Stopped.
+Jun 18 13:47:59.719 GENERAL: reset done.
