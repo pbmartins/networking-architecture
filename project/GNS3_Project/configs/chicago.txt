@@ -10,8 +10,9 @@ ipv6 router ospf 1
 default-information originate always metric 5
 ip route 200.1.0.0 255.255.255.0 100.0.0.1
 ip route 200.1.0.0 255.255.255.0 100.0.0.2
+ipv6 route 2002:A:A:1::/52 tunnel 0
+ipv6 route 2002:A:A:2::/52 tunnel 0
 ipv6 route 2002:A:A:2000::/52 tunnel 0
-#ipv6 route 2002:A:A:2000::/52 2001:0:0:0::2
 
 # IPSec
 crypto isakmp policy 30
@@ -98,8 +99,12 @@ ipv6 router ospf 1
 default-information originate always metric 10
 ip route 200.1.0.0 255.255.255.0 100.0.0.1
 ip route 200.1.0.0 255.255.255.0 100.0.0.2
+ipv6 route 2002:A:A:1::/52 2001:0:0:0::1
+ipv6 route 2002:A:A:2::/52 2001:0:0:0::1
 ipv6 route 2002:A:A:2000::/52 2001:0:0:0::1
-ipv6 route 2002:A:A:2000::/52 2001:0:0:0::2
+no ipv6 route 2002:A:A:2000::/52 2001:0:0:0::2
+no ipv6 route 2002:A:A:1::/52 2001:0:0:0::2
+no ipv6 route 2002:A:A:2::/52 2001:0:0:0::2
 
 # NAT
 access-list 1 permit 10.0.0.0 0.255.255.255

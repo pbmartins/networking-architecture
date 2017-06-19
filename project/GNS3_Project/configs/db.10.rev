@@ -1,0 +1,11 @@
+$TTL 604800
+$ORIGIN 10.in-addr.arpa.
+@       IN      SOA     ns1.metaltech.av. adm.metaltech.av. (
+                                2           ; Serial
+                           604800           ; Refresh
+                            86400           ; Retry
+                          2419200           ; Expire
+                           604800 )  ; Negative Cache TTL
+        IN      NS      ns1.metaltech.av.
+1.64.23 IN      PTR     mone0.metaltech.av.
+1.64.20 IN      PTR     vce0.metaltech.com.

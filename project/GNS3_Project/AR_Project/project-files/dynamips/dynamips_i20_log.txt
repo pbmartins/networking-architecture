@@ -1,22 +1,22 @@
-Jun 18 14:02:27.631 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 18 14:02:27.631 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50532.
-Jun 18 14:02:27.671 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 18 14:02:27.675 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 18 14:02:27.675 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 18 14:02:27.690 HYPERVISOR: exec_cmd: ethsw create SW2 
-Jun 18 14:02:29.791 HYPERVISOR: exec_cmd: nio create_udp udp-f68856c3-a2a3-4590-8e56-f32aa6876c3e 10073 127.0.0.1 10072 
-Jun 18 14:02:29.808 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-f68856c3-a2a3-4590-8e56-f32aa6876c3e 
-Jun 18 14:02:29.827 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-f68856c3-a2a3-4590-8e56-f32aa6876c3e 1 
-Jun 18 14:02:29.847 HYPERVISOR: exec_cmd: nio create_udp udp-722812fb-5ad1-43f5-8f45-506aee94d38d 10076 127.0.0.1 10077 
-Jun 18 14:02:29.878 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-722812fb-5ad1-43f5-8f45-506aee94d38d 
-Jun 18 14:02:29.908 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-722812fb-5ad1-43f5-8f45-506aee94d38d 1 
-Jun 18 14:02:29.918 HYPERVISOR: exec_cmd: nio create_udp udp-fbefb43e-95bf-483f-84a2-c85345503f06 10081 127.0.0.1 10080 
-Jun 18 14:02:29.931 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-fbefb43e-95bf-483f-84a2-c85345503f06 
-Jun 18 14:02:29.953 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-fbefb43e-95bf-483f-84a2-c85345503f06 1 
-Jun 18 14:02:30.018 HYPERVISOR: exec_cmd: nio create_udp udp-2eb3c9ae-476f-44e2-aace-e1399f041afd 10089 127.0.0.1 10088 
-Jun 18 14:02:30.034 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-2eb3c9ae-476f-44e2-aace-e1399f041afd 
-Jun 18 14:02:30.057 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-2eb3c9ae-476f-44e2-aace-e1399f041afd 1 
-Jun 18 14:58:23.629 HYPERVISOR: exec_cmd: ethsw delete SW2 
-Jun 18 14:58:23.709 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 18 14:58:23.713 HYPERVISOR: Stopped.
-Jun 18 14:58:23.713 GENERAL: reset done.
+Jun 19 21:46:07.961 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+Jun 19 21:46:07.961 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49890.
+Jun 19 21:46:08.177 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 19 21:46:08.224 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Diogo Ferreira\Google Drive\Universidade\3º Ano\2º Semestre\Arquitectura de Redes\Repository\AR\project\GNS3_Project\AR_Project\project-files\dynamips 
+Jun 19 21:46:08.224 GENERAL: working_dir=C:\Users\Diogo Ferreira\Google Drive\Universidade\3º Ano\2º Semestre\Arquitectura de Redes\Repository\AR\project\GNS3_Project\AR_Project\project-files\dynamips
+Jun 19 21:46:08.271 HYPERVISOR: exec_cmd: ethsw create SW2 
+Jun 19 21:46:16.342 HYPERVISOR: exec_cmd: nio create_udp udp-54010045-b244-4829-9379-44cd537ee0ba 10067 127.0.0.1 10066 
+Jun 19 21:46:16.373 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-54010045-b244-4829-9379-44cd537ee0ba 
+Jun 19 21:46:16.420 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-54010045-b244-4829-9379-44cd537ee0ba 1 
+Jun 19 21:46:16.786 HYPERVISOR: exec_cmd: nio create_udp udp-14683920-388b-414c-b9c8-615c9faaff51 10076 127.0.0.1 10077 
+Jun 19 21:46:16.832 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-14683920-388b-414c-b9c8-615c9faaff51 
+Jun 19 21:46:16.886 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-14683920-388b-414c-b9c8-615c9faaff51 1 
+Jun 19 21:46:16.980 HYPERVISOR: exec_cmd: nio create_udp udp-188fefbe-2f6a-40ce-9a4d-7307db041f74 10081 127.0.0.1 10080 
+Jun 19 21:46:17.011 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-188fefbe-2f6a-40ce-9a4d-7307db041f74 
+Jun 19 21:46:17.058 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-188fefbe-2f6a-40ce-9a4d-7307db041f74 1 
+Jun 19 21:46:17.361 HYPERVISOR: exec_cmd: nio create_udp udp-f93576ef-8da1-4a35-aee4-42cc688416a1 10089 127.0.0.1 10088 
+Jun 19 21:46:17.423 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-f93576ef-8da1-4a35-aee4-42cc688416a1 
+Jun 19 21:46:17.470 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-f93576ef-8da1-4a35-aee4-42cc688416a1 1 
+Jun 19 22:06:39.838 HYPERVISOR: exec_cmd: ethsw delete SW2 
+Jun 19 22:06:39.994 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 19 22:06:40.025 HYPERVISOR: Stopped.
+Jun 19 22:06:40.041 GENERAL: reset done.
