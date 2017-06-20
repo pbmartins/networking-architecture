@@ -1,1 +1,2 @@
-set pcname Chicago_Public
+ip 200.1.1.200 200.1.1.193 24
+ip 2002:a:a:6428::101/64

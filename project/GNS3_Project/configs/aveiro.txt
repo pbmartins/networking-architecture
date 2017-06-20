@@ -929,12 +929,14 @@ set interface tunnel 1
 
 # NAT
 access-list 1 permit 10.0.0.0 0.255.255.255
+access-list 2 permit 192.168.0.0 0.0.255.255
 ip nat pool POOLR 200.1.0.129 200.1.0.190 netmask 255.255.255.192
 ip nat Stateful id 1
 primary 10.17.3.49
 peer 10.17.3.50
 mapping-id 10
 ip nat inside source list 1 pool POOLR mapping-id 10 overload
+ip nat inside source list 2 pool POOLR mapping-id 10 overload
 
 
 # Core A
@@ -980,10 +982,19 @@ no shut
 interface f3/0
 ip add 200.1.0.125 255.255.255.192
 ip add 10.29.0.253 255.255.255.0 secondary
+ip nat inside
 ipv6 enable
 ipv6 add 2002:A:A:2103:19::1/80
 ip ospf 1 area 0
 ipv6 ospf 1 area 0
+no shut
+
+# Internet alta-resilencia
+interface f4/0
+ip add 100.0.0.5 255.255.255.0
+ip nat outside
+ipv6 enable
+ipv6 add 2001:0:0:0::5/64
 no shut
 
 # Tunel IPSec
@@ -1017,12 +1028,14 @@ snmp-server community public RO
 
 # NAT
 access-list 1 permit 10.0.0.0 0.255.255.255
+access-list 2 permit 192.168.0.0 0.0.255.255
 ip nat pool POOLR 200.1.0.129 200.1.0.190 netmask 255.255.255.192
 ip nat Stateful id 2
 backup 10.17.3.50
 peer 10.17.3.49
 mapping-id 10
 ip nat inside source list 1 pool POOLR mapping-id 10 overload
+ip nat inside source list 2 pool POOLR mapping-id 10 overload
 
 # Core A
 interface f0/0
@@ -1071,6 +1084,7 @@ no shut
 interface f3/0
 ip add 200.1.0.126 255.255.255.192
 ip add 10.29.0.254 255.255.255.0 secondary
+ip nat inside
 ipv6 enable
 ipv6 add 2002:A:A:2103:19::2/80
 ip ospf 1 area 0
@@ -1224,6 +1238,7 @@ Aveiro_E0_MonTerminal_DHCP
 conf t
 ip domain-lookup
 ip name-server 10.29.0.1
+ip name-server 200.1.0.65
 ipv6 unicast-routing
 int f0/0
 ip add dhcp
