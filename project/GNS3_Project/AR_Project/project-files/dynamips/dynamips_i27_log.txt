@@ -1,44 +1,56 @@
-Jun 19 22:22:28.507 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 19 22:22:28.508 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55588.
-Jun 19 22:22:28.625 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 19 22:22:28.634 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
-Jun 19 22:22:28.635 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
-Jun 19 22:22:28.638 HYPERVISOR: exec_cmd: vm create Aveiro_E1_IPTV 19 c7200 
-Jun 19 22:22:28.638 VM: VM Aveiro_E1_IPTV created.
-Jun 19 22:22:28.649 HYPERVISOR: exec_cmd: vm set_con_tcp_port Aveiro_E1_IPTV 5028 
-Jun 19 22:22:28.660 HYPERVISOR: exec_cmd: c7200 get_mac_addr Aveiro_E1_IPTV 
-Jun 19 22:22:28.668 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
-Jun 19 22:22:28.674 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_E1_IPTV 0 0 C7200-IO-FE 
-Jun 19 22:22:28.686 HYPERVISOR: exec_cmd: c7200 set_mac_addr Aveiro_E1_IPTV ca13.2c51.0000 
-Jun 19 22:22:28.700 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
-Jun 19 22:22:28.720 HYPERVISOR: exec_cmd: vm set_idle_pc Aveiro_E1_IPTV 0x60608040 
-Jun 19 22:22:28.725 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
-Jun 19 22:22:28.728 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_E1_IPTV 1 0 PA-2FE-TX 
-Jun 19 22:22:28.732 HYPERVISOR: exec_cmd: vm set_nvram Aveiro_E1_IPTV 512 
-Jun 19 22:22:28.745 HYPERVISOR: exec_cmd: vm set_ios Aveiro_E1_IPTV /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
-Jun 19 22:22:28.751 HYPERVISOR: exec_cmd: vm set_disk0 Aveiro_E1_IPTV 0 
-Jun 19 22:22:28.757 HYPERVISOR: exec_cmd: vm set_ram Aveiro_E1_IPTV 512 
-Jun 19 22:22:28.771 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
-Jun 19 22:22:28.781 HYPERVISOR: exec_cmd: vm slot_remove_binding Aveiro_E1_IPTV 0 0 
-Jun 19 22:22:28.789 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
-Jun 19 22:22:28.799 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_E1_IPTV 0 0 C7200-IO-2FE 
-Jun 19 22:22:28.820 HYPERVISOR: exec_cmd: vm set_config Aveiro_E1_IPTV configs/i19_startup-config.cfg 
-Jun 19 22:22:30.715 HYPERVISOR: exec_cmd: nio create_udp udp-31a4d824-e62c-4b4f-a08b-9eb3b363dfdd 10118 127.0.0.1 10119 
-Jun 19 22:22:30.717 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_E1_IPTV 0 0 udp-31a4d824-e62c-4b4f-a08b-9eb3b363dfdd 
-Jun 19 22:22:30.722 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
-Jun 19 22:23:21.266 HYPERVISOR: exec_cmd: vm set_ghost_status Aveiro_E1_IPTV 2 
-Jun 19 22:23:21.269 HYPERVISOR: exec_cmd: vm set_ghost_file Aveiro_E1_IPTV c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
-Jun 19 22:23:21.271 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
-Jun 19 22:23:21.277 HYPERVISOR: exec_cmd: vm start Aveiro_E1_IPTV 
-Jun 20 01:14:40.752 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
-Jun 20 01:14:40.764 HYPERVISOR: exec_cmd: vm stop Aveiro_E1_IPTV 
-Jun 20 01:14:42.124 VM: VM Aveiro_E1_IPTV shutdown.
-Jun 20 01:14:42.170 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E1_IPTV 
-Jun 20 01:14:48.460 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E1_IPTV 
-Jun 20 01:14:52.148 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
-Jun 20 01:14:52.195 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E1_IPTV 
-Jun 20 01:14:52.228 HYPERVISOR: exec_cmd: vm delete Aveiro_E1_IPTV 
-Jun 20 01:14:52.228 VM: VM Aveiro_E1_IPTV destroyed.
-Jun 20 01:14:52.254 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 20 01:14:52.596 HYPERVISOR: Stopped.
-Jun 20 01:14:52.597 GENERAL: reset done.
+Jun 24 18:39:21.337 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 24 18:39:21.338 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54739.
+Jun 24 18:39:21.400 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 24 18:39:21.405 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips 
+Jun 24 18:39:21.405 GENERAL: working_dir=/Users/pedromartins/Documents/UA/3_year/ar/project/GNS3_Project/AR_Project/project-files/dynamips
+Jun 24 18:39:21.409 HYPERVISOR: exec_cmd: vm create Aveiro_E1_IPTV 19 c7200 
+Jun 24 18:39:21.409 VM: VM Aveiro_E1_IPTV created.
+Jun 24 18:39:21.419 HYPERVISOR: exec_cmd: vm set_con_tcp_port Aveiro_E1_IPTV 5028 
+Jun 24 18:39:21.430 HYPERVISOR: exec_cmd: c7200 get_mac_addr Aveiro_E1_IPTV 
+Jun 24 18:39:21.433 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
+Jun 24 18:39:21.435 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_E1_IPTV 0 0 C7200-IO-FE 
+Jun 24 18:39:21.438 HYPERVISOR: exec_cmd: vm set_ios Aveiro_E1_IPTV /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 24 18:39:21.440 HYPERVISOR: exec_cmd: c7200 set_mac_addr Aveiro_E1_IPTV ca13.2c51.0000 
+Jun 24 18:39:21.442 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
+Jun 24 18:39:21.446 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_E1_IPTV 1 0 PA-2FE-TX 
+Jun 24 18:39:21.449 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
+Jun 24 18:39:21.451 HYPERVISOR: exec_cmd: vm slot_remove_binding Aveiro_E1_IPTV 0 0 
+Jun 24 18:39:21.454 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
+Jun 24 18:39:21.456 HYPERVISOR: exec_cmd: vm slot_add_binding Aveiro_E1_IPTV 0 0 C7200-IO-2FE 
+Jun 24 18:39:21.459 HYPERVISOR: exec_cmd: vm set_ram Aveiro_E1_IPTV 512 
+Jun 24 18:39:21.462 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
+Jun 24 18:39:21.465 HYPERVISOR: exec_cmd: vm set_idle_pc Aveiro_E1_IPTV 0x60608040 
+Jun 24 18:39:21.474 HYPERVISOR: exec_cmd: vm set_disk0 Aveiro_E1_IPTV 0 
+Jun 24 18:39:21.498 HYPERVISOR: exec_cmd: vm set_nvram Aveiro_E1_IPTV 512 
+Jun 24 18:39:21.503 HYPERVISOR: exec_cmd: vm set_config Aveiro_E1_IPTV configs/i19_startup-config.cfg 
+Jun 24 18:39:23.937 HYPERVISOR: exec_cmd: nio create_udp udp-ed0e0af2-873b-45ad-9fdc-8d820828c320 10116 127.0.0.1 10117 
+Jun 24 18:39:23.956 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Aveiro_E1_IPTV 0 0 udp-ed0e0af2-873b-45ad-9fdc-8d820828c320 
+Jun 24 18:39:23.972 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
+Jun 24 18:39:59.819 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jun 24 18:39:59.819 VM: VM Ghost created.
+Jun 24 18:39:59.821 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/pedromartins/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Jun 24 18:39:59.823 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 24 18:39:59.824 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 24 18:39:59.825 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jun 24 18:39:59.826 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 24 18:39:59.828 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 24 18:40:01.026 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 24 18:40:01.029 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 24 18:40:01.972 VM: VM Ghost shutdown.
+Jun 24 18:40:01.974 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 24 18:40:01.974 VM: VM Ghost destroyed.
+Jun 24 18:40:01.983 HYPERVISOR: exec_cmd: vm set_ghost_status Aveiro_E1_IPTV 2 
+Jun 24 18:40:01.984 HYPERVISOR: exec_cmd: vm set_ghost_file Aveiro_E1_IPTV c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Jun 24 18:40:01.986 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
+Jun 24 18:40:01.988 HYPERVISOR: exec_cmd: vm start Aveiro_E1_IPTV 
+Jun 25 12:23:54.714 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
+Jun 25 12:23:54.723 HYPERVISOR: exec_cmd: vm stop Aveiro_E1_IPTV 
+Jun 25 12:23:56.484 VM: VM Aveiro_E1_IPTV shutdown.
+Jun 25 12:23:56.580 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E1_IPTV 
+Jun 25 12:24:03.401 HYPERVISOR: exec_cmd: vm get_status Aveiro_E1_IPTV 
+Jun 25 12:24:03.445 HYPERVISOR: exec_cmd: vm extract_config Aveiro_E1_IPTV 
+Jun 25 12:24:03.497 HYPERVISOR: exec_cmd: vm delete Aveiro_E1_IPTV 
+Jun 25 12:24:03.497 VM: VM Aveiro_E1_IPTV destroyed.
+Jun 25 12:24:03.543 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 25 12:24:04.025 HYPERVISOR: Stopped.
+Jun 25 12:24:04.025 GENERAL: reset done.
